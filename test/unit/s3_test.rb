@@ -1,23 +1,15 @@
 require 'test_helper'
 
-class DownloadTest < ActiveSupport::TestCase
+
+class TestS3 < ActiveSupport::TestCase
   def setup
     Rails.application.secrets.aws_access_key_id = '123'
     Rails.application.secrets.aws_secret_access_key = 'abc'
-    Rails.application.secrets.aws_downloads_bucket = 'pp-downloads-development'
   end
 
-  test '#new creates an S3 connection' do
-    AWS::S3.expects(:new).with(
-      access_key_id: '123',
-      secret_access_key: 'abc'
-    )
+  test '.download_from_bucket retrieves the latest file from
+  given bucket on S3, and saves it to the given filename' do
 
-    Gef::Importer::Download.new
-  end
-
-  test '.download_current_wdpa_to retrieves the latest WDPA from S3,
-   and saves it to the given filename' do
     latest_file_mock = mock
     latest_file_mock.stubs(:last_modified).returns(2.days.ago)
     latest_file_mock.expects(:read).returns('')
@@ -33,8 +25,10 @@ class DownloadTest < ActiveSupport::TestCase
       oldest_file_mock
     ])
 
+    bucket_name = 'hey_i_am_a_bucket'
+
     s3_mock = mock
-    s3_mock.stubs(:buckets).returns('wdpa' => bucket_mock)
+    s3_mock.stubs(:buckets).returns(bucket_name => bucket_mock)
 
     AWS::S3.expects(:new).returns(s3_mock)
 
@@ -46,6 +40,7 @@ class DownloadTest < ActiveSupport::TestCase
       .with(filename)
       .yields(file_write_mock)
 
-    Gef::Importer::Download.file filename: filename
+    s3 = S3.new()
+    s3.download_from_bucket(bucket: bucket,filename: filename)
   end
 end
