@@ -1,9 +1,9 @@
 class S3
-  def initialize bucket_name
-    @s3 = AWS::S3.new({
+  def initialize(bucket_name)
+    @s3 = AWS::S3.new(
       access_key_id: Rails.application.secrets.aws_access_key_id,
       secret_access_key: Rails.application.secrets.aws_secret_access_key
-    })
+    )
     @bucket_name = bucket_name
   end
 
@@ -11,7 +11,7 @@ class S3
     download_last_file_to(filename: filename)
   end
 
-  def download_last_file_to filename: filename
+  def download_last_file_to(filename: filename)
     File.open(filename, 'w:ASCII-8BIT') do |file|
       file.write last_file.read
     end

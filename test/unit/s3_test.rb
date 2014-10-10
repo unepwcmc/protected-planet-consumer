@@ -1,6 +1,5 @@
 require 'test_helper'
 
-
 class TestS3 < ActiveSupport::TestCase
   def setup
     Rails.application.secrets.aws_access_key_id = '123'
@@ -37,7 +36,7 @@ class TestS3 < ActiveSupport::TestCase
     file_write_mock = mock
     file_write_mock.stubs(:write)
     File.expects(:open)
-      .with(filename,'w:ASCII-8BIT')
+      .with(filename, 'w:ASCII-8BIT')
       .yields(file_write_mock)
 
     s3 = S3.new(bucket_name)
