@@ -37,10 +37,10 @@ class TestS3 < ActiveSupport::TestCase
     file_write_mock = mock
     file_write_mock.stubs(:write)
     File.expects(:open)
-      .with(filename)
+      .with(filename,'w:ASCII-8BIT')
       .yields(file_write_mock)
 
-    s3 = S3.new()
-    s3.download_from_bucket(bucket: bucket,filename: filename)
+    s3 = S3.new(bucket_name)
+    s3.download_from_bucket(filename: filename)
   end
 end
