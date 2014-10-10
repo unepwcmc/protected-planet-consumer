@@ -26,3 +26,5 @@ end
 gem 'aws-sdk', '~> 1.3.9'
 gem 'rubocop', '~> 0.26.1'
 gem 'minitest'
+gem 'dotenv', '~> 0.11.1'
+gem 'dotenv-deployment'
