@@ -8,10 +8,6 @@ class S3
   end
 
   def download_from_bucket(filename: filename)
-    download_last_file_to(filename: filename)
-  end
-
-  def download_last_file_to(filename: filename)
     File.open(filename, 'w:ASCII-8BIT') do |file|
       file.write last_file.read
     end
