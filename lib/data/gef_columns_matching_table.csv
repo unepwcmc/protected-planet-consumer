@@ -1,0 +1,43 @@
+model_columns,type,xls_columns
+gef_pims_id,string,GEF PMIS ID
+wdpa_id,integer,WDPA ID (METT)
+pa_name_mett,text,PA NAME (METT)
+mett_original_uid,integer,METT UID1
+mett_new_uid,string,METT UID2
+assessment_type,text,Assessment Type
+assessment_year,text,Assessment Year
+legal_status,text,Legal Status
+pa_regulations,integer,Protected Area Regulations
+law_enforcement,integer,Law Enforcement
+pa_objectives,integer,Protected Area Objectives
+pa_design,integer,Protected Area Design
+pa_boundary_demarcation,integer,Protected Area Boundary Demarcation
+management_plan,integer,Management Plan
+regular_work_plan,integer,Regular Work Plan
+resource_inventory,integer,Resource inventory
+protection_systems,integer,Protection Systems (METT3 ONLY)
+research,integer,Research
+resource_management,integer,Resource Management
+staff_numbers,integer,Staff Numbers
+staff_training,integer,Staff Training
+current_budget,integer,Current Budget
+security_of_budget,integer,Security of Budget
+management_of_budget,integer,Management of Budget
+equipment,integer,Equipment
+maintenance_of_equipment,integer,Maintenance of Equipment
+education_and_awareness,integer,Education and Awareness
+planning_for_land_and_water,integer,Planning for Land and Water Use (METT3 ONLY)
+stage_and_commercial_neighbours,integer,State and Commercial Neighbours?
+indigenous_people,integer,Indigenous People
+local_communities,integer,Local Communities
+weconomic_benefit,integer,Economic Benefit
+monitoring_and_evaluation,integer,Monitoring and Evaluation
+visitor_facilities,integer,Visitor Faciltiies
+commercial_tourism_operators,integer,Commercial Tourism Operators
+fees,integer,Fees
+condition_of_values,integer,Condition of Values
+personal_management,integer,Personnel Management (METT1 ONLY)
+access_assessment,integer,Access Assessment (METT1 ONLY)
+total_mett_score,integer,Total METT Score
+total_possible_score,integer,Total Possible Score
+overall_percentage,decimal,Overall Percentage
