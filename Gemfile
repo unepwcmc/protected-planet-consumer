@@ -12,17 +12,19 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 
-gem 'spring',        group: :development
+group :development do
+  gem 'spring'
+end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+group :test do
+  gem 'factory_girl_rails', '~> 4.4.1'
+  gem 'mocha', '~> 1.0.0'
+  gem 'webmock', '~> 1.18.0', require: false
+  gem 'codeclimate-test-reporter', require: nil
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
+gem 'aws-sdk', '~> 1.3.9'
+gem 'rubocop', '~> 0.26.1'
+gem 'minitest'
+gem 'dotenv', '~> 0.11.1'
+gem 'dotenv-deployment'
