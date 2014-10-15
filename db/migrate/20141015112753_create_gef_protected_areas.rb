@@ -1,6 +1,6 @@
-class CreateModelGefProtectedArea < ActiveRecord::Migration
+class CreateGefProtectedAreas < ActiveRecord::Migration
   def change
-    create_table :model_gef_protected_areas do |t|
+    create_table :gef_protected_areas do |t|
       t.string :gef_pims_id
       t.integer :wdpa_id
       t.text :pa_name_mett
@@ -43,6 +43,8 @@ class CreateModelGefProtectedArea < ActiveRecord::Migration
       t.integer :total_mett_score
       t.integer :total_possible_score
       t.integer :overall_percentage
+
+      t.timestamps
     end
   end
 end
