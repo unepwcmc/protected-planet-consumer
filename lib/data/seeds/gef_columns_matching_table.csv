@@ -1,4 +1,4 @@
-model_columns,type,xls_columns
+model_columns,column_type,xls_columns
 gef_pims_id,string,GEF PMIS ID
 wdpa_id,integer,WDPA ID (METT)
 pa_name_mett,text,PA NAME (METT)
