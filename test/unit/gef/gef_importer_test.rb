@@ -25,8 +25,24 @@ class TestGefImporter < ActiveSupport::TestCase
 
     result = {pa_name_mett:  'wolf', research: 4}
 
-    #GefProtectedArea.expects(:create).with(:pa_name_met).at_least(2)
 
     assert_equal result, Gef::Importer.find_fields(protected_area)
+  end
+
+  test 'import creates protected areas from csv file' do
+
+    filename = 'long_tables.csv'
+
+    parsed_csv = [['name in file', 'Research'], ['wolf', 4], ['dog', 7]]
+
+    CSV.expects(:read).with(filename).returns(parsed_csv)
+
+    FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
+    FactoryGirl.create(:gef_column_match, model_columns: 'research', xls_columns: 'Research')
+
+    GefProtectedArea.expects(:create).with(pa_name_mett: 'wolf', research: 4)
+    GefProtectedArea.expects(:create).with(pa_name_mett: 'dog', research: 7)
+
+    Gef::Importer.import(filename: filename)
   end
 end
