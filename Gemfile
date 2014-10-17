@@ -21,6 +21,7 @@ group :test do
   gem 'mocha', '~> 1.0.0'
   gem 'webmock', '~> 1.18.0', require: false
   gem 'codeclimate-test-reporter', require: nil
+  gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 gem 'aws-sdk', '~> 1.3.9'
@@ -28,4 +29,3 @@ gem 'rubocop', '~> 0.26.1'
 gem 'minitest'
 gem 'dotenv', '~> 0.11.1'
 gem 'dotenv-deployment'
-gem 'roo', '~> 1.13.2'

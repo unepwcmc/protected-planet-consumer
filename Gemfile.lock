@@ -111,19 +111,13 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
     rake (10.3.2)
-    roo (1.13.2)
-      nokogiri
-      rubyzip
-      spreadsheet (> 0.6.4)
     rubocop (0.26.1)
       astrolabe (~> 1.3)
       parser (>= 2.2.0.pre.4, < 3.0)
       powerpack (~> 0.0.6)
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.4)
-    ruby-ole (1.2.11.7)
     ruby-progressbar (1.6.0)
-    rubyzip (1.1.6)
     safe_yaml (1.0.3)
     sass (3.2.19)
     sass-rails (4.0.3)
@@ -137,8 +131,6 @@ GEM
       simplecov-html (~> 0.8.0)
     simplecov-html (0.8.0)
     slop (3.6.0)
-    spreadsheet (1.0.0)
-      ruby-ole (>= 1.0)
     spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -183,7 +175,6 @@ DEPENDENCIES
   mocha (~> 1.0.0)
   pg
   rails (= 4.1.0)
-  roo (~> 1.13.2)
   rubocop (~> 0.26.1)
   sass-rails (~> 4.0.3)
   spring
