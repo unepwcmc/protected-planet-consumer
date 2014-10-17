@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141015120330) do
+ActiveRecord::Schema.define(version: 20141017150357) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20141015120330) do
   end
 
   create_table "gef_protected_areas", force: true do |t|
-    t.string   "gef_pims_id"
+    t.string   "gef_pmis_id"
     t.integer  "wdpa_id"
     t.text     "pa_name_mett"
     t.integer  "mett_original_uid"

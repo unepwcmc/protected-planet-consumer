@@ -1,5 +1,5 @@
 model_columns,column_type,xls_columns
-gef_pims_id,string,GEF PMIS ID
+gef_pmis_id,string,GEF PMIS ID
 wdpa_id,integer,WDPA ID (METT)
 pa_name_mett,text,PA NAME (METT)
 mett_original_uid,integer,METT UID1
