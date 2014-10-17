@@ -1,5 +1,4 @@
 class Gef::Importer::Download
-
   BUCKET_NAME = 'pp-consumer'
   FILENAME = 'tmp/gef_db.mdb'
 
