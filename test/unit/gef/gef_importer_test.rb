@@ -9,10 +9,14 @@ class TestGefImporter < ActiveSupport::TestCase
 
     CSV.expects(:read).with(filename).returns(parsed_csv)
 
-    assert_equal result, Gef::Importer.convert_to_hash(filename)
+    importer = Gef::Importer.new(filename: filename)
+
+    assert_equal result, importer.convert_to_hash
   end
 
   test '.find_fields creates a hash with columns of model and values' do
+
+    filename = 'long_tables.csv'
 
     FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
     FactoryGirl.create(:gef_column_match, model_columns: 'research', xls_columns: 'Research')
@@ -21,7 +25,9 @@ class TestGefImporter < ActiveSupport::TestCase
 
     result = { pa_name_mett:  'wolf', research: 4 }
 
-    assert_equal result, Gef::Importer.find_fields(protected_area)
+     importer = Gef::Importer.new(filename: filename)
+
+    assert_equal result, importer.find_fields(protected_area)
   end
 
   test 'import creates protected areas from csv file' do
@@ -38,6 +44,8 @@ class TestGefImporter < ActiveSupport::TestCase
     GefProtectedArea.expects(:create).with(pa_name_mett: 'wolf', research: 4)
     GefProtectedArea.expects(:create).with(pa_name_mett: 'dog', research: 7)
 
-    Gef::Importer.import(filename)
+    importer = Gef::Importer.new(filename: filename)
+
+    importer.import
   end
 end
