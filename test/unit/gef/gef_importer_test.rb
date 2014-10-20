@@ -30,6 +30,22 @@ class TestGefImporter < ActiveSupport::TestCase
     assert_equal result, importer.find_fields(protected_area)
   end
 
+  test '.find_fields ignores columns not matching' do
+
+    filename = 'long_tables.csv'
+
+    FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
+    FactoryGirl.create(:gef_column_match, model_columns: 'research', xls_columns: 'Research')
+
+    protected_area = { 'name in file' => 'wolf', 'name we dont want' => 'human', 'Research' => 4 }
+
+    result = { pa_name_mett:  'wolf', research: 4 }
+
+     importer = Gef::Importer.new(filename: filename)
+
+    assert_equal result, importer.find_fields(protected_area)
+  end
+
   test 'import creates protected areas from csv file' do
 
     filename = 'long_tables.csv'

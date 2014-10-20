@@ -1,3 +1,5 @@
+require 'csv'
+
 class Gef::Importer
 
   def initialize filename: filename
@@ -16,7 +18,9 @@ class Gef::Importer
     gef_protected_area = {}
     protected_area.each do |column, value|
       model_column = GefColumnMatch.select(:model_columns).where(xls_columns: column)
-      gef_protected_area.merge!(model_column.first['model_columns'].to_sym => value)
+      unless model_column == []
+        gef_protected_area.merge!(model_column.first['model_columns'].to_sym => value)
+      end
     end
     gef_protected_area
   end
