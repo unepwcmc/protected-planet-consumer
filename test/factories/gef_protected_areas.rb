@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :gef_protected_area do
-    gef_pmis_id "MyString"
-    pa_name_mett "MyText"
+    gef_pmis_id 'MyString'
+    pa_name_mett 'MyText'
   end
 end

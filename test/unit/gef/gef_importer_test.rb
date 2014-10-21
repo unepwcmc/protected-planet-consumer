@@ -25,7 +25,7 @@ class TestGefImporter < ActiveSupport::TestCase
 
     result = { pa_name_mett:  'wolf', research: 4 }
 
-     importer = Gef::Importer.new(filename: filename)
+    importer = Gef::Importer.new(filename: filename)
 
     assert_equal result, importer.find_fields(protected_area)
   end
@@ -41,7 +41,7 @@ class TestGefImporter < ActiveSupport::TestCase
 
     result = { pa_name_mett:  'wolf', research: 4 }
 
-     importer = Gef::Importer.new(filename: filename)
+    importer = Gef::Importer.new(filename: filename)
 
     assert_equal result, importer.find_fields(protected_area)
   end

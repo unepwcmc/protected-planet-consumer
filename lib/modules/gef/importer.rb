@@ -1,12 +1,11 @@
 require 'csv'
 
 class Gef::Importer
-
-  def initialize filename: filename
+  def initialize(filename: filename)
     @filename = filename
   end
 
-  def import 
+  def import
     pas_list = convert_to_hash
     pas_list.each do |pa|
       pa_converted = find_fields pa
@@ -14,7 +13,7 @@ class Gef::Importer
     end
   end
 
-  def find_fields protected_area
+  def find_fields(protected_area)
     gef_protected_area = {}
     protected_area.each do |column, value|
       model_column = GefColumnMatch.select(:model_columns).where(xls_columns: column)

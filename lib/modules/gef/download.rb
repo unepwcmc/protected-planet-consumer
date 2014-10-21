@@ -1,5 +1,4 @@
 class Gef::Download
-
   def initialize(bucket_name, filename)
     @bucket_name = bucket_name
     @filename = filename

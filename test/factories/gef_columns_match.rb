@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :gef_column_match do
-    model_columns "MyString"
-    xls_columns "MyText"
+    model_columns 'MyString'
+    xls_columns 'MyText'
   end
 end
