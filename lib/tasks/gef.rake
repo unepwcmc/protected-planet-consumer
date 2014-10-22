@@ -4,7 +4,7 @@ namespace :gef do
     BUCKET_NAME = 'gef-protected-areas'
     FILENAME = 'tmp/gef.csv'
 
-    importer = Gef::Import.new(FILENAME)
+    importer = Gef::Importer.new(filename: FILENAME, bucket_name: BUCKET_NAME)
     importer.import
   end
 end
