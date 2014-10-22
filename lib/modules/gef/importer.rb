@@ -1,16 +1,23 @@
 require 'csv'
 
 class Gef::Importer
-  def initialize(filename: filename)
+  def initialize(filename: filename, bucket_name: bucket_name)
     @filename = filename
+    @bucket_name = bucket_name
   end
 
   def import
+    download
     pas_list = convert_to_hash
     pas_list.each do |pa|
       pa_converted = find_fields pa
       GefProtectedArea.create(pa_converted)
     end
+  end
+
+  def download
+    s3 = S3.new(@bucket_name)
+    s3.download_from_bucket(filename: @filename)
   end
 
   def find_fields(protected_area)
