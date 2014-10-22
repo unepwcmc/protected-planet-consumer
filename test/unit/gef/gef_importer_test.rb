@@ -25,7 +25,7 @@ class TestGefImporter < ActiveSupport::TestCase
 
     result = { pa_name_mett:  'wolf', research: 4 }
 
-    importer = Gef::Importer.new(filename: filename)
+    importer = Gef::Importer.new(filename: filename, bucket_name: 'a_s3_bucket')
 
     assert_equal result, importer.find_fields(protected_area)
   end
@@ -41,7 +41,7 @@ class TestGefImporter < ActiveSupport::TestCase
 
     result = { pa_name_mett:  'wolf', research: 4 }
 
-    importer = Gef::Importer.new(filename: filename)
+    importer = Gef::Importer.new({filename: filename, bucket_name: 'a_s3_bucket'})
 
     assert_equal result, importer.find_fields(protected_area)
   end
@@ -60,7 +60,7 @@ class TestGefImporter < ActiveSupport::TestCase
     GefProtectedArea.expects(:create).with(pa_name_mett: 'wolf', research: 4)
     GefProtectedArea.expects(:create).with(pa_name_mett: 'dog', research: 7)
 
-    importer = Gef::Importer.new(filename: filename)
+    importer = Gef::Importer.new(filename: filename, bucket_name: 'a_s3_bucket')
 
     importer.import
   end
