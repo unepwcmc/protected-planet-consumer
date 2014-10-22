@@ -20,7 +20,6 @@ group :test do
   gem 'factory_girl_rails', '~> 4.4.1'
   gem 'mocha', '~> 1.0.0'
   gem 'webmock', '~> 1.18.0', require: false
-  gem 'codeclimate-test-reporter', require: nil
   gem 'factory_girl_rails', '~> 4.4.1'
 end
 
