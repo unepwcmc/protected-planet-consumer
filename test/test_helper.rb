@@ -5,6 +5,7 @@ require 'rails/test_help'
 ActiveRecord::Migration.maintain_test_schema!
 require 'webmock/minitest'
 
+
 class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 end
