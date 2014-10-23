@@ -6,6 +6,17 @@ class TestS3 < ActiveSupport::TestCase
     Rails.application.secrets.aws_secret_access_key = 'abc'
   end
 
+  test '#new creates an S3 connection' do
+    AWS::S3.expects(:new).with({
+      :access_key_id     => '123',
+      :secret_access_key => 'abc'
+    })
+
+    bucket_name = 'hey_i_am_a_bucket'
+
+    S3.new(bucket_name)
+  end
+
   test '.download_from_bucket retrieves the latest file from
   given bucket on S3, and saves it to the given filename' do
 
