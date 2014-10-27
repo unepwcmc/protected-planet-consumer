@@ -63,7 +63,7 @@ class TestGefConsumer < ActiveSupport::TestCase
 
     ProtectedPlanetReader.expects(:new).returns(pp_hash)
 
-    reader = Gef::Consumer.new()
+    reader = Gef::Consumer.new
 
     assert_equal result, reader.api_data(wdpa_id: 555999)
   end
