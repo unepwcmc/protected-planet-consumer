@@ -10,6 +10,7 @@ class TestGefConsumer < ActiveSupport::TestCase
       :original_name => "Manboné",
       :marine => true,
       :legal_status_updated_at => time,
+      :reported_area => 20,
       :sub_locations => [
         {
           :english_name => "Manboneland City"
@@ -43,10 +44,11 @@ class TestGefConsumer < ActiveSupport::TestCase
 
     pp_hash = mock
     pp_hash.expects(:protected_area_from_wdpaid).
-      with(:wdpa_id).
+      with(id: 555999).
       returns(pp_data)
 
     result = {
+      wdpa_id: 555999,
       wdpa_pa_name: 'Manbone',
       designation: 'National',
       designation_type: 'International',
@@ -63,6 +65,6 @@ class TestGefConsumer < ActiveSupport::TestCase
 
     reader = Gef::Consumer.new()
 
-    assert_equal result, reader.data
+    assert_equal result, reader.api_data(wdpa_id: 555999)
   end
 end

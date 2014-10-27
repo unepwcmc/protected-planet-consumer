@@ -2,8 +2,6 @@ require 'test_helper'
 require 'csv'
 class TestGefImporter < ActiveSupport::TestCase
 
-
-
   test '.convert_to_hash reads csv and converts to array of hashes' do
     filename = 'long_tables.csv'
     parsed_csv = [['name in file', 'age'], ['wolf', 10], ['dog', 20]]
