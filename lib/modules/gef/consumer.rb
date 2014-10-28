@@ -1,27 +1,45 @@
 class Gef::Consumer
 
-  DIRECT_VALUES = [:wdpa_id, :name, :legal_status_updated_at]
-  ONLY_NAME = [:iucn_category, :legal_status, :governance]
+  DIRECT_VALUES = [:wdpa_id, :pa_name, :reported_area]
+  WITH_NAME = [:designation, :iucn_category, :governance, :legal_status]
 
   def api_data wdpa_id: wdpa_id
     reader = ProtectedPlanetReader.new
     @full_api_data = reader.protected_area_from_wdpaid(id: wdpa_id)
-    conversion
+    @consumer_data = {}
+    direct_values && designation_type && only_name && status_year && countries 
+    { wdpa_data: @consumer_data }
   end
 
-  def conversion
-    {
-      wdpa_id: @full_api_data[:wdpa_id],
-      wdpa_pa_name: @full_api_data[:name],
-      wdpa_designation: @full_api_data[:designation][:name],
-      wdpa_designation_type: @full_api_data[:designation][:jurisdiction][:name],
-      wdpa_iucn_category: @full_api_data[:iucn_category][:name],
-      wdpa_governance: @full_api_data[:governance][:name],
-      wdpa_reported_area: @full_api_data[:reported_area],
-      wdpa_status: @full_api_data[:legal_status][:name],
-      wdpa_status_year: Date.parse(@full_api_data[:legal_status_updated_at]).year,
-      wdpa_iso_3: @full_api_data[:countries][0][:iso_3],
-      wdpa_region: @full_api_data[:countries][0][:region][:name]
-    }
+  def direct_values
+    DIRECT_VALUES.each do |value|
+      @consumer_data[value] =  @full_api_data[value]
+    end
+  end
+
+  def only_name
+    WITH_NAME.each do |value|
+      @consumer_data[value] =  @full_api_data[value][:name]
+    end
+  end
+
+  def countries
+    countries = []
+    @full_api_data[:countries].each do |country|
+      countries << {
+        name: country[:name],
+        iso_3: country[:iso_3],
+        region: country[:region][:name]
+      }
+    end
+    @consumer_data[:countries] = countries
+  end
+
+  def status_year
+    @consumer_data[:status_year] = Date.parse(@full_api_data[:legal_status_updated_at]).year
+  end
+
+  def designation_type
+    @consumer_data[:designation_type] = @full_api_data[:designation][:jurisdiction][:name]
   end
 end
