@@ -13,15 +13,15 @@ class Gef::Consumer
     {
       wdpa_id: @full_api_data[:wdpa_id],
       wdpa_pa_name: @full_api_data[:name],
-      designation: @full_api_data[:designation][:name],
-      designation_type: @full_api_data[:designation][:jurisdiction][:name],
-      iucn_category: @full_api_data[:iucn_category][:name],
-      governance: @full_api_data[:governance][:name],
-      reported_area: @full_api_data[:reported_area],
-      status: @full_api_data[:legal_status][:name],
-      status_year: @full_api_data[:legal_status_updated_at].year,
-      iso_3: @full_api_data[:countries][0][:iso_3],
-      region: @full_api_data[:countries][0][:region][:name]
+      wdpa_designation: @full_api_data[:designation][:name],
+      wdpa_designation_type: @full_api_data[:designation][:jurisdiction][:name],
+      wdpa_iucn_category: @full_api_data[:iucn_category][:name],
+      wdpa_governance: @full_api_data[:governance][:name],
+      wdpa_reported_area: @full_api_data[:reported_area],
+      wdpa_status: @full_api_data[:legal_status][:name],
+      wdpa_status_year: Date.parse(@full_api_data[:legal_status_updated_at]).year,
+      wdpa_iso_3: @full_api_data[:countries][0][:iso_3],
+      wdpa_region: @full_api_data[:countries][0][:region][:name]
     }
   end
 end
