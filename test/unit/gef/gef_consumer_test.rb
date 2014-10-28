@@ -9,7 +9,7 @@ class TestGefConsumer < ActiveSupport::TestCase
       :name => 'Manbone',
       :original_name => "Manboné",
       :marine => true,
-      :legal_status_updated_at => time,
+      :legal_status_updated_at => time.to_s,
       :reported_area => 20,
       :sub_locations => [
         {
@@ -50,15 +50,15 @@ class TestGefConsumer < ActiveSupport::TestCase
     result = {
       wdpa_id: 555999,
       wdpa_pa_name: 'Manbone',
-      designation: 'National',
-      designation_type: 'International',
-      iucn_category: 'IA',
-      governance: 'Bone Man',
-      reported_area: 20,
-      status: 'Proposed',
-      status_year: 2008,
-      iso_3: 'MBN',
-      region: 'North Manmerica'
+      wdpa_designation: 'National',
+      wdpa_designation_type: 'International',
+      wdpa_iucn_category: 'IA',
+      wdpa_governance: 'Bone Man',
+      wdpa_reported_area: 20,
+      wdpa_status: 'Proposed',
+      wdpa_status_year: 2008,
+      wdpa_iso_3: 'MBN',
+      wdpa_region: 'North Manmerica'
     }
 
     ProtectedPlanetReader.expects(:new).returns(pp_hash)
