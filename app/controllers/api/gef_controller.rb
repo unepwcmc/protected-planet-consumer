@@ -3,9 +3,13 @@ module Api
     def index
       gef_pas = GefProtectedArea.all
       if pmis_id = params[:pmis_id]
-        gef_pas = gef_pas.where(gef_pmis_id: pmis_id)
+        pas_array = []
+        all_pas = gef_pas.where(gef_pmis_id: pmis_id)
+        all_pas.each do |pa|
+          pas_array << pa.generate_data
+        end
+        gef_pas = pas_array
       end
-
       render json: gef_pas, status: 200
     end
   end
