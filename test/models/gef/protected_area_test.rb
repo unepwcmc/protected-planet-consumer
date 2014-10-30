@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class GefProtectedAreaTest < ActiveSupport::TestCase
+class Gef::ProtectedAreaTest < ActiveSupport::TestCase
   test '.full_data returns a hash with all the data requested' do
 
     current_time = Time.now
@@ -24,6 +24,6 @@ class GefProtectedAreaTest < ActiveSupport::TestCase
       pa_name_wdpa: 'Manbone'
     }
 
-    assert_equal result, GefProtectedArea.where(id: 1).first.generate_data
+    assert_equal result, Gef::ProtectedArea.where(id: 1).first.generate_data
   end
 end

@@ -58,8 +58,8 @@ class TestGefImporter < ActiveSupport::TestCase
     FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
     FactoryGirl.create(:gef_column_match, model_columns: 'research', xls_columns: 'Research')
 
-    GefProtectedArea.expects(:create).with(pa_name_mett: 'wolf', research: 4)
-    GefProtectedArea.expects(:create).with(pa_name_mett: 'dog', research: 7)
+    Gef::ProtectedArea.expects(:create).with(pa_name_mett: 'wolf', research: 4)
+    Gef::ProtectedArea.expects(:create).with(pa_name_mett: 'dog', research: 7)
 
     s3_response_mock = mock
     s3_response_mock.expects(:download_from_bucket)

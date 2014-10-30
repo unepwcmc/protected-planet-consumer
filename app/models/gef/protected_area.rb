@@ -1,4 +1,4 @@
-class GefProtectedArea < ActiveRecord::Base
+class Gef::ProtectedArea < ActiveRecord::Base
   def generate_data
     consumer = Gef::Consumer.new
     wdpa_api_data = consumer.api_data(wdpa_id: self.wdpa_id)
