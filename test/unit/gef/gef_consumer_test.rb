@@ -6,7 +6,7 @@ class TestGefConsumer < ActiveSupport::TestCase
 
     pp_data = {
       :wdpa_id => 555999,
-      :pa_name => 'Manbone',
+      :name => 'Manbone',
       :original_name => "Manboné",
       :marine => true,
       :legal_status_updated_at => time.to_s,
@@ -50,7 +50,7 @@ class TestGefConsumer < ActiveSupport::TestCase
     result = { wdpa_data:
       {
         wdpa_id: 555999,
-        pa_name: 'Manbone',
+        name: 'Manbone',
         reported_area: 20,
         designation_type: 'International',
         designation: 'National',
@@ -79,7 +79,7 @@ class TestGefConsumer < ActiveSupport::TestCase
 
     pp_data = {
       :wdpa_id => 555999,
-      :pa_name => 'Manbone',
+      :name => 'Manbone',
       :original_name => "Manboné",
       :marine => true,
       :legal_status_updated_at => time.to_s,
@@ -131,7 +131,7 @@ class TestGefConsumer < ActiveSupport::TestCase
     result = { wdpa_data:
       {
         wdpa_id: 555999,
-        pa_name: 'Manbone',
+        name: 'Manbone',
         reported_area: 20,
         designation_type: 'International',
         designation: 'National',

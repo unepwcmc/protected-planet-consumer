@@ -1,6 +1,6 @@
 class Gef::Consumer
 
-  DIRECT_VALUES = [:wdpa_id, :pa_name, :reported_area]
+  DIRECT_VALUES = [:wdpa_id, :name, :reported_area]
   WITH_NAME = [:designation, :iucn_category, :governance, :legal_status]
 
   def api_data wdpa_id: wdpa_id
