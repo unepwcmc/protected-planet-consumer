@@ -1,0 +1,22 @@
+<main class="protected-area">
+  <div class="heading">
+    <h1>GEF ID #</h1>
+  </div>
+
+  <div class="table">
+    <table id="results">
+      <tr>
+        <th>WDPA ID</td>
+        <th>WDPA Name</td>
+        <th>Protected Area Page</td>
+      </tr>
+      <% @protected_areas.each do |pa| %>
+        <tr>
+          <td><%= pa[:wdpa_id] %></td>
+          <td><%= pa[:wdpa_data][:name] %></td>
+          <td><%= link_to 'ProtectedPlanet.net Page', "http://alpha.protectedplanet.net/#{pa[:wdpa_id]}" %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</main>
