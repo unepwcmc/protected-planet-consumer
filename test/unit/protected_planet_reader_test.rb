@@ -8,7 +8,7 @@ class TestProtectedPlanetReader < ActiveSupport::TestCase
 
     json_file = File.read(File.join('test', 'fixtures', 'pp_area.json'))
 
-    stub_request(:get,'http://mywebsite.com/api/protected_areas?wdpa_id=1').
+    stub_request(:get,'http://mywebsite.com/api/protected_areas/1').
        to_return(status: 200, body: json_file, :headers => {})
 
     reader = ProtectedPlanetReader.new()

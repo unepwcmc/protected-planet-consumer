@@ -6,14 +6,14 @@ class ProtectedPlanetReader
   end
 
   def protected_area_from_wdpaid(id: id)
-    url = url_generator(fieldname: 'wdpa_id', value: id)
+    url = url_generator(value: id)
     protected_area_json = open(url).read
     JSON.parse(protected_area_json, symbolize_names: true)
   end
 
   private
 
-  def url_generator(fieldname: fieldname, value: value)
-    "#{@pp_api_url}protected_areas?#{fieldname}=#{value}"
+  def url_generator(value: value)
+    "#{@pp_api_url}protected_areas/#{value}"
   end
 end
