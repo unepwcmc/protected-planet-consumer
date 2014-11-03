@@ -7,7 +7,6 @@ class Gef::ProtectedAreaController < ApplicationController
       @all_protected_areas.each do |pa|
         @protected_areas << pa.generate_data
       end 
-      debugger   
     end
   end
 
