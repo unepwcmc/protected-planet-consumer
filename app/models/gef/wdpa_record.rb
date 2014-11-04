@@ -1,4 +1,6 @@
-class Gef::ProtectedArea < ActiveRecord::Base
+class Gef::WdpaRecord < ActiveRecord::Base
+  belongs_to :gef_area
+
   def generate_data
     consumer = Gef::Consumer.new
     wdpa_api_data = consumer.api_data(wdpa_id: self.wdpa_id)

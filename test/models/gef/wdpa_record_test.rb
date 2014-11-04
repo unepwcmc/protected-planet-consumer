@@ -1,10 +1,10 @@
 require 'test_helper'
 
-class Gef::ProtectedAreaTest < ActiveSupport::TestCase
+class Gef::WdpaRecordTest < ActiveSupport::TestCase
   test '.full_data returns a hash with all the data requested' do
 
     current_time = Time.now
-    FactoryGirl.create(:gef_protected_area,
+    FactoryGirl.create(:gef_wdpa_record,
       id: 1,
       wdpa_id: 555999,
       pa_name_mett: 'Mankind Boneless',
@@ -24,6 +24,6 @@ class Gef::ProtectedAreaTest < ActiveSupport::TestCase
       pa_name_wdpa: 'Manbone'
     }
 
-    assert_equal result, Gef::ProtectedArea.where(id: 1).first.generate_data
+    assert_equal result, Gef::WdpaRecord.where(id: 1).first.generate_data
   end
 end

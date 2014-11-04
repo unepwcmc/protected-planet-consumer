@@ -11,10 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141022140524) do
+ActiveRecord::Schema.define(version: 20141104110250) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "gef_areas", force: true do |t|
+    t.integer  "gef_pmis_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "gef_column_matches", force: true do |t|
     t.string   "model_columns"
@@ -23,8 +29,7 @@ ActiveRecord::Schema.define(version: 20141022140524) do
     t.datetime "updated_at"
   end
 
-  create_table "gef_protected_areas", force: true do |t|
-    t.string   "gef_pmis_id"
+  create_table "gef_wdpa_records", force: true do |t|
     t.integer  "wdpa_id"
     t.text     "pa_name_mett"
     t.integer  "mett_original_uid"
@@ -68,6 +73,7 @@ ActiveRecord::Schema.define(version: 20141022140524) do
     t.integer  "overall_percentage"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "gef_area_id"
   end
 
 end
