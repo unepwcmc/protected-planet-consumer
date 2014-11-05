@@ -1,5 +1,5 @@
 class Gef::WdpaRecord < ActiveRecord::Base
-  belongs_to :gef_area
+  belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id
 
   def generate_data
     consumer = Gef::Consumer.new
