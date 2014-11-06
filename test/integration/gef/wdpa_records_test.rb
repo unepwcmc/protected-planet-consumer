@@ -30,7 +30,7 @@ class Gef::WdpaRecordsTest < ActionDispatch::IntegrationTest
 
     visit '/gef/area/1/wdpa_record'
     
-    assert page.has_selector?('h1', text: 'GEF ID #1'), 'h1 does not match'
+    assert page.has_selector?('h2', text: 'GEF ID #1'), 'h2 does not match'
   end
 
   test 'renders WDPA name' do
@@ -76,7 +76,7 @@ class Gef::WdpaRecordsTest < ActionDispatch::IntegrationTest
 
     get '/gef/area/1/wdpa_record'
 
-    assert page.has_link?('ProtectedPlanet.net', :href => 'http://alpha.protectedplanet.net/999888'),
+    assert page.has_link?('Link', :href => 'http://alpha.protectedplanet.net/999888'),
       'Has no 999888 PP.net link'
   end
 end
