@@ -1,7 +1,17 @@
-<%= form_for(@gef_pmis_id)  do |f| %>
+<main class="gef-area">
 
-  <%= f.text_firld :gef_pmis_id %>
+  <div class="container">
+    <h1>GEF Protected Planet Tool</h1>
+  </div>
 
-  <%= submit %>
-  
-<% end %>
+  <div class="col-xs-9">
+    <h6>Please type the GEF ID you want to search</h6>
+  </div>
+
+  <div class="col-xs-6" id="search-form">
+    <%= form_tag gef_path, method: :get do %>
+       <%= text_field_tag :description %>
+       <%= @button = submit_tag "Search" %>
+    <% end %>
+  </div>
+</main>

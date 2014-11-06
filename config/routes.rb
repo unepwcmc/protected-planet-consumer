@@ -4,7 +4,11 @@ Rails.application.routes.draw do
     resources :protected_areas
   end
 
-  get '/api/gef/:gef_pmis_id', to: 'api/gef#show', as: 'gef'
+  get '/gef/', to: 'gef#index', as: 'gef'
+
+  get '/gef/area/:gef_pmis_id',  to: 'gef/area#index', as: 'gef_area'
+
+  get '/api/gef/:gef_pmis_id', to: 'api/gef#index', as: 'gef_home'
 
   get '/gef/area/:gef_pmis_id/wdpa_record', to: 'gef/wdpa_record#index', as: 'area_wdpa_records'
 
