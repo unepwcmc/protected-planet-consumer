@@ -33,3 +33,5 @@ gem 'minitest'
 gem 'dotenv', '~> 0.11.1'
 gem 'dotenv-deployment'
 
+gem 'bootstrap-sass', '~> 3.3.0'
+gem 'autoprefixer-rails'
