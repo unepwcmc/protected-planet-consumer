@@ -12,7 +12,7 @@ class Gef::Importer
     pas_list = convert_to_hash
     pas_list.each do |pa|
       pa_converted = find_fields pa
-      pa_converted[:gef_area_id] = Gef::Area.where(gef_pmis_id: pa_converted[:gef_pmis_id]).first[:id]
+      pa_converted[:gef_area_id] = Gef::Area.where(gef_pmis_id: pa_converted[:gef_pmis_id]).first.id
       Gef::WdpaRecord.create(pa_converted.except!(:gef_pmis_id))
     end
   end

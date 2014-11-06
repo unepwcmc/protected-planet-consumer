@@ -64,14 +64,16 @@ class TestGefImporter < ActiveSupport::TestCase
 
     filename = 'long_tables.csv'
 
-    parsed_csv = [['GEF_PMIS_ID','name in file'], [1, 'wolf']]
+    parsed_csv = [['GEF PMIS ID','name in file'], [1, 'wolf']]
 
     CSV.expects(:read).with(filename).returns(parsed_csv)
-    CSV.expects(:foreach).multiple_yields(1)
+    CSV.expects(:foreach).yields(1)
 
     FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
+    FactoryGirl.create(:gef_column_match, model_columns: 'gef_pmis_id', xls_columns: 'GEF PMIS ID')
 
-    Gef::WdpaRecord.expects(:create).with(pa_name_mett: 'wolf')
+
+    Gef::WdpaRecord.expects(:create).once
 
 
     s3_response_mock = mock
