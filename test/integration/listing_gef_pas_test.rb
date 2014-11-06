@@ -20,11 +20,7 @@ class ListingGefPasTest < ActionDispatch::IntegrationTest
 
     get 'api/gef/1'
 
-puts response.body
-
     assert_equal 200, response.status
-
-
 
     gef_pas = JSON.parse(response.body, symbolize_names: true)
     names = gef_pas.map { |pa| pa[:pa_name_mett] }
