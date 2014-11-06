@@ -9,5 +9,4 @@ Rails.application.routes.draw do
   get '/gef/area/:gef_pmis_id/wdpa_record', to: 'gef/wdpa_record#index', as: 'area_wdpa_records'
 
   get '/gef/area/:gef_pmis_id/wdpa_record/:wdpa_id', to: 'gef/wdpa_record#show', as: 'area_wdpa_record'
-
 end
