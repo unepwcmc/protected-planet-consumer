@@ -1,6 +1,20 @@
 require 'test_helper'
 require 'csv'
+
 class TestGefImporter < ActiveSupport::TestCase
+
+  test '.gef_ids imports ids to gef_areas' do
+
+    filename = 'long_tables.csv'
+
+    CSV.expects(:foreach).multiple_yields([1,1])
+
+    Gef::Area.expects(:create).with(gef_pmis_id: 1)
+
+    importer = Gef::Importer.new(filename: filename, bucket_name: 'a_s3_bucket')
+    importer.gef_ids
+  end
+
   test '.convert_to_hash reads csv and converts to array of hashes' do
     filename = 'long_tables.csv'
     parsed_csv = [['name in file', 'age'], ['wolf', 10], ['dog', 20]]
@@ -50,15 +64,17 @@ class TestGefImporter < ActiveSupport::TestCase
 
     filename = 'long_tables.csv'
 
-    parsed_csv = [['name in file', 'Research'], ['wolf', 4], ['dog', 7]]
+    parsed_csv = [['GEF PMIS ID','name in file'], [1, 'wolf']]
 
     CSV.expects(:read).with(filename).returns(parsed_csv)
+    CSV.expects(:foreach).yields(1)
 
     FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
-    FactoryGirl.create(:gef_column_match, model_columns: 'research', xls_columns: 'Research')
+    FactoryGirl.create(:gef_column_match, model_columns: 'gef_pmis_id', xls_columns: 'GEF PMIS ID')
 
-    GefProtectedArea.expects(:create).with(pa_name_mett: 'wolf', research: 4)
-    GefProtectedArea.expects(:create).with(pa_name_mett: 'dog', research: 7)
+
+    Gef::WdpaRecord.expects(:create).once
+
 
     s3_response_mock = mock
     s3_response_mock.expects(:download_from_bucket)

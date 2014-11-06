@@ -1,0 +1,17 @@
+<main class="gef-area">
+
+  <div class="container">
+    <h1>GEF Protected Planet Tool</h1>
+  </div>
+
+  <div class="col-xs-9">
+    <h6>Please type the GEF ID you want to search</h6>
+  </div>
+
+  <div class="col-xs-6" id="search-form">
+    <%= form_tag gef_path, method: :get do %>
+       <%= text_field_tag :description %>
+       <%= @button = submit_tag "Search" %>
+    <% end %>
+  </div>
+</main>

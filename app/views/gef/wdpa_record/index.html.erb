@@ -1,0 +1,27 @@
+<main class="protected-area">
+
+  <div class="container">
+    <h1>GEF Protected Planet Tool</h1>
+  </div>
+
+  <div class="col-xs-9">
+    <h2>GEF ID #<%= @gef_area[:gef_pmis_id] %></h2>
+  </div>
+
+  <div class="col-xs-6">
+    <table class="table-condensed">
+      <tr>
+        <th>WDPA ID</td>
+        <th>WDPA Name</td>
+        <th>Protected Area Page</td>
+      </tr>
+      <% @protected_areas.each do |pa| %>
+        <tr>
+          <td><%= pa[:wdpa_id] %></td>
+          <td><%= pa[:wdpa_data][:name] %></td>
+          <td><%= link_to 'Link', "http://alpha.protectedplanet.net/#{pa[:wdpa_id]}" %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</main>

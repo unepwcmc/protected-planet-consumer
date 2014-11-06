@@ -1,61 +1,16 @@
 Rails.application.routes.draw do
 
-  namespace :api do
-    resources :gef, only: :index
+  namespace :gef do
+    resources :protected_areas
   end
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  get '/gef/', to: 'gef#index', as: 'gef'
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  get '/gef/area/:gef_pmis_id',  to: 'gef/area#index', as: 'gef_area'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  get '/api/gef/:gef_pmis_id', to: 'api/gef#index', as: 'gef_home'
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+  get '/gef/area/:gef_pmis_id/wdpa_record', to: 'gef/wdpa_record#index', as: 'area_wdpa_records'
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  get '/gef/area/:gef_pmis_id/wdpa_record/:wdpa_id', to: 'gef/wdpa_record#show', as: 'area_wdpa_record'
 end
