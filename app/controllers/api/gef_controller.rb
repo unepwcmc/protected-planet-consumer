@@ -1,6 +1,6 @@
 module Api
   class GefController < ApplicationController
-    def show
+    def index
       all_pas = Gef::Area.select('*').joins(:gef_wdpa_records).where(gef_pmis_id: params[:gef_pmis_id])
       pas_array = []
       all_pas.each do |pa|
