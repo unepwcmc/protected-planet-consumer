@@ -79,4 +79,21 @@ class Gef::WdpaRecordsIndexTest < ActionDispatch::IntegrationTest
     assert page.has_link?('Link', :href => 'http://alpha.protectedplanet.net/999888'),
       'Has no 999888 PP.net link'
   end
+
+  test 'has links to wdpa_page' do
+    gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
+
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, pa_name_mett: 'Killbear', wdpa_id: 999888)
+
+    consumer_mock = mock
+    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, name: 'Willbear', wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
+
+    Gef::Consumer.expects(:new).returns(consumer_mock)
+
+    visit '/gef/area/1/wdpa_record'
+
+    assert page.has_link?('Willbear', /999888/)
+
+  end
+
 end

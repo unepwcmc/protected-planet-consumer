@@ -18,7 +18,7 @@
       <% @protected_areas.each do |pa| %>
         <tr>
           <td><%= pa[:wdpa_id] %></td>
-          <td><%= pa[:wdpa_data][:name] %></td>
+          <td><%= link_to pa[:wdpa_data][:name], "/gef/area/838/wdpa_record/#{pa[:wdpa_id]}" %></td>
           <td><%= link_to 'Link', "http://alpha.protectedplanet.net/#{pa[:wdpa_id]}" %></td>
         </tr>
       <% end %>
