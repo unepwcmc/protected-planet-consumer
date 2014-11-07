@@ -14,7 +14,15 @@ class Gef::WdpaRecordController < ApplicationController
   end
 
   def show
+    if params[:wdpa_id]
 
+      @protected_area = @gef_area
+                          .gef_wdpa_records
+                          .where('wdpa_id = ?', params[:wdpa_id])
+                          .first
+                          .generate_data
+
+    end
   end
   
   respond_to do |format|
