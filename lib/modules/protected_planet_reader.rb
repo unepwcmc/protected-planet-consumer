@@ -14,6 +14,6 @@ class ProtectedPlanetReader
   private
 
   def url_generator(value: value)
-    "#{@pp_api_url}protected_areas/#{value}"
+    "#{@pp_api_url}/#{value}"
   end
 end

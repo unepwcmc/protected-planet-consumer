@@ -1,7 +1,7 @@
 class TestProtectedPlanetReader < ActiveSupport::TestCase
 
   def setup
-    Rails.application.secrets.protected_planet_api_url = 'http://mywebsite.com/api/'
+    Rails.application.secrets.protected_planet_api_url = 'http://mywebsite.com/api/protected_areas'
   end
 
   test '.wdpa_id returns a hash with the given protected area from ProtectedPlanet API' do
