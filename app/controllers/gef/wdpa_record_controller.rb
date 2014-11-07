@@ -12,6 +12,10 @@ class Gef::WdpaRecordController < ApplicationController
       @protected_areas << pa.generate_data
     end 
   end
+
+  def show
+
+  end
   
   respond_to do |format|
     format.html # index.html.erb

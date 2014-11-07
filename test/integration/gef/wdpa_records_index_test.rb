@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Gef::WdpaRecordsTest < ActionDispatch::IntegrationTest
+class Gef::WdpaRecordsIndexTest < ActionDispatch::IntegrationTest
   test 'returns list of gef pas for given gef_pmis_id' do
 
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
