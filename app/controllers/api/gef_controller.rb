@@ -6,7 +6,6 @@ module Api
       all_pas.each do |pa|
         pas_array << pa.generate_data
       end
-      puts pas_array
       gef_pas = pas_array
       render json: gef_pas, status: 200
     end
