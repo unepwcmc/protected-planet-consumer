@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  taxonomic_class: MyString
+  year: 1
+  stat: MyString
+  value: 1.5
+
+two:
+  taxonomic_class: MyString
+  year: 1
+  stat: MyString
+  value: 1.5
