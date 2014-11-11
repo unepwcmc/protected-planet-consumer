@@ -76,4 +76,17 @@ ActiveRecord::Schema.define(version: 20141110172547) do
     t.integer  "gef_area_id"
   end
 
+  create_table "parcc_protected_areas", force: true do |t|
+    t.integer  "parcc_id"
+    t.string   "name"
+    t.string   "iso_3"
+    t.integer  "poly_id"
+    t.string   "designation"
+    t.string   "geom_type"
+    t.string   "iucn_cat"
+    t.integer  "wdpa_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end
