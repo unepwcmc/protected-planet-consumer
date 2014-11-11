@@ -36,7 +36,7 @@ class Gef::Consumer
   end
 
   def status_year
-    @consumer_data[:status_year] = Date.parse(@full_api_data[:legal_status_updated_at]).year
+    @consumer_data[:status_year] = Date.parse(@full_api_data[:legal_status_updated_at]).year rescue nil
   end
 
   def designation_type

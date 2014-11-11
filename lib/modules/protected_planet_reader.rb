@@ -8,12 +8,12 @@ class ProtectedPlanetReader
   def protected_area_from_wdpaid(id: id)
     url = url_generator(value: id)
     protected_area_json = open(url).read
-    JSON.parse(protected_area_json, symbolize_names: true)
+    JSON.parse(protected_area_json, symbolize_names: true) if protected_area_json
   end
 
   private
 
   def url_generator(value: value)
-    "#{@pp_api_url}/#{value}"
+    @pp_api_url + value.to_s
   end
 end
