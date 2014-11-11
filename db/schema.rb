@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141111154825) do
+ActiveRecord::Schema.define(version: 20141111175448) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -76,15 +76,6 @@ ActiveRecord::Schema.define(version: 20141111154825) do
     t.integer  "gef_area_id"
   end
 
-  create_table "parc_species_turnovers", force: true do |t|
-    t.string   "taxonomic_class"
-    t.integer  "year"
-    t.string   "stat"
-    t.float    "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "parcc_protected_areas", force: true do |t|
     t.integer  "parcc_id"
     t.string   "name"
@@ -94,6 +85,16 @@ ActiveRecord::Schema.define(version: 20141111154825) do
     t.string   "geom_type"
     t.string   "iucn_cat"
     t.integer  "wdpa_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "parcc_species_turnovers", force: true do |t|
+    t.integer  "parcc_protected_area_id"
+    t.string   "taxonomic_class"
+    t.integer  "year"
+    t.string   "stat"
+    t.float    "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
