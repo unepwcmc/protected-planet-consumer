@@ -214,9 +214,16 @@ require 'yaml'
 end
 
 
+desc "Links the configuration file"
+  task :link_configuration_file do
+    run "ln -nsf #{shared_path}/config/.env #{latest_release}/.env"
+  end
+end
+
+
 after "deploy:setup", :setup_production_database_configuration
 after "deploy:setup", :setup_ec2
-
+after "deploy:setup", :link_configuration_file
 
 default_run_options[:pty] = true
 
