@@ -197,7 +197,26 @@ task :setup_production_database_configuration do
   put(spec.to_yaml, "#{shared_path}/config/database.yml")
 end
 
+task :setup_ec2 do
+  aws_access_key = Capistrano::CLI.ui.ask("AWS_ACCESS_KEY_ID: ")
+  aws_secret_access_key = Capistrano::CLI.ui.ask("AWS_SECRET_ACCESS_KEY: ")
+
+require 'yaml'
+
+  spec = {
+    "AWS_ACCESS_KEY_ID:" => aws_access_key,
+    "AWS_SECRET_ACCESS_KEY:" => aws_secret_access_key
+    }
+  }
+
+  run "mkdir -p #{shared_path}/config"
+  put(spec.to_yaml, "#{shared_path}/config/.env")
+end
+
+
 after "deploy:setup", :setup_production_database_configuration
+after "deploy:setup", :setup_ec2
+
 
 default_run_options[:pty] = true
 
