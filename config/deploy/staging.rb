@@ -20,7 +20,7 @@ task :config_vhost do
       keepalive_timeout 5;
       root #{deploy_to}/current/public;
       passenger_enabled on;
-      rails_env production;
+      rails_env staging;
 
       add_header 'Access-Control-Allow-Origin' *;
       add_header 'Access-Control-Allow-Methods' "GET, POST, PUT, DELETE, OPTIONS";
