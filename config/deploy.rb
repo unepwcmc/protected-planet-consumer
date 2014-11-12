@@ -206,9 +206,8 @@ require 'yaml'
   spec = {
     "AWS_ACCESS_KEY_ID:" => aws_access_key,
     "AWS_SECRET_ACCESS_KEY:" => aws_secret_access_key
-    }
-  }
-
+    
+}
   run "mkdir -p #{shared_path}/config"
   put(spec.to_yaml, "#{shared_path}/config/.env")
 end
@@ -218,7 +217,7 @@ desc "Links the configuration file"
   task :link_configuration_file do
     run "ln -nsf #{shared_path}/config/.env #{latest_release}/.env"
   end
-end
+
 
 
 after "deploy:setup", :setup_production_database_configuration
