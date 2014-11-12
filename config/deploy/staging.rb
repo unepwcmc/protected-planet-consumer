@@ -54,3 +54,13 @@ task :config_vhost do
 end
 
 after "deploy:setup", :config_vhost
+after "deploy:finalize_update", "deploy:assets:precompile"
+
+namespace :deploy do
+  namespace :assets do
+    task :precompile, :roles => :web, :except => { :no_release => true } do
+      run "cd #{latest_release} && bundle exec #{rake} RAILS_ENV=#{rails_env} assets:precompile"
+    end
+  end
+end
+
