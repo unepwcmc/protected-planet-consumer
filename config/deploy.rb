@@ -173,7 +173,7 @@ default_run_options[:pty] = true
 # to be necessary with older versions of passenger
 # set :passenger_restart_strategy, :soft
 
-set :local_shared_files, %w(config/database.yml)
+set :local_shared_files, %w(config/database.yml .env)
 
 task :setup_production_database_configuration do
   the_host = Capistrano::CLI.ui.ask("Database IP address: ")
