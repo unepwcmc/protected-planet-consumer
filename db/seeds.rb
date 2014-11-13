@@ -11,5 +11,5 @@ require 'csv'
 source = File.join(Rails.root, 'lib', 'data', 'seeds', 'gef_columns_matching_table.csv')
 
 CSV.foreach(source, headers: true) do |row|
-  GefColumnMatch.create!(row.to_hash)
+  Gef::ColumnMatch.create!(row.to_hash)
 end
