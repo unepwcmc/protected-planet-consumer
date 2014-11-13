@@ -59,35 +59,36 @@ class TestParccImporter < ActiveSupport::TestCase
                     'point' => 'polygon', 'WDPAID' => '888999', 'median' => '0.222', 
                     'upper' => '0.333', 'lower' => '0.111'}
                  ]
+    CSV.expects(:read).with(filename, headers: true).returns(parsed_csv)
+
 
     values_to_save_1 = {
-                          parcc_protected_area_id: 1,
                           taxonomic_class: 'Amphibian',
-                          year: 2040,
+                          year: '2040',
                           stat: 'median',
-                          value: 0.222
+                          value: '0.222',
+                          parcc_protected_area_id: 1
                         }
 
     values_to_save_2 = {
-                          parcc_protected_area_id: 1,
                           taxonomic_class: 'Amphibian',
-                          year: 2040,
-                          stat: 'median',
-                          value: 0.111
+                          year: '2040',
+                          stat: 'lower',
+                          value: '0.111',
+                          parcc_protected_area_id: 1,
                         }
 
     values_to_save_3 = {
-                          parcc_protected_area_id: 1,
                           taxonomic_class: 'Amphibian',
-                          year: 2040,
-                          stat: 'median',
-                          value: 0.333
+                          year: '2040',
+                          stat: 'upper',
+                          value: '0.333',
+                          parcc_protected_area_id: 1,
                         }
 
     Parcc::SpeciesTurnover.expects(:create).with(values_to_save_1)
     Parcc::SpeciesTurnover.expects(:create).with(values_to_save_2)
     Parcc::SpeciesTurnover.expects(:create).with(values_to_save_3)
-
 
     importer = Parcc::Importer.new
     importer.populate_values file_path: filename
