@@ -11,7 +11,21 @@ class Parcc::Importer
 
   def import
     files = list_files
-    create_pas file_path: list_files[0]
+    create_pas file_path: files[0]
+    files.each do |file|
+      populate_values file_path: file
+    end
+  end
+
+  def create_pas file_path: file_path
+    protected_areas = read_csv file_path: file_path
+    protected_areas.each do |pa|
+      pa_to_create = {}
+      MATCH_COLUMNS.each do |final, original|
+        pa_to_create[final] = pa[original] if pa[original]
+      end
+      Parcc::ProtectedArea.create pa_to_create
+    end
   end
 
   def populate_values file_path: file_path
@@ -27,12 +41,9 @@ class Parcc::Importer
           values_to_populate[:stat] = k
           values_to_populate[:value] = v
           create_turnover parcc_values:values_to_populate,  parcc_id: pa['']
+        end
       end
     end
-  end
-
-  def list_files
-    Dir['lib/data/parcc/*']
   end
 
   def create_turnover parcc_values: parcc_values, parcc_id: parcc_id
@@ -41,17 +52,10 @@ class Parcc::Importer
     Parcc::SpeciesTurnover.create parcc_values
   end
 
-
-  def create_pas file_path: file_path
-    protected_areas = read_csv file_path: file_path
-    protected_areas.each do |pa|
-      pa_to_create = {}
-      MATCH_COLUMNS.each do |final, original|
-        pa_to_create[final] = pa[original] if pa[original]
-      end
-      Parcc::ProtectedArea.create pa_to_create
-    end
+  def list_files
+    Dir['lib/data/parcc/*']
   end
+
 
   def read_csv file_path: file_path
     CSV.read(file_path, headers: true)
