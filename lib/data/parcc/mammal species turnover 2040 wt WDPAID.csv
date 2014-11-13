@@ -1,0 +1,1988 @@
+"","name","country","polyID","designation","point","iucn_cat","WDPAID","median","upper","lower"
+"1","Abak River","NGA",725,"Forest Reserve","polygon","Not Reported",36673,0.297,0.455,0.202
+"2","Abasumba","GHA",12,"Forest Reserve","polygon","Not Reported",26456,0.596,0.707,0.502
+"3","Abba Isari","NGA",558,"Forest Reserve","polygon","Not Reported",36497,0.273,0.379,0.143
+"4","Abdoulaye","TGO",30,"Faunal Reserve","polygon","IV",20978,0.324,0.491,0.212
+"5","Abeanou","CIV",64,"Classified Forest","polygon","Not Reported",300869,0.513,0.682,0.346
+"6","Abisu","GHA",81,"Forest Reserve","polygon","Not Reported",40781,0.414,0.647,0.321
+"7","Aboben Hill","GHA",249,"Forest Reserve","polygon","Not Reported",26451,0.375,0.554,0.309
+"8","Abokouamekro","CIV",239,"National Reserve","polygon","IV",555547525,0.524,0.699,0.386
+"9","Aboma","GHA",66,"Forest Reserve","polygon","Not Reported",40766,0.45,0.633,0.328
+"10","Abou Telfane","TCD",6,"Faunal Reserve","polygon","IV",9034,0.31,0.47,0.244
+"11","Abouderessou","CIV",18,"Classified Forest","polygon","Not Reported",29534,0.539,0.728,0.388
+"12","Abrimasu","GHA",67,"Forest Reserve","polygon","Not Reported",40767,0.45,0.633,0.328
+"13","Abuko Buffer","GMB",9,"Nature Reserve","polygon","Not Reported",555547523,0.536,0.754,0.335
+"14","Abuko","GMB",4,"Nature Reserve","polygon","IV",3214,0.536,0.754,0.335
+"15","Aburifa","NGA",802,"Forest Reserve","polygon","Not Reported",36752,0.383,0.647,0.197
+"16","Abutia Hills","GHA",182,"Forest Reserve","polygon","Not Reported",26440,0.444,0.664,0.361
+"17","Achalla","NGA",121,"Forest Reserve","polygon","Not Reported",36953,0.465,0.588,0.398
+"18","Achara Ihe","NGA",185,"Forest Reserve","polygon","Not Reported",37021,0.471,0.563,0.384
+"19","Acharane","NGA",47,"Forest Reserve","polygon","Not Reported",36858,0.445,0.639,0.344
+"20","Adaki","NGA",820,"Forest Reserve","polygon","Not Reported",36770,0.358,0.58,0.26
+"21","Adankolo","NGA",864,"Forest Reserve","polygon","Not Reported",36845,0.34,0.55,0.242
+"22","Addax Sanctuary","NER",6,"Strict Nature Reserve","polygon","Ia",72350,0.246,0.304,0.179
+"23","Adiani","NGA",340,"Forest Reserve","polygon","Not Reported",36268,0.386,0.609,0.237
+"24","Adoru","NGA",49,"Forest Reserve","polygon","Not Reported",36860,0.428,0.615,0.344
+"25","Adzope","CIV",87,"Classified Forest","polygon","Not Reported",300911,0.508,0.694,0.396
+"26","Afaka","NGA",617,"Forest Reserve","polygon","Not Reported",36562,0.2,0.334,0.14
+"27","Afao Hills","GHA",137,"Forest Reserve","polygon","Not Reported",40845,0.425,0.63,0.338
+"28","Afi Mountain","NGA",205,"Wildlife Sanctuary","polygon","Not Reported",354003,0.448,0.575,0.355
+"29","Afi River","NGA",90,"Forest Reserve","polygon","Not Reported",36919,0.438,0.568,0.351
+"30","Afia Shelterbelt","GHA",21,"Forest Reserve","polygon","Not Reported",40672,0.469,0.641,0.363
+"31","Afram Headwaters","GHA",68,"Forest Reserve","polygon","Not Reported",40768,0.425,0.614,0.314
+"32","Afrensu Bohuma","GHA",69,"Forest Reserve","polygon","Not Reported",40769,0.436,0.623,0.339
+"33","Agaie Gate","NGA",681,"Forest Reserve","polygon","Not Reported",36629,0.343,0.622,0.235
+"34","Agala","NGA",91,"Forest Reserve","polygon","Not Reported",36921,0.474,0.611,0.375
+"35","Agbaja","NGA",819,"Forest Reserve","polygon","Not Reported",36769,0.357,0.576,0.261
+"36","Agbo","CIV",79,"Classified Forest","polygon","Not Reported",300895,0.538,0.707,0.408
+"37","Agbonou-Nord","TGO",31,"Forest Reserve","polygon","Not Reported",37119,0.268,0.382,0.185
+"38","Agbun","NGA",779,"Forest Reserve","polygon","Not Reported",36729,0.421,0.629,0.207
+"39","Ago-Owu","NGA",30,"Forest Reserve","polygon","Not Reported",36818,0.428,0.555,0.348
+"40","Agoi","NGA",176,"Forest Reserve","polygon","Not Reported",37012,0.471,0.563,0.384
+"41","Agou","TGO",2,"Forest Reserve","polygon","Not Reported",37121,0.399,0.571,0.294
+"42","Agoua","BEN",18,"Classified Forest","polygon","Not Reported",7957,0.351,0.575,0.235
+"43","Agrimey","BEN",2,"Classified Forest","polygon","Not Reported",5159,0.427,0.56,0.303
+"44","Aguara","NGA",132,"Forest Reserve","polygon","Not Reported",36964,0.505,0.632,0.417
+"45","Aguobu Owa","NGA",125,"Forest Reserve","polygon","Not Reported",36957,0.505,0.632,0.417
+"46","Ahirasu Blocks I & II","GHA",10,"Forest Reserve","polygon","Not Reported",26454,0.596,0.707,0.502
+"47","Ahua","CIV",23,"Classified Forest","polygon","Not Reported",29580,0.526,0.721,0.336
+"48","Air and Tenere Natural Reserves","NER",13,"World Heritage Site","polygon","Not Applicable",67727,0.247,0.309,0.187
+"49","Air and Tenere","NER",4,"National Nature Reserve","polygon","IV",9024,0.252,0.317,0.191
+"50","Aiyaola","GHA",92,"Forest Reserve","polygon","Not Reported",40792,0.449,0.634,0.353
+"51","Ajaokuta","NGA",967,"Forest Reserve","polygon","Not Reported",36847,0.377,0.575,0.286
+"52","Ajenjua Bepo","GHA",93,"Forest Reserve","polygon","Not Reported",40793,0.439,0.641,0.351
+"53","Ajigin","NGA",500,"Forest Reserve","polygon","Not Reported",36439,0.28,0.396,0.148
+"54","Ajuesu","GHA",39,"Forest Reserve","polygon","Not Reported",40691,0.471,0.608,0.399
+"55","Akanga","NGA",793,"Forest Reserve","polygon","Not Reported",36743,0.393,0.638,0.245
+"56","Akanto","NGA",190,"Forest Reserve","polygon","Not Reported",37026,0.487,0.611,0.415
+"57","Akerre","NGA",640,"Forest Reserve","polygon","Not Reported",36586,0.362,0.608,0.202
+"58","Ako","NGA",537,"Forest Reserve","polygon","Not Reported",36476,0.284,0.418,0.14
+"59","Akobiwho","NGA",878,"Forest Reserve","polygon","Not Reported",36872,0.418,0.638,0.259
+"60","Akpaka","NGA",130,"Forest Reserve","polygon","Not Reported",36962,0.465,0.588,0.398
+"61","Akpatakum","NGA",871,"Forest Reserve","polygon","Not Reported",36853,0.388,0.586,0.29
+"62","Akpugo","NGA",113,"Forest Reserve","polygon","Not Reported",36945,0.444,0.609,0.361
+"63","Akrobong","GHA",11,"Forest Reserve","polygon","Not Reported",26455,0.596,0.707,0.502
+"64","Akumazi","NGA",117,"Forest Reserve","polygon","Not Reported",36949,0.457,0.594,0.385
+"65","Akure-Ofosu","NGA",46,"Forest Reserve","polygon","Not Reported",36842,0.419,0.5,0.352
+"66","Akure","NGA",39,"Forest Reserve","polygon","Not Reported",36834,0.402,0.495,0.349
+"67","Akwana East","NGA",696,"Forest Reserve","polygon","Not Reported",36644,0.254,0.451,0.204
+"68","Akwana West","NGA",697,"Forest Reserve","polygon","Not Reported",36645,0.255,0.447,0.199
+"69","Akwari Ani","NGA",104,"Forest Reserve","polygon","Not Reported",36935,0.442,0.613,0.362
+"70","Ala","NGA",45,"Forest Reserve","polygon","Not Reported",36841,0.412,0.533,0.357
+"71","Alagbede","NGA",823,"Forest Reserve","polygon","Not Reported",36773,0.298,0.547,0.202
+"72","Alata","MLI",30,"Hunting Area","polygon","VI",555556068,0.43,0.606,0.325
+"73","Alawa","NGA",229,"Game Reserve","polygon","Not Reported",7864,0.364,0.573,0.18
+"74","Alawa","NGA",611,"Forest Reserve","polygon","Not Reported",36556,0.373,0.58,0.181
+"75","Albasu","NGA",325,"Forest Reserve","polygon","Not Reported",36253,0.319,0.478,0.224
+"76","Alin Magani","NGA",545,"Forest Reserve","polygon","Not Reported",36484,0.281,0.408,0.142
+"77","Alla","NGA",48,"Forest Reserve","polygon","Not Reported",36859,0.445,0.639,0.344
+"78","Amakpave","TGO",3,"Forest Reserve","polygon","Not Reported",37122,0.447,0.592,0.301
+"79","Amama Shelterbelt","GHA",51,"Forest Reserve","polygon","Not Reported",40747,0.468,0.643,0.35
+"80","Ambakar","NGA",786,"Forest Reserve","polygon","Not Reported",36736,0.376,0.586,0.205
+"81","Ambalalai","GHA",235,"Forest Reserve","polygon","Not Reported",303944,0.3,0.553,0.191
+"82","Amere","NGA",713,"Forest Reserve","polygon","Not Reported",36661,0.271,0.466,0.199
+"83","Amou-Mono","TGO",4,"Forest Reserve","polygon","Not Reported",37123,0.442,0.59,0.265
+"84","Anambra","NGA",103,"Forest Reserve","polygon","Not Reported",36934,0.453,0.613,0.378
+"85","Anambra","NGA",15,"Game Reserve","polygon","Not Reported",7845,0.453,0.613,0.378
+"86","Ananguie","CIV",90,"Classified Forest","polygon","Not Reported",300915,0.557,0.726,0.389
+"87","Anara","NGA",597,"Forest Reserve","polygon","Not Reported",36538,0.196,0.289,0.136
+"88","Anchau West","NGA",467,"Forest Reserve","polygon","Not Reported",36401,0.195,0.31,0.136
+"89","Anfani","NGA",673,"Forest Reserve","polygon","Not Reported",36620,0.406,0.638,0.184
+"90","Angoben Shelterbelt","GHA",144,"Forest Reserve","polygon","Not Reported",40853,0.455,0.613,0.375
+"91","Anguededou","CIV",16,"Classified Forest","polygon","Not Reported",29520,0.366,0.463,0.217
+"92","Anhwiaso East","GHA",138,"Forest Reserve","polygon","Not Reported",40846,0.479,0.681,0.383
+"93","Anhwiaso North","GHA",13,"Forest Reserve","polygon","Not Reported",26457,0.425,0.63,0.338
+"94","Anie","TGO",32,"Forest Reserve","polygon","Not Reported",37124,0.363,0.569,0.259
+"95","Anji","NGA",706,"Forest Reserve","polygon","Not Reported",36654,0.277,0.485,0.202
+"96","Ankasa River","GHA",120,"Forest Reserve","polygon","Not Reported",40826,0.372,0.441,0.307
+"97","Ankwai East","GHA",231,"Forest Reserve","polygon","Not Reported",303940,0.399,0.704,0.178
+"98","Anlo-Keta lagoon complex","GHA",189,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67970,NA,NA,NA
+"99","Ansongo Menaka","MLI",27,"Integral Wildlife Reserve","polygon","IV",2327,0.496,0.72,0.323
+"100","Anumso North","GHA",151,"Forest Reserve","polygon","Not Reported",40860,0.437,0.647,0.329
+"101","Anumso South","GHA",152,"Forest Reserve","polygon","Not Reported",40861,0.437,0.647,0.329
+"102","Anwo","NGA",66,"Forest Reserve","polygon","Not Reported",36886,0.428,0.637,0.289
+"103","Aou-Mono","TGO",33,"Forest Reserve","polygon","Not Reported",37125,0.312,0.435,0.18
+"104","Apamprama","GHA",22,"Forest Reserve","polygon","Not Reported",40673,0.492,0.691,0.39
+"105","Aparabi Shelterbelt","GHA",52,"Forest Reserve","polygon","Not Reported",40748,0.436,0.623,0.339
+"106","Apedua","GHA",164,"Forest Reserve","polygon","Not Reported",40877,0.447,0.63,0.36
+"107","Apepesu River","GHA",243,"Forest Reserve","polygon","Not Reported",26505,0.366,0.568,0.275
+"108","Apoi Creek Forests","NGA",2,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903104,NA,NA,NA
+"109","Apoi Creek","NGA",198,"Forest Reserve","polygon","Not Reported",37034,NA,NA,NA
+"110","Ara","NGA",860,"Forest Reserve","polygon","Not Reported",36823,0.339,0.485,0.275
+"111","Arakanga","NGA",28,"Forest Reserve","polygon","Not Reported",36816,0.438,0.604,0.312
+"112","Arly","BFA",71,"Faunal Reserve","polygon","IV",4488,0.354,0.605,0.155
+"113","Arly","BFA",72,"Partial Faunal Reserve","polygon","IV",9264,0.35,0.618,0.159
+"114","Arrah","CIV",71,"Classified Forest","polygon","Not Reported",300881,0.499,0.67,0.367
+"115","Asonari","GHA",17,"Forest Reserve","polygon","Not Reported",26572,0.437,0.647,0.329
+"116","Asrama","TGO",5,"Forest Reserve","polygon","Not Reported",37126,0.423,0.58,0.302
+"117","Assime-Adeta","TGO",6,"Forest Reserve","polygon","Not Reported",37128,0.369,0.556,0.265
+"118","Assin-Attandanso","GHA",16,"Game Production Reserve","polygon","VI",26463,0.443,0.628,0.37
+"119","Assin Apimanim","GHA",40,"Forest Reserve","polygon","Not Reported",40698,0.471,0.608,0.399
+"120","Assin Attandaso","GHA",41,"Forest Reserve","polygon","Not Reported",40699,0.445,0.621,0.375
+"121","Assob Bachit","NGA",722,"Forest Reserve","polygon","Not Reported",36670,0.297,0.455,0.202
+"122","Assoukoko","TGO",34,"Forest Reserve","polygon","Not Reported",37129,0.313,0.485,0.211
+"123","Asubima","GHA",70,"Forest Reserve","polygon","Not Reported",40770,0.434,0.618,0.332
+"124","Asufu Shelterbelt East","GHA",71,"Forest Reserve","polygon","Not Reported",40771,0.45,0.633,0.328
+"125","Asufu Shelterbelt West","GHA",72,"Forest Reserve","polygon","Not Reported",40772,0.436,0.619,0.33
+"126","Asukese","GHA",53,"Forest Reserve","polygon","Not Reported",40749,0.468,0.643,0.35
+"127","Asuokoko River","GHA",244,"Forest Reserve","polygon","Not Reported",26506,0.36,0.581,0.256
+"128","Atakora","BEN",9,"Hunting Zone","polygon","VI",2254,0.292,0.46,0.133
+"129","Atakpame","TGO",59,"Forest Reserve","polygon","Not Reported",37130,0.268,0.382,0.185
+"130","Atcherigbe","BEN",27,"Classified Forest","polygon","Not Reported",5160,0.279,0.387,0.166
+"131","Atewa Range","GHA",165,"Forest Reserve","polygon","Not Reported",40878,0.433,0.62,0.339
+"132","Atilakoutse","TGO",7,"Forest Reserve","polygon","Not Reported",37131,0.369,0.556,0.265
+"133","Auchi","NGA",53,"Forest Reserve","polygon","Not Reported",36865,0.421,0.586,0.323
+"134","Audoin","CIV",118,"Classified Forest","polygon","Not Reported",300960,0.366,0.463,0.217
+"135","Auno","NGA",503,"Forest Reserve","polygon","Not Reported",36442,0.336,0.578,0.179
+"136","Auro River","GHA",94,"Forest Reserve","polygon","Not Reported",40794,0.439,0.641,0.351
+"137","Auya","NGA",496,"Forest Reserve","polygon","Not Reported",36435,0.283,0.41,0.158
+"138","Aviele","NGA",99,"Forest Reserve","polygon","Not Reported",36929,0.442,0.575,0.36
+"139","Awlaw-Isikwe","NGA",137,"Forest Reserve","polygon","Not Reported",36969,0.483,0.609,0.418
+"140","Aworo","NGA",202,"Forest Reserve","polygon","Not Reported",37039,0.451,0.591,0.305
+"141","Awura","GHA",73,"Forest Reserve","polygon","Not Reported",40773,0.446,0.632,0.332
+"142","Ayu Hills","NGA",726,"Forest Reserve","polygon","Not Reported",36674,0.297,0.455,0.202
+"143","Azagny","CIV",232,"National Park","polygon","II",7522,0.494,0.64,0.367
+"144","Azarunikwia","NGA",335,"Forest Reserve","polygon","Not Reported",36263,0.39,0.614,0.24
+"145","Azaya","NGA",311,"Forest Reserve","polygon","Not Reported",36239,0.404,0.687,0.199
+"146","Babban Rafi","NGA",254,"Forest Reserve","polygon","Not Reported",36181,0.355,0.5,0.255
+"147","Babbankurmi","NGA",804,"Forest Reserve","polygon","Not Reported",36754,0.358,0.598,0.218
+"148","Bableu","CIV",204,"Classified Forest","polygon","Not Reported",300821,0.462,0.614,0.314
+"149","Babolo","BFA",36,"Classified Forest","polygon","Not Reported",28559,0.376,0.61,0.213
+"150","Badauri","NGA",273,"Forest Reserve","polygon","Not Reported",36201,0.336,0.493,0.246
+"151","Badiar-sud","GIN",52,"Classified Forest","polygon","Not Reported",29409,0.586,0.839,0.354
+"152","Badiar","GIN",4,"National Park","polygon","II",29069,0.583,0.839,0.354
+"153","Badikaha","CIV",130,"Classified Forest","polygon","Not Reported",29549,0.336,0.556,0.206
+"154","Badinko","MLI",31,"Faunal Reserve","polygon","IV",2322,0.495,0.882,0.268
+"155","Badonou","CIV",137,"Classified Forest","polygon","Not Reported",29605,0.3,0.505,0.179
+"156","Bafing","MLI",12,"Chimpanzee Sanctuary","polygon","IV",317194,0.468,0.845,0.244
+"157","Baga","NGA",296,"Forest Reserve","polygon","Not Reported",36224,0.45,0.726,0.249
+"158","Bagaji","NGA",875,"Forest Reserve","polygon","Not Reported",36869,0.385,0.613,0.286
+"159","Bagata","GIN",97,"Classified Forest","polygon","Not Reported",33510,0.281,0.368,0.217
+"160","Bagau","NGA",497,"Forest Reserve","polygon","Not Reported",36436,0.237,0.387,0.169
+"161","Bage","NGA",559,"Forest Reserve","polygon","Not Reported",36498,0.273,0.379,0.143
+"162","Bagele Hill","NGA",756,"Forest Reserve","polygon","Not Reported",36704,0.346,0.695,0.151
+"163","Bagga","NGA",419,"Forest Reserve","polygon","Not Reported",36347,0.43,0.683,0.231
+"164","Bahr Salamat","TCD",3,"Faunal reserve","polygon","IV",5164,0.34,0.615,0.19
+"165","Baissa","NGA",74,"Forest Reserve","polygon","Not Reported",36899,0.273,0.365,0.235
+"166","Bajiye","NGA",699,"Forest Reserve","polygon","Not Reported",36647,0.274,0.45,0.186
+"167","Bakanbawa","NGA",393,"Forest Reserve","polygon","Not Reported",36321,0.319,0.478,0.224
+"168","Bakin Dutse","NGA",761,"Forest Reserve","polygon","Not Reported",36711,0.387,0.676,0.174
+"169","Bakoun","GIN",68,"Classified Forest","polygon","Not Reported",29435,0.251,0.392,0.194
+"170","Baku","GHA",42,"Forest Reserve","polygon","Not Reported",40700,0.471,0.608,0.399
+"171","Bakura Tureta","NGA",414,"Forest Reserve","polygon","Not Reported",36342,0.42,0.619,0.228
+"172","Balam","TGO",57,"Forest Reserve","polygon","Not Reported",300807,0.312,0.452,0.182
+"173","Balayan-Souroumba","GIN",64,"Classified Forest","polygon","Not Reported",29425,0.316,0.519,0.203
+"174","Bam Ngelzarma","NGA",488,"Forest Reserve","polygon","Not Reported",36427,0.291,0.401,0.159
+"175","Bambaya","GIN",78,"Classified Forest","polygon","Not Reported",29453,0.341,0.479,0.241
+"176","Bambou","BFA",44,"Classified Forest","polygon","Not Reported",28568,0.382,0.632,0.187
+"177","Banco","CIV",229,"National Park","polygon","II",725,0.366,0.463,0.217
+"178","Bandai Hills","GHA",153,"Forest Reserve","polygon","Not Reported",40862,0.428,0.644,0.322
+"179","Bandama-Blanc","CIV",138,"Classified Forest","polygon","Not Reported",29615,0.421,0.655,0.332
+"180","Bandama Rouge","CIV",184,"Classified Forest","polygon","Not Reported",300794,0.404,0.621,0.26
+"181","Bani","GIN",59,"Classified Forest","polygon","Not Reported",29417,0.274,0.381,0.224
+"182","Banie","GIN",1,"Classified Forest","polygon","Not Reported",29380,0.626,0.721,0.465
+"183","Banifing Baoule","MLI",19,"Partial Wildlife Reserve","polygon","IV",555556061,0.389,0.799,0.21
+"184","Bansie","BFA",45,"Classified Forest","polygon","Not Reported",28569,0.358,0.614,0.168
+"185","Bantaji","NGA",780,"Forest Reserve","polygon","Not Reported",36730,0.406,0.644,0.223
+"186","Bantarawel","GIN",22,"Classified Forest","polygon","Not Reported",29367,0.334,0.489,0.219
+"187","Banzana","MLI",11,"Hunting Area","polygon","VI",555556058,0.359,0.511,0.193
+"188","Baobolon Wetland Reserve","GMB",1,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",145529,0.588,0.836,0.37
+"189","Baoule","MLI",32,"National Park","polygon","II",2328,0.504,0.866,0.269
+"190","Baoule","TGO",60,"Forest Reserve","polygon","Not Reported",37132,0.403,0.574,0.264
+"191","Baporo","BFA",29,"Classified Forest","polygon","Not Reported",28551,0.376,0.663,0.168
+"192","Bara","NGA",536,"Forest Reserve","polygon","Not Reported",36475,0.321,0.535,0.141
+"193","Barawa","NGA",360,"Forest Reserve","polygon","Not Reported",36288,0.313,0.488,0.24
+"194","Barburam","NGA",337,"Forest Reserve","polygon","Not Reported",36265,0.39,0.614,0.24
+"195","Barkedji Dodji","SEN",27,"Not Reported","polygon","Not Reported",352617,0.58,0.769,0.308
+"196","Barkoissi","TGO",35,"Forest Reserve","polygon","Not Reported",37133,0.341,0.583,0.18
+"197","Baro","GIN",74,"Classified Forest","polygon","Not Reported",29446,0.418,0.556,0.303
+"198","Barrage","BFA",16,"Classified Forest","polygon","Not Reported",28534,0.34,0.615,0.175
+"199","Bas-Ogou","TGO",36,"Forest Reserve","polygon","Not Reported",37134,0.303,0.483,0.2
+"200","Bashari","NGA",519,"Forest Reserve","polygon","Not Reported",36458,0.389,0.646,0.177
+"201","Bassari-Montagne","TGO",37,"Forest Reserve","polygon","Not Reported",37136,0.344,0.589,0.22
+"202","Basse-Casamance","SEN",4,"National Park","polygon","II",868,NA,NA,NA
+"203","Baturiya Wetland","NGA",3,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903105,0.353,0.59,0.208
+"204","Baturiya Wetlands","NGA",231,"Game Reserve","polygon","IV",7872,0.354,0.586,0.208
+"205","Bauni","NGA",243,"Forest Reserve","polygon","Not Reported",36170,0.446,0.694,0.296
+"206","Bayawa","NGA",480,"Forest Reserve","polygon","Not Reported",36418,0.358,0.579,0.196
+"207","Bayeme","TGO",23,"Forest Reserve","polygon","Not Reported",300905,0.448,0.594,0.348
+"208","Bayota","CIV",77,"Classified Forest","polygon","Not Reported",300892,0.506,0.693,0.352
+"209","Bazairam","NGA",274,"Forest Reserve","polygon","Not Reported",36202,0.39,0.614,0.24
+"210","Bbaobolon","GMB",7,"Wetland Reserve","polygon","Not Reported",31330,0.588,0.836,0.37
+"211","Bdoule","CIV",168,"Classified Forest","polygon","Not Reported",300776,0.315,0.486,0.18
+"212","Beauvois","GIN",27,"Classified Forest","polygon","Not Reported",29375,0.281,0.368,0.217
+"213","Bediako","GHA",95,"Forest Reserve","polygon","Not Reported",40795,0.439,0.641,0.351
+"214","Beh'Ho","TGO",38,"Forest Reserve","polygon","Not Reported",37137,0.324,0.55,0.203
+"215","Beji","NGA",658,"Forest Reserve","polygon","Not Reported",36604,0.416,0.64,0.18
+"216","Beki Bosse Matie","CIV",6,"Classified Forest","polygon","Not Reported",29500,0.483,0.671,0.379
+"217","Belare","NGA",408,"Forest Reserve","polygon","Not Reported",36336,0.423,0.666,0.224
+"218","Bellefoungou","BEN",20,"Classified Forest","polygon","Not Reported",32995,0.273,0.435,0.175
+"219","Bellel","GIN",26,"Classified Forest","polygon","Not Reported",29373,0.32,0.455,0.239
+"220","Bem-Bem","SEN",37,"Not Reported","polygon","Not Reported",352627,0.594,0.798,0.299
+"221","Bemu","GHA",96,"Forest Reserve","polygon","Not Reported",40796,0.476,0.644,0.365
+"222","Ben East","GHA",139,"Forest Reserve","polygon","Not Reported",40848,0.444,0.636,0.366
+"223","Ben West","GHA",140,"Forest Reserve","polygon","Not Reported",40849,0.378,0.462,0.316
+"224","Bena","TGO",61,"Forest Reserve","polygon","Not Reported",300836,0.366,0.568,0.275
+"225","Benisheikh","NGA",501,"Forest Reserve","polygon","Not Reported",36440,0.305,0.461,0.162
+"226","Bere","CIV",196,"Classified Forest","polygon","Not Reported",300813,0.434,0.669,0.337
+"227","Beregadougou","BFA",37,"Classified Forest","polygon","Not Reported",28560,0.396,0.633,0.209
+"228","Besso","CIV",13,"Classified Forest","polygon","Not Reported",29514,0.507,0.693,0.392
+"229","Bia Tano Blk 1","GHA",169,"Forest Reserve","polygon","Not Reported",303952,0.482,0.683,0.375
+"230","Bia Tano","GHA",54,"Forest Reserve","polygon","Not Reported",40752,0.469,0.667,0.351
+"231","Bia Tawya","GHA",108,"Forest Reserve","polygon","Not Reported",40811,0.477,0.683,0.377
+"232","Bia Trans","GHA",176,"Forest Reserve","polygon","Not Reported",303960,0.483,0.684,0.376
+"233","Bia Tributaries North","GHA",109,"Forest Reserve","polygon","Not Reported",40812,0.484,0.681,0.374
+"234","Bia","GHA",2,"National Park","polygon","II",672,0.479,0.693,0.374
+"235","Bia","GHA",4,"Resource Reserve","polygon","VI",5150,0.479,0.693,0.374
+"236","Bida Bornu State","NGA",305,"Forest Reserve","polygon","Not Reported",36233,0.426,0.711,0.234
+"237","Bida Niger State","NGA",652,"Forest Reserve","polygon","Not Reported",36598,0.343,0.622,0.235
+"238","Biliri Hills","NGA",744,"Forest Reserve","polygon","Not Reported",36692,0.264,0.484,0.141
+"239","Bilisu","GHA",238,"Forest Reserve","polygon","Not Reported",303948,0.376,0.637,0.213
+"240","Bimpong","GHA",43,"Forest Reserve","polygon","Not Reported",40730,0.45,0.599,0.386
+"241","Binder-Lere","TCD",13,"Faunal Reserve","polygon","IV",5168,0.392,0.788,0.154
+"242","Binti","GIN",40,"Classified Forest","polygon","Not Reported",29394,0.313,0.468,0.189
+"243","Birim Extension","GHA",98,"Forest Reserve","polygon","Not Reported",40798,0.478,0.648,0.364
+"244","Birim","GHA",97,"Forest Reserve","polygon","Not Reported",40797,0.478,0.648,0.364
+"245","Birnin Gwari","NGA",442,"Forest Reserve","polygon","Not Reported",36374,0.21,0.398,0.154
+"246","Birniwa Railway","NGA",341,"Forest Reserve","polygon","Not Reported",36269,0.356,0.588,0.211
+"247","Birniwa","NGA",529,"Forest Reserve","polygon","Not Reported",36468,0.224,0.338,0.16
+"248","Bissaula","NGA",75,"Forest Reserve","polygon","Not Reported",36900,0.282,0.339,0.239
+"249","Bissiga","BFA",18,"Classified Forest","polygon","Not Reported",28536,0.376,0.678,0.18
+"250","Boa","CIV",186,"Classified Forest","polygon","Not Reported",300797,0.401,0.574,0.258
+"251","Boabeng-Fiema","GHA",200,"Wildlife Sanctuary","polygon","IV",26462,0.402,0.62,0.293
+"252","Bobiri","GHA",154,"Forest Reserve","polygon","Not Reported",40863,0.466,0.655,0.341
+"253","Bodi","GHA",110,"Forest Reserve","polygon","Not Reported",40814,0.419,0.555,0.353
+"254","Bodio Doubele","CIV",19,"Classified Forest","polygon","Not Reported",29535,0.539,0.728,0.388
+"255","Bodor Hill","NGA",557,"Forest Reserve","polygon","Not Reported",36496,0.273,0.379,0.143
+"256","Boe","GNB",19,"National Park","polygon","Not Reported",342670,0.529,0.774,0.309
+"257","Boe","GNB",3,"Hunting Reserve","polygon","Not Reported",11609,0.529,0.774,0.309
+"258","Boin River","GHA",128,"Forest Reserve","polygon","Not Reported",40835,0.393,0.473,0.321
+"259","Boin Tano","GHA",127,"Forest Reserve","polygon","Not Reported",40834,0.372,0.441,0.307
+"260","Bojeni Hills","SLE",19,"Forest Reserve","polygon","Not Reported",29983,0.445,0.542,0.364
+"261","Bokori","NGA",431,"Forest Reserve","polygon","Not Reported",36361,0.206,0.284,0.168
+"262","Boli","CIV",59,"Classified Forest","polygon","Not Reported",300861,0.487,0.704,0.322
+"263","Bolo","CIV",26,"Classified Forest","polygon","Not Reported",29585,NA,NA,NA
+"264","Bombi","GHA",193,"Forest Reserve","polygon","Not Reported",26441,0.349,0.602,0.238
+"265","Bomfobiri","GHA",6,"Wildlife Sanctuary","polygon","IV",5155,0.436,0.647,0.328
+"266","Bomfoum","GHA",155,"Forest Reserve","polygon","Not Reported",40864,0.437,0.647,0.329
+"267","Bong Mountain","LBR",5,"National Park","polygon","Not Reported",555512167,0.419,0.558,0.323
+"268","Bongouanou","CIV",74,"Classified Forest","polygon","Not Reported",300887,0.516,0.682,0.347
+"269","Bonkoni","GHA",55,"Forest Reserve","polygon","Not Reported",40753,0.477,0.683,0.366
+"270","Bonsa Ben","GHA",141,"Forest Reserve","polygon","Not Reported",40850,0.399,0.504,0.33
+"271","Bonsa River","GHA",121,"Forest Reserve","polygon","Not Reported",40827,0.378,0.462,0.316
+"272","Bonsam Bepo","GHA",56,"Forest Reserve","polygon","Not Reported",40754,0.478,0.682,0.368
+"273","Bontioli","BFA",3,"Faunal Reserve","polygon","IV",4489,0.315,0.481,0.149
+"274","Bonu","NGA",674,"Forest Reserve","polygon","Not Reported",36621,0.405,0.613,0.2
+"275","Bopong","GHA",232,"Forest Reserve","polygon","Not Reported",303941,0.362,0.585,0.173
+"276","Borgu","NGA",628,"Forest Reserve","polygon","Not Reported",36573,0.292,0.507,0.183
+"277","Borotou","CIV",146,"Classified Forest","polygon","Not Reported",29644,0.401,0.573,0.258
+"278","Bosomkese","GHA",57,"Forest Reserve","polygon","Not Reported",40755,0.459,0.643,0.343
+"279","Bosomoa","GHA",224,"Forest Reserve","polygon","Not Reported",40871,0.379,0.62,0.297
+"280","Bosso Dam","NGA",660,"Forest Reserve","polygon","Not Reported",36606,0.416,0.64,0.18
+"281","Bosumtwi Range","GHA",23,"Forest Reserve","polygon","Not Reported",40674,0.435,0.628,0.365
+"282","Botokoly","GIN",10,"Classified Forest","polygon","Not Reported",29339,0.325,0.464,0.241
+"283","Bouafle","CIV",70,"Classified Forest","polygon","Not Reported",300880,0.501,0.68,0.37
+"284","Bouahoum","BFA",61,"Classified Forest","polygon","Not Reported",313432,0.358,0.614,0.168
+"285","Boucle de la Pendjari","BEN",6,"National Park","polygon","II",597,0.318,0.542,0.14
+"286","Bougouriba","BFA",24,"Classified Forest","polygon","Not Reported",28545,0.362,0.6,0.177
+"287","Boula","GIN",60,"Classified Forest","polygon","Not Reported",29419,0.252,0.39,0.197
+"288","Boulal","SEN",29,"Not Reported","polygon","Not Reported",352619,0.553,0.731,0.329
+"289","Boulon","BFA",38,"Classified Forest","polygon","Not Reported",28561,0.39,0.615,0.209
+"290","Boundiali","CIV",162,"Classified Forest","polygon","Not Reported",300768,0.315,0.515,0.187
+"291","Bounou","BFA",60,"Classified Forest","polygon","Not Reported",313430,0.358,0.614,0.168
+"292","Bounouna","BFA",39,"Classified Forest","polygon","Not Reported",28562,0.404,0.651,0.205
+"293","Bowiye Range","GHA",147,"Forest Reserve","polygon","Not Reported",40856,0.429,0.597,0.361
+"294","Brassue","CIV",3,"Classified Forest","polygon","Not Reported",29497,0.496,0.668,0.364
+"295","Brimso","GHA",44,"Forest Reserve","polygon","Not Reported",40731,NA,NA,NA
+"296","Buga Hill","NGA",813,"Forest Reserve","polygon","Not Reported",36763,0.33,0.585,0.223
+"297","Bugau North","NGA",463,"Forest Reserve","polygon","Not Reported",36397,0.218,0.281,0.173
+"298","Bui","GHA",191,"National Park","polygon","II",671,0.353,0.591,0.25
+"299","Bukanaw Shelterbelt","GHA",167,"Forest Reserve","polygon","Not Reported",40890,0.338,0.464,0.27
+"300","Bulangu","NGA",344,"Forest Reserve","polygon","Not Reported",36272,0.318,0.516,0.217
+"301","Buli Hill","NGA",581,"Forest Reserve","polygon","Not Reported",36522,0.19,0.266,0.147
+"302","Bunga Hill","NGA",589,"Forest Reserve","polygon","Not Reported",36530,0.222,0.267,0.163
+"303","Bunkunaw","GHA",170,"Game Production Reserve","polygon","Not Reported",303953,0.338,0.464,0.27
+"304","Bunu","NGA",818,"Forest Reserve","polygon","Not Reported",36768,0.344,0.552,0.241
+"305","Bura River","GHA",145,"Forest Reserve","polygon","Not Reported",40854,0.453,0.607,0.372
+"306","Burashika","NGA",569,"Forest Reserve","polygon","Not Reported",36508,0.288,0.522,0.131
+"307","Buratai","NGA",560,"Forest Reserve","polygon","Not Reported",36499,0.269,0.437,0.155
+"308","Burgo","NGA",298,"Forest Reserve","polygon","Not Reported",36226,0.35,0.588,0.212
+"309","Burra North","NGA",466,"Forest Reserve","polygon","Not Reported",36400,0.358,0.579,0.196
+"310","Burra West","NGA",594,"Forest Reserve","polygon","Not Reported",36535,0.247,0.313,0.162
+"311","Buru","GHA",225,"Forest Reserve","polygon","Not Reported",40887,0.381,0.604,0.274
+"312","Busta","NGA",366,"Forest Reserve","polygon","Not Reported",36294,0.289,0.448,0.24
+"313","Calicednat","TGO",52,"Forest Reserve","polygon","Not Reported",300726,0.34,0.588,0.162
+"314","Canjambari","GNB",15,"Faunal Reserve","polygon","Not Reported",342659,0.589,0.857,0.378
+"315","Canquelifa","GNB",17,"Forest Reserve","polygon","Not Reported",342661,0.596,0.818,0.364
+"316","Cantanhez Forest","GNB",23,"National Park","polygon","Not Reported",351088,0.301,0.48,0.241
+"317","Cantanhez Forest","GNB",9,"Hunting Reserve","polygon","Not Reported",33049,0.301,0.48,0.241
+"318","Cape Three Points","GHA",122,"Forest Reserve","polygon","Not Reported",40828,NA,NA,NA
+"319","Cece","NGA",683,"Forest Reserve","polygon","Not Reported",36631,0.383,0.647,0.197
+"320","Central Shendam","NGA",776,"Forest Reserve","polygon","Not Reported",36726,0.416,0.614,0.218
+"321","Central Wase","NGA",740,"Forest Reserve","polygon","Not Reported",36688,0.409,0.605,0.175
+"322","Chai River","GHA",245,"Forest Reserve","polygon","Not Reported",26507,0.332,0.511,0.218
+"323","Chasi River","GHA",210,"Forest Reserve","polygon","Not Reported",26535,0.408,0.719,0.179
+"324","Che Che","GNB",20,"Not Reported","polygon","Not Reported",342671,0.461,0.694,0.265
+"325","Chiana Hills","GHA",211,"Forest Reserve","polygon","Not Reported",26536,0.334,0.533,0.161
+"326","Chihurma","NGA",703,"Forest Reserve","polygon","Not Reported",36651,0.274,0.45,0.186
+"327","Chikwei","NGA",701,"Forest Reserve","polygon","Not Reported",36649,0.274,0.45,0.186
+"328","Chinade","NGA",476,"Forest Reserve","polygon","Not Reported",36412,0.295,0.423,0.201
+"329","Chipa Tributaries","GHA",255,"Forest Reserve","polygon","Not Reported",40892,0.469,0.6,0.396
+"330","Chiremoasi","GHA",24,"Forest Reserve","polygon","Not Reported",40675,0.435,0.628,0.365
+"331","Chirimfa","GHA",74,"Forest Reserve","polygon","Not Reported",40774,0.439,0.638,0.335
+"332","Chokochoko","NGA",863,"Forest Reserve","polygon","Not Reported",36844,0.358,0.548,0.279
+"333","Chutes de Tinkisso","GIN",63,"Classified Forest","polygon","Not Reported",29424,0.293,0.437,0.216
+"334","Classified Forest Name Unknown CIV No1","CIV",150,"Classified Forest","polygon","Not Reported",300739,0.302,0.478,0.19
+"335","Classified Forest Name Unknown CIV No10","CIV",170,"Classified Forest","polygon","Not Reported",300778,0.325,0.495,0.184
+"336","Classified Forest Name Unknown CIV No11","CIV",175,"Classified Forest","polygon","Not Reported",300783,0.351,0.559,0.219
+"337","Classified Forest Name Unknown CIV No12","CIV",176,"Classified Forest","polygon","Not Reported",300784,0.339,0.522,0.199
+"338","Classified Forest Name Unknown CIV No13","CIV",178,"Classified Forest","polygon","Not Reported",300787,0.351,0.559,0.219
+"339","Classified Forest Name Unknown CIV No14","CIV",179,"Classified Forest","polygon","Not Reported",300788,0.36,0.616,0.233
+"340","Classified Forest Name Unknown CIV No15","CIV",182,"Classified Forest","polygon","Not Reported",300791,0.369,0.573,0.243
+"341","Classified Forest Name Unknown CIV No16","CIV",183,"Classified Forest","polygon","Not Reported",300792,0.398,0.614,0.278
+"342","Classified Forest Name Unknown CIV No17","CIV",189,"Classified Forest","polygon","Not Reported",300802,0.394,0.617,0.282
+"343","Classified Forest Name Unknown CIV No18","CIV",190,"Classified Forest","polygon","Not Reported",300804,0.42,0.662,0.298
+"344","Classified Forest Name Unknown CIV No19","CIV",191,"Classified Forest","polygon","Not Reported",300805,0.402,0.629,0.304
+"345","Classified Forest Name Unknown CIV No2","CIV",151,"Classified Forest","polygon","Not Reported",300741,0.315,0.546,0.199
+"346","Classified Forest Name Unknown CIV No20","CIV",192,"Classified Forest","polygon","Not Reported",300806,0.457,0.694,0.305
+"347","Classified Forest Name Unknown CIV No21","CIV",194,"Classified Forest","polygon","Not Reported",300811,0.452,0.688,0.304
+"348","Classified Forest Name Unknown CIV No22","CIV",195,"Classified Forest","polygon","Not Reported",300812,0.468,0.713,0.347
+"349","Classified Forest Name Unknown CIV No23","CIV",199,"Classified Forest","polygon","Not Reported",300816,0.402,0.629,0.304
+"350","Classified Forest Name Unknown CIV No24","CIV",200,"Classified Forest","polygon","Not Reported",300817,0.436,0.655,0.312
+"351","Classified Forest Name Unknown CIV No25","CIV",202,"Classified Forest","polygon","Not Reported",300819,0.424,0.639,0.323
+"352","Classified Forest Name Unknown CIV No26","CIV",203,"Classified Forest","polygon","Not Reported",300820,0.36,0.53,0.247
+"353","Classified Forest Name Unknown CIV No27","CIV",205,"Classified Forest","polygon","Not Reported",300822,0.436,0.646,0.332
+"354","Classified Forest Name Unknown CIV No28","CIV",206,"Classified Forest","polygon","Not Reported",300823,0.452,0.678,0.319
+"355","Classified Forest Name Unknown CIV No29","CIV",209,"Classified Forest","polygon","Not Reported",300827,0.436,0.646,0.332
+"356","Classified Forest Name Unknown CIV No3","CIV",159,"Classified Forest","polygon","Not Reported",300755,0.329,0.607,0.213
+"357","Classified Forest Name Unknown CIV No30","CIV",214,"Classified Forest","polygon","Not Reported",300828,0.513,0.722,0.344
+"358","Classified Forest Name Unknown CIV No31","CIV",216,"Classified Forest","polygon","Not Reported",300830,0.486,0.753,0.314
+"359","Classified Forest Name Unknown CIV No32","CIV",217,"Classified Forest","polygon","Not Reported",300831,0.452,0.678,0.319
+"360","Classified Forest Name Unknown CIV No33","CIV",218,"Classified Forest","polygon","Not Reported",300833,0.462,0.613,0.314
+"361","Classified Forest Name Unknown CIV No34","CIV",219,"Classified Forest","polygon","Not Reported",300834,0.362,0.535,0.256
+"362","Classified Forest Name Unknown CIV No35","CIV",220,"Classified Forest","polygon","Not Reported",300835,0.462,0.614,0.314
+"363","Classified Forest Name Unknown CIV No36","CIV",221,"Classified Forest","polygon","Not Reported",300837,0.517,0.7,0.364
+"364","Classified Forest Name Unknown CIV No37","CIV",223,"Classified Forest","polygon","Not Reported",300839,0.452,0.678,0.319
+"365","Classified Forest Name Unknown CIV No38","CIV",224,"Classified Forest","polygon","Not Reported",300840,0.491,0.682,0.379
+"366","Classified Forest Name Unknown CIV No39","CIV",42,"Classified Forest","polygon","Not Reported",300843,0.495,0.702,0.37
+"367","Classified Forest Name Unknown CIV No4","CIV",160,"Classified Forest","polygon","Not Reported",300756,0.318,0.599,0.211
+"368","Classified Forest Name Unknown CIV No40","CIV",43,"Classified Forest","polygon","Not Reported",300844,0.51,0.663,0.35
+"369","Classified Forest Name Unknown CIV No41","CIV",45,"Classified Forest","polygon","Not Reported",300846,0.509,0.714,0.381
+"370","Classified Forest Name Unknown CIV No42","CIV",46,"Classified Forest","polygon","Not Reported",300847,0.565,0.703,0.398
+"371","Classified Forest Name Unknown CIV No43","CIV",47,"Classified Forest","polygon","Not Reported",300848,0.53,0.707,0.397
+"372","Classified Forest Name Unknown CIV No44","CIV",48,"Classified Forest","polygon","Not Reported",300849,0.509,0.714,0.381
+"373","Classified Forest Name Unknown CIV No45","CIV",50,"Classified Forest","polygon","Not Reported",300851,0.483,0.7,0.321
+"374","Classified Forest Name Unknown CIV No46","CIV",51,"Classified Forest","polygon","Not Reported",300852,0.487,0.704,0.322
+"375","Classified Forest Name Unknown CIV No47","CIV",53,"Classified Forest","polygon","Not Reported",300854,0.505,0.706,0.355
+"376","Classified Forest Name Unknown CIV No48","CIV",54,"Classified Forest","polygon","Not Reported",300855,0.487,0.704,0.322
+"377","Classified Forest Name Unknown CIV No49","CIV",55,"Classified Forest","polygon","Not Reported",300856,0.523,0.728,0.36
+"378","Classified Forest Name Unknown CIV No5","CIV",163,"Classified Forest","polygon","Not Reported",300770,0.315,0.486,0.18
+"379","Classified Forest Name Unknown CIV No50","CIV",56,"Classified Forest","polygon","Not Reported",300857,0.515,0.665,0.359
+"380","Classified Forest Name Unknown CIV No51","CIV",57,"Classified Forest","polygon","Not Reported",300859,0.523,0.728,0.36
+"381","Classified Forest Name Unknown CIV No52","CIV",58,"Classified Forest","polygon","Not Reported",300860,0.479,0.663,0.341
+"382","Classified Forest Name Unknown CIV No53","CIV",61,"Classified Forest","polygon","Not Reported",300864,0.516,0.695,0.397
+"383","Classified Forest Name Unknown CIV No54","CIV",62,"Classified Forest","polygon","Not Reported",300865,0.487,0.704,0.322
+"384","Classified Forest Name Unknown CIV No55","CIV",75,"Classified Forest","polygon","Not Reported",300890,0.52,0.715,0.35
+"385","Classified Forest Name Unknown CIV No56","CIV",76,"Classified Forest","polygon","Not Reported",300891,0.519,0.695,0.4
+"386","Classified Forest Name Unknown CIV No57","CIV",82,"Classified Forest","polygon","Not Reported",300900,0.539,0.728,0.388
+"387","Classified Forest Name Unknown CIV No58","CIV",83,"Classified Forest","polygon","Not Reported",300901,0.471,0.692,0.344
+"388","Classified Forest Name Unknown CIV No59","CIV",88,"Classified Forest","polygon","Not Reported",300912,0.507,0.701,0.358
+"389","Classified Forest Name Unknown CIV No6","CIV",164,"Classified Forest","polygon","Not Reported",300772,0.34,0.593,0.227
+"390","Classified Forest Name Unknown CIV No60","CIV",93,"Classified Forest","polygon","Not Reported",300926,0.474,0.666,0.363
+"391","Classified Forest Name Unknown CIV No61","CIV",94,"Classified Forest","polygon","Not Reported",300928,0.512,0.714,0.395
+"392","Classified Forest Name Unknown CIV No62","CIV",95,"Classified Forest","polygon","Not Reported",300929,0.451,0.661,0.324
+"393","Classified Forest Name Unknown CIV No63","CIV",99,"Classified Forest","polygon","Not Reported",300933,0.576,0.721,0.417
+"394","Classified Forest Name Unknown CIV No64","CIV",100,"Classified Forest","polygon","Not Reported",300934,0.58,0.732,0.416
+"395","Classified Forest Name Unknown CIV No65","CIV",101,"Classified Forest","polygon","Not Reported",300937,0.512,0.714,0.395
+"396","Classified Forest Name Unknown CIV No66","CIV",102,"Classified Forest","polygon","Not Reported",300938,0.398,0.514,0.303
+"397","Classified Forest Name Unknown CIV No67","CIV",103,"Classified Forest","polygon","Not Reported",300939,0.547,0.717,0.405
+"398","Classified Forest Name Unknown CIV No68","CIV",104,"Classified Forest","polygon","Not Reported",300940,0.372,0.467,0.207
+"399","Classified Forest Name Unknown CIV No69","CIV",106,"Classified Forest","polygon","Not Reported",300944,0.366,0.463,0.217
+"400","Classified Forest Name Unknown CIV No7","CIV",165,"Classified Forest","polygon","Not Reported",300773,0.33,0.555,0.201
+"401","Classified Forest Name Unknown CIV No70","CIV",107,"Classified Forest","polygon","Not Reported",300945,0.365,0.465,0.18
+"402","Classified Forest Name Unknown CIV No71","CIV",111,"Classified Forest","polygon","Not Reported",300951,0.365,0.461,0.221
+"403","Classified Forest Name Unknown CIV No72","CIV",112,"Classified Forest","polygon","Not Reported",300952,0.611,0.727,0.438
+"404","Classified Forest Name Unknown CIV No73","CIV",113,"Classified Forest","polygon","Not Reported",300953,0.37,0.447,0.3
+"405","Classified Forest Name Unknown CIV No74","CIV",114,"Classified Forest","polygon","Not Reported",300954,0.366,0.463,0.217
+"406","Classified Forest Name Unknown CIV No75","CIV",116,"Classified Forest","polygon","Not Reported",300956,0.374,0.448,0.299
+"407","Classified Forest Name Unknown CIV No76","CIV",117,"Classified Forest","polygon","Not Reported",300959,0.374,0.448,0.299
+"408","Classified Forest Name Unknown CIV No77","CIV",124,"Classified Forest","polygon","Not Reported",301724,0.422,0.576,0.301
+"409","Classified Forest Name Unknown CIV No8","CIV",166,"Classified Forest","polygon","Not Reported",300774,0.271,0.418,0.198
+"410","Classified Forest Name Unknown CIV No9","CIV",169,"Classified Forest","polygon","Not Reported",300777,0.325,0.495,0.184
+"411","Cliff of Bandiagara Land of the Dogons","MLI",1,"World Heritage Site","polygon","Not Applicable",20171,0.498,0.75,0.286
+"412","Colline-Macenta","GIN",85,"Classified Forest","polygon","Not Reported",29462,0.466,0.592,0.348
+"413","Comoe National Park","CIV",225,"World Heritage Site","polygon","Not Applicable",9545,0.345,0.576,0.221
+"414","Comoe","CIV",237,"National Park","polygon","II",7523,0.345,0.576,0.222
+"415","Counsignaki","GIN",86,"Classified Forest","polygon","Not Reported",29463,0.317,0.454,0.233
+"416","Cross River North","NGA",174,"Forest Reserve","polygon","Not Reported",37009,0.45,0.542,0.361
+"417","Cross River South","NGA",175,"Forest Reserve","polygon","Not Reported",37010,0.437,0.534,0.35
+"418","Cross River","NGA",19,"National Park","polygon","II",20299,0.378,0.449,0.293
+"419","Cufada","GNB",22,"National Park","polygon","Not Reported",342673,0.349,0.583,0.244
+"420","Dabaga","NGA",412,"Forest Reserve","polygon","Not Reported",36340,0.434,0.724,0.243
+"421","Dabamsame","NGA",426,"Forest Reserve","polygon","Not Reported",36354,0.377,0.637,0.175
+"422","Dabira","NGA",300,"Forest Reserve","polygon","Not Reported",36228,0.367,0.614,0.212
+"423","Dadieso","GHA",132,"Forest Reserve","polygon","Not Reported",40840,0.416,0.504,0.332
+"424","Dadingel","NGA",499,"Forest Reserve","polygon","Not Reported",36438,0.302,0.461,0.166
+"425","Dagida","NGA",228,"Game Reserve","polygon","IV",7863,0.351,0.597,0.213
+"426","Dagidda","NGA",637,"Forest Reserve","polygon","Not Reported",36583,0.357,0.613,0.218
+"427","Dagona Sanctuary Lake","NGA",4,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903106,0.374,0.61,0.225
+"428","Dajina","NGA",297,"Forest Reserve","polygon","Not Reported",36225,0.428,0.685,0.254
+"429","Daka Headwaters","GHA",194,"Forest Reserve","polygon","Not Reported",26442,0.339,0.61,0.201
+"430","Dakka","NGA",767,"Forest Reserve","polygon","Not Reported",36717,0.269,0.506,0.188
+"431","Dalli","NGA",478,"Forest Reserve","polygon","Not Reported",36415,0.363,0.61,0.202
+"432","Dam Makama","NGA",323,"Forest Reserve","polygon","Not Reported",36251,0.381,0.604,0.242
+"433","Damakhania","GIN",14,"Classified Forest","polygon","Not Reported",29352,0.265,0.363,0.204
+"434","Damakuli","NGA",306,"Forest Reserve","polygon","Not Reported",36234,0.404,0.687,0.199
+"435","Damango Scarp","GHA",219,"Forest Reserve","polygon","Not Reported",26553,0.349,0.607,0.238
+"436","Damangu","NGA",363,"Forest Reserve","polygon","Not Reported",36291,0.319,0.485,0.24
+"437","Damasak","NGA",279,"Forest Reserve","polygon","Not Reported",36207,0.439,0.753,0.277
+"438","Damboa","NGA",517,"Forest Reserve","polygon","Not Reported",36456,0.289,0.429,0.144
+"439","Dampia Range","GHA",25,"Forest Reserve","polygon","Not Reported",40676,0.441,0.622,0.381
+"440","Damri","NGA",416,"Forest Reserve","polygon","Not Reported",36344,0.429,0.639,0.229
+"441","Dan Babba","NGA",271,"Forest Reserve","polygon","Not Reported",36199,0.369,0.531,0.247
+"442","Dan Burkina Faso","BFA",46,"Classified Forest","polygon","Not Reported",28570,0.318,0.56,0.177
+"443","Dan Gagi","NGA",390,"Forest Reserve","polygon","Not Reported",36318,0.335,0.479,0.24
+"444","Dan Kabba","NGA",266,"Forest Reserve","polygon","Not Reported",36194,0.369,0.531,0.247
+"445","Dan Kulili","NGA",322,"Forest Reserve","polygon","Not Reported",36250,0.381,0.604,0.242
+"446","Dan","BEN",4,"Classified Forest","polygon","Not Reported",32999,0.462,0.589,0.285
+"447","Dandadu","NGA",539,"Forest Reserve","polygon","Not Reported",36478,0.281,0.409,0.142
+"448","Danganagi","NGA",685,"Forest Reserve","polygon","Not Reported",36633,0.408,0.642,0.208
+"449","Danguwa","NGA",711,"Forest Reserve","polygon","Not Reported",36659,0.271,0.466,0.199
+"450","Dankaiwa","NGA",394,"Forest Reserve","polygon","Not Reported",36322,0.414,0.634,0.25
+"451","Dansosia","NGA",453,"Forest Reserve","polygon","Not Reported",36387,0.222,0.294,0.165
+"452","Dapchi","NGA",315,"Forest Reserve","polygon","Not Reported",36243,0.354,0.604,0.217
+"453","Dara-Labe","GIN",48,"Classified Forest","polygon","Not Reported",29404,0.261,0.349,0.211
+"454","Dargazu","NGA",474,"Forest Reserve","polygon","Not Reported",36410,0.405,0.613,0.2
+"455","Darou-salam","GIN",31,"Classified Forest","polygon","Not Reported",29379,0.26,0.382,0.206
+"456","Dassieko","CIV",123,"Classified Forest","polygon","Not Reported",300966,NA,NA,NA
+"457","Dasun","NGA",642,"Forest Reserve","polygon","Not Reported",36588,0.357,0.614,0.219
+"458","Datsinudara","NGA",622,"Forest Reserve","polygon","Not Reported",36567,0.344,0.575,0.193
+"459","Daura","NGA",272,"Forest Reserve","polygon","Not Reported",36200,0.336,0.493,0.246
+"460","Davo","CIV",27,"Classified Forest","polygon","Not Reported",29594,0.515,0.71,0.402
+"461","Dawaki","NGA",717,"Forest Reserve","polygon","Not Reported",36665,0.297,0.455,0.202
+"462","Dawan Allah","NGA",268,"Forest Reserve","polygon","Not Reported",36196,0.341,0.48,0.235
+"463","Dayi","NGA",446,"Forest Reserve","polygon","Not Reported",36380,0.254,0.37,0.2
+"464","Dayigora","NGA",447,"Forest Reserve","polygon","Not Reported",36381,0.254,0.37,0.2
+"465","De","CIV",49,"Classified Forest","polygon","Not Reported",300850,0.519,0.722,0.381
+"466","Deali","SEN",32,"Not Reported","polygon","Not Reported",352622,0.564,0.742,0.325
+"467","Dechidan Stream","GHA",171,"Forest Reserve","polygon","Not Reported",303954,0.485,0.618,0.405
+"468","Dede","GHA",8,"Forest Reserve","polygon","Not Reported",26449,0.334,0.473,0.272
+"469","Dekina","NGA",872,"Forest Reserve","polygon","Not Reported",36854,0.368,0.561,0.269
+"470","Delta du Saloum","SEN",13,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",68153,0.44,0.621,0.251
+"471","Delta du Saloum","SEN",2,"National Park","polygon","II",866,0.536,0.754,0.335
+"472","Dem","BFA",27,"Classified Forest","polygon","Not Reported",28549,0.387,0.668,0.204
+"473","Demsa","NGA",751,"Forest Reserve","polygon","Not Reported",36699,0.331,0.614,0.139
+"474","Dende","NGA",421,"Forest Reserve","polygon","Not Reported",36349,0.375,0.62,0.157
+"475","Denyau Shelterbelt","GHA",26,"Forest Reserve","polygon","Not Reported",40677,0.47,0.666,0.386
+"476","Dep River","NGA",771,"Forest Reserve","polygon","Not Reported",36721,0.406,0.626,0.233
+"477","Desiri","GHA",58,"Forest Reserve","polygon","Not Reported",40756,0.475,0.686,0.368
+"478","Deux Bales","BFA",2,"National Park","polygon","II",2344,0.374,0.658,0.168
+"479","Dialakoro","MLI",26,"Wildlife Reserve","polygon","IV",555556066,0.393,0.632,0.2
+"480","Diambarakrou","CIV",5,"Classified Forest","polygon","Not Reported",29499,0.475,0.682,0.387
+"481","Dida","BFA",5,"Classified Forest","polygon","Not Reported",7517,0.343,0.574,0.182
+"482","Diecke","GIN",106,"Classified Forest","polygon","Not Reported",29484,0.551,0.662,0.396
+"483","Diefoula","BFA",6,"Classified Forest","polygon","Not Reported",7518,0.341,0.591,0.19
+"484","Digya","GHA",247,"National Park","polygon","II",670,0.399,0.637,0.27
+"485","Dinderesso","BFA",47,"Classified Forest","polygon","Not Reported",28571,0.367,0.589,0.204
+"486","Diogoure","GIN",24,"Classified Forest","polygon","Not Reported",29371,0.281,0.368,0.217
+"487","Disue River","GHA",129,"Forest Reserve","polygon","Not Reported",40836,0.416,0.503,0.332
+"488","Divana","NGA",562,"Forest Reserve","polygon","Not Reported",36501,0.364,0.629,0.151
+"489","Divo","CIV",1,"Botanical Reserve","polygon","Not Reported",7390,0.521,0.726,0.405
+"490","Dixinn","GIN",8,"Classified Forest","polygon","Not Reported",29335,NA,NA,NA
+"491","Djamde","TGO",29,"Faunal Reserve","polygon","IV",20976,0.323,0.539,0.233
+"492","Djangoumerila","MLI",25,"Wildlife Reserve","polygon","IV",555556065,0.38,0.544,0.197
+"493","Djemegni","TGO",8,"Forest Reserve","polygon","Not Reported",37144,0.447,0.592,0.301
+"494","Djibia","NGA",258,"Forest Reserve","polygon","Not Reported",36185,0.319,0.47,0.232
+"495","Djigbe","BEN",3,"Classified Forest","polygon","Not Reported",5161,0.381,0.522,0.31
+"496","Djimbera Bantiguel","GIN",39,"Classified Forest","polygon","Not Reported",29391,0.31,0.453,0.226
+"497","Djinetoumanina","MLI",28,"Wildlife Reserve","polygon","IV",555556067,0.384,0.594,0.203
+"498","Djona","BEN",7,"Hunting Zone","polygon","VI",2252,0.35,0.579,0.143
+"499","Djoudj National Bird Sanctuary","SEN",114,"World Heritage Site","polygon","Not Applicable",2578,0.424,0.548,0.335
+"500","Djoudj","SEN",12,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",68151,0.424,0.548,0.335
+"501","Dodo Hills","SLE",15,"Forest Reserve","polygon","Not Reported",29974,0.426,0.526,0.356
+"502","Dogan Dawa","NGA",443,"Forest Reserve","polygon","Not Reported",36375,0.216,0.37,0.15
+"503","Dogo","BEN",28,"Classified Forest","polygon","Not Reported",19277,0.419,0.607,0.267
+"504","Dogodou","CIV",25,"Classified Forest","polygon","Not Reported",29583,0.622,0.732,0.446
+"505","Dogwandaji","NGA",410,"Forest Reserve","polygon","Not Reported",36338,0.411,0.694,0.197
+"506","Doka","NGA",656,"Forest Reserve","polygon","Not Reported",36602,0.331,0.544,0.2
+"507","Dokin","NGA",938,"Forest Reserve","polygon","Not Reported",300732,0.221,0.37,0.154
+"508","Dokoro","GIN",58,"Classified Forest","polygon","Not Reported",29416,0.266,0.402,0.19
+"509","Doli","SEN",39,"Not Reported","polygon","Not Reported",352629,0.621,0.83,0.309
+"510","Doma","NGA",796,"Forest Reserve","polygon","Not Reported",36746,0.374,0.628,0.254
+"511","Dome River","GHA",156,"Forest Reserve","polygon","Not Reported",40865,0.439,0.641,0.351
+"512","Dono","NGA",270,"Forest Reserve","polygon","Not Reported",36198,0.369,0.531,0.247
+"513","Dora Diaro","CIV",201,"Classified Forest","polygon","Not Reported",300818,0.494,0.684,0.35
+"514","Doro","NGA",629,"Forest Reserve","polygon","Not Reported",36574,0.306,0.524,0.198
+"515","Dorofi","NGA",85,"Forest Reserve","polygon","Not Reported",36913,0.318,0.368,0.24
+"516","Draw River","GHA",123,"Forest Reserve","polygon","Not Reported",40829,0.374,0.435,0.309
+"517","Duekoue","CIV",30,"Classified Forest","polygon","Not Reported",29598,0.507,0.695,0.386
+"518","Duisin Bamli","NGA",269,"Forest Reserve","polygon","Not Reported",36197,0.365,0.521,0.246
+"519","Dukku","NGA",534,"Forest Reserve","polygon","Not Reported",36473,0.269,0.39,0.14
+"520","Dulombi","GNB",10,"National Park","polygon","Not Reported",33050,0.377,0.617,0.23
+"521","Duma","NGA",645,"Forest Reserve","polygon","Not Reported",36591,0.329,0.606,0.224
+"522","Dumbari Futu","NGA",349,"Forest Reserve","polygon","Not Reported",36277,0.322,0.53,0.21
+"523","Dumbua","TGO",39,"Forest Reserve","polygon","Not Reported",37146,0.323,0.539,0.233
+"524","Dungal","GNB",14,"Forest Reserve","polygon","Not Reported",342658,0.514,0.818,0.356
+"525","Dungunde","NGA",475,"Forest Reserve","polygon","Not Reported",36411,0.295,0.423,0.201
+"526","Dunwli","GHA",240,"Forest Reserve","polygon","Not Reported",303950,0.377,0.639,0.218
+"527","Dupa","NGA",653,"Forest Reserve","polygon","Not Reported",36599,0.343,0.622,0.235
+"528","Dusuwa","NGA",489,"Forest Reserve","polygon","Not Reported",36428,0.31,0.482,0.186
+"529","Dutsen Amina","NGA",542,"Forest Reserve","polygon","Not Reported",36481,0.264,0.484,0.141
+"530","Dutsen Bello","NGA",584,"Forest Reserve","polygon","Not Reported",36525,0.19,0.266,0.147
+"531","Dutsen Kurafe","NGA",781,"Forest Reserve","polygon","Not Reported",36731,0.322,0.521,0.219
+"532","Dutsin Dorowa","NGA",429,"Forest Reserve","polygon","Not Reported",36358,0.254,0.371,0.201
+"533","Dutsin Gora","NGA",586,"Forest Reserve","polygon","Not Reported",36527,0.19,0.266,0.147
+"534","Dutsin Kodawa","NGA",374,"Forest Reserve","polygon","Not Reported",36302,0.297,0.483,0.228
+"535","Dutsin Kuba","NGA",262,"Forest Reserve","polygon","Not Reported",36189,0.319,0.47,0.232
+"536","Dutsin Kwaita","NGA",373,"Forest Reserve","polygon","Not Reported",36301,0.29,0.457,0.234
+"537","Duya","NGA",440,"Forest Reserve","polygon","Not Reported",36372,0.202,0.275,0.152
+"538","Dyengele","CIV",144,"Classified Forest","polygon","Not Reported",29624,0.325,0.495,0.184
+"539","East Anka","NGA",398,"Forest Reserve","polygon","Not Reported",36326,0.247,0.402,0.163
+"540","East Nimba","LBR",13,"National Park","polygon","Not Reported",9176,0.578,0.679,0.428
+"541","Eba Island","NGA",139,"Forest Reserve","polygon","Not Reported",36972,NA,NA,NA
+"542","Ebba","NGA",811,"Forest Reserve","polygon","Not Reported",36761,0.327,0.531,0.213
+"543","Ebbe-Kampe","NGA",224,"Game Reserve","polygon","Not Reported",7834,0.354,0.576,0.244
+"544","Ebi Shelterbelt River","GHA",124,"Forest Reserve","polygon","Not Reported",40830,NA,NA,NA
+"545","Ebor","NGA",212,"Forest Reserve","polygon","Not Reported",300893,0.465,0.57,0.399
+"546","Ebrinenou","CIV",68,"Classified Forest","polygon","Not Reported",300878,0.5,0.673,0.375
+"547","Ebue","NGA",115,"Forest Reserve","polygon","Not Reported",36947,0.465,0.571,0.399
+"548","Eda 1","NGA",963,"Forest Reserve","polygon","Not Reported",300825,0.346,0.484,0.254
+"549","Eda 2","NGA",861,"Forest Reserve","polygon","Not Reported",36824,0.346,0.484,0.254
+"550","Ede","NGA",858,"Forest Reserve","polygon","Not Reported",36815,0.387,0.548,0.303
+"551","Edoko Hills","NGA",829,"Forest Reserve","polygon","Not Reported",36779,0.343,0.622,0.235
+"552","Edotsu","NGA",800,"Forest Reserve","polygon","Not Reported",36750,0.343,0.622,0.235
+"553","Edumanom","NGA",196,"Forest Reserve","polygon","Not Reported",37032,0.411,0.493,0.342
+"554","Efan","NGA",828,"Forest Reserve","polygon","Not Reported",36778,0.319,0.579,0.214
+"555","Effium","NGA",92,"Forest Reserve","polygon","Not Reported",36922,0.474,0.653,0.359
+"556","Egbe","NGA",862,"Forest Reserve","polygon","Not Reported",36843,0.346,0.484,0.254
+"557","Egbedi Creek","NGA",166,"Forest Reserve","polygon","Not Reported",37000,0.441,0.506,0.372
+"558","Eggua","NGA",201,"Forest Reserve","polygon","Not Reported",37037,0.411,0.546,0.324
+"559","Ehor","NGA",211,"Forest Reserve","polygon","Not Reported",300886,0.439,0.572,0.36
+"560","Ejidogardi","NGA",824,"Forest Reserve","polygon","Not Reported",36774,0.296,0.558,0.203
+"561","Ejigbo","NGA",853,"Forest Reserve","polygon","Not Reported",36805,0.386,0.563,0.293
+"562","Ejigbobini","NGA",140,"Forest Reserve","polygon","Not Reported",36973,0.352,0.421,0.244
+"563","Ekenwan","NGA",154,"Forest Reserve","polygon","Not Reported",36988,0.382,0.447,0.298
+"564","Ekiadolor","NGA",151,"Forest Reserve","polygon","Not Reported",36984,0.423,0.515,0.361
+"565","Ekiadolor","NGA",151,"Forest Reserve","polygon","Not Reported",300883,0.423,0.515,0.361
+"566","Ekiadolor","NGA",210,"Forest Reserve","polygon","Not Reported",36984,0.428,0.563,0.36
+"567","Ekiadolor","NGA",210,"Forest Reserve","polygon","Not Reported",300883,0.428,0.563,0.36
+"568","Ekinta River","NGA",178,"Forest Reserve","polygon","Not Reported",37014,0.354,0.403,0.271
+"569","Eleiyele","NGA",27,"Forest Reserve","polygon","Not Reported",36814,0.415,0.571,0.323
+"570","Elroukro","CIV",60,"Classified Forest","polygon","Not Reported",300862,0.511,0.664,0.351
+"571","Eme River","NGA",189,"Forest Reserve","polygon","Not Reported",37025,0.506,0.607,0.437
+"572","Enugu","NGA",214,"Forest Reserve","polygon","Not Reported",300898,0.504,0.632,0.417
+"573","Eporo","NGA",41,"Forest Reserve","polygon","Not Reported",36836,0.434,0.566,0.352
+"574","Eruwa","NGA",23,"Forest Reserve","polygon","Not Reported",36809,0.422,0.602,0.289
+"575","Esen Epam","GHA",99,"Forest Reserve","polygon","Not Reported",40799,0.447,0.629,0.359
+"576","Esie","NGA",832,"Forest Reserve","polygon","Not Reported",36783,0.33,0.497,0.228
+"577","Esuboni For","GHA",100,"Forest Reserve","polygon","Not Reported",40800,0.447,0.63,0.36
+"578","Esukawkaw","GHA",82,"Forest Reserve","polygon","Not Reported",40782,0.424,0.635,0.334
+"579","Etizurugi","NGA",684,"Forest Reserve","polygon","Not Reported",36632,0.39,0.643,0.204
+"580","Eto","TGO",9,"Forest Reserve","polygon","Not Reported",37147,0.448,0.594,0.348
+"581","Ewohimi","NGA",116,"Forest Reserve","polygon","Not Reported",36948,0.457,0.594,0.385
+"582","Ewun Rafia","NGA",892,"Forest Reserve","polygon","Not Reported",342474,0.413,0.639,0.181
+"583","Fada Archei","TCD",14,"Faunal Reserve","polygon","IV",9033,0.443,0.537,0.302
+"584","Fadaman Mada","NGA",585,"Forest Reserve","polygon","Not Reported",36526,0.19,0.266,0.147
+"585","Fahu","NGA",368,"Forest Reserve","polygon","Not Reported",36296,0.254,0.37,0.2
+"586","Falgore Kogin Kano","NGA",233,"Game Reserve","polygon","IV",7875,0.217,0.281,0.173
+"587","Falomi","NGA",357,"Forest Reserve","polygon","Not Reported",36285,0.322,0.507,0.219
+"588","Faragama","MLI",10,"Hunting Area","polygon","VI",555556057,0.397,0.791,0.238
+"589","Farangbaia","SLE",16,"Forest Reserve","polygon","Not Reported",29980,0.402,0.52,0.312
+"590","Farfar","NGA",249,"Forest Reserve","polygon","Not Reported",36176,0.449,0.716,0.267
+"591","Farin Ruwa","NGA",482,"Forest Reserve","polygon","Not Reported",36420,0.236,0.375,0.165
+"592","Fatika","NGA",437,"Forest Reserve","polygon","Not Reported",36369,0.202,0.275,0.152
+"593","Fazao-Malfakassa","TGO",26,"National Park","polygon","II",2340,0.345,0.551,0.244
+"594","Fefeku","NGA",378,"Forest Reserve","polygon","Not Reported",36306,0.29,0.457,0.234
+"595","Fello-Selouma","GIN",67,"Classified Forest","polygon","Not Reported",29434,0.372,0.607,0.204
+"596","Fello Digue","GIN",51,"Classified Forest","polygon","Not Reported",29408,0.37,0.624,0.238
+"597","Fello Sounga","GIN",49,"Classified Forest","polygon","Not Reported",29406,0.352,0.6,0.224
+"598","Femari","NGA",507,"Forest Reserve","polygon","Not Reported",36446,0.336,0.578,0.179
+"599","Feri","NGA",670,"Forest Reserve","polygon","Not Reported",36616,0.237,0.387,0.168
+"600","Ferlo-Nord","SEN",7,"Wildlife Reserve","polygon","IV",2333,0.576,0.779,0.308
+"601","Ferlo-Sud","SEN",6,"Wildlife Reserve","polygon","IV",2332,0.595,0.826,0.305
+"602","Fiankonya Stream","GHA",168,"Forest Reserve","polygon","Not Reported",40894,0.485,0.618,0.405
+"603","Fina","MLI",24,"Wildlife Reserve","polygon","IV",2329,0.445,0.831,0.235
+"604","Finukunu","NGA",316,"Forest Reserve","polygon","Not Reported",36244,0.361,0.609,0.226
+"605","Fitacouna","GIN",23,"Classified Forest","polygon","Not Reported",29370,0.334,0.489,0.219
+"606","Flawa","MLI",9,"Hunting Area","polygon","VI",317192,0.473,0.849,0.266
+"607","Foge Islands","NGA",5,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903107,0.313,0.531,0.196
+"608","Forest Reserve Name Unknown NGA No1","NGA",897,"Forest Reserve","polygon","Not Reported",300680,0.449,0.695,0.278
+"609","Forest Reserve Name Unknown NGA No11","NGA",905,"Forest Reserve","polygon","Not Reported",300690,0.322,0.53,0.21
+"610","Forest Reserve Name Unknown NGA No12","NGA",906,"Forest Reserve","polygon","Not Reported",300691,0.354,0.586,0.208
+"611","Forest Reserve Name Unknown NGA No13","NGA",907,"Forest Reserve","polygon","Not Reported",300692,0.322,0.53,0.21
+"612","Forest Reserve Name Unknown NGA No14","NGA",908,"Forest Reserve","polygon","Not Reported",300693,0.3,0.44,0.208
+"613","Forest Reserve Name Unknown NGA No15","NGA",909,"Forest Reserve","polygon","Not Reported",300694,0.294,0.475,0.212
+"614","Forest Reserve Name Unknown NGA No16","NGA",910,"Forest Reserve","polygon","Not Reported",300695,0.278,0.461,0.208
+"615","Forest Reserve Name Unknown NGA No17","NGA",911,"Forest Reserve","polygon","Not Reported",300696,0.278,0.461,0.208
+"616","Forest Reserve Name Unknown NGA No18","NGA",912,"Forest Reserve","polygon","Not Reported",300697,0.278,0.461,0.208
+"617","Forest Reserve Name Unknown NGA No19","NGA",913,"Forest Reserve","polygon","Not Reported",300699,0.318,0.516,0.217
+"618","Forest Reserve Name Unknown NGA No2","NGA",898,"Forest Reserve","polygon","Not Reported",300681,0.449,0.695,0.278
+"619","Forest Reserve Name Unknown NGA No20","NGA",914,"Forest Reserve","polygon","Not Reported",300700,0.303,0.466,0.217
+"620","Forest Reserve Name Unknown NGA No21","NGA",915,"Forest Reserve","polygon","Not Reported",300701,0.297,0.453,0.212
+"621","Forest Reserve Name Unknown NGA No22","NGA",916,"Forest Reserve","polygon","Not Reported",300702,0.289,0.408,0.158
+"622","Forest Reserve Name Unknown NGA No23","NGA",917,"Forest Reserve","polygon","Not Reported",300703,0.32,0.514,0.159
+"623","Forest Reserve Name Unknown NGA No24","NGA",918,"Forest Reserve","polygon","Not Reported",300704,0.293,0.41,0.189
+"624","Forest Reserve Name Unknown NGA No25","NGA",919,"Forest Reserve","polygon","Not Reported",300705,0.3,0.457,0.164
+"625","Forest Reserve Name Unknown NGA No26","NGA",920,"Forest Reserve","polygon","Not Reported",300706,0.293,0.41,0.189
+"626","Forest Reserve Name Unknown NGA No27","NGA",921,"Forest Reserve","polygon","Not Reported",300707,0.293,0.41,0.189
+"627","Forest Reserve Name Unknown NGA No28","NGA",922,"Forest Reserve","polygon","Not Reported",300708,0.293,0.41,0.189
+"628","Forest Reserve Name Unknown NGA No29","NGA",923,"Forest Reserve","polygon","Not Reported",300709,0.238,0.348,0.183
+"629","Forest Reserve Name Unknown NGA No3","NGA",899,"Forest Reserve","polygon","Not Reported",300682,0.449,0.695,0.278
+"630","Forest Reserve Name Unknown NGA No30","NGA",925,"Forest Reserve","polygon","Not Reported",300711,0.254,0.406,0.182
+"631","Forest Reserve Name Unknown NGA No31","NGA",926,"Forest Reserve","polygon","Not Reported",300712,0.251,0.402,0.187
+"632","Forest Reserve Name Unknown NGA No32","NGA",927,"Forest Reserve","polygon","Not Reported",300713,0.206,0.284,0.168
+"633","Forest Reserve Name Unknown NGA No33","NGA",928,"Forest Reserve","polygon","Not Reported",300714,0.295,0.423,0.201
+"634","Forest Reserve Name Unknown NGA No34","NGA",929,"Forest Reserve","polygon","Not Reported",300715,0.221,0.274,0.167
+"635","Forest Reserve Name Unknown NGA No35","NGA",930,"Forest Reserve","polygon","Not Reported",300716,0.269,0.388,0.163
+"636","Forest Reserve Name Unknown NGA No36","NGA",931,"Forest Reserve","polygon","Not Reported",300717,0.207,0.263,0.159
+"637","Forest Reserve Name Unknown NGA No37","NGA",934,"Forest Reserve","polygon","Not Reported",300723,0.322,0.546,0.174
+"638","Forest Reserve Name Unknown NGA No38","NGA",935,"Forest Reserve","polygon","Not Reported",300724,0.35,0.638,0.17
+"639","Forest Reserve Name Unknown NGA No39","NGA",936,"Forest Reserve","polygon","Not Reported",300725,0.35,0.638,0.17
+"640","Forest Reserve Name Unknown NGA No40","NGA",937,"Forest Reserve","polygon","Not Reported",300728,0.321,0.535,0.141
+"641","Forest Reserve Name Unknown NGA No41","NGA",939,"Forest Reserve","polygon","Not Reported",300733,0.198,0.259,0.156
+"642","Forest Reserve Name Unknown NGA No42","NGA",940,"Forest Reserve","polygon","Not Reported",300734,0.198,0.259,0.156
+"643","Forest Reserve Name Unknown NGA No43","NGA",941,"Forest Reserve","polygon","Not Reported",300736,0.219,0.305,0.145
+"644","Forest Reserve Name Unknown NGA No44","NGA",943,"Forest Reserve","polygon","Not Reported",300740,0.233,0.273,0.155
+"645","Forest Reserve Name Unknown NGA No45","NGA",944,"Forest Reserve","polygon","Not Reported",300742,0.198,0.259,0.156
+"646","Forest Reserve Name Unknown NGA No46","NGA",945,"Forest Reserve","polygon","Not Reported",300744,0.198,0.259,0.156
+"647","Forest Reserve Name Unknown NGA No47","NGA",946,"Forest Reserve","polygon","Not Reported",300745,0.198,0.259,0.156
+"648","Forest Reserve Name Unknown NGA No48","NGA",947,"Forest Reserve","polygon","Not Reported",300746,0.198,0.259,0.156
+"649","Forest Reserve Name Unknown NGA No49","NGA",948,"Forest Reserve","polygon","Not Reported",300751,0.264,0.484,0.141
+"650","Forest Reserve Name Unknown NGA No5","NGA",900,"Forest Reserve","polygon","Not Reported",300684,0.386,0.609,0.237
+"651","Forest Reserve Name Unknown NGA No50","NGA",949,"Forest Reserve","polygon","Not Reported",300752,0.219,0.305,0.145
+"652","Forest Reserve Name Unknown NGA No51","NGA",950,"Forest Reserve","polygon","Not Reported",300757,0.331,0.547,0.196
+"653","Forest Reserve Name Unknown NGA No52","NGA",951,"Forest Reserve","polygon","Not Reported",300758,0.358,0.579,0.196
+"654","Forest Reserve Name Unknown NGA No53","NGA",952,"Forest Reserve","polygon","Not Reported",300760,0.274,0.45,0.186
+"655","Forest Reserve Name Unknown NGA No56","NGA",953,"Forest Reserve","polygon","Not Reported",300765,0.358,0.579,0.196
+"656","Forest Reserve Name Unknown NGA No57","NGA",954,"Forest Reserve","polygon","Not Reported",300766,0.271,0.466,0.199
+"657","Forest Reserve Name Unknown NGA No58","NGA",955,"Forest Reserve","polygon","Not Reported",300769,0.358,0.579,0.196
+"658","Forest Reserve Name Unknown NGA No59","NGA",956,"Forest Reserve","polygon","Not Reported",300771,0.358,0.579,0.196
+"659","Forest Reserve Name Unknown NGA No6","NGA",901,"Forest Reserve","polygon","Not Reported",300685,0.386,0.609,0.237
+"660","Forest Reserve Name Unknown NGA No61","NGA",960,"Forest Reserve","polygon","Not Reported",300799,0.33,0.585,0.223
+"661","Forest Reserve Name Unknown NGA No62","NGA",961,"Forest Reserve","polygon","Not Reported",300801,0.362,0.607,0.241
+"662","Forest Reserve Name Unknown NGA No69","NGA",213,"Forest Reserve","polygon","Not Reported",300896,0.5,0.608,0.409
+"663","Forest Reserve Name Unknown NGA No7","NGA",902,"Forest Reserve","polygon","Not Reported",300686,0.37,0.561,0.251
+"664","Forest Reserve Name Unknown NGA No72","NGA",215,"Forest Reserve","polygon","Not Reported",300906,0.5,0.608,0.409
+"665","Forest Reserve Name Unknown NGA No74","NGA",216,"Forest Reserve","polygon","Not Reported",300916,0.5,0.608,0.409
+"666","Forest Reserve Name Unknown NGA No75","NGA",217,"Forest Reserve","polygon","Not Reported",300917,0.465,0.602,0.384
+"667","Forest Reserve Name Unknown NGA No78","NGA",218,"Forest Reserve","polygon","Not Reported",300922,0.471,0.614,0.385
+"668","Forest Reserve Name Unknown NGA No8","NGA",903,"Forest Reserve","polygon","Not Reported",300687,0.289,0.448,0.24
+"669","Forest Reserve Name Unknown NGA No80","NGA",219,"Forest Reserve","polygon","Not Reported",300925,0.471,0.614,0.385
+"670","Forest Reserve Name Unknown NGA No9","NGA",904,"Forest Reserve","polygon","Not Reported",300688,0.319,0.478,0.224
+"671","Forest Reserve Name unknown1","SLE",27,"Forest Reserve","polygon","Not Reported",303926,0.405,0.505,0.308
+"672","Forest Reserve Name unknown2","SLE",28,"Forest Reserve","polygon","Not Reported",303927,0.405,0.505,0.308
+"673","Forest Reserve Name unknown3","SLE",29,"Forest Reserve","polygon","Not Reported",303928,0.392,0.477,0.291
+"674","Forest Reserve Name unknown4","SLE",4,"Forest Reserve","polygon","Not Reported",303929,NA,NA,NA
+"675","Forest Reserve Name unknown5","SLE",5,"Forest Reserve","polygon","Not Reported",303930,NA,NA,NA
+"676","Forest Reserve Name unknown6","SLE",6,"Forest Reserve","polygon","Not Reported",303931,NA,NA,NA
+"677","Forest Reserve Name unknown7","SLE",7,"Forest Reserve","polygon","Not Reported",303932,NA,NA,NA
+"678","Forest Reserve Name unknown8","SLE",36,"Forest Reserve","polygon","Not Reported",303933,0.406,0.528,0.308
+"679","Foret d'Essom","SEN",77,"Forest Reserve","polygon","Not Reported",352667,0.498,0.761,0.306
+"680","Foret d'Oukout","SEN",100,"Forest Reserve","polygon","Not Reported",352690,NA,NA,NA
+"681","Foret de Amboura","SEN",16,"Forest Reserve","polygon","Not Reported",352606,0.521,0.734,0.358
+"682","Foret de Bafata","SEN",97,"Forest Reserve","polygon","Not Reported",352687,0.493,0.813,0.318
+"683","Foret de Bakor","SEN",79,"Forest Reserve","polygon","Not Reported",352669,0.615,0.875,0.399
+"684","Foret de Bala- Est","SEN",51,"Forest Reserve","polygon","Not Reported",352641,0.567,0.864,0.301
+"685","Foret de Bala- Ouest","SEN",57,"Forest Reserve","polygon","Not Reported",352647,0.608,0.903,0.315
+"686","Foret de Bandia","SEN",42,"Forest Reserve","polygon","Not Reported",352632,NA,NA,NA
+"687","Foret de Bari","SEN",87,"Forest Reserve","polygon","Not Reported",352677,0.545,0.822,0.378
+"688","Foret de Baria","SEN",71,"Forest Reserve","polygon","Not Reported",352661,0.567,0.812,0.362
+"689","Foret de Bignona","SEN",104,"Forest Reserve","polygon","Not Reported",352694,0.493,0.804,0.339
+"690","Foret de Birkelane","SEN",47,"Forest Reserve","polygon","Not Reported",352637,0.642,0.87,0.315
+"691","Foret de Bissine","SEN",95,"Forest Reserve","polygon","Not Reported",352685,0.467,0.797,0.308
+"692","Foret de Blaz","SEN",96,"Forest Reserve","polygon","Not Reported",352686,0.467,0.797,0.308
+"693","Foret de Botou","SEN",62,"Forest Reserve","polygon","Not Reported",352652,0.608,0.901,0.31
+"694","Foret de Boukitingo","SEN",98,"Forest Reserve","polygon","Not Reported",352688,NA,NA,NA
+"695","Foret de Boulierobe","SEN",30,"Forest Reserve","polygon","Not Reported",352620,0.554,0.723,0.354
+"696","Foret de Dabo","SEN",83,"Forest Reserve","polygon","Not Reported",352673,0.603,0.86,0.385
+"697","Foret de Delbi","SEN",50,"Forest Reserve","polygon","Not Reported",352640,0.61,0.82,0.293
+"698","Foret de Diambour","SEN",68,"Forest Reserve","polygon","Not Reported",352658,0.594,0.899,0.327
+"699","Foret de Diamel","SEN",25,"Forest Reserve","polygon","Not Reported",352615,0.585,0.792,0.336
+"700","Foret de Diantene","SEN",99,"Forest Reserve","polygon","Not Reported",352689,NA,NA,NA
+"701","Foret de Diatouma","SEN",80,"Forest Reserve","polygon","Not Reported",352670,0.587,0.859,0.405
+"702","Foret de Djibelor","SEN",102,"Forest Reserve","polygon","Not Reported",352692,NA,NA,NA
+"703","Foret de Djipakoum","SEN",105,"Forest Reserve","polygon","Not Reported",352695,0.561,0.828,0.391
+"704","Foret de Fathala","SEN",67,"Forest Reserve","polygon","Not Reported",352657,0.536,0.754,0.335
+"705","Foret de Goudiri","SEN",48,"Forest Reserve","polygon","Not Reported",352638,0.578,0.868,0.301
+"706","Foret de Gouloumbou","SEN",109,"Forest Reserve","polygon","Not Reported",352699,0.602,0.887,0.327
+"707","Foret de Kalounayes","SEN",86,"Forest Reserve","polygon","Not Reported",352676,0.53,0.817,0.376
+"708","Foret de Kandiadiou","SEN",76,"Forest Reserve","polygon","Not Reported",352666,0.561,0.828,0.391
+"709","Foret de Kantora","SEN",73,"Forest Reserve","polygon","Not Reported",352663,0.6,0.885,0.326
+"710","Foret de Kassas","SEN",49,"Forest Reserve","polygon","Not Reported",352639,0.642,0.871,0.315
+"711","Foret de Keur Momar Sarr","SEN",20,"Forest Reserve","polygon","Not Reported",352610,0.499,0.641,0.362
+"712","Foret de Koudora","SEN",93,"Forest Reserve","polygon","Not Reported",352683,0.589,0.857,0.381
+"713","Foret de Koulaye","SEN",82,"Forest Reserve","polygon","Not Reported",352672,0.561,0.828,0.391
+"714","Foret de l'Anambe","SEN",78,"Forest Reserve","polygon","Not Reported",352668,0.599,0.858,0.381
+"715","Foret de la Kayanga","SEN",85,"Forest Reserve","polygon","Not Reported",352675,0.6,0.855,0.387
+"716","Foret de Leybar","SEN",22,"Forest Reserve","polygon","Not Reported",352612,NA,NA,NA
+"717","Foret de Mahon","SEN",84,"Forest Reserve","polygon","Not Reported",352674,0.615,0.875,0.399
+"718","Foret de Maka-Diama","SEN",11,"Forest Reserve","polygon","Not Reported",13930,NA,NA,NA
+"719","Foret de Maka Yop-est","SEN",59,"Forest Reserve","polygon","Not Reported",352649,0.626,0.882,0.318
+"720","Foret de Maka Yop-ouest","SEN",58,"Forest Reserve","polygon","Not Reported",352648,0.635,0.882,0.317
+"721","Foret de Malem-Hodar","SEN",56,"Forest Reserve","polygon","Not Reported",352646,0.625,0.87,0.306
+"722","Foret de Malem Niani","SEN",54,"Forest Reserve","polygon","Not Reported",352644,0.619,0.885,0.3
+"723","Foret de Mambi","SEN",70,"Forest Reserve","polygon","Not Reported",352660,0.585,0.837,0.344
+"724","Foret de Mampaye","SEN",92,"Forest Reserve","polygon","Not Reported",352682,0.585,0.835,0.354
+"725","Foret de Mangaroungou","SEN",103,"Forest Reserve","polygon","Not Reported",352693,0.493,0.813,0.318
+"726","Foret de Mpal","SEN",21,"Forest Reserve","polygon","Not Reported",352611,0.505,0.642,0.367
+"727","Foret de Narangs","SEN",45,"Forest Reserve","polygon","Not Reported",352635,NA,NA,NA
+"728","Foret de Ndankou","SEN",63,"Forest Reserve","polygon","Not Reported",352653,0.636,0.882,0.318
+"729","Foret de Ndioum Dieri","SEN",15,"Forest Reserve","polygon","Not Reported",352605,0.542,0.742,0.353
+"730","Foret de Ngayene","SEN",65,"Forest Reserve","polygon","Not Reported",352655,0.602,0.852,0.319
+"731","Foret de Panal","SEN",44,"Forest Reserve","polygon","Not Reported",352634,0.597,0.838,0.291
+"732","Foret de Pane","SEN",69,"Forest Reserve","polygon","Not Reported",352659,0.545,0.766,0.298
+"733","Foret de Pata","SEN",72,"Forest Reserve","polygon","Not Reported",352662,0.612,0.869,0.362
+"734","Foret de Patako","SEN",66,"Forest Reserve","polygon","Not Reported",352656,0.545,0.75,0.299
+"735","Foret de Pate","SEN",28,"Forest Reserve","polygon","Not Reported",352618,0.579,0.842,0.259
+"736","Foret de Pire-Goureye","SEN",36,"Forest Reserve","polygon","Not Reported",352626,0.484,0.651,0.34
+"737","Foret de Saboya","SEN",108,"Forest Reserve","polygon","Not Reported",352698,0.544,0.765,0.298
+"738","Foret de Sadiata","SEN",81,"Forest Reserve","polygon","Not Reported",352671,0.587,0.859,0.405
+"739","Foret de Sagna","SEN",53,"Forest Reserve","polygon","Not Reported",352643,0.627,0.853,0.306
+"740","Foret de Sangako","SEN",106,"Forest Reserve","polygon","Not Reported",352696,NA,NA,NA
+"741","Foret de Sokone","SEN",107,"Forest Reserve","polygon","Not Reported",352697,NA,NA,NA
+"742","Foret de Tamba- Nord","SEN",46,"Forest Reserve","polygon","Not Reported",352636,0.595,0.882,0.292
+"743","Foret de Tamba-sud","SEN",64,"Forest Reserve","polygon","Not Reported",352654,0.623,0.899,0.313
+"744","Foret de Thies","SEN",40,"Forest Reserve","polygon","Not Reported",352630,NA,NA,NA
+"745","Foret de Tilene et Ndiaye","SEN",18,"Forest Reserve","polygon","Not Reported",352608,0.505,0.642,0.367
+"746","Foret de Tobor","SEN",94,"Forest Reserve","polygon","Not Reported",352684,0.467,0.797,0.308
+"747","Foret de Toutoune","SEN",89,"Forest Reserve","polygon","Not Reported",352679,0.588,0.841,0.393
+"748","Foret de Welor","SEN",55,"Forest Reserve","polygon","Not Reported",352645,0.546,0.757,0.297
+"749","Foret de Yassine","SEN",88,"Forest Reserve","polygon","Not Reported",352678,0.543,0.823,0.378
+"750","Foret des Bayot","SEN",101,"Forest Reserve","polygon","Not Reported",352691,NA,NA,NA
+"751","Foret des Narangs","SEN",75,"Forest Reserve","polygon","Not Reported",352665,0.498,0.761,0.306
+"752","Foret des Paniates","SEN",52,"Forest Reserve","polygon","Not Reported",352642,0.6,0.878,0.289
+"753","Foret du Balmadou","SEN",90,"Forest Reserve","polygon","Not Reported",352680,0.509,0.809,0.346
+"754","Foret du Boudie","SEN",91,"Forest Reserve","polygon","Not Reported",352681,0.492,0.814,0.32
+"755","Foret du Guimara","SEN",74,"Forest Reserve","polygon","Not Reported",352664,0.596,0.869,0.356
+"756","Foret du Ouli","SEN",61,"Forest Reserve","polygon","Not Reported",352651,0.623,0.899,0.313
+"757","Foro Foro","CIV",198,"Classified Forest","polygon","Not Reported",300815,0.396,0.626,0.303
+"758","Fosse aux Lions","TGO",27,"National Park","polygon","II",2342,0.333,0.571,0.189
+"759","Fougoumba","GIN",37,"Classified Forest","polygon","Not Reported",29387,0.286,0.394,0.214
+"760","Foula","CIV",171,"Classified Forest","polygon","Not Reported",300779,0.325,0.495,0.184
+"761","Foumbou","CIV",177,"Classified Forest","polygon","Not Reported",300786,0.369,0.601,0.227
+"762","Foya","LBR",1,"National Park","polygon","Not Reported",555512165,0.493,0.592,0.363
+"763","Foye-Madinadian","GIN",20,"Classified Forest","polygon","Not Reported",29359,0.277,0.434,0.197
+"764","Fuchi","NGA",509,"Forest Reserve","polygon","Not Reported",36448,0.402,0.679,0.185
+"765","Fuka","NGA",664,"Forest Reserve","polygon","Not Reported",36610,0.405,0.613,0.2
+"766","Fum Headwaters","GHA",27,"Forest Reserve","polygon","Not Reported",40678,0.376,0.444,0.315
+"767","Fumbesi","GHA",234,"Forest Reserve","polygon","Not Reported",303943,0.339,0.585,0.177
+"768","Fure River","GHA",130,"Forest Reserve","polygon","Not Reported",40838,0.374,0.435,0.309
+"769","Gabas Mari","NGA",339,"Forest Reserve","polygon","Not Reported",36267,0.386,0.609,0.237
+"770","Gabo Escarpment","NGA",822,"Forest Reserve","polygon","Not Reported",36772,0.358,0.58,0.26
+"771","Gabu","NGA",97,"Forest Reserve","polygon","Not Reported",36927,0.442,0.6,0.346
+"772","Gadabedji","NER",3,"Faunal Reserve","polygon","IV",3230,0.475,0.672,0.307
+"773","Gadadri","NGA",290,"Forest Reserve","polygon","Not Reported",36218,0.403,0.751,0.206
+"774","Gadam","NGA",554,"Forest Reserve","polygon","Not Reported",36493,0.281,0.408,0.142
+"775","Gadari","NGA",342,"Forest Reserve","polygon","Not Reported",36270,0.354,0.586,0.208
+"776","Gadau","NGA",471,"Forest Reserve","polygon","Not Reported",36406,0.261,0.385,0.192
+"777","Gagara","NGA",485,"Forest Reserve","polygon","Not Reported",36424,0.23,0.27,0.185
+"778","Gajiram","NGA",303,"Forest Reserve","polygon","Not Reported",36231,0.425,0.706,0.232
+"779","Galadima","NGA",805,"Forest Reserve","polygon","Not Reported",36755,0.356,0.596,0.218
+"780","Galambi","NGA",580,"Forest Reserve","polygon","Not Reported",36521,0.298,0.353,0.155
+"781","Galangashie","TGO",28,"Faunal Reserve","polygon","IV",20975,0.346,0.589,0.182
+"782","Galma","NGA",595,"Forest Reserve","polygon","Not Reported",36536,0.189,0.276,0.145
+"783","Galy","GIN",47,"Classified Forest","polygon","Not Reported",29402,0.28,0.34,0.206
+"784","Gambaga East","GHA",195,"Forest Reserve","polygon","Not Reported",26443,0.346,0.617,0.167
+"785","Gambaga West I","GHA",196,"Forest Reserve","polygon","Not Reported",26444,0.367,0.632,0.169
+"786","Gambare","NGA",891,"Forest Reserve","polygon","Not Reported",342473,0.211,0.278,0.167
+"787","Gambari","NGA",29,"Forest Reserve","polygon","Not Reported",36817,0.415,0.571,0.323
+"788","Gambi","GIN",55,"Classified Forest","polygon","Not Reported",29413,0.283,0.514,0.145
+"789","Game","TGO",10,"Forest Reserve","polygon","Not Reported",37148,0.447,0.592,0.301
+"790","Gangan","GIN",11,"Classified Forest","polygon","Not Reported",29340,0.298,0.369,0.214
+"791","Gangara","NGA",448,"Forest Reserve","polygon","Not Reported",36382,0.254,0.37,0.2
+"792","Gangoro","NGA",768,"Forest Reserve","polygon","Not Reported",36718,0.269,0.506,0.188
+"793","Gangume","NGA",887,"Forest Reserve","polygon","Not Reported",36901,0.245,0.349,0.171
+"794","Garba Shege","NGA",766,"Forest Reserve","polygon","Not Reported",36716,0.384,0.665,0.17
+"795","Gardemna","NGA",526,"Forest Reserve","polygon","Not Reported",36465,0.322,0.546,0.174
+"796","Garere","NGA",281,"Forest Reserve","polygon","Not Reported",36209,0.473,0.744,0.303
+"797","Garko Meri","NGA",546,"Forest Reserve","polygon","Not Reported",36485,0.281,0.408,0.142
+"798","Garko","NGA",544,"Forest Reserve","polygon","Not Reported",36483,0.281,0.408,0.142
+"799","Garu Gingna","NGA",267,"Forest Reserve","polygon","Not Reported",36195,0.313,0.488,0.24
+"800","Garu","NGA",245,"Forest Reserve","polygon","Not Reported",36172,0.475,0.698,0.334
+"801","Garunda","NGA",280,"Forest Reserve","polygon","Not Reported",36208,0.445,0.757,0.265
+"802","Gasartani","NGA",375,"Forest Reserve","polygon","Not Reported",36303,0.304,0.499,0.227
+"803","Gashaka-Gumti","NGA",964,"National Park","polygon","II",7873,0.243,0.288,0.159
+"804","Gasi","NGA",568,"Forest Reserve","polygon","Not Reported",36507,0.342,0.58,0.143
+"805","Gauara","NGA",461,"Forest Reserve","polygon","Not Reported",36395,0.21,0.271,0.164
+"806","Gaya","NGA",469,"Forest Reserve","polygon","Not Reported",36403,0.392,0.583,0.194
+"807","Gayi","NGA",420,"Forest Reserve","polygon","Not Reported",36348,0.43,0.683,0.231
+"808","Gazabure","NGA",302,"Forest Reserve","polygon","Not Reported",36230,0.439,0.755,0.259
+"809","Gbagba","NGA",668,"Forest Reserve","polygon","Not Reported",36614,0.41,0.633,0.183
+"810","Gban","GIN",93,"Classified Forest","polygon","Not Reported",29477,0.377,0.554,0.229
+"811","Gbanala","CIV",155,"Classified Forest","polygon","Not Reported",300749,0.323,0.469,0.178
+"812","Gbedege","NGA",869,"Forest Reserve","polygon","Not Reported",36851,0.359,0.577,0.263
+"813","Gbele","GHA",192,"Game Production Reserve","polygon","VI",5153,0.286,0.507,0.168
+"814","Gbi","LBR",9,"National Park","polygon","Not Reported",555512168,0.387,0.494,0.288
+"815","Gboi Hills","SLE",21,"Forest Reserve","polygon","Not Reported",29990,0.426,0.526,0.356
+"816","Gboko","NGA",65,"Forest Reserve","polygon","Not Reported",36885,0.428,0.637,0.289
+"817","Geltur","NGA",309,"Forest Reserve","polygon","Not Reported",36237,0.336,0.578,0.179
+"818","Gembu","NGA",84,"Forest Reserve","polygon","Not Reported",36912,0.358,0.427,0.191
+"819","Gerkawa Hill","NGA",738,"Forest Reserve","polygon","Not Reported",36686,0.393,0.567,0.182
+"820","Gerki","NGA",695,"Forest Reserve","polygon","Not Reported",36643,0.325,0.532,0.218
+"821","Gerti Kloof","NGA",714,"Forest Reserve","polygon","Not Reported",36662,0.271,0.466,0.199
+"822","Ghira","GHA",228,"Forest Reserve","polygon","Not Reported",303937,0.311,0.505,0.153
+"823","Giah","GHA",212,"Forest Reserve","polygon","Not Reported",26538,0.376,0.655,0.176
+"824","Gianima","GHA",75,"Forest Reserve","polygon","Not Reported",40775,0.452,0.634,0.324
+"825","Gijia","NGA",407,"Forest Reserve","polygon","Not Reported",36335,0.423,0.666,0.224
+"826","Gilli-Gilli","NGA",14,"Game Reserve","polygon","IV",7844,0.371,0.439,0.276
+"827","Gilli-Gilli","NGA",155,"Forest Reserve","polygon","Not Reported",36989,0.371,0.439,0.276
+"828","Gimi River","NGA",721,"Forest Reserve","polygon","Not Reported",36669,0.297,0.455,0.202
+"829","Gindiri","NGA",736,"Forest Reserve","polygon","Not Reported",36684,0.251,0.335,0.213
+"830","Girari","NGA",330,"Forest Reserve","polygon","Not Reported",36258,0.381,0.604,0.242
+"831","Girei","NGA",757,"Forest Reserve","polygon","Not Reported",36705,0.346,0.695,0.151
+"832","Giru","NGA",423,"Forest Reserve","polygon","Not Reported",36351,0.387,0.636,0.16
+"833","Gitata","NGA",704,"Forest Reserve","polygon","Not Reported",36652,0.277,0.485,0.202
+"834","Giwa North","NGA",438,"Forest Reserve","polygon","Not Reported",36370,0.202,0.275,0.152
+"835","Giwa South","NGA",671,"Forest Reserve","polygon","Not Reported",36617,0.274,0.45,0.186
+"836","Go Bodienou","CIV",8,"Classified Forest","polygon","Not Reported",29504,0.494,0.64,0.367
+"837","Goa","GHA",59,"Forest Reserve","polygon","Not Reported",40757,0.475,0.686,0.368
+"838","Gogiya","NGA",343,"Forest Reserve","polygon","Not Reported",36271,0.354,0.586,0.208
+"839","Gola Rainforest National Park","SLE",30,"National Park","polygon","II",555542335,0.423,0.509,0.339
+"840","Gola","LBR",3,"National Park","polygon","Not Reported",9171,0.459,0.554,0.368
+"841","Gombe","NGA",538,"Forest Reserve","polygon","Not Reported",36477,0.281,0.408,0.142
+"842","Gombole","NGA",513,"Forest Reserve","polygon","Not Reported",36452,0.406,0.672,0.185
+"843","Gonse","BFA",19,"Classified Forest","polygon","Not Reported",28537,0.367,0.663,0.175
+"844","Gori Hills","SLE",23,"Forest Reserve","polygon","Not Reported",303922,0.462,0.579,0.357
+"845","Gorke","CIV",15,"Classified Forest","polygon","Not Reported",29516,0.553,0.717,0.407
+"846","Goronyo","NGA",248,"Forest Reserve","polygon","Not Reported",36175,0.445,0.639,0.282
+"847","Gouandougou","BFA",40,"Classified Forest","polygon","Not Reported",28563,0.383,0.621,0.206
+"848","Gouari","CIV",172,"Classified Forest","polygon","Not Reported",300780,0.338,0.531,0.198
+"849","Gouba","GIN",56,"Classified Forest","polygon","Not Reported",29414,0.373,0.544,0.266
+"850","Goudi","CIV",24,"Classified Forest","polygon","Not Reported",29581,0.53,0.731,0.404
+"851","Gougoun","BEN",11,"Classified Forest","polygon","Not Reported",6950,0.358,0.622,0.158
+"852","Gouin","CIV",78,"Classified Forest","polygon","Not Reported",300894,0.47,0.723,0.34
+"853","Goulaleu","CIV",29,"Classified Forest","polygon","Not Reported",29597,0.581,0.747,0.433
+"854","Goulgoul-Kankande","GIN",16,"Classified Forest","polygon","Not Reported",29355,0.295,0.434,0.212
+"855","Gourma","MLI",13,"Partial Elephant Reserve","polygon","IV",2321,0.519,0.715,0.295
+"856","Grand Kru-River Gee","LBR",10,"National Park","polygon","Not Reported",555512169,0.311,0.432,0.221
+"857","Grandes Chutes","GIN",13,"Classified Forest","polygon","Not Reported",29351,0.305,0.363,0.209
+"858","Grebo","LBR",8,"National Park","polygon","Not Reported",9170,0.376,0.487,0.279
+"859","Gubagi","NGA",639,"Forest Reserve","polygon","Not Reported",36585,0.372,0.598,0.205
+"860","Gubaji","NGA",801,"Forest Reserve","polygon","Not Reported",36751,0.36,0.624,0.213
+"861","Gubio","NGA",301,"Forest Reserve","polygon","Not Reported",36229,0.371,0.617,0.212
+"862","Gudi Hill","NGA",494,"Forest Reserve","polygon","Not Reported",36433,0.281,0.389,0.151
+"863","Guduma","NGA",665,"Forest Reserve","polygon","Not Reported",36611,0.405,0.613,0.2
+"864","Gueltas et Oasis de l'Air","NER",8,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",902737,0.289,0.335,0.204
+"865","Gueme Sangan","GIN",17,"Classified Forest","polygon","Not Reported",29356,0.295,0.434,0.212
+"866","Gueroual","GIN",32,"Classified Forest","polygon","Not Reported",29381,0.281,0.368,0.217
+"867","Gueumbeul","SEN",14,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",68154,NA,NA,NA
+"868","Guga","NGA",435,"Forest Reserve","polygon","Not Reported",36367,0.2,0.26,0.155
+"869","Gugunguma","NGA",354,"Forest Reserve","polygon","Not Reported",36282,0.322,0.507,0.219
+"870","Guidan Baure","NGA",257,"Forest Reserve","polygon","Not Reported",36184,0.319,0.47,0.232
+"871","Guirila","GIN",87,"Classified Forest","polygon","Not Reported",29464,0.295,0.425,0.249
+"872","Gujba","NGA",492,"Forest Reserve","polygon","Not Reported",36431,0.29,0.408,0.148
+"873","Gujba","NGA",890,"National Park","polygon","Not Reported",62088,0.29,0.408,0.148
+"874","Guji-Ganna","NGA",307,"Forest Reserve","polygon","Not Reported",36235,0.336,0.578,0.179
+"875","Gulbin Ka","NGA",417,"Forest Reserve","polygon","Not Reported",36345,0.378,0.635,0.181
+"876","Gumsi","NGA",276,"Forest Reserve","polygon","Not Reported",36204,0.384,0.611,0.238
+"877","Gumu","NGA",667,"Forest Reserve","polygon","Not Reported",36613,0.252,0.399,0.189
+"878","Gundulwa","NGA",490,"Forest Reserve","polygon","Not Reported",36429,0.302,0.461,0.166
+"879","Gundumi","NGA",250,"Forest Reserve","polygon","Not Reported",36177,0.415,0.616,0.254
+"880","Gunjur Bolonfenyo","GMB",11,"Community Wildlife Reserve","polygon","Not Reported",555547522,NA,NA,NA
+"881","Gura","NGA",430,"Forest Reserve","polygon","Not Reported",36360,0.206,0.284,0.168
+"882","Guram River","NGA",603,"Forest Reserve","polygon","Not Reported",36545,0.288,0.342,0.154
+"883","Gurin","NGA",755,"Forest Reserve","polygon","Not Reported",36703,0.216,0.394,0.127
+"884","Gurmina","NGA",486,"Forest Reserve","polygon","Not Reported",36425,0.25,0.305,0.183
+"885","Gurusu","NGA",661,"Forest Reserve","polygon","Not Reported",36607,0.316,0.433,0.172
+"886","Gwadabawa","NGA",251,"Forest Reserve","polygon","Not Reported",36178,0.458,0.714,0.282
+"887","Gwagwa","NGA",690,"Forest Reserve","polygon","Not Reported",36638,0.358,0.598,0.218
+"888","Gwaiyo","NGA",313,"Forest Reserve","polygon","Not Reported",36241,0.354,0.599,0.21
+"889","Gwana","NGA",663,"Forest Reserve","polygon","Not Reported",36609,0.405,0.613,0.2
+"890","Gwanara","NGA",630,"Forest Reserve","polygon","Not Reported",36575,0.289,0.432,0.175
+"891","Gwirta","NGA",388,"Forest Reserve","polygon","Not Reported",36316,0.335,0.479,0.24
+"892","Gwiwa Korel","NGA",381,"Forest Reserve","polygon","Not Reported",36309,0.334,0.492,0.245
+"893","Hadejia Plantation","NGA",347,"Forest Reserve","polygon","Not Reported",36275,0.322,0.53,0.21
+"894","Hadin","NGA",350,"Forest Reserve","polygon","Not Reported",36278,0.322,0.53,0.21
+"895","Haho-Baloe","TGO",11,"Forest Reserve","polygon","Not Reported",37149,0.436,0.546,0.34
+"896","Haito","TGO",20,"Forest Reserve","polygon","Not Reported",300858,0.395,0.566,0.302
+"897","Hardaali","NGA",346,"Forest Reserve","polygon","Not Reported",36274,0.304,0.461,0.216
+"898","Haut Bandama","CIV",236,"Fauna and Flora Reserve","polygon","Ia",1293,0.4,0.633,0.288
+"899","Haute-Komba","GIN",46,"Classified Forest","polygon","Not Reported",29401,0.28,0.366,0.163
+"900","Haute Dodo","CIV",37,"Classified Forest","polygon","Not Reported",29636,0.377,0.472,0.276
+"901","Hawe","TGO",58,"Forest Reserve","polygon","Not Reported",300832,0.268,0.382,0.185
+"902","Hein","CIV",11,"Classified Forest","polygon","Not Reported",29508,0.414,0.547,0.318
+"903","Ibadan","NGA",26,"Forest Reserve","polygon","Not Reported",36813,0.415,0.571,0.323
+"904","Ibaji-Ojok","NGA",50,"Forest Reserve","polygon","Not Reported",36862,0.45,0.613,0.37
+"905","Ibi","NGA",225,"Game Reserve","polygon","Not Reported",7852,0.421,0.629,0.207
+"906","Ibi","NGA",777,"Forest Reserve","polygon","Not Reported",36727,0.421,0.629,0.207
+"907","Idanre","NGA",144,"Forest Reserve","polygon","Not Reported",36977,0.399,0.463,0.326
+"908","Idasu","NGA",439,"Forest Reserve","polygon","Not Reported",36371,0.202,0.275,0.152
+"909","Idu","NGA",691,"Forest Reserve","polygon","Not Reported",36639,0.358,0.598,0.218
+"910","Ife","NGA",31,"Forest Reserve","polygon","Not Reported",36819,0.414,0.514,0.343
+"911","Ifon","NGA",10,"Game Reserve","polygon","Not Reported",7463,0.413,0.582,0.334
+"912","Ifon","NGA",207,"Forest Reserve","polygon","Not Reported",300863,0.416,0.592,0.331
+"913","Igangan","NGA",849,"Forest Reserve","polygon","Not Reported",36801,0.411,0.6,0.277
+"914","Iggi River","NGA",470,"Forest Reserve","polygon","Not Reported",36405,0.391,0.611,0.191
+"915","Iguobazuwa","NGA",147,"Forest Reserve","polygon","Not Reported",36980,0.42,0.491,0.348
+"916","Ihugh","NGA",86,"Forest Reserve","polygon","Not Reported",36914,0.429,0.554,0.329
+"917","Ijaiye","NGA",855,"Forest Reserve","polygon","Not Reported",36807,0.417,0.6,0.299
+"918","Ijebu-Ode","NGA",158,"Forest Reserve","polygon","Not Reported",36992,0.382,0.474,0.297
+"919","Ikebiri Creek","NGA",199,"Forest Reserve","polygon","Not Reported",37035,NA,NA,NA
+"920","Ikeji","NGA",37,"Forest Reserve","polygon","Not Reported",36832,0.402,0.495,0.349
+"921","Ikerre","NGA",34,"Forest Reserve","polygon","Not Reported",36828,0.338,0.482,0.273
+"922","Ikom","NGA",22,"Forest Reserve","polygon","Not Reported",36359,0.448,0.54,0.354
+"923","Ikpeye","NGA",648,"Forest Reserve","polygon","Not Reported",36594,0.363,0.61,0.202
+"924","Ikrigon","NGA",95,"Forest Reserve","polygon","Not Reported",36925,0.473,0.596,0.387
+"925","Ikwe","NGA",56,"Forest Reserve","polygon","Not Reported",36875,0.426,0.639,0.291
+"926","Ila Nigeria","NGA",837,"Forest Reserve","polygon","Not Reported",36788,0.33,0.497,0.228
+"927","Ilaro","NGA",156,"Forest Reserve","polygon","Not Reported",36990,0.394,0.531,0.316
+"928","Ile Alcatraz","GIN",100,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67983,NA,NA,NA
+"929","Ile Blanche","GIN",105,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67988,NA,NA,NA
+"930","Iles Ehotile","CIV",233,"National Park","polygon","II",20174,NA,NA,NA
+"931","Iles Tristao","GIN",101,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67984,0.301,0.48,0.241
+"932","Ilesha","NGA",842,"Forest Reserve","polygon","Not Reported",36793,0.316,0.465,0.19
+"933","Illela","NGA",396,"Forest Reserve","polygon","Not Reported",36324,0.318,0.46,0.238
+"934","Illoka'oje","NGA",424,"Forest Reserve","polygon","Not Reported",36352,0.362,0.594,0.177
+"935","Imbibnina","NGA",522,"Forest Reserve","polygon","Not Reported",36461,0.255,0.402,0.137
+"936","Inekar","MLI",8,"Hunting Area","polygon","VI",555556056,0.446,0.637,0.326
+"937","Inyelen","NGA",112,"Forest Reserve","polygon","Not Reported",36944,0.457,0.594,0.385
+"938","Ipeli-Idoani","NGA",43,"Forest Reserve","polygon","Not Reported",36838,0.427,0.603,0.338
+"939","Ipetu","NGA",838,"Forest Reserve","polygon","Not Reported",36789,0.33,0.497,0.228
+"940","Ira","CIV",127,"Classified Forest","polygon","Not Reported",29526,0.36,0.53,0.247
+"941","Irele","NGA",141,"Forest Reserve","polygon","Not Reported",36974,0.391,0.456,0.323
+"942","Irite Amoli","NGA",136,"Forest Reserve","polygon","Not Reported",36968,0.505,0.632,0.417
+"943","Irobo","CIV",9,"Classified Forest","polygon","Not Reported",29505,0.371,0.473,0.167
+"944","Irrua-Unea","NGA",100,"Forest Reserve","polygon","Not Reported",36930,0.442,0.575,0.36
+"945","Irrua Uromi","NGA",101,"Forest Reserve","polygon","Not Reported",36931,0.442,0.575,0.36
+"946","Isa Zurmi","NGA",255,"Forest Reserve","polygon","Not Reported",36182,0.337,0.475,0.235
+"947","Isanlu","NGA",833,"Forest Reserve","polygon","Not Reported",36784,0.33,0.497,0.228
+"948","Ise","NGA",33,"Forest Reserve","polygon","Not Reported",36826,0.434,0.566,0.352
+"949","Iseyin Central","NGA",850,"Forest Reserve","polygon","Not Reported",36802,0.353,0.533,0.236
+"950","Iseyin West","NGA",851,"Forest Reserve","polygon","Not Reported",36803,0.353,0.533,0.236
+"951","Ishan Aiyede","NGA",839,"Forest Reserve","polygon","Not Reported",36790,0.348,0.544,0.249
+"952","Isheagu","NGA",163,"Forest Reserve","polygon","Not Reported",36997,0.494,0.594,0.44
+"953","Ishieki","NGA",93,"Forest Reserve","polygon","Not Reported",36923,0.5,0.608,0.409
+"954","Isiamaigbo","NGA",123,"Forest Reserve","polygon","Not Reported",36955,0.474,0.604,0.403
+"955","Issia","CIV",81,"Classified Forest","polygon","Not Reported",300899,0.473,0.689,0.351
+"956","Ivi-Ada-Obi","NGA",98,"Forest Reserve","polygon","Not Reported",36928,0.435,0.566,0.356
+"957","Iwa River","NGA",635,"Forest Reserve","polygon","Not Reported",36581,0.299,0.542,0.202
+"958","Jabi Rawa","NGA",392,"Forest Reserve","polygon","Not Reported",36320,0.319,0.478,0.224
+"959","Jagali","NGA",567,"Forest Reserve","polygon","Not Reported",36506,0.355,0.598,0.147
+"960","Jaja","NGA",705,"Forest Reserve","polygon","Not Reported",36653,0.277,0.485,0.202
+"961","Jajere","NGA",318,"Forest Reserve","polygon","Not Reported",36246,0.3,0.448,0.181
+"962","Jalingo","NGA",763,"Forest Reserve","polygon","Not Reported",36713,0.398,0.67,0.163
+"963","Jangasiri","NGA",493,"Forest Reserve","polygon","Not Reported",36432,0.278,0.397,0.164
+"964","Jankai","NGA",553,"Forest Reserve","polygon","Not Reported",36492,0.281,0.408,0.142
+"965","Jaori","NGA",505,"Forest Reserve","polygon","Not Reported",36444,0.32,0.514,0.159
+"966","Jarawa Hill","NGA",942,"Forest Reserve","polygon","Not Reported",300737,0.297,0.365,0.176
+"967","Jare","NGA",452,"Forest Reserve","polygon","Not Reported",36386,0.221,0.274,0.167
+"968","Jauro River","NGA",573,"Forest Reserve","polygon","Not Reported",36513,0.301,0.359,0.167
+"969","Jauro Tukur","NGA",543,"Forest Reserve","polygon","Not Reported",36482,0.264,0.484,0.141
+"970","Jawo","NGA",477,"Forest Reserve","polygon","Not Reported",36413,0.295,0.423,0.201
+"971","Jema Asemkrom","GHA",133,"Forest Reserve","polygon","Not Reported",40841,0.374,0.448,0.299
+"972","Jenere","NGA",520,"Forest Reserve","polygon","Not Reported",36459,0.326,0.446,0.166
+"973","Jeni River","GHA",28,"Forest Reserve","polygon","Not Reported",40679,0.492,0.691,0.39
+"974","Jere","NGA",601,"Forest Reserve","polygon","Not Reported",36542,0.294,0.341,0.151
+"975","Jerwa","NGA",487,"Forest Reserve","polygon","Not Reported",36426,0.311,0.499,0.205
+"976","Jimbum","NGA",320,"Forest Reserve","polygon","Not Reported",36248,0.339,0.571,0.209
+"977","Jimira Extension","GHA",172,"Forest Reserve","polygon","Not Reported",303955,0.492,0.691,0.39
+"978","Jimira","GHA",63,"Forest Reserve","polygon","Not Reported",40762,0.469,0.666,0.368
+"979","Jogble","TGO",24,"Forest Reserve","polygon","Not Reported",300913,0.448,0.594,0.348
+"980","Kabacha","NGA",700,"Forest Reserve","polygon","Not Reported",36648,0.274,0.45,0.186
+"981","Kabakaba Hills","GHA",183,"Forest Reserve","polygon","Not Reported",26509,0.4,0.573,0.294
+"982","Kabama","NGA",457,"Forest Reserve","polygon","Not Reported",36391,0.207,0.263,0.159
+"983","Kabela","GIN",66,"Classified Forest","polygon","Not Reported",29428,0.307,0.549,0.176
+"984","Kabo River","GHA",256,"Forest Reserve","polygon","Not Reported",26510,0.349,0.577,0.26
+"985","Kabo","NGA",676,"Forest Reserve","polygon","Not Reported",36624,0.224,0.291,0.181
+"986","Kabobi","NGA",265,"Forest Reserve","polygon","Not Reported",36193,0.369,0.531,0.247
+"987","Kabore-Tambi","BFA",1,"National Park","polygon","II",1049,0.334,0.516,0.169
+"988","Kabou-Montagne","TGO",40,"Forest Reserve","polygon","Not Reported",37151,0.333,0.567,0.21
+"989","Kade Bepo","GHA",83,"Forest Reserve","polygon","Not Reported",40783,0.424,0.635,0.334
+"990","Kadobi","NGA",263,"Forest Reserve","polygon","Not Reported",36190,0.319,0.47,0.232
+"991","Kafa Kurmi","NGA",734,"Forest Reserve","polygon","Not Reported",36682,0.322,0.521,0.219
+"992","Kafanchan","NGA",716,"Forest Reserve","polygon","Not Reported",36664,0.278,0.462,0.199
+"993","Kafarati","NGA",552,"Forest Reserve","polygon","Not Reported",36491,0.281,0.408,0.142
+"994","Kafnikoro","NGA",669,"Forest Reserve","polygon","Not Reported",36615,0.232,0.368,0.164
+"995","Kagorko","NGA",698,"Forest Reserve","polygon","Not Reported",36646,0.274,0.45,0.186
+"996","Kagurna","NGA",619,"Forest Reserve","polygon","Not Reported",36564,0.26,0.483,0.192
+"997","Kaibaki North","NGA",385,"Forest Reserve","polygon","Not Reported",36313,0.335,0.479,0.24
+"998","Kaibaki South","NGA",386,"Forest Reserve","polygon","Not Reported",36314,0.335,0.479,0.24
+"999","Kaikaimako","NGA",247,"Forest Reserve","polygon","Not Reported",36174,0.444,0.638,0.282
+"1000","Kainji Lake","NGA",220,"National Park","polygon","II",819,0.298,0.513,0.188
+"1001","Kajeasi","GHA",101,"Forest Reserve","polygon","Not Reported",40803,0.439,0.641,0.351
+"1002","Kakanda Hills","NGA",814,"Forest Reserve","polygon","Not Reported",36764,0.337,0.555,0.24
+"1003","Kakangi","NGA",436,"Forest Reserve","polygon","Not Reported",36368,0.202,0.275,0.152
+"1004","Kakara","NGA",81,"Forest Reserve","polygon","Not Reported",36909,0.358,0.427,0.191
+"1005","Kakau","NGA",620,"Forest Reserve","polygon","Not Reported",36565,0.26,0.483,0.192
+"1006","Kakiwargi","NGA",885,"Forest Reserve","polygon","Not Reported",36892,0.371,0.6,0.262
+"1007","Kakrima","GIN",43,"Classified Forest","polygon","Not Reported",29397,0.295,0.434,0.212
+"1008","Kakum","GHA",15,"National Park","polygon","II",26460,0.445,0.619,0.376
+"1009","Kala","GIN",35,"Classified Forest","polygon","Not Reported",29385,0.286,0.394,0.214
+"1010","Kalakpa","GHA",181,"Game Production Reserve","polygon","VI",5152,0.463,0.661,0.372
+"1011","Kalalawa","NGA",317,"Forest Reserve","polygon","Not Reported",36245,0.299,0.467,0.171
+"1012","Kalio","BFA",62,"Classified Forest","polygon","Not Reported",313435,0.376,0.684,0.173
+"1013","Kaloum","GIN",5,"Classified Forest","polygon","Not Reported",29330,NA,NA,NA
+"1014","Kalsingi Hills","NGA",549,"Forest Reserve","polygon","Not Reported",36488,0.281,0.408,0.142
+"1015","Kaltungo Hill","NGA",746,"Forest Reserve","polygon","Not Reported",36694,0.262,0.477,0.132
+"1016","Kaltungo","NGA",745,"Forest Reserve","polygon","Not Reported",36693,0.264,0.484,0.141
+"1017","Kalunta","NGA",187,"Forest Reserve","polygon","Not Reported",37023,0.506,0.607,0.437
+"1018","Kalurwa","NGA",283,"Forest Reserve","polygon","Not Reported",36211,0.449,0.746,0.263
+"1019","Kamarimi","NGA",675,"Forest Reserve","polygon","Not Reported",36623,0.358,0.579,0.196
+"1020","Kamatan","NGA",209,"Forest Reserve","polygon","Not Reported",300870,0.338,0.4,0.181
+"1021","Kambari","NGA",234,"Game Reserve","polygon","IV",11596,0.39,0.629,0.166
+"1022","Kambari","NGA",760,"Forest Reserve","polygon","Not Reported",36710,0.391,0.633,0.166
+"1023","Kambia","GIN",25,"Classified Forest","polygon","Not Reported",29372,0.334,0.489,0.219
+"1024","Kambui Hills and Extensions","SLE",26,"Forest Reserve","polygon","Not Reported",303925,0.441,0.542,0.354
+"1025","Kambui South","SLE",13,"Forest Reserve","polygon","Not Reported",29972,0.445,0.542,0.364
+"1026","Kamesso","CIV",197,"Classified Forest","polygon","Not Reported",300814,0.469,0.728,0.303
+"1027","Kampe River","NGA",809,"Forest Reserve","polygon","Not Reported",36759,0.372,0.607,0.262
+"1028","Kamuku","NGA",232,"National Park","polygon","II",7874,0.353,0.566,0.167
+"1029","Kanawa","NGA",566,"Forest Reserve","polygon","Not Reported",36505,0.281,0.408,0.142
+"1030","Kandawa","NGA",364,"Forest Reserve","polygon","Not Reported",36292,0.29,0.451,0.235
+"1031","Kande River","NGA",772,"Forest Reserve","polygon","Not Reported",36722,0.417,0.633,0.24
+"1032","Kandenbelli","GHA",233,"Forest Reserve","polygon","Not Reported",303942,0.408,0.719,0.179
+"1033","Kangari Hills","SLE",31,"Forest Reserve","polygon","VI",5180,0.429,0.535,0.351
+"1034","Kani kani","GHA",241,"Forest Reserve","polygon","Not Reported",303951,0.32,0.548,0.207
+"1035","Kanoma Gabiya","NGA",397,"Forest Reserve","polygon","Not Reported",36325,0.283,0.459,0.181
+"1036","Kapo","BFA",48,"Classified Forest","polygon","Not Reported",28572,0.382,0.632,0.187
+"1037","Kara","TGO",55,"Forest Reserve","polygon","Not Reported",300762,0.323,0.539,0.233
+"1038","Karaduwa","NGA",367,"Forest Reserve","polygon","Not Reported",36295,0.289,0.448,0.24
+"1039","Karaka Plantation","GHA",230,"Forest Reserve","polygon","Not Reported",303939,0.325,0.488,0.143
+"1040","Karanja","GHA",236,"Forest Reserve","polygon","Not Reported",303945,0.339,0.61,0.201
+"1041","Karfe Binji","NGA",240,"Forest Reserve","polygon","Not Reported",36167,0.448,0.69,0.275
+"1042","Kari","BFA",8,"Classified Forest","polygon","Not Reported",28524,0.39,0.716,0.187
+"1043","Kariya","NGA",462,"Forest Reserve","polygon","Not Reported",36396,0.21,0.271,0.164
+"1044","Karlahi","NGA",758,"Forest Reserve","polygon","Not Reported",36706,0.256,0.464,0.141
+"1045","Karmo","NGA",692,"Forest Reserve","polygon","Not Reported",36640,0.358,0.598,0.218
+"1046","Karnowa","NGA",308,"Forest Reserve","polygon","Not Reported",36236,0.336,0.578,0.179
+"1047","Karoka","NGA",810,"Forest Reserve","polygon","Not Reported",36760,0.34,0.594,0.245
+"1048","Karonmajigi","NGA",694,"Forest Reserve","polygon","Not Reported",36642,0.358,0.598,0.218
+"1049","Kasa Kogi","NGA",778,"Forest Reserve","polygon","Not Reported",36728,0.421,0.629,0.207
+"1050","Kasanu","NGA",933,"Forest Reserve","polygon","Not Reported",300720,0.354,0.592,0.174
+"1051","Kasewe","SLE",24,"Forest Reserve","polygon","Not Reported",303923,0.434,0.523,0.354
+"1052","Kashimbila","NGA",18,"Game Reserve","polygon","IV",11597,0.327,0.406,0.292
+"1053","Kassa","CIV",91,"Classified Forest","polygon","Not Reported",300919,0.58,0.732,0.415
+"1054","Katerma","NGA",621,"Forest Reserve","polygon","Not Reported",36566,0.271,0.497,0.186
+"1055","Katika","NGA",329,"Forest Reserve","polygon","Not Reported",36257,0.322,0.507,0.219
+"1056","Katsina-Ala","NGA",71,"Forest Reserve","polygon","Not Reported",36896,0.417,0.645,0.312
+"1057","Katsina","NGA",361,"Forest Reserve","polygon","Not Reported",36289,0.313,0.488,0.24
+"1058","Kaugama Motso","NGA",352,"Forest Reserve","polygon","Not Reported",36280,0.322,0.518,0.216
+"1059","Kavi","CIV",97,"Classified Forest","polygon","Not Reported",300931,0.58,0.732,0.416
+"1060","Kawara","NGA",415,"Forest Reserve","polygon","Not Reported",36343,0.441,0.711,0.235
+"1061","Kaya","NGA",383,"Forest Reserve","polygon","Not Reported",36311,0.336,0.493,0.246
+"1062","Kazura","NGA",334,"Forest Reserve","polygon","Not Reported",36262,0.322,0.53,0.21
+"1063","Keaun Suna","NGA",246,"Forest Reserve","polygon","Not Reported",36173,0.408,0.604,0.292
+"1064","Keffi","NGA",782,"Forest Reserve","polygon","Not Reported",36732,0.34,0.583,0.247
+"1065","Kemini","TGO",41,"Forest Reserve","polygon","Not Reported",37152,0.322,0.532,0.234
+"1066","Keniebaoule","MLI",23,"Total Wildlife Reserve","polygon","IV",2325,0.38,0.782,0.234
+"1067","Kenjimiram","NGA",304,"Forest Reserve","polygon","Not Reported",36232,0.417,0.668,0.224
+"1068","Keran","TGO",25,"National Park","polygon","II",2339,0.34,0.602,0.163
+"1069","Kesewa","NGA",504,"Forest Reserve","polygon","Not Reported",36443,0.315,0.533,0.162
+"1070","Ketou","BEN",26,"Classified Forest","polygon","Not Reported",5157,0.448,0.589,0.278
+"1071","Khabitaye","GIN",7,"Classified Forest","polygon","Not Reported",29333,NA,NA,NA
+"1072","Khadar","SEN",24,"Not Reported","polygon","Not Reported",352614,0.582,0.762,0.336
+"1073","Khogue","SEN",31,"Not Reported","polygon","Not Reported",352621,0.577,0.753,0.313
+"1074","Khogue","SEN",60,"Forest Reserve","polygon","Not Reported",352650,0.626,0.882,0.318
+"1075","Kiang West","GMB",8,"National Park","polygon","Not Reported",2289,0.575,0.821,0.375
+"1076","Kilboa","NGA",277,"Forest Reserve","polygon","Not Reported",36205,0.442,0.669,0.258
+"1077","Kilimi","SLE",1,"National Park","polygon","Not Reported",555555549,0.332,0.46,0.257
+"1078","Kimbirila","CIV",143,"Classified Forest","polygon","Not Reported",29623,0.326,0.491,0.182
+"1079","Kindja","TGO",42,"Forest Reserve","polygon","Not Reported",37153,0.323,0.539,0.233
+"1080","Kinging","NGA",531,"Forest Reserve","polygon","Not Reported",36470,0.214,0.377,0.138
+"1081","Kinkene","CIV",134,"Classified Forest","polygon","Not Reported",29567,0.384,0.643,0.293
+"1082","Kir Hill","NGA",582,"Forest Reserve","polygon","Not Reported",36523,0.19,0.266,0.147
+"1083","Kirfi Hill","NGA",535,"Forest Reserve","polygon","Not Reported",36474,0.249,0.418,0.139
+"1084","Kiri","NGA",962,"Forest Reserve","polygon","Not Reported",300810,0.239,0.322,0.168
+"1085","Kirmin Agyaga","NGA",732,"Forest Reserve","polygon","Not Reported",36680,0.277,0.485,0.202
+"1086","Kirmin Nunkuchu","NGA",731,"Forest Reserve","polygon","Not Reported",36679,0.321,0.528,0.203
+"1087","Klemu Headwaters","GHA",184,"Forest Reserve","polygon","Not Reported",26511,0.399,0.571,0.294
+"1088","Klouamian","CIV",222,"Classified Forest","polygon","Not Reported",300838,0.477,0.682,0.378
+"1089","Kobo","CIV",136,"Classified Forest","polygon","Not Reported",29600,0.401,0.616,0.278
+"1090","Koflande","BFA",4,"Classified Forest","polygon","Not Reported",7516,0.381,0.608,0.208
+"1091","Kogha","CIV",128,"Classified Forest","polygon","Not Reported",29546,0.333,0.574,0.212
+"1092","Kogin Kano","NGA",455,"Forest Reserve","polygon","Not Reported",36389,0.192,0.261,0.153
+"1093","Kogin Zur","NGA",527,"Forest Reserve","polygon","Not Reported",36466,0.322,0.546,0.174
+"1094","Kogo","NGA",445,"Forest Reserve","polygon","Not Reported",36378,0.208,0.322,0.153
+"1095","Kogo","NGA",889,"National Park","polygon","Not Reported",62087,0.208,0.322,0.153
+"1096","Kogum River","NGA",709,"Forest Reserve","polygon","Not Reported",36657,0.276,0.479,0.2
+"1097","Kogyae","GHA",3,"Strict Nature Reserve","polygon","Ia",1543,0.451,0.653,0.348
+"1098","Kokoh","CIV",120,"Classified Forest","polygon","Not Reported",300963,NA,NA,NA
+"1099","Kokomto","NGA",750,"Forest Reserve","polygon","Not Reported",36698,0.331,0.614,0.139
+"1100","Kokotintin Shelterbelt","GHA",29,"Forest Reserve","polygon","Not Reported",40680,0.478,0.648,0.364
+"1101","Komadugu Gana","NGA",319,"Forest Reserve","polygon","Not Reported",36247,0.31,0.494,0.202
+"1102","Komala","NGA",514,"Forest Reserve","polygon","Not Reported",36453,0.288,0.448,0.146
+"1103","Kona","NGA",609,"Forest Reserve","polygon","Not Reported",36553,0.2,0.325,0.137
+"1104","Konduga","NGA",512,"Forest Reserve","polygon","Not Reported",36451,0.408,0.68,0.186
+"1105","Kongossambougou","MLI",16,"Wildlife Reserve","polygon","IV",2324,0.491,0.843,0.248
+"1106","Kongouko","BFA",66,"Classified Forest","polygon","Not Reported",313442,0.364,0.588,0.186
+"1107","Koni","GIN",94,"Classified Forest","polygon","Not Reported",29478,0.334,0.489,0.219
+"1108","Konkoure Fetto","GIN",29,"Classified Forest","polygon","Not Reported",29377,0.334,0.489,0.219
+"1109","Kontagora","NGA",623,"Forest Reserve","polygon","Not Reported",36568,0.344,0.575,0.193
+"1110","Konza Kourou","CIV",158,"Classified Forest","polygon","Not Reported",300754,0.342,0.493,0.182
+"1111","Kora","GIN",42,"Classified Forest","polygon","Not Reported",29396,0.313,0.468,0.189
+"1112","Korama Kurumi","NGA",376,"Forest Reserve","polygon","Not Reported",36304,0.304,0.499,0.227
+"1113","Kouadikro","CIV",208,"Classified Forest","polygon","Not Reported",300826,0.497,0.685,0.351
+"1114","Kouatie","TGO",53,"Forest Reserve","polygon","Not Reported",300735,0.324,0.55,0.203
+"1115","Koularo","TGO",43,"Forest Reserve","polygon","Not Reported",37156,0.323,0.539,0.233
+"1116","Koulbi","BFA",25,"Classified Forest","polygon","Not Reported",28547,0.293,0.518,0.166
+"1117","Koulima","BFA",49,"Classified Forest","polygon","Not Reported",28574,0.378,0.611,0.212
+"1118","Koumban-Kourou","GIN",71,"Classified Forest","polygon","Not Reported",29442,0.368,0.595,0.195
+"1119","Kourani-Oulete- Dienne","GIN",72,"Classified Forest","polygon","Not Reported",29443,0.341,0.526,0.202
+"1120","Kouroufing","MLI",29,"National Park","polygon","II",317195,0.481,0.839,0.246
+"1121","Kourtiagou","BFA",68,"Partial Faunal Reserve","polygon","IV",3226,0.36,0.602,0.153
+"1122","Kpandu Range Dayi Block","GHA",185,"Forest Reserve","polygon","Not Reported",26513,0.43,0.651,0.323
+"1123","Kpandu Range West","GHA",188,"Forest Reserve","polygon","Not Reported",26516,0.43,0.651,0.323
+"1124","Kpashimi","NGA",807,"Forest Reserve","polygon","Not Reported",36757,0.344,0.604,0.241
+"1125","Kpeyafo","NGA",647,"Forest Reserve","polygon","Not Reported",36593,0.356,0.612,0.213
+"1126","Kpime","TGO",12,"Forest Reserve","polygon","Not Reported",37154,0.399,0.571,0.294
+"1127","Kpo Mountains","LBR",2,"National Park","polygon","Not Reported",555512166,0.522,0.641,0.381
+"1128","Kra","TGO",21,"Forest Reserve","polygon","Not Reported",300867,0.395,0.566,0.302
+"1129","Kravassou","CIV",86,"Classified Forest","polygon","Not Reported",300910,0.538,0.727,0.388
+"1130","Krochua","GHA",45,"Forest Reserve","polygon","Not Reported",40734,0.451,0.573,0.392
+"1131","Krokosua Hills FoR","GHA",20,"Forest Reserve","polygon","Not Reported",33145,0.488,0.703,0.374
+"1132","Krowam","GHA",18,"Forest Reserve","polygon","Not Reported",26573,0.452,0.651,0.334
+"1133","Krozalie","CIV",22,"Classified Forest","polygon","Not Reported",29570,0.505,0.726,0.377
+"1134","Kua","BFA",58,"Classified Forest","polygon","Not Reported",313427,0.378,0.611,0.212
+"1135","Kuchigi","NGA",654,"Forest Reserve","polygon","Not Reported",36600,0.343,0.622,0.235
+"1136","Kudu","NGA",644,"Forest Reserve","polygon","Not Reported",36590,0.317,0.589,0.217
+"1137","Kuduge","NGA",643,"Forest Reserve","polygon","Not Reported",36589,0.363,0.61,0.202
+"1138","Kukangiwa","NGA",336,"Forest Reserve","polygon","Not Reported",36264,0.39,0.614,0.24
+"1139","Kukar Jangara","NGA",403,"Forest Reserve","polygon","Not Reported",36331,0.291,0.463,0.232
+"1140","Kukawa","NGA",284,"Forest Reserve","polygon","Not Reported",36212,0.449,0.746,0.263
+"1141","Kukwaba","NGA",693,"Forest Reserve","polygon","Not Reported",36641,0.358,0.598,0.218
+"1142","Kulpawn Headwaters","GHA",202,"Forest Reserve","polygon","Not Reported",26522,0.279,0.487,0.149
+"1143","Kulpawn Tributaries","GHA",223,"Forest Reserve","polygon","Not Reported",35161,0.288,0.513,0.18
+"1144","Kumawu Waters","GHA",19,"Forest Reserve","polygon","Not Reported",26574,0.437,0.647,0.329
+"1145","Kumbo","GHA",197,"Forest Reserve","polygon","Not Reported",26446,0.346,0.598,0.217
+"1146","Kumo","NGA",571,"Forest Reserve","polygon","Not Reported",36511,0.264,0.484,0.141
+"1147","Kuna Hill","NGA",592,"Forest Reserve","polygon","Not Reported",36533,0.252,0.351,0.157
+"1148","Kurba","NGA",893,"Forest Reserve","polygon","Not Reported",342475,0.237,0.387,0.168
+"1149","Kurmayai","NGA",399,"Forest Reserve","polygon","Not Reported",36327,0.319,0.47,0.232
+"1150","Kurmi Adebi","NGA",798,"Forest Reserve","polygon","Not Reported",36748,0.393,0.638,0.245
+"1151","Kurmi Agori","NGA",775,"Forest Reserve","polygon","Not Reported",36725,0.416,0.614,0.218
+"1152","Kurmi Agudu","NGA",791,"Forest Reserve","polygon","Not Reported",36741,0.362,0.607,0.241
+"1153","Kurmi Agyaragu","NGA",792,"Forest Reserve","polygon","Not Reported",36742,0.365,0.615,0.235
+"1154","Kurmi Akanga","NGA",799,"Forest Reserve","polygon","Not Reported",36749,0.393,0.638,0.245
+"1155","Kurmi Akeno","NGA",797,"Forest Reserve","polygon","Not Reported",36747,0.393,0.638,0.245
+"1156","Kurmi Akura","NGA",773,"Forest Reserve","polygon","Not Reported",36723,0.411,0.619,0.231
+"1157","Kurmi Kurayi","NGA",774,"Forest Reserve","polygon","Not Reported",36724,0.415,0.614,0.218
+"1158","Kurmi Maiakuya","NGA",789,"Forest Reserve","polygon","Not Reported",36739,0.362,0.607,0.241
+"1159","Kurmi Maisamari","NGA",795,"Forest Reserve","polygon","Not Reported",36745,0.437,0.635,0.248
+"1160","Kurmi Tagwaye North","NGA",784,"Forest Reserve","polygon","Not Reported",36734,0.346,0.576,0.205
+"1161","Kurmi Tagwaye South","NGA",787,"Forest Reserve","polygon","Not Reported",36737,0.346,0.576,0.205
+"1162","Kurmin Bakin Kogin","NGA",606,"Forest Reserve","polygon","Not Reported",36548,0.198,0.259,0.156
+"1163","Kurmin Danki","NGA",79,"Forest Reserve","polygon","Not Reported",36907,0.303,0.37,0.169
+"1164","Kurmin Kogi","NGA",460,"Forest Reserve","polygon","Not Reported",36394,0.21,0.271,0.164
+"1165","Kurmin Male","NGA",599,"Forest Reserve","polygon","Not Reported",36540,0.173,0.239,0.14
+"1166","Kurra Jekko","NGA",724,"Forest Reserve","polygon","Not Reported",36672,0.297,0.455,0.202
+"1167","Kuru Hills","SLE",12,"Forest Reserve","polygon","Not Reported",10733,0.364,0.548,0.24
+"1168","Kurumi Zano","NGA",815,"Forest Reserve","polygon","Not Reported",36765,0.366,0.603,0.275
+"1169","Kusoru","NGA",702,"Forest Reserve","polygon","Not Reported",36650,0.274,0.45,0.186
+"1170","Kusoziko","NGA",649,"Forest Reserve","polygon","Not Reported",36595,0.31,0.567,0.199
+"1171","Kusur","NGA",299,"Forest Reserve","polygon","Not Reported",36227,0.35,0.588,0.212
+"1172","Kutigi","NGA",646,"Forest Reserve","polygon","Not Reported",36592,0.334,0.61,0.233
+"1173","Kuyambana","NGA",222,"Game Reserve","polygon","Not Reported",5156,0.218,0.353,0.152
+"1174","Kuzosiko","NGA",827,"Forest Reserve","polygon","Not Reported",36777,0.334,0.61,0.233
+"1175","Kwaimbana","NGA",924,"Forest Reserve","polygon","Not Reported",300710,0.212,0.35,0.15
+"1176","Kwakuti","NGA",896,"Forest Reserve","polygon","Not Reported",342480,0.405,0.613,0.2
+"1177","Kwakwa","NGA",641,"Forest Reserve","polygon","Not Reported",36587,0.305,0.554,0.207
+"1178","Kwamisa","GHA",76,"Forest Reserve","polygon","Not Reported",40776,0.436,0.623,0.339
+"1179","Kwankiro","NGA",432,"Forest Reserve","polygon","Not Reported",36364,0.206,0.284,0.168
+"1180","Kwari Kwasa","NGA",422,"Forest Reserve","polygon","Not Reported",36350,0.375,0.605,0.168
+"1181","Kwaya Tera","NGA",563,"Forest Reserve","polygon","Not Reported",36502,0.35,0.638,0.17
+"1182","Kwekaru","GHA",102,"Forest Reserve","polygon","Not Reported",40804,0.439,0.641,0.351
+"1183","Kwogin Kerami","NGA",598,"Forest Reserve","polygon","Not Reported",36539,0.168,0.238,0.139
+"1184","Kwoiba","NGA",294,"Forest Reserve","polygon","Not Reported",36222,0.403,0.751,0.206
+"1185","Kwongoma","NGA",610,"Forest Reserve","polygon","Not Reported",36555,0.373,0.58,0.181
+"1186","Kyabobo","GHA",246,"National Park","polygon","Not Reported",68788,0.337,0.542,0.24
+"1187","Kyarana","NGA",468,"Forest Reserve","polygon","Not Reported",36402,0.222,0.294,0.165
+"1188","L'Alibori Superieur","BEN",14,"Classified Forest","polygon","Not Reported",6953,0.268,0.426,0.131
+"1189","L'Amana","GIN",73,"Classified Forest","polygon","Not Reported",29445,0.384,0.622,0.213
+"1190","La Lama-Sud","BEN",5,"Classified Forest","polygon","Not Reported",33005,0.458,0.575,0.333
+"1191","La Lama Nord","BEN",1,"Classified Forest","polygon","Not Reported",5158,0.449,0.567,0.33
+"1192","La Mare aux hippopotames","BFA",54,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67823,0.366,0.66,0.187
+"1193","La Mare d'Oursi","BFA",53,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67822,0.464,0.68,0.264
+"1194","La mare de Dan Doutchi","NER",9,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",902738,0.527,0.732,0.349
+"1195","La mare de Lassouri","NER",10,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",902739,0.393,0.597,0.257
+"1196","La mare de Tabalak","NER",11,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",902740,0.469,0.666,0.335
+"1197","La Sota","BEN",12,"Classified Forest","polygon","Not Reported",6951,0.343,0.584,0.165
+"1198","Laba","BFA",30,"Classified Forest","polygon","Not Reported",28553,0.375,0.658,0.168
+"1199","Labar","NGA",614,"Forest Reserve","polygon","Not Reported",36559,0.205,0.315,0.143
+"1200","Laboni","GHA",242,"Forest Reserve","polygon","Not Reported",303959,0.382,0.65,0.228
+"1201","Lac Fitri","TCD",9,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",30017,0.461,0.734,0.32
+"1202","Lafia Gongola State","NGA",747,"Forest Reserve","polygon","Not Reported",36695,0.31,0.559,0.161
+"1203","Lafia Plateau State","NGA",790,"Forest Reserve","polygon","Not Reported",36740,0.362,0.607,0.241
+"1204","Lafiagi Oro","NGA",958,"Forest Reserve","polygon","Not Reported",300793,0.35,0.524,0.216
+"1205","Lafiagi","NGA",826,"Forest Reserve","polygon","Not Reported",36776,0.31,0.567,0.199
+"1206","Lagoa de Cufada","GNB",5,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",29806,NA,NA,NA
+"1207","Lagoas de Cufada","GNB",8,"Natural Park","polygon","Not Reported",33048,0.349,0.583,0.244
+"1208","Laigbede","NGA",841,"Forest Reserve","polygon","Not Reported",36792,0.316,0.495,0.215
+"1209","Lainde","NGA",753,"Forest Reserve","polygon","Not Reported",36701,0.213,0.351,0.135
+"1210","Laine","GIN",96,"Classified Forest","polygon","Not Reported",29488,0.472,0.587,0.339
+"1211","Laka","CIV",131,"Classified Forest","polygon","Not Reported",29556,0.452,0.678,0.319
+"1212","Lake Alo","NGA",511,"Forest Reserve","polygon","Not Reported",36450,0.408,0.68,0.186
+"1213","Lake Chad Wetlands in Nigeria","NGA",1,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903113,0.429,0.714,0.252
+"1214","Lake Piso","LBR",4,"National Park","polygon","Not Reported",555542457,0.4,0.516,0.265
+"1215","Lakes of Ounianga","TCD",11,"World Heritage Site","polygon","Not Applicable",555547987,0.319,0.446,0.203
+"1216","Lalay","SLE",3,"Forest Reserve","polygon","Not Reported",29986,NA,NA,NA
+"1217","Lambo","GHA",222,"Forest Reserve","polygon","Not Reported",26564,0.36,0.588,0.233
+"1218","Lame-Burra","NGA",227,"Game Reserve","polygon","IV",7860,0.246,0.302,0.149
+"1219","Lame","NGA",572,"Forest Reserve","polygon","Not Reported",36512,0.269,0.325,0.16
+"1220","Lamto","CIV",240,"National Reserve","polygon","Ia",555547526,0.507,0.715,0.375
+"1221","Lamurde","NGA",748,"Forest Reserve","polygon","Not Reported",36696,0.357,0.622,0.173
+"1222","Langai","NGA",735,"Forest Reserve","polygon","Not Reported",36683,0.3,0.357,0.156
+"1223","Langue de Barbarie","SEN",5,"National Park","polygon","II",869,0.434,0.564,0.327
+"1224","Lanlate","NGA",854,"Forest Reserve","polygon","Not Reported",36806,0.417,0.6,0.299
+"1225","Lantang","NGA",739,"Forest Reserve","polygon","Not Reported",36687,0.393,0.567,0.182
+"1226","Lapale","CIV",157,"Classified Forest","polygon","Not Reported",300753,0.3,0.484,0.181
+"1227","Lefarani","GIN",18,"Classified Forest","polygon","Not Reported",29357,0.368,0.595,0.195
+"1228","Lekki","NGA",20,"Strict Nature Reserve","polygon","Ia",26627,NA,NA,NA
+"1229","Lema","NGA",238,"Forest Reserve","polygon","Not Reported",36165,0.437,0.677,0.262
+"1230","Lembi","NGA",541,"Forest Reserve","polygon","Not Reported",36480,0.251,0.429,0.13
+"1231","Lemsikari","NGA",523,"Forest Reserve","polygon","Not Reported",36462,0.269,0.437,0.155
+"1232","Leraba","CIV",135,"Classified Forest","polygon","Not Reported",29586,0.329,0.607,0.213
+"1233","Libere","NGA",608,"Forest Reserve","polygon","Not Reported",36552,0.21,0.31,0.141
+"1234","Liji Hills","NGA",551,"Forest Reserve","polygon","Not Reported",36490,0.281,0.408,0.142
+"1235","Lili","TGO",13,"Forest Reserve","polygon","Not Reported",37155,0.432,0.583,0.313
+"1236","Limanti","NGA",508,"Forest Reserve","polygon","Not Reported",36447,0.404,0.687,0.199
+"1237","Limoro","NGA",600,"Forest Reserve","polygon","Not Reported",36541,0.294,0.341,0.151
+"1238","Linde Sud","SEN",34,"Not Reported","polygon","Not Reported",352624,0.575,0.76,0.309
+"1239","Little Osse","NGA",40,"Forest Reserve","polygon","Not Reported",36835,0.353,0.495,0.261
+"1240","Lizai","NGA",472,"Forest Reserve","polygon","Not Reported",36407,0.295,0.423,0.201
+"1241","Loffa","GIN",84,"Classified Forest","polygon","Not Reported",29461,0.466,0.592,0.348
+"1242","Log-boyo","CIV",188,"Classified Forest","polygon","Not Reported",300800,0.393,0.664,0.28
+"1243","Logoniegue","BFA",41,"Classified Forest","polygon","Not Reported",28564,0.342,0.585,0.181
+"1244","Logozohe","BEN",21,"Classified Forest","polygon","Not Reported",33007,0.396,0.607,0.256
+"1245","Lokwoja","NGA",525,"Forest Reserve","polygon","Not Reported",36464,0.35,0.638,0.17
+"1246","Loma Mountains","SLE",32,"National Park","polygon","Not Reported",29968,0.362,0.487,0.278
+"1247","Loma Mountains","SLE",35,"No or Non - Hunting Forest Reserve","polygon","II",8517,0.363,0.488,0.278
+"1248","Lopboho","CIV",161,"Classified Forest","polygon","Not Reported",300759,0.33,0.555,0.201
+"1249","Lougbo","CIV",152,"Classified Forest","polygon","Not Reported",300743,0.329,0.607,0.213
+"1250","Lougguere Todji","SEN",23,"Not Reported","polygon","Not Reported",352613,0.579,0.765,0.325
+"1251","Lower Enyong","NGA",182,"Forest Reserve","polygon","Not Reported",37018,0.459,0.545,0.376
+"1252","Lower Imo River","NGA",192,"Forest Reserve","polygon","Not Reported",37028,NA,NA,NA
+"1253","Lower Kaduna-Middle Niger Floodplain","NGA",6,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903108,0.322,0.598,0.234
+"1254","Lower Orashi River","NGA",195,"Forest Reserve","polygon","Not Reported",37031,NA,NA,NA
+"1255","Mabi-Yaya","CIV",10,"Classified Forest","polygon","Not Reported",29506,0.436,0.589,0.336
+"1256","Mada River North","NGA",708,"Forest Reserve","polygon","Not Reported",36656,0.277,0.485,0.202
+"1257","Mada River South","NGA",707,"Forest Reserve","polygon","Not Reported",36655,0.277,0.485,0.202
+"1258","Madagine","NGA",295,"Forest Reserve","polygon","Not Reported",36223,0.404,0.687,0.199
+"1259","Madalla","NGA",688,"Forest Reserve","polygon","Not Reported",36636,0.358,0.598,0.218
+"1260","Madara","NGA",473,"Forest Reserve","polygon","Not Reported",36408,0.295,0.423,0.201
+"1261","Madatai","NGA",264,"Forest Reserve","polygon","Not Reported",36191,0.313,0.487,0.239
+"1262","Madjoari","BFA",73,"Faunal Reserve","polygon","IV",9265,0.35,0.605,0.157
+"1263","Mafa","CIV",211,"Classified Forest","polygon","Not Reported",29552,0.354,0.534,0.267
+"1264","Mafa","NGA",518,"Forest Reserve","polygon","Not Reported",36457,0.404,0.687,0.199
+"1265","Mafuta","NGA",326,"Forest Reserve","polygon","Not Reported",36254,0.319,0.478,0.224
+"1266","Maharai","NGA",728,"Forest Reserve","polygon","Not Reported",36676,0.346,0.576,0.205
+"1267","Mai-Ido","NGA",607,"Forest Reserve","polygon","Not Reported",36551,0.257,0.456,0.207
+"1268","Mai Hula","NGA",769,"Forest Reserve","polygon","Not Reported",36719,0.275,0.423,0.182
+"1269","Mai Samari","NGA",77,"Forest Reserve","polygon","Not Reported",36903,0.298,0.355,0.184
+"1270","Maifari","NGA",332,"Forest Reserve","polygon","Not Reported",36260,0.322,0.53,0.21
+"1271","Maigazari","NGA",358,"Forest Reserve","polygon","Not Reported",36286,0.322,0.507,0.219
+"1272","Maiwado","NGA",356,"Forest Reserve","polygon","Not Reported",36284,0.322,0.507,0.219
+"1273","Maje Abuchi","NGA",687,"Forest Reserve","polygon","Not Reported",36635,0.357,0.595,0.215
+"1274","Maje East","NGA",464,"Forest Reserve","polygon","Not Reported",36398,0.238,0.348,0.183
+"1275","Maje West","NGA",456,"Forest Reserve","polygon","Not Reported",36390,0.207,0.263,0.159
+"1276","Maki","NGA",532,"Forest Reserve","polygon","Not Reported",36471,0.202,0.335,0.131
+"1277","Makona","GIN",82,"Classified Forest","polygon","Not Reported",29459,0.454,0.583,0.363
+"1278","Makurdi Fuel","NGA",877,"Forest Reserve","polygon","Not Reported",36871,0.418,0.638,0.259
+"1279","Maladumba","NGA",481,"Forest Reserve","polygon","Not Reported",36419,0.237,0.387,0.168
+"1280","Malal Hills","SLE",18,"Forest Reserve","polygon","Not Reported",29982,0.377,0.469,0.284
+"1281","Malechana","NGA",495,"Forest Reserve","polygon","Not Reported",36434,0.309,0.471,0.142
+"1282","Mallamji","NGA",411,"Forest Reserve","polygon","Not Reported",36339,0.442,0.702,0.236
+"1283","Mamang River","GHA",103,"Forest Reserve","polygon","Not Reported",40806,0.439,0.641,0.351
+"1284","Mamiri","GHA",131,"Forest Reserve","polygon","Not Reported",40839,0.374,0.435,0.309
+"1285","Mamu River","NGA",133,"Forest Reserve","polygon","Not Reported",36965,0.493,0.623,0.414
+"1286","Manda","TCD",2,"National Park","polygon","II",642,0.323,0.625,0.15
+"1287","Mande Wula","MLI",22,"Wildlife Reserve","polygon","II",555556064,0.358,0.74,0.214
+"1288","Mande Wula","MLI",3,"North Migration Zone","polygon","VI",555556051,0.397,0.791,0.238
+"1289","Mandelia","TCD",12,"Faunal Reserve","polygon","IV",5166,0.355,0.603,0.186
+"1290","Mando Road North","NGA",615,"Forest Reserve","polygon","Not Reported",36560,0.2,0.34,0.145
+"1291","Mando Road South","NGA",616,"Forest Reserve","polygon","Not Reported",36561,0.234,0.42,0.174
+"1292","Mando","CIV",20,"Classified Forest","polygon","Not Reported",29542,0.539,0.728,0.388
+"1293","Mando","NGA",612,"Forest Reserve","polygon","Not Reported",36557,0.316,0.535,0.167
+"1294","Mankrang","GHA",77,"Forest Reserve","polygon","Not Reported",40777,0.436,0.623,0.339
+"1295","Mansoa","GNB",18,"Forest Reserve","polygon","Not Reported",342662,0.403,0.718,0.258
+"1296","Manu","NGA",242,"Forest Reserve","polygon","Not Reported",36169,0.477,0.701,0.329
+"1297","Manzan","CIV",4,"Classified Forest","polygon","Not Reported",29498,0.475,0.682,0.387
+"1298","Manzan","GHA",111,"Forest Reserve","polygon","Not Reported",40816,0.5,0.673,0.375
+"1299","Maradun","NGA",395,"Forest Reserve","polygon","Not Reported",36323,0.331,0.467,0.236
+"1300","Marafa","NGA",679,"Forest Reserve","polygon","Not Reported",36627,0.343,0.622,0.235
+"1301","Marago River","GHA",198,"Forest Reserve","polygon","Not Reported",26447,0.349,0.607,0.174
+"1302","Marahoue","CIV",227,"National Park","polygon","II",722,0.49,0.683,0.344
+"1303","Marahoue","CIV",69,"Classified Forest","polygon","Not Reported",300879,0.534,0.708,0.378
+"1304","Marama Hill","NGA",524,"Forest Reserve","polygon","Not Reported",36463,0.35,0.638,0.17
+"1305","Marbe","NGA",433,"Forest Reserve","polygon","Not Reported",36365,0.218,0.333,0.159
+"1306","Mare aux Hippopotames","BFA",52,"Bird Reserve","polygon","IV",28581,0.366,0.66,0.187
+"1307","Mare d'Oursi Bird Sanctuary","BFA",7,"Sanctuary","polygon","Not Reported",13749,0.464,0.68,0.264
+"1308","Margibi Mangrove","LBR",6,"National Park","polygon","Not Reported",555542456,NA,NA,NA
+"1309","Marguba","NGA",502,"Forest Reserve","polygon","Not Reported",36441,0.305,0.462,0.16
+"1310","Maribara","NGA",389,"Forest Reserve","polygon","Not Reported",36317,0.335,0.479,0.24
+"1311","Maro","BFA",50,"Classified Forest","polygon","Not Reported",28576,0.359,0.61,0.178
+"1312","Maru Bongudu","NGA",444,"Forest Reserve","polygon","Not Reported",36376,0.248,0.4,0.171
+"1313","Massa Me","CIV",98,"Classified Forest","polygon","Not Reported",300932,0.474,0.666,0.363
+"1314","Massif du Ziama","GIN",2,"Classified Forest","polygon","Not Reported",29066,0.495,0.622,0.355
+"1315","Matanfada","NGA",372,"Forest Reserve","polygon","Not Reported",36300,0.29,0.457,0.234
+"1316","Matiemba","CIV",21,"Classified Forest","polygon","Not Reported",29545,0.505,0.706,0.355
+"1317","Matsago","NGA",355,"Forest Reserve","polygon","Not Reported",36283,0.322,0.507,0.219
+"1318","Matsena","NGA",275,"Forest Reserve","polygon","Not Reported",36203,0.386,0.608,0.237
+"1319","Mawarta","NGA",521,"Forest Reserve","polygon","Not Reported",36460,0.392,0.711,0.188
+"1320","Mawashi","NGA",370,"Forest Reserve","polygon","Not Reported",36298,0.29,0.457,0.234
+"1321","Mawbia","GHA",203,"Forest Reserve","polygon","Not Reported",26524,0.312,0.543,0.177
+"1322","Mawulli","NGA",289,"Forest Reserve","polygon","Not Reported",36217,0.399,0.723,0.214
+"1323","Mayo Ndaga","NGA",83,"Forest Reserve","polygon","Not Reported",36911,0.335,0.396,0.176
+"1324","Mazanbiya","NGA",259,"Forest Reserve","polygon","Not Reported",36186,0.319,0.47,0.232
+"1325","Mbaafon","NGA",87,"Forest Reserve","polygon","Not Reported",36915,0.429,0.554,0.329
+"1326","Mbaav 1","NGA",62,"Forest Reserve","polygon","Not Reported",36882,0.434,0.649,0.305
+"1327","Mbaav 2","NGA",63,"Forest Reserve","polygon","Not Reported",36883,0.434,0.649,0.305
+"1328","Mbaava","NGA",68,"Forest Reserve","polygon","Not Reported",36888,0.416,0.625,0.304
+"1329","Mbahura","NGA",89,"Forest Reserve","polygon","Not Reported",36917,0.339,0.442,0.293
+"1330","Mbakoso","NGA",88,"Forest Reserve","polygon","Not Reported",36916,0.339,0.442,0.293
+"1331","Mbakpa","NGA",880,"Forest Reserve","polygon","Not Reported",36874,0.375,0.619,0.271
+"1332","Mbamsjrom","NGA",72,"Forest Reserve","polygon","Not Reported",36897,0.339,0.442,0.293
+"1333","Mbanue","NGA",57,"Forest Reserve","polygon","Not Reported",36876,0.434,0.649,0.305
+"1334","Mbatan","NGA",64,"Forest Reserve","polygon","Not Reported",36884,0.428,0.637,0.289
+"1335","Mbatiav","NGA",883,"Forest Reserve","polygon","Not Reported",36890,0.39,0.612,0.273
+"1336","Mbe Mountains","NGA",204,"Community Forest","polygon","Not Reported",354002,0.448,0.575,0.355
+"1337","Mbegue","SEN",41,"Not Reported","polygon","Not Reported",352631,0.606,0.823,0.294
+"1338","Meko","NGA",235,"Game Reserve","polygon","Not Reported",11599,0.399,0.597,0.27
+"1339","Meko","NGA",848,"Forest Reserve","polygon","Not Reported",36800,0.399,0.597,0.27
+"1340","Mele","NGA",327,"Forest Reserve","polygon","Not Reported",36255,0.322,0.507,0.219
+"1341","Meleri","NGA",292,"Forest Reserve","polygon","Not Reported",36220,0.39,0.759,0.204
+"1342","Meringa North West","NGA",561,"Forest Reserve","polygon","Not Reported",36500,0.324,0.521,0.15
+"1343","Milo","GIN",83,"Classified Forest","polygon","Not Reported",29460,0.313,0.44,0.256
+"1344","Minna","NGA",659,"Forest Reserve","polygon","Not Reported",36605,0.409,0.636,0.179
+"1345","Minta","GHA",142,"Forest Reserve","polygon","Not Reported",40851,0.458,0.629,0.396
+"1346","Mirasa Hills","GHA",157,"Forest Reserve","polygon","Not Reported",40866,0.439,0.641,0.351
+"1347","Mirire","GIN",34,"Classified Forest","polygon","Not Reported",29384,0.28,0.34,0.206
+"1348","Missahoe","TGO",14,"Forest Reserve","polygon","Not Reported",37159,0.399,0.571,0.294
+"1349","Miti Kambadaga","GIN",38,"Classified Forest","polygon","Not Reported",29388,0.313,0.468,0.189
+"1350","Mkar","NGA",70,"Forest Reserve","polygon","Not Reported",36895,0.428,0.637,0.289
+"1351","Mohono","NGA",406,"Forest Reserve","polygon","Not Reported",36334,0.423,0.666,0.224
+"1352","Molai","NGA",510,"Forest Reserve","polygon","Not Reported",36449,0.32,0.514,0.159
+"1353","Mole","GHA",190,"National Park","polygon","II",669,0.309,0.557,0.197
+"1354","Moma","NGA",287,"Forest Reserve","polygon","Not Reported",36215,0.412,0.702,0.223
+"1355","Mombeya","GIN",33,"Classified Forest","polygon","Not Reported",29382,0.28,0.34,0.206
+"1356","Monda","TGO",44,"Forest Reserve","polygon","Not Reported",37160,0.314,0.541,0.205
+"1357","Mongu","NGA",737,"Forest Reserve","polygon","Not Reported",36685,0.251,0.335,0.213
+"1358","Monkin","NGA",765,"Forest Reserve","polygon","Not Reported",36715,0.247,0.502,0.169
+"1359","Monogaga","CIV",40,"Classified Forest","polygon","Not Reported",29640,0.662,0.775,0.531
+"1360","Mont Peko","CIV",228,"National Park","polygon","II",724,0.518,0.701,0.4
+"1361","Mont Sangbe","CIV",235,"National Park","polygon","II",723,0.394,0.571,0.296
+"1362","Monts Kouffe","BEN",17,"Classified Forest","polygon","Not Reported",6956,0.323,0.556,0.225
+"1363","Mopri","CIV",7,"Classified Forest","polygon","Not Reported",29503,0.531,0.727,0.404
+"1364","Mount Nimba","CIV",238,"National Reserve","polygon","Ia",1295,0.575,0.675,0.427
+"1365","Mount Nimba","GIN",3,"Strict Nature Reserve","polygon","Ia",29067,0.554,0.66,0.397
+"1366","Moyenne Marahoue","CIV",207,"Classified Forest","polygon","Not Reported",300824,0.501,0.706,0.33
+"1367","Mozum","NGA",870,"Forest Reserve","polygon","Not Reported",36852,0.388,0.586,0.29
+"1368","Mpameso","GHA",60,"Forest Reserve","polygon","Not Reported",40758,0.467,0.646,0.352
+"1369","Mt Amalo","TGO",54,"Forest Reserve","polygon","Not Reported",300738,0.324,0.55,0.203
+"1370","Mt Ba","CIV",125,"Classified Forest","polygon","Not Reported",29524,0.362,0.543,0.263
+"1371","Mt Balan","GIN",6,"Classified Forest","polygon","Not Reported",29331,NA,NA,NA
+"1372","Mt Balandougou","GIN",15,"Classified Forest","polygon","Not Reported",29353,0.342,0.503,0.253
+"1373","Mt Bolo","CIV",115,"Classified Forest","polygon","Not Reported",300955,0.567,0.718,0.414
+"1374","Mt De","CIV",215,"Classified Forest","polygon","Not Reported",300829,0.513,0.721,0.335
+"1375","Mt Ko","CIV",139,"Classified Forest","polygon","Not Reported",29617,0.405,0.606,0.312
+"1376","Mt Konossou","GIN",91,"Classified Forest","polygon","Not Reported",29470,0.416,0.56,0.332
+"1377","Mt Kouya","GIN",90,"Classified Forest","polygon","Not Reported",29468,0.461,0.57,0.354
+"1378","Mt Loura","GIN",54,"Classified Forest","polygon","Not Reported",29412,0.28,0.49,0.134
+"1379","Mt Manda","CIV",140,"Classified Forest","polygon","Not Reported",29618,0.377,0.542,0.199
+"1380","Mt Sainte-Cavally","CIV",80,"Classified Forest","polygon","Not Reported",300897,0.47,0.723,0.34
+"1381","Mt Sassandra","CIV",52,"Classified Forest","polygon","Not Reported",300853,0.52,0.687,0.383
+"1382","Mt Tetini","GIN",95,"Classified Forest","polygon","Not Reported",29487,0.374,0.481,0.259
+"1383","Mt Tia","CIV",32,"Classified Forest","polygon","Not Reported",29614,0.516,0.693,0.404
+"1384","Mt Yonon","GIN",92,"Classified Forest","polygon","Not Reported",29472,0.516,0.639,0.373
+"1385","Mudu","NGA",293,"Forest Reserve","polygon","Not Reported",36221,0.39,0.759,0.204
+"1386","Mungurum","NGA",338,"Forest Reserve","polygon","Not Reported",36266,0.386,0.609,0.237
+"1387","Muni","NGA",391,"Forest Reserve","polygon","Not Reported",36319,0.319,0.478,0.224
+"1388","Muro","GHA",112,"Forest Reserve","polygon","Not Reported",40817,0.477,0.696,0.369
+"1389","Musa","NGA",680,"Forest Reserve","polygon","Not Reported",36628,0.343,0.622,0.235
+"1390","N'Dama","GIN",53,"Classified Forest","polygon","Not Reported",29410,0.493,0.764,0.302
+"1391","N'Guidou","GIN",57,"Classified Forest","polygon","Not Reported",29415,0.391,0.644,0.239
+"1392","N'zi Superieure","CIV",174,"Classified Forest","polygon","Not Reported",300782,0.352,0.559,0.219
+"1393","N'Zo","CIV",230,"Partial Faunal Reserve","polygon","IV",2293,0.466,0.676,0.339
+"1394","N Zodji","CIV",110,"Classified Forest","polygon","Not Reported",300948,0.37,0.447,0.3
+"1395","Naanabi","NGA",353,"Forest Reserve","polygon","Not Reported",36281,0.322,0.507,0.219
+"1396","Nabardo","NGA",577,"Forest Reserve","polygon","Not Reported",36518,0.301,0.359,0.167
+"1397","Nabere","BFA",59,"Classified Forest","polygon","Not Reported",313428,0.362,0.6,0.177
+"1398","Nafada","NGA",498,"Forest Reserve","polygon","Not Reported",36437,0.32,0.5,0.145
+"1399","Nakabe","BFA",28,"Classified Forest","polygon","Not Reported",28550,0.375,0.665,0.188
+"1400","Nakambe","BFA",65,"Classified Forest","polygon","Not Reported",313441,0.315,0.546,0.16
+"1401","Nami Hill","NGA",682,"Forest Reserve","polygon","Not Reported",36630,0.383,0.647,0.197
+"1402","Namtari","NGA",752,"Forest Reserve","polygon","Not Reported",36700,0.303,0.578,0.138
+"1403","Nandom-Lambussie","GHA",204,"Forest Reserve","polygon","Not Reported",26525,0.325,0.488,0.143
+"1404","Nangbyon","CIV",193,"Classified Forest","polygon","Not Reported",300809,0.397,0.621,0.309
+"1405","Nasarawa Northern Kaduna","NGA",759,"Forest Reserve","polygon","Not Reported",36707,0.21,0.266,0.164
+"1406","Nasarawa","NGA",459,"Forest Reserve","polygon","Not Reported",342477,0.314,0.488,0.24
+"1407","Nasarawa","NGA",459,"Forest Reserve","polygon","Not Reported",36393,0.314,0.488,0.24
+"1408","Nasarawa","NGA",894,"Forest Reserve","polygon","Not Reported",342477,0.217,0.269,0.141
+"1409","Nasarawa","NGA",894,"Forest Reserve","polygon","Not Reported",36393,0.217,0.269,0.141
+"1410","Nasia Tributaries","GHA",199,"Forest Reserve","polygon","Not Reported",26448,0.358,0.635,0.182
+"1411","Natiwah","TGO",45,"Forest Reserve","polygon","Not Reported",37164,0.335,0.567,0.185
+"1412","Navrongo North","GHA",229,"Forest Reserve","polygon","Not Reported",303938,0.408,0.719,0.179
+"1413","Nazinon","BFA",32,"Classified Forest","polygon","Not Reported",28555,0.302,0.465,0.163
+"1414","Ndiael","SEN",10,"Wildlife Reserve","polygon","IV",5178,0.478,0.609,0.348
+"1415","Ndokouassikro","CIV",65,"Classified Forest","polygon","Not Reported",300872,0.526,0.721,0.336
+"1416","Ndumfri","GHA",125,"Forest Reserve","polygon","Not Reported",40831,NA,NA,NA
+"1417","Nema Wula","MLI",2,"South Buffer Zone","polygon","IV",555556050,0.367,0.701,0.22
+"1418","Nema Wula","MLI",21,"Wildlife Reserve","polygon","II",555556063,0.349,0.713,0.209
+"1419","Neung  South","GHA",126,"Forest Reserve","polygon","Not Reported",40832,NA,NA,NA
+"1420","Neung North","GHA",173,"Forest Reserve","polygon","Not Reported",303956,NA,NA,NA
+"1421","Ngala","NGA",291,"Forest Reserve","polygon","Not Reported",36219,0.432,0.726,0.238
+"1422","Ngamzagi","NGA",278,"Forest Reserve","polygon","Not Reported",36206,0.443,0.739,0.255
+"1423","Nganda Nganda","CIV",121,"Classified Forest","polygon","Not Reported",300964,NA,NA,NA
+"1424","Ngel - Nyaki","NGA",78,"Forest Reserve","polygon","Not Reported",36904,0.298,0.355,0.184
+"1425","Ngohingulde","NGA",528,"Forest Reserve","polygon","Not Reported",36467,0.255,0.43,0.136
+"1426","Nguechie","CIV",12,"Classified Forest","polygon","Not Reported",29509,0.37,0.447,0.3
+"1427","Nguroje","NGA",82,"Forest Reserve","polygon","Not Reported",36910,0.358,0.427,0.191
+"1428","Nialama or Nyalama","GIN",98,"Classified Forest","polygon","Not Reported",317286,0.303,0.486,0.207
+"1429","Niangoloko","BFA",42,"Classified Forest","polygon","Not Reported",28565,0.376,0.61,0.213
+"1430","Nibi Hana","CIV",109,"Classified Forest","polygon","Not Reported",300947,0.391,0.51,0.31
+"1431","Niegre","CIV",36,"Classified Forest","polygon","Not Reported",29635,0.467,0.661,0.377
+"1432","Nienendougou","MLI",14,"Wildlife Reserve","polygon","IV",555556059,0.379,0.584,0.2
+"1433","Nienendougou","MLI",7,"Hunting Area","polygon","VI",555556055,0.376,0.565,0.199
+"1434","Nimba West","LBR",11,"National Park","polygon","Not Reported",20175,0.575,0.675,0.427
+"1435","Nimbia","NGA",720,"Forest Reserve","polygon","Not Reported",36668,0.297,0.455,0.202
+"1436","Nimini South","SLE",14,"Forest Reserve","polygon","Not Reported",29973,0.419,0.516,0.341
+"1437","Ningishi Hills","NGA",729,"Forest Reserve","polygon","Not Reported",36677,0.32,0.502,0.204
+"1438","Nini-Suhien","GHA",7,"National Park","polygon","II",5173,0.372,0.437,0.309
+"1439","Ninjam","NGA",715,"Forest Reserve","polygon","Not Reported",36663,0.271,0.464,0.198
+"1440","Niocha","NGA",119,"Forest Reserve","polygon","Not Reported",36951,0.465,0.588,0.398
+"1441","Niokolo-Koba National Park","SEN",115,"World Heritage Site","polygon","Not Applicable",2580,0.576,0.87,0.348
+"1442","Niokolo Koba","SEN",1,"National Park","polygon","II",865,0.576,0.87,0.348
+"1443","Niouma","BFA",34,"Classified Forest","polygon","Not Reported",28557,0.401,0.723,0.216
+"1444","Niouniourou","CIV",38,"Classified Forest","polygon","Not Reported",29637,0.567,0.718,0.414
+"1445","Niumi National Park","GMB",3,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",109037,0.536,0.754,0.335
+"1446","Niumi","GMB",6,"National Park","polygon","II",2290,0.536,0.754,0.335
+"1447","Nizoro","CIV",96,"Classified Forest","polygon","Not Reported",300930,0.512,0.714,0.395
+"1448","Nkachu-Ituku","NGA",122,"Forest Reserve","polygon","Not Reported",36954,0.465,0.588,0.398
+"1449","Nkawanda","GHA",84,"Forest Reserve","polygon","Not Reported",40784,0.424,0.635,0.334
+"1450","Nkisi River","NGA",131,"Forest Reserve","polygon","Not Reported",36963,0.516,0.631,0.452
+"1451","Nkonto Ben","GHA",143,"Forest Reserve","polygon","Not Reported",40852,0.378,0.462,0.316
+"1452","Nkrabia","GHA",30,"Forest Reserve","polygon","Not Reported",40682,0.458,0.629,0.396
+"1453","Nono","GIN",75,"Classified Forest","polygon","Not Reported",29448,0.363,0.605,0.214
+"1454","North Bandai Hills","GHA",166,"Forest Reserve","polygon","Not Reported",40889,0.411,0.644,0.315
+"1455","North Fomangsu","GHA",87,"Forest Reserve","polygon","Not Reported",40787,0.437,0.647,0.329
+"1456","North Tangaza","NGA",239,"Forest Reserve","polygon","Not Reported",36166,0.459,0.687,0.312
+"1457","Northern Scarp East","GHA",85,"Forest Reserve","polygon","Not Reported",40785,0.414,0.647,0.321
+"1458","Northern Scarp West","GHA",86,"Forest Reserve","polygon","Not Reported",40786,0.414,0.647,0.321
+"1459","Noussebou","BFA",9,"Classified Forest","polygon","Not Reported",28525,0.383,0.687,0.177
+"1460","Nsemere","GHA",251,"Forest Reserve","polygon","Not Reported",40872,0.419,0.629,0.311
+"1461","Nsuensa","GHA",104,"Forest Reserve","polygon","Not Reported",40807,0.455,0.634,0.356
+"1462","Nsukwai","NGA",128,"Forest Reserve","polygon","Not Reported",36960,0.457,0.594,0.385
+"1463","Nuale","GHA",205,"Forest Reserve","polygon","Not Reported",26526,0.336,0.574,0.202
+"1464","Nuatja Sud","TGO",22,"Forest Reserve","polygon","Not Reported",300877,0.447,0.592,0.301
+"1465","Nugboji","NGA",812,"Forest Reserve","polygon","Not Reported",36762,0.335,0.596,0.243
+"1466","Numan","NGA",749,"Forest Reserve","polygon","Not Reported",36697,0.331,0.614,0.139
+"1467","Numia","GHA",31,"Forest Reserve","polygon","Not Reported",40683,0.458,0.631,0.394
+"1468","Nun River","NGA",193,"Forest Reserve","polygon","Not Reported",37029,0.423,0.49,0.356
+"1469","Nungu","NGA",712,"Forest Reserve","polygon","Not Reported",36660,0.271,0.466,0.199
+"1470","Nunku","NGA",730,"Forest Reserve","polygon","Not Reported",36678,0.346,0.576,0.205
+"1471","NW Escarpment","NGA",723,"Forest Reserve","polygon","Not Reported",36671,0.297,0.455,0.202
+"1472","Nyamgboue","CIV",132,"Classified Forest","polygon","Not Reported",29560,0.326,0.559,0.204
+"1473","Nyamibe Bepo","GHA",32,"Forest Reserve","polygon","Not Reported",40684,0.436,0.621,0.368
+"1474","Nyellepuo","CIV",181,"Classified Forest","polygon","Not Reported",300790,0.369,0.569,0.243
+"1475","Nzida","CIV",119,"Classified Forest","polygon","Not Reported",300961,NA,NA,NA
+"1476","Oasis du Kawar","NER",12,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",902741,0.317,0.482,0.193
+"1477","Oba Hills","NGA",856,"Forest Reserve","polygon","Not Reported",36808,0.386,0.563,0.293
+"1478","Oban Group","NGA",177,"Forest Reserve","polygon","Not Reported",37013,0.399,0.478,0.296
+"1479","Obaretin","NGA",152,"Forest Reserve","polygon","Not Reported",36986,0.402,0.47,0.325
+"1480","Obeaku","NGA",197,"Forest Reserve","polygon","Not Reported",37033,0.468,0.518,0.374
+"1481","Obi","NGA",794,"Forest Reserve","polygon","Not Reported",36744,0.393,0.638,0.245
+"1482","Obieze-Isu","NGA",179,"Forest Reserve","polygon","Not Reported",37015,0.471,0.563,0.384
+"1483","Obot-Ndom","NGA",184,"Forest Reserve","polygon","Not Reported",37020,0.506,0.607,0.437
+"1484","Obotumfo Hills","GHA",9,"Forest Reserve","polygon","Not Reported",26453,0.596,0.707,0.502
+"1485","Oboyow","GHA",105,"Forest Reserve","polygon","Not Reported",40808,0.474,0.644,0.363
+"1486","Obrachere 1","GHA",175,"Forest Reserve","polygon","Not Reported",303958,0.596,0.707,0.502
+"1487","Obrachere","GHA",174,"Forest Reserve","polygon","Not Reported",303957,0.596,0.707,0.502
+"1488","Occra Hills","SLE",22,"Forest Reserve","polygon","Not Reported",29999,NA,NA,NA
+"1489","Ochi Headwaters Blk I","GHA",46,"Forest Reserve","polygon","Not Reported",40735,0.458,0.629,0.396
+"1490","Oda River","GHA",33,"Forest Reserve","polygon","Not Reported",40685,0.469,0.663,0.383
+"1491","Odinne","CIV",167,"Classified Forest","polygon","Not Reported",300775,0.325,0.495,0.184
+"1492","Odo Ogun","NGA",852,"Forest Reserve","polygon","Not Reported",36804,0.417,0.6,0.299
+"1493","Odoba","NGA",58,"Forest Reserve","polygon","Not Reported",36878,0.417,0.597,0.326
+"1494","Odomi River","GHA",186,"Forest Reserve","polygon","Not Reported",26514,0.369,0.556,0.265
+"1495","Odu","NGA",808,"Forest Reserve","polygon","Not Reported",36758,0.335,0.582,0.239
+"1496","Odugebe","NGA",888,"Forest Reserve","polygon","Not Reported",37038,0.407,0.602,0.275
+"1497","Odun","NGA",835,"Forest Reserve","polygon","Not Reported",36786,0.33,0.497,0.228
+"1498","Offumpo","CIV",92,"Classified Forest","polygon","Not Reported",300921,0.58,0.732,0.416
+"1499","Ofin Shelterbelt Headwaters","GHA",78,"Forest Reserve","polygon","Not Reported",40778,0.504,0.686,0.372
+"1500","Ogbe","NGA",840,"Forest Reserve","polygon","Not Reported",36791,0.348,0.544,0.249
+"1501","Ogbesse","NGA",965,"Forest Reserve","polygon","Not Reported",36827,0.346,0.484,0.254
+"1502","Ogiopa","NGA",118,"Forest Reserve","polygon","Not Reported",36950,0.457,0.594,0.385
+"1503","Oglewu","NGA",60,"Forest Reserve","polygon","Not Reported",36880,0.418,0.627,0.316
+"1504","Ogotun North","NGA",966,"Forest Reserve","polygon","Not Reported",36829,0.339,0.485,0.275
+"1505","Ogotun South","NGA",36,"Forest Reserve","polygon","Not Reported",36831,0.349,0.478,0.292
+"1506","Ogotun West","NGA",35,"Forest Reserve","polygon","Not Reported",36830,0.339,0.485,0.275
+"1507","Ogu Itu","NGA",183,"Forest Reserve","polygon","Not Reported",37019,0.506,0.607,0.437
+"1508","Ogun River","NGA",157,"Forest Reserve","polygon","Not Reported",36991,0.37,0.507,0.304
+"1509","Oguta Lake","NGA",7,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903110,0.518,0.63,0.454
+"1510","Ogwa","NGA",107,"Forest Reserve","polygon","Not Reported",36939,0.457,0.594,0.385
+"1511","Ogwashi-Uku","NGA",129,"Forest Reserve","polygon","Not Reported",36961,0.49,0.589,0.436
+"1512","Ohaji","NGA",165,"Forest Reserve","polygon","Not Reported",36999,0.518,0.63,0.454
+"1513","Ohaodo-Mbanasa","NGA",114,"Forest Reserve","polygon","Not Reported",36946,0.469,0.608,0.386
+"1514","Ohosu","NGA",12,"Game Reserve","polygon","Not Reported",7838,0.405,0.478,0.337
+"1515","Ohosu","NGA",145,"Forest Reserve","polygon","Not Reported",36978,0.405,0.478,0.337
+"1516","Ohumbe","NGA",200,"Forest Reserve","polygon","Not Reported",37036,0.411,0.546,0.324
+"1517","Oinye","NGA",817,"Forest Reserve","polygon","Not Reported",36767,0.34,0.548,0.238
+"1518","Oiseaux de Djoudj","SEN",3,"National Park","polygon","II",867,0.424,0.548,0.335
+"1519","Oji River","NGA",134,"Forest Reserve","polygon","Not Reported",36966,0.505,0.632,0.417
+"1520","Ojofu","NGA",874,"Forest Reserve","polygon","Not Reported",36868,0.368,0.561,0.269
+"1521","Ojogba-Ugun","NGA",105,"Forest Reserve","polygon","Not Reported",36936,0.465,0.571,0.399
+"1522","Okeluse","NGA",150,"Forest Reserve","polygon","Not Reported",36983,0.424,0.52,0.362
+"1523","Okene catchment area","NGA",868,"Forest Reserve","polygon","Not Reported",36850,0.358,0.548,0.28
+"1524","Okene waterworks","NGA",867,"Forest Reserve","polygon","Not Reported",36849,0.358,0.548,0.28
+"1525","Okhuessan","NGA",110,"Forest Reserve","polygon","Not Reported",36942,0.452,0.586,0.381
+"1526","Okomu","NGA",11,"Wildlife Sanctuary","polygon","Not Reported",7465,0.373,0.433,0.292
+"1527","Okomu","NGA",146,"Forest Reserve","polygon","II",36979,0.373,0.433,0.292
+"1528","Okpara","NGA",959,"Forest Reserve","polygon","Not Reported",300796,0.355,0.564,0.242
+"1529","Okpobi","NGA",59,"Forest Reserve","polygon","Not Reported",36879,0.418,0.627,0.316
+"1530","Okura Iyale","NGA",968,"Forest Reserve","polygon","Not Reported",36856,0.368,0.561,0.269
+"1531","Okura River","NGA",51,"Forest Reserve","polygon","Not Reported",36863,0.445,0.639,0.344
+"1532","Okuta","NGA",633,"Forest Reserve","polygon","Not Reported",36578,0.316,0.465,0.19
+"1533","Olague","NGA",160,"Forest Reserve","polygon","Not Reported",36994,NA,NA,NA
+"1534","Old Ogbomosho Water Works","NGA",846,"Forest Reserve","polygon","Not Reported",36798,0.363,0.529,0.237
+"1535","Old Ogbomosho","NGA",844,"Forest Reserve","polygon","Not Reported",36796,0.363,0.529,0.237
+"1536","Old Oyo","NGA",236,"National Park","polygon","II",26625,0.319,0.483,0.191
+"1537","Oldou Debokol","SEN",35,"Not Reported","polygon","Not Reported",352625,0.576,0.777,0.287
+"1538","Olla Hill","NGA",845,"Forest Reserve","polygon","Not Reported",36797,0.363,0.529,0.237
+"1539","Olle","NGA",816,"Forest Reserve","polygon","Not Reported",36766,0.317,0.494,0.215
+"1540","Ologbo","NGA",153,"Forest Reserve","polygon","Not Reported",36987,0.371,0.439,0.276
+"1541","Ologholo-Emu-Urho","NGA",111,"Forest Reserve","polygon","Not Reported",36943,0.431,0.567,0.359
+"1542","Olokemeji","NGA",24,"Forest Reserve","polygon","Not Reported",36811,0.415,0.571,0.323
+"1543","Olomu","NGA",836,"Forest Reserve","polygon","Not Reported",36787,0.33,0.497,0.228
+"1544","Oloyan","NGA",847,"Forest Reserve","polygon","Not Reported",36799,0.33,0.463,0.217
+"1545","Oluwa","NGA",138,"Forest Reserve","polygon","Not Reported",36971,0.365,0.452,0.277
+"1546","Omo","NGA",32,"Forest Reserve","polygon","Not Reported",36820,0.356,0.46,0.278
+"1547","Ongwam Blk I, II and III","GHA",158,"Forest Reserve","polygon","Not Reported",40867,0.504,0.686,0.372
+"1548","Ongwam","GHA",79,"Forest Reserve","polygon","Not Reported",40779,0.499,0.682,0.37
+"1549","Oni","NGA",38,"Forest Reserve","polygon","Not Reported",36833,0.412,0.502,0.348
+"1550","Onishere","NGA",143,"Forest Reserve","polygon","Not Reported",36976,0.399,0.463,0.326
+"1551","Onuem Bepo","GHA",35,"Forest Reserve","polygon","Not Reported",40687,0.478,0.648,0.364
+"1552","Onuem Nyamibe Shelterbelt","GHA",34,"Forest Reserve","polygon","Not Reported",40686,0.456,0.632,0.388
+"1553","Onyimsu","GHA",159,"Forest Reserve","polygon","Not Reported",40868,0.437,0.647,0.329
+"1554","Opandha","NGA",873,"Forest Reserve","polygon","Not Reported",36855,0.369,0.567,0.27
+"1555","Opara","NGA",223,"Game Reserve","polygon","Not Reported",5177,0.356,0.568,0.242
+"1556","Opimbo","GHA",47,"Forest Reserve","polygon","Not Reported",40737,0.596,0.707,0.502
+"1557","Opon mansi","GHA",148,"Forest Reserve","polygon","Not Reported",40857,0.435,0.571,0.367
+"1558","Opro River","GHA",80,"Forest Reserve","polygon","Not Reported",40780,0.436,0.622,0.336
+"1559","Ora-Iuleha-Ozalla","NGA",148,"Forest Reserve","polygon","Not Reported",36981,0.439,0.572,0.36
+"1560","Orle River","NGA",13,"Game Reserve","polygon","IV",7843,0.44,0.574,0.36
+"1561","Orle River","NGA",55,"Forest Reserve","polygon","Not Reported",36867,0.44,0.574,0.36
+"1562","Oroma Anam","NGA",120,"Forest Reserve","polygon","Not Reported",36952,0.465,0.588,0.398
+"1563","Orumbo Boka","CIV",85,"Classified Forest","polygon","Not Reported",300903,0.507,0.715,0.375
+"1564","Osara","NGA",865,"Forest Reserve","polygon","Not Reported",36846,0.369,0.566,0.283
+"1565","Osho","NGA",25,"Forest Reserve","polygon","Not Reported",36812,0.412,0.572,0.319
+"1566","Oshogbo","NGA",859,"Forest Reserve","polygon","Not Reported",36822,0.397,0.544,0.321
+"1567","Oshun","NGA",159,"Forest Reserve","polygon","Not Reported",36993,0.363,0.47,0.292
+"1568","Osi","NGA",834,"Forest Reserve","polygon","Not Reported",36785,0.348,0.544,0.249
+"1569","Osomari","NGA",164,"Forest Reserve","polygon","Not Reported",36998,0.516,0.631,0.452
+"1570","Otamiri River","NGA",169,"Forest Reserve","polygon","Not Reported",37003,0.454,0.515,0.371
+"1571","Otamiri","NGA",170,"Forest Reserve","polygon","Not Reported",37004,0.518,0.63,0.454
+"1572","Otete","NGA",866,"Forest Reserve","polygon","Not Reported",36848,0.358,0.548,0.28
+"1573","Otu","NGA",142,"Forest Reserve","polygon","Not Reported",36975,0.399,0.463,0.326
+"1574","Otuma","NGA",857,"Forest Reserve","polygon","Not Reported",36810,0.422,0.602,0.289
+"1575","Oturkpo","NGA",61,"Forest Reserve","polygon","Not Reported",36881,0.418,0.627,0.316
+"1576","Ouadi-Rime-Ouadi Achim","TCD",7,"Faunal Reserve","polygon","IV",1250,0.504,0.66,0.374
+"1577","Ouari Maro","BEN",16,"Classified Forest","polygon","Not Reported",6955,0.313,0.519,0.218
+"1578","Ouarigue","CIV",153,"Classified Forest","polygon","Not Reported",300747,0.31,0.578,0.197
+"1579","Ouatchidome","TGO",15,"Forest Reserve","polygon","Not Reported",37169,0.436,0.546,0.34
+"1580","Oueme Boukou","BEN",10,"Classified Forest","polygon","Not Reported",5162,0.41,0.608,0.261
+"1581","Oueme Superieur","BEN",15,"Classified Forest","polygon","Not Reported",6954,0.274,0.425,0.166
+"1582","Ouilingore","BFA",20,"Classified Forest","polygon","Not Reported",28540,0.367,0.598,0.166
+"1583","Ouladin","GIN",81,"Classified Forest","polygon","Not Reported",29456,0.416,0.56,0.332
+"1584","Oume Doka","CIV",84,"Classified Forest","polygon","Not Reported",300902,0.503,0.711,0.373
+"1585","Ouoro","BFA",63,"Classified Forest","polygon","Not Reported",313438,0.387,0.713,0.191
+"1586","Outamba","SLE",8,"National Park","polygon","II",7417,0.385,0.574,0.249
+"1587","Owabi","GHA",179,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67965,0.504,0.686,0.372
+"1588","Owabi","GHA",5,"Wildlife Sanctuary","polygon","IV",5154,0.504,0.686,0.372
+"1589","Owan","NGA",149,"Forest Reserve","polygon","Not Reported",36982,0.439,0.572,0.36
+"1590","Owo","NGA",44,"Forest Reserve","polygon","Not Reported",36840,0.425,0.507,0.362
+"1591","Oyinno","NGA",42,"Forest Reserve","polygon","Not Reported",36837,0.434,0.566,0.352
+"1592","Pa","BFA",10,"Classified Forest","polygon","Not Reported",28527,0.358,0.614,0.168
+"1593","Pai River","NGA",226,"Game Reserve","polygon","Not Reported",7856,0.409,0.625,0.177
+"1594","Pai River","NGA",741,"Forest Reserve","polygon","Not Reported",36689,0.41,0.621,0.175
+"1595","Pama","BFA",69,"Partial Faunal Reserve","polygon","IV",3228,0.338,0.567,0.154
+"1596","Pamu Berekum","GHA",61,"Forest Reserve","polygon","Not Reported",40759,0.472,0.64,0.356
+"1597","Pandam and Wase Lakes","NGA",8,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903111,0.42,0.639,0.243
+"1598","Panshanu","NGA",574,"Forest Reserve","polygon","Not Reported",36514,0.29,0.334,0.148
+"1599","Paradji","GIN",19,"Classified Forest","polygon","Not Reported",29358,0.276,0.416,0.191
+"1600","Parc national d'Azagny","CIV",234,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",145528,0.494,0.64,0.367
+"1601","Parc national de la Keran","TGO",51,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",95397,0.34,0.602,0.163
+"1602","Pategi","NGA",831,"Forest Reserve","polygon","Not Reported",36782,0.373,0.609,0.263
+"1603","Pelundo","GNB",13,"Faunal Reserve","polygon","Not Reported",342657,0.467,0.797,0.308
+"1604","Pendjari","BEN",8,"Hunting Zone","polygon","VI",2253,0.32,0.57,0.155
+"1605","Penessoulou","BEN",22,"Classified Forest","polygon","Not Reported",33010,0.313,0.45,0.185
+"1606","Peni","BFA",51,"Classified Forest","polygon","Not Reported",28578,0.404,0.651,0.205
+"1607","Pic de Fon","GIN",88,"Classified Forest","polygon","Not Reported",29465,0.4,0.522,0.278
+"1608","Pic de Tibe","GIN",89,"Classified Forest","polygon","Not Reported",29466,0.291,0.402,0.252
+"1609","Pic Nahouri","BFA",17,"Classified Forest","polygon","Not Reported",28535,0.372,0.582,0.197
+"1610","Pinselli","GIN",30,"Classified Forest","polygon","Not Reported",29378,0.367,0.54,0.263
+"1611","Plaine des Elephants","CIV",72,"Classified Forest","polygon","Not Reported",300882,0.513,0.694,0.373
+"1612","Pogi","GHA",213,"Forest Reserve","polygon","Not Reported",26543,0.376,0.655,0.176
+"1613","Polli","GHA",206,"Forest Reserve","polygon","Not Reported",26527,0.318,0.502,0.163
+"1614","Pompo Headwaters","GHA",36,"Forest Reserve","polygon","Not Reported",40688,0.435,0.628,0.365
+"1615","Port Gautier","CIV",122,"Classified Forest","polygon","Not Reported",300965,NA,NA,NA
+"1616","Pouniokele","CIV",149,"Classified Forest","polygon","Not Reported",300731,0.347,0.516,0.198
+"1617","Pra Anum","GHA",106,"Forest Reserve","polygon","Not Reported",40809,0.439,0.641,0.351
+"1618","Pra Birim","GHA",107,"Forest Reserve","polygon","Not Reported",40810,0.478,0.648,0.364
+"1619","Pra Suhyien Blk II","GHA",48,"Forest Reserve","polygon","Not Reported",40739,0.444,0.636,0.366
+"1620","Prakaw","GHA",160,"Forest Reserve","polygon","Not Reported",40869,0.439,0.641,0.351
+"1621","Previously called Mafou Classified Forest","GIN",61,"National Park","polygon","Not Reported",29421,0.374,0.615,0.208
+"1622","Prison Fuel","NGA",678,"Forest Reserve","polygon","Not Reported",36626,0.343,0.622,0.235
+"1623","Pru Shelterbelt","GHA",254,"Forest Reserve","polygon","Not Reported",40880,0.396,0.619,0.306
+"1624","Pudu Hills","GHA",207,"Forest Reserve","polygon","Not Reported",26528,0.334,0.533,0.161
+"1625","Puissa","NGA",627,"Forest Reserve","polygon","Not Reported",36572,0.319,0.534,0.197
+"1626","Rabadi","NGA",483,"Forest Reserve","polygon","Not Reported",36421,0.237,0.387,0.168
+"1627","Radda","NGA",365,"Forest Reserve","polygon","Not Reported",36293,0.289,0.448,0.24
+"1628","Rade","NGA",382,"Forest Reserve","polygon","Not Reported",36310,0.336,0.493,0.246
+"1629","Radoho","NGA",371,"Forest Reserve","polygon","Not Reported",36299,0.29,0.457,0.234
+"1630","Radung","NGA",602,"Forest Reserve","polygon","Not Reported",36544,0.297,0.365,0.176
+"1631","Radwan","NGA",575,"Forest Reserve","polygon","Not Reported",36515,0.297,0.365,0.176
+"1632","Rafin Bawa","NGA",604,"Forest Reserve","polygon","Not Reported",36546,0.198,0.259,0.156
+"1633","Rafin Doboyi","NGA",662,"Forest Reserve","polygon","Not Reported",36608,0.295,0.423,0.201
+"1634","Rafin Hill","NGA",261,"Forest Reserve","polygon","Not Reported",36188,0.319,0.47,0.232
+"1635","Rafin Iwa","NGA",441,"Forest Reserve","polygon","Not Reported",36373,0.202,0.275,0.152
+"1636","Raganda","NGA",624,"Forest Reserve","polygon","Not Reported",36569,0.33,0.553,0.206
+"1637","Rahama","NGA",718,"Forest Reserve","polygon","Not Reported",36666,0.198,0.259,0.156
+"1638","Rakuma","NGA",405,"Forest Reserve","polygon","Not Reported",36333,0.376,0.547,0.229
+"1639","Ran","NGA",587,"Forest Reserve","polygon","Not Reported",36528,0.19,0.266,0.147
+"1640","Rapide Grah","CIV",39,"Classified Forest","polygon","Not Reported",29638,0.401,0.565,0.28
+"1641","Rasso","CIV",14,"Classified Forest","polygon","Not Reported",29515,0.547,0.717,0.405
+"1642","Red Volta East","GHA",201,"Forest Reserve","polygon","Not Reported",26501,0.355,0.617,0.174
+"1643","Red Volta West","GHA",214,"Forest Reserve","polygon","Not Reported",26544,0.375,0.647,0.175
+"1644","Reserve de faune de Binder-Lere","TCD",10,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",902838,0.392,0.788,0.154
+"1645","Reserve de faune de Togodo","TGO",19,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",95398,0.423,0.58,0.302
+"1646","Reserve Naturelle Nationale de Termit et de Tin Toumma","NER",15,"National Nature Reserve","polygon","IV",17367,0.371,0.527,0.242
+"1647","Ribako","NGA",596,"Forest Reserve","polygon","Not Reported",36537,0.195,0.288,0.133
+"1648","Ribuku","NGA",638,"Forest Reserve","polygon","Not Reported",36584,0.354,0.605,0.216
+"1649","Richa","NGA",727,"Forest Reserve","polygon","Not Reported",36675,0.392,0.59,0.207
+"1650","Rigachikun","NGA",618,"Forest Reserve","polygon","Not Reported",36563,0.205,0.315,0.143
+"1651","Rikau","NGA",613,"Forest Reserve","polygon","Not Reported",36558,0.205,0.315,0.143
+"1652","Rinukunu","NGA",314,"Forest Reserve","polygon","Not Reported",36242,0.378,0.634,0.235
+"1653","Rio Cacheu Mangroves","GNB",6,"Natural Park","polygon","Not Reported",33046,0.467,0.797,0.308
+"1654","Rio Grande de Buba","GNB",1,"Protected Area","polygon","Not Reported",317051,0.349,0.583,0.244
+"1655","Rio Kapatchez","GIN",102,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67985,NA,NA,NA
+"1656","Rio Pongo","GIN",103,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67986,0.317,0.371,0.181
+"1657","River Amboi","NGA",76,"Forest Reserve","polygon","Not Reported",36902,0.273,0.343,0.238
+"1658","River Gambia","GMB",5,"National Park","polygon","II",2288,0.606,0.879,0.33
+"1659","River Moshi","NGA",634,"Forest Reserve","polygon","Not Reported",36579,0.303,0.497,0.194
+"1660","River Nwum","NGA",80,"Forest Reserve","polygon","Not Reported",36908,0.368,0.444,0.19
+"1661","Rogogo","NGA",387,"Forest Reserve","polygon","Not Reported",36315,0.335,0.479,0.24
+"1662","Roni East","NGA",377,"Forest Reserve","polygon","Not Reported",36305,0.29,0.457,0.234
+"1663","Roni North","NGA",380,"Forest Reserve","polygon","Not Reported",36308,0.29,0.457,0.234
+"1664","RukubaAmo","NGA",605,"Forest Reserve","polygon","Not Reported",36547,0.197,0.256,0.155
+"1665","Ruma","NGA",402,"Forest Reserve","polygon","Not Reported",36330,0.271,0.411,0.215
+"1666","Rurum","NGA",465,"Forest Reserve","polygon","Not Reported",36399,0.232,0.32,0.175
+"1667","Sa","BFA",11,"Classified Forest","polygon","Not Reported",28528,0.39,0.716,0.187
+"1668","Sab-Sabre","SEN",38,"Not Reported","polygon","Not Reported",352628,0.616,0.836,0.339
+"1669","Sadji","TGO",46,"Forest Reserve","polygon","Not Reported",37170,0.333,0.57,0.21
+"1670","Sahel","BFA",75,"Partial Faunal Reserve","polygon","IV",3225,0.471,0.691,0.26
+"1671","Sainyinan","NGA",409,"Forest Reserve","polygon","Not Reported",36337,0.423,0.666,0.224
+"1672","Sakwa","NGA",359,"Forest Reserve","polygon","Not Reported",36287,0.318,0.516,0.217
+"1673","Sala","GIN",44,"Classified Forest","polygon","Not Reported",29398,0.31,0.453,0.226
+"1674","Salam","MLI",6,"Hunting Area","polygon","VI",555556054,0.574,0.748,0.413
+"1675","Salifo","GNB",21,"Forest Reserve","polygon","Not Reported",342672,0.347,0.59,0.245
+"1676","Samatiguila","CIV",156,"Classified Forest","polygon","Not Reported",300750,0.342,0.493,0.182
+"1677","Sambalankan","GIN",41,"Classified Forest","polygon","Not Reported",29395,0.295,0.434,0.212
+"1678","Sambisa","NGA",230,"Game Reserve","polygon","Not Reported",7870,0.294,0.468,0.15
+"1679","Sambisa","NGA",516,"National Park","polygon","Not Reported",36455,0.313,0.505,0.155
+"1680","Sambisa","NGA",932,"Forest Reserve","polygon","Not Reported",300719,0.313,0.505,0.155
+"1681","Sambrero","NGA",168,"Forest Reserve","polygon","Not Reported",37002,0.454,0.515,0.371
+"1682","Sananferedougou","CIV",142,"Classified Forest","polygon","Not Reported",29620,0.342,0.493,0.182
+"1683","Sandami","NGA",384,"Forest Reserve","polygon","Not Reported",36312,0.333,0.478,0.241
+"1684","Sanga River","NGA",710,"Forest Reserve","polygon","Not Reported",36658,0.282,0.459,0.199
+"1685","Sangiwa","NGA",413,"Forest Reserve","polygon","Not Reported",36341,0.427,0.697,0.246
+"1686","Sangoue","CIV",34,"Classified Forest","polygon","Not Reported",29632,0.49,0.707,0.373
+"1687","Sankan Biriwa Tingi Hills","SLE",11,"No or Non - Hunting Forest Reserve","polygon","II",10732,0.39,0.553,0.296
+"1688","Sapawsu","GHA",248,"Forest Reserve","polygon","Not Reported",26450,0.389,0.579,0.317
+"1689","Sapo","LBR",12,"National Park","polygon","Not Reported",7409,0.319,0.424,0.222
+"1690","Sapoba","NGA",21,"Forest Reserve","polygon","Not Reported",33149,0.475,0.558,0.402
+"1691","Sawsaw","GHA",252,"Forest Reserve","polygon","Not Reported",40873,0.411,0.622,0.307
+"1692","Scio","CIV",28,"Classified Forest","polygon","Not Reported",29596,0.51,0.714,0.378
+"1693","Sebore","NGA",754,"Forest Reserve","polygon","Not Reported",36702,0.256,0.464,0.141
+"1694","Seguela","CIV",213,"Classified Forest","polygon","Not Reported",29629,0.525,0.728,0.352
+"1695","Seguie","CIV",17,"Classified Forest","polygon","Not Reported",29530,0.538,0.707,0.408
+"1696","Sekondi Waterworks Blocks II and III","GHA",14,"Forest Reserve","polygon","Not Reported",26458,NA,NA,NA
+"1697","Selly-Koro","GIN",79,"Classified Forest","polygon","Not Reported",29454,0.416,0.56,0.332
+"1698","Semien Flansobly","CIV",210,"Classified Forest","polygon","Not Reported",29527,0.477,0.682,0.378
+"1699","Senkwehn","LBR",7,"National Park","polygon","Not Reported",36026,0.292,0.402,0.206
+"1700","Sephe","GHA",237,"Forest Reserve","polygon","Not Reported",303947,0.3,0.552,0.193
+"1701","Sere","GIN",21,"Classified Forest","polygon","Not Reported",29366,0.334,0.489,0.219
+"1702","Seri","NGA",206,"Forest Reserve","polygon","Not Reported",300841,0.278,0.326,0.177
+"1703","Serima","GIN",45,"Classified Forest","polygon","Not Reported",29399,0.31,0.453,0.226
+"1704","Shaba","NGA",677,"Forest Reserve","polygon","Not Reported",36625,0.358,0.579,0.196
+"1705","Shai Hills","GHA",180,"Game Production Reserve","polygon","VI",5151,0.467,0.615,0.396
+"1706","Shakwadina","NGA",655,"Forest Reserve","polygon","Not Reported",36601,0.241,0.395,0.173
+"1707","Shamyogti","NGA",879,"Forest Reserve","polygon","Not Reported",36873,0.418,0.626,0.261
+"1708","Shangey Tiev","NGA",67,"Forest Reserve","polygon","Not Reported",36887,0.434,0.649,0.305
+"1709","Share","NGA",825,"Forest Reserve","polygon","Not Reported",36775,0.354,0.542,0.227
+"1710","Shasha","NGA",208,"Forest Reserve","polygon","Not Reported",300868,0.378,0.459,0.312
+"1711","Shebangel Hills","NGA",550,"Forest Reserve","polygon","Not Reported",36489,0.281,0.408,0.142
+"1712","Shegali","NGA",321,"Forest Reserve","polygon","Not Reported",36249,0.312,0.495,0.188
+"1713","Shekato","NGA",345,"Forest Reserve","polygon","Not Reported",36273,0.313,0.476,0.218
+"1714","Sherigia","NGA",733,"Forest Reserve","polygon","Not Reported",36681,0.346,0.576,0.205
+"1715","Sheya","NGA",348,"Forest Reserve","polygon","Not Reported",36276,0.322,0.53,0.21
+"1716","Shimfida","NGA",404,"Forest Reserve","polygon","Not Reported",36332,0.319,0.47,0.232
+"1717","Siankadougou","MLI",20,"Partial Wildlife Reserve","polygon","IV",555556062,0.411,0.78,0.217
+"1718","Sierra-Fore","GIN",9,"Classified Forest","polygon","Not Reported",29337,0.294,0.37,0.215
+"1719","Silue","CIV",129,"Classified Forest","polygon","Not Reported",29547,0.363,0.589,0.232
+"1720","Sincery-Ourssa","GIN",65,"Classified Forest","polygon","Not Reported",29426,0.292,0.46,0.206
+"1721","Sine-Saloum","SEN",43,"Not Reported","polygon","Not Reported",352633,0.599,0.826,0.291
+"1722","Singamba","SLE",20,"Forest Reserve","polygon","Not Reported",29985,0.434,0.523,0.354
+"1723","Singou","BFA",70,"Faunal Reserve","polygon","IV",3229,0.348,0.593,0.154
+"1724","Siniaka-Minia","TCD",8,"Faunal Reserve","polygon","IV",5165,0.359,0.618,0.191
+"1725","Sinsableswani","GHA",239,"Forest Reserve","polygon","Not Reported",303949,0.374,0.631,0.204
+"1726","Siou","TGO",47,"Forest Reserve","polygon","Not Reported",37172,0.324,0.55,0.203
+"1727","Siriabe","TGO",48,"Forest Reserve","polygon","Not Reported",37173,0.273,0.441,0.175
+"1728","Sirka","TGO",56,"Forest Reserve","polygon","Not Reported",300767,0.323,0.539,0.233
+"1729","Sissili Central","GHA",215,"Forest Reserve","polygon","Not Reported",26546,0.332,0.535,0.161
+"1730","Sissili North","GHA",216,"Forest Reserve","polygon","Not Reported",26547,0.334,0.533,0.161
+"1731","Sissili","BFA",33,"Classified Forest","polygon","Not Reported",28556,0.321,0.5,0.16
+"1732","Site Ramsar du Complexe W","BFA",74,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",67824,0.367,0.635,0.161
+"1733","Sitenga","BFA",21,"Classified Forest","polygon","Not Reported",28541,0.345,0.596,0.17
+"1734","Six Forage","SEN",19,"Not Reported","polygon","Not Reported",352609,0.539,0.731,0.36
+"1735","Sobi","NGA",830,"Forest Reserve","polygon","Not Reported",36780,0.357,0.531,0.221
+"1736","Sobory","GIN",69,"Classified Forest","polygon","Not Reported",29437,0.253,0.389,0.199
+"1737","Soge","NGA",806,"Forest Reserve","polygon","Not Reported",36756,0.34,0.594,0.245
+"1738","Sogobe","SEN",17,"Not Reported","polygon","Not Reported",352607,0.52,0.703,0.369
+"1739","Songan-Tamin","CIV",2,"Classified Forest","polygon","Not Reported",29496,0.436,0.571,0.342
+"1740","Sonkpa","NGA",884,"Forest Reserve","polygon","Not Reported",36891,0.405,0.62,0.217
+"1741","Sorobouly","BFA",12,"Classified Forest","polygon","Not Reported",28529,0.369,0.671,0.162
+"1742","Sotouboa","TGO",49,"Forest Reserve","polygon","Not Reported",37176,0.312,0.435,0.18
+"1743","Souarela","GIN",62,"Classified Forest","polygon","Not Reported",29423,0.293,0.437,0.216
+"1744","Soukourou","CIV",148,"Classified Forest","polygon","Not Reported",300727,0.337,0.493,0.2
+"1745","Soungounau","CIV",41,"Classified Forest","polygon","Not Reported",300842,0.44,0.678,0.31
+"1746","Source de Mouhoun","BFA",43,"Classified Forest","polygon","Not Reported",28566,0.39,0.716,0.187
+"1747","Sources de Kindia","GIN",12,"Classified Forest","polygon","Not Reported",29349,0.305,0.363,0.209
+"1748","Sources de la Volta Noire","BFA",57,"Classified Forest","polygon","Not Reported",313425,0.388,0.622,0.212
+"1749","Sousan","MLI",18,"Total Wildlife Reserve","polygon","IV",3213,0.396,0.804,0.211
+"1750","South Fomangsu","GHA",161,"Forest Reserve","polygon","Not Reported",40870,0.431,0.64,0.327
+"1751","South Ibie","NGA",54,"Forest Reserve","polygon","Not Reported",36866,0.404,0.572,0.321
+"1752","Southern Scarp","GHA",88,"Forest Reserve","polygon","Not Reported",40788,0.388,0.589,0.302
+"1753","Souti-Yanfu","GIN",99,"Classified Forest","polygon","Not Reported",317287,0.336,0.494,0.248
+"1754","Soyah","GIN",28,"Classified Forest","polygon","Not Reported",29376,0.333,0.489,0.221
+"1755","Stubbs Creek","NGA",17,"Game Reserve","polygon","Not Reported",7851,NA,NA,NA
+"1756","Stubbs Creek","NGA",191,"Forest Reserve","polygon","Not Reported",37027,NA,NA,NA
+"1757","Subin Shelterbelt","GHA",37,"Forest Reserve","polygon","Not Reported",40689,0.47,0.666,0.386
+"1758","Subin","GHA",62,"Forest Reserve","polygon","Not Reported",40760,0.483,0.684,0.376
+"1759","Subri River","GHA",177,"Forest Reserve","polygon","Not Reported",303961,0.418,0.583,0.355
+"1760","Subuma","GHA",113,"Forest Reserve","polygon","Not Reported",40818,0.453,0.607,0.372
+"1761","Sui River","GHA",114,"Forest Reserve","polygon","Not Reported",40820,0.425,0.572,0.364
+"1762","Suitoro","CIV",133,"Classified Forest","polygon","Not Reported",29566,0.386,0.653,0.281
+"1763","Sukusuki","GHA",115,"Forest Reserve","polygon","Not Reported",40821,0.475,0.682,0.387
+"1764","Sumbundo","GNB",16,"Forest Reserve","polygon","Not Reported",342660,0.591,0.857,0.386
+"1765","Sumu","NGA",588,"Forest Reserve","polygon","Not Reported",36529,0.248,0.296,0.148
+"1766","Suntai","NGA",886,"Forest Reserve","polygon","Not Reported",36893,0.344,0.586,0.247
+"1767","Supong","GHA",49,"Forest Reserve","polygon","Not Reported",40740,0.471,0.608,0.399
+"1768","Supuma Shelterbelt","GHA",38,"Forest Reserve","polygon","Not Reported",40690,0.458,0.629,0.396
+"1769","Surami","NGA",241,"Forest Reserve","polygon","Not Reported",36168,0.449,0.711,0.263
+"1770","Swamp","NGA",821,"Forest Reserve","polygon","Not Reported",36771,0.358,0.577,0.263
+"1771","Taabo","CIV",89,"Classified Forest","polygon","Not Reported",300914,0.504,0.719,0.375
+"1772","Tabe","SLE",25,"Forest Reserve","polygon","Not Reported",303924,0.434,0.523,0.354
+"1773","Tadres","NER",7,"Faunal Reserve","polygon","Not Reported",342470,0.46,0.653,0.323
+"1774","Tafsirla","GIN",70,"Classified Forest","polygon","Not Reported",29438,0.372,0.607,0.204
+"1775","Tai National Park","CIV",226,"World Heritage Site","polygon","Not Applicable",5003,0.42,0.578,0.308
+"1776","Tai","CIV",231,"National Park","polygon","II",721,0.417,0.573,0.306
+"1777","Tain Tributaries II","GHA",253,"Forest Reserve","polygon","Not Reported",40875,0.444,0.64,0.324
+"1778","Tain Tributaries","GHA",162,"Forest Reserve","polygon","Not Reported",40874,0.468,0.643,0.35
+"1779","Takum","NGA",73,"Forest Reserve","polygon","Not Reported",36898,0.337,0.451,0.249
+"1780","Tala Hill","NGA",583,"Forest Reserve","polygon","Not Reported",36524,0.19,0.266,0.147
+"1781","Talikourou","MLI",15,"Total Wildlife Reserve","polygon","IV",555556060,0.383,0.797,0.21
+"1782","Tama","SLE",10,"Forest Reserve","polygon","Not Reported",8516,0.401,0.506,0.324
+"1783","Tamou","NER",2,"Faunal Reserve","polygon","IV",2331,0.387,0.659,0.182
+"1784","Tanbi Wetland Complex","GMB",2,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903024,0.536,0.754,0.335
+"1785","Tanbi","GMB",12,"National Park","polygon","Not Reported",555547524,0.536,0.754,0.335
+"1786","Tandama","NGA",454,"Forest Reserve","polygon","Not Reported",36388,0.211,0.264,0.163
+"1787","Tangama","GIN",77,"Classified Forest","polygon","Not Reported",29451,0.286,0.394,0.214
+"1788","Tanja","GHA",257,"Forest Reserve","polygon","Not Reported",303946,0.339,0.61,0.201
+"1789","Tanji-Karenti","GMB",10,"Bird Reserve","polygon","Not Applicable",62085,NA,NA,NA
+"1790","Tankesse","CIV",44,"Classified Forest","polygon","Not Reported",300845,0.517,0.667,0.362
+"1791","Tano Anwia","GHA",134,"Forest Reserve","polygon","Not Reported",40842,0.449,0.597,0.369
+"1792","Tano Ehuro","GHA",116,"Forest Reserve","polygon","Not Reported",40822,0.434,0.57,0.359
+"1793","Tano Nimri or Tano Nimiri","GHA",135,"Forest Reserve","polygon","Not Reported",40843,0.375,0.44,0.308
+"1794","Tano Ofin Extension","GHA",178,"Forest Reserve","polygon","Not Reported",303962,0.453,0.656,0.362
+"1795","Tano Ofin","GHA",64,"Forest Reserve","polygon","Not Reported",40764,0.454,0.658,0.361
+"1796","Tano Suhyien","GHA",117,"Forest Reserve","polygon","Not Reported",40823,0.425,0.63,0.338
+"1797","Tano Suraw Extension","GHA",118,"Forest Reserve","polygon","Not Reported",40824,0.425,0.63,0.338
+"1798","Tano Suraw","GHA",119,"Forest Reserve","polygon","Not Reported",40825,0.425,0.63,0.338
+"1799","Tanoe","CIV",108,"Classified Forest","polygon","Not Reported",300946,0.374,0.448,0.299
+"1800","Tapania","GHA",208,"Forest Reserve","polygon","Not Reported",26530,0.318,0.502,0.163
+"1801","Tara","NGA",253,"Forest Reserve","polygon","Not Reported",36180,0.355,0.501,0.255
+"1802","Tarana","NGA",328,"Forest Reserve","polygon","Not Reported",36256,0.322,0.507,0.219
+"1803","Tatu","NGA",578,"Forest Reserve","polygon","Not Reported",36519,0.301,0.359,0.167
+"1804","Taylor Creek","NGA",167,"Forest Reserve","polygon","Not Reported",37001,0.441,0.51,0.374
+"1805","Taylor Creek","NGA",203,"Game Reserve","polygon","Not Reported",39873,0.441,0.51,0.374
+"1806","Tchaourou","BEN",23,"Classified Forest","polygon","Not Reported",33018,0.317,0.545,0.228
+"1807","Tchatchou Gokana","BEN",24,"Classified Forest","polygon","Not Reported",33019,0.317,0.545,0.228
+"1808","Tchilla-Monota","TGO",16,"Forest Reserve","polygon","Not Reported",37179,0.442,0.59,0.265
+"1809","Tchorogo","TGO",50,"Forest Reserve","polygon","Not Reported",37180,0.304,0.434,0.171
+"1810","Tene","CIV",33,"Classified Forest","polygon","Not Reported",29631,0.501,0.708,0.373
+"1811","Teonle","CIV",31,"Classified Forest","polygon","Not Reported",29613,0.517,0.71,0.38
+"1812","Tere","BFA",22,"Classified Forest","polygon","Not Reported",28543,0.379,0.683,0.195
+"1813","Teshi","NGA",631,"Forest Reserve","polygon","Not Reported",36576,0.285,0.409,0.167
+"1814","Tete","CIV",66,"Classified Forest","polygon","Not Reported",300874,0.526,0.721,0.336
+"1815","Tetetou-Nord","TGO",17,"Forest Reserve","polygon","Not Reported",37181,0.423,0.577,0.276
+"1816","Tetetou-Sud","TGO",18,"Forest Reserve","polygon","Not Reported",37182,0.423,0.58,0.302
+"1817","Tialakoun","GIN",76,"Classified Forest","polygon","Not Reported",29450,0.28,0.34,0.206
+"1818","Tiapleu","CIV",212,"Classified Forest","polygon","Not Reported",29572,0.507,0.646,0.353
+"1819","Tidermene Alata","MLI",5,"Hunting Area","polygon","VI",555556053,0.418,0.608,0.317
+"1820","Tieme","CIV",145,"Classified Forest","polygon","Not Reported",29628,0.315,0.486,0.18
+"1821","Tienny","CIV",141,"Classified Forest","polygon","Not Reported",29619,0.342,0.493,0.182
+"1822","Tin Achara","MLI",4,"Hunting Area","polygon","VI",555556052,0.431,0.591,0.331
+"1823","Tinka","GIN",36,"Classified Forest","polygon","Not Reported",29386,0.286,0.394,0.214
+"1824","Tinrido","CIV",154,"Classified Forest","polygon","Not Reported",300748,0.342,0.493,0.182
+"1825","Tinte Bepo","GHA",65,"Forest Reserve","polygon","Not Reported",40765,0.453,0.656,0.362
+"1826","Tiogo","BFA",31,"Classified Forest","polygon","Not Reported",28554,0.377,0.689,0.177
+"1827","Tisse","BFA",13,"Classified Forest","polygon","Not Reported",28530,0.383,0.687,0.177
+"1828","Tiwai Island Sanctuary","SLE",2,"Game Sanctuary / Non-hunting Forest Reserve","polygon","IV",10741,0.456,0.562,0.369
+"1829","Togo Plateau","GHA",187,"Forest Reserve","polygon","Not Reported",26515,0.386,0.598,0.27
+"1830","Togodo","TGO",1,"Faunal Reserve","polygon","IV",2341,0.423,0.58,0.302
+"1831","Tomine Koumba","GIN",50,"Classified Forest","polygon","Not Reported",29407,0.369,0.623,0.237
+"1832","Tongo","NGA",556,"Forest Reserve","polygon","Not Reported",36495,0.273,0.379,0.143
+"1833","Tonkoli","SLE",9,"Forest Reserve","polygon","Not Reported",8515,0.368,0.489,0.277
+"1834","Tonton","GHA",149,"Forest Reserve","polygon","Not Reported",40858,0.47,0.666,0.386
+"1835","Toroba","BFA",14,"Classified Forest","polygon","Not Reported",28531,0.39,0.716,0.187
+"1836","Tos","CIV",67,"Classified Forest","polygon","Not Reported",300876,0.503,0.682,0.369
+"1837","Totua Shelterbelt","GHA",146,"Forest Reserve","polygon","Not Reported",40855,0.453,0.607,0.372
+"1838","Tougouri","BFA",26,"Classified Forest","polygon","Not Reported",28548,0.425,0.7,0.241
+"1839","Toui-Kilibo","BEN",25,"Classified Forest","polygon","Not Reported",33020,0.349,0.573,0.243
+"1840","Toumousseni","BFA",55,"Classified Forest","polygon","Not Reported",313422,0.372,0.609,0.211
+"1841","Trois Rivieres","BEN",13,"Classified Forest","polygon","Not Reported",6952,0.28,0.481,0.152
+"1842","Tsanni","NGA",362,"Forest Reserve","polygon","Not Reported",36290,0.313,0.488,0.24
+"1843","Tsaunin Kaura","NGA",450,"Forest Reserve","polygon","Not Reported",36384,0.221,0.274,0.167
+"1844","Tudun Iyo","NGA",434,"Forest Reserve","polygon","Not Reported",36366,0.202,0.275,0.152
+"1845","Tudun Mani","NGA",401,"Forest Reserve","polygon","Not Reported",36329,0.254,0.371,0.201
+"1846","Tufa","NGA",686,"Forest Reserve","polygon","Not Reported",36634,0.411,0.644,0.209
+"1847","Tui","BFA",23,"Classified Forest","polygon","Not Reported",28544,0.357,0.611,0.176
+"1848","Tukan","NGA",783,"Forest Reserve","polygon","Not Reported",36733,0.277,0.485,0.202
+"1849","Tukoki","NGA",803,"Forest Reserve","polygon","Not Reported",36753,0.358,0.598,0.218
+"1850","Tukulma","NGA",540,"Forest Reserve","polygon","Not Reported",36479,0.321,0.535,0.141
+"1851","Tumu","GHA",209,"Forest Reserve","polygon","Not Reported",26531,0.279,0.487,0.149
+"1852","Turbustrajiri","NGA",331,"Forest Reserve","polygon","Not Reported",36259,0.322,0.53,0.21
+"1853","Tuwaru","NGA",451,"Forest Reserve","polygon","Not Reported",36385,0.222,0.288,0.165
+"1854","Twesse","BFA",35,"Classified Forest","polygon","Not Reported",28558,0.379,0.697,0.199
+"1855","Tyabo Rokota","NGA",650,"Forest Reserve","polygon","Not Reported",36596,0.334,0.61,0.233
+"1856","Tyemba","CIV",187,"Classified Forest","polygon","Not Reported",300798,0.401,0.574,0.258
+"1857","Ubiaja","NGA",109,"Forest Reserve","polygon","Not Reported",36941,0.431,0.569,0.357
+"1858","Ubibia","NGA",186,"Forest Reserve","polygon","Not Reported",37022,0.506,0.607,0.437
+"1859","Udi-Nsukka","NGA",16,"Game Reserve","polygon","Not Reported",7846,0.444,0.609,0.361
+"1860","Udo","NGA",108,"Forest Reserve","polygon","Not Reported",36940,0.435,0.567,0.363
+"1861","Ugboha","NGA",102,"Forest Reserve","polygon","Not Reported",36933,0.442,0.575,0.36
+"1862","Ugondo","NGA",882,"Forest Reserve","polygon","Not Reported",36889,0.425,0.631,0.277
+"1863","Ujrohi-Ojogba","NGA",106,"Forest Reserve","polygon","Not Reported",36937,0.465,0.571,0.399
+"1864","Ukpam","NGA",876,"Forest Reserve","polygon","Not Reported",36870,0.418,0.638,0.259
+"1865","Ukpe-Sobo","NGA",162,"Forest Reserve","polygon","Not Reported",36996,0.371,0.439,0.276
+"1866","Ukpilla","NGA",52,"Forest Reserve","polygon","Not Reported",36864,0.421,0.586,0.323
+"1867","Ukpom-Bende","NGA",188,"Forest Reserve","polygon","Not Reported",37024,0.506,0.607,0.437
+"1868","Uku Da Sisi","NGA",324,"Forest Reserve","polygon","Not Reported",36252,0.319,0.478,0.224
+"1869","Umon Ndealichi","NGA",181,"Forest Reserve","polygon","Not Reported",37017,0.471,0.563,0.384
+"1870","Umuabi","NGA",135,"Forest Reserve","polygon","Not Reported",36967,0.505,0.632,0.417
+"1871","Umuahia Ibeku","NGA",172,"Forest Reserve","polygon","Not Reported",37006,0.506,0.605,0.437
+"1872","Umude Ugbenu","NGA",124,"Forest Reserve","polygon","Not Reported",36956,0.505,0.632,0.417
+"1873","Umuokpara Umuowa Ogee","NGA",173,"Forest Reserve","polygon","Not Reported",37007,0.483,0.609,0.418
+"1874","Ungua Jiburu","NGA",351,"Forest Reserve","polygon","Not Reported",36279,0.322,0.507,0.219
+"1875","Unguwa Lalle","NGA",252,"Forest Reserve","polygon","Not Reported",36179,0.444,0.638,0.282
+"1876","Unuhu Agbaja","NGA",94,"Forest Reserve","polygon","Not Reported",36924,0.5,0.608,0.409
+"1877","Uppe Bli","GHA",227,"Forest Reserve","polygon","Not Reported",303936,0.367,0.598,0.166
+"1878","Upper Imo River","NGA",171,"Forest Reserve","polygon","Not Reported",37005,0.47,0.524,0.384
+"1879","Upper Ogun","NGA",957,"Forest Reserve","polygon","Not Reported",300785,0.319,0.483,0.191
+"1880","Upper Orashi Forests","NGA",9,"Ramsar Site, Wetland of International Importance","polygon","Not Applicable",903112,0.43,0.5,0.361
+"1881","Upper Orashi River","NGA",194,"Forest Reserve","polygon","Not Reported",37030,0.441,0.506,0.372
+"1882","Upper Wassaw","GHA",150,"Forest Reserve","polygon","Not Reported",40859,0.442,0.62,0.365
+"1883","Uremure Yokri","NGA",161,"Forest Reserve","polygon","Not Reported",36995,NA,NA,NA
+"1884","Usonigbe","NGA",126,"Forest Reserve","polygon","Not Reported",36958,0.481,0.563,0.405
+"1885","Ute-Ukpu","NGA",127,"Forest Reserve","polygon","Not Reported",36959,0.475,0.58,0.418
+"1886","Utugu and Karama","NGA",788,"Forest Reserve","polygon","Not Reported",36738,0.346,0.576,0.205
+"1887","Uwet Odot","NGA",180,"Forest Reserve","polygon","Not Reported",37016,0.425,0.491,0.332
+"1888","Varela","GNB",12,"National Park","polygon","Not Reported",342656,NA,NA,NA
+"1889","Vavoua","CIV",63,"Classified Forest","polygon","Not Reported",300866,0.508,0.706,0.37
+"1890","Velingara","SEN",33,"Not Reported","polygon","Not Reported",352623,0.59,0.778,0.319
+"1891","Vobera","NGA",632,"Forest Reserve","polygon","Not Reported",36577,0.284,0.453,0.168
+"1892","Volta River","GHA",250,"Forest Reserve","polygon","Not Reported",26452,0.417,0.575,0.343
+"1893","W Benin","BEN",19,"National Park","polygon","II",12201,0.355,0.61,0.149
+"1894","W du Burkina Faso","BFA",67,"National Park","polygon","II",1048,0.366,0.623,0.155
+"1895","W du Niger","NER",1,"National Park","polygon","II",818,0.392,0.657,0.174
+"1896","W National Park of Niger","NER",14,"World Heritage Site","polygon","Not Applicable",124385,0.392,0.657,0.174
+"1897","Wafin","NGA",719,"Forest Reserve","polygon","Not Reported",36667,0.198,0.259,0.156
+"1898","Wagur","NGA",491,"Forest Reserve","polygon","Not Reported",36430,0.342,0.52,0.147
+"1899","Waji","NGA",576,"Forest Reserve","polygon","Not Reported",36517,0.293,0.354,0.159
+"1900","Walama","NGA",570,"Forest Reserve","polygon","Not Reported",36509,0.349,0.633,0.153
+"1901","Wamba","NGA",785,"Forest Reserve","polygon","Not Reported",36735,0.346,0.576,0.205
+"1902","Wamiri","NGA",288,"Forest Reserve","polygon","Not Reported",36216,0.449,0.746,0.263
+"1903","Wannune","NGA",881,"Forest Reserve","polygon","Not Reported",36877,0.418,0.626,0.261
+"1904","Wara Wara Hills","SLE",17,"Forest Reserve","polygon","Not Reported",29981,0.405,0.538,0.281
+"1905","Wara","NGA",843,"Forest Reserve","polygon","Not Reported",36795,0.357,0.531,0.221
+"1906","Warwade","NGA",895,"Forest Reserve","polygon","Not Reported",342479,0.241,0.402,0.174
+"1907","Wasagu Sakaba","NGA",427,"Forest Reserve","polygon","Not Reported",36356,0.367,0.6,0.178
+"1908","Wasaini","NGA",418,"Forest Reserve","polygon","Not Reported",36346,0.43,0.683,0.231
+"1909","Wawa","NGA",555,"Forest Reserve","polygon","Not Reported",36494,0.27,0.377,0.141
+"1910","Wawagi","NGA",672,"Forest Reserve","polygon","Not Reported",36618,0.363,0.61,0.202
+"1911","Wawahi","GHA",50,"Forest Reserve","polygon","Not Reported",40741,0.463,0.597,0.398
+"1912","Wayen","BFA",15,"Classified Forest","polygon","Not Reported",28533,0.376,0.678,0.18
+"1913","Werdawa","NGA",379,"Forest Reserve","polygon","Not Reported",36307,0.29,0.457,0.234
+"1914","West Anka","NGA",428,"Forest Reserve","polygon","Not Reported",36357,0.325,0.528,0.193
+"1915","West Okura","NGA",969,"Forest Reserve","polygon","Not Reported",36857,0.386,0.582,0.289
+"1916","West Tangaza","NGA",237,"Forest Reserve","polygon","Not Reported",36164,0.456,0.69,0.282
+"1917","Western Area Peninsula Forest","SLE",33,"National Park","polygon","Not Reported",19249,NA,NA,NA
+"1918","Western Area","SLE",34,"No or Non - Hunting Forest Reserve","polygon","II",5179,NA,NA,NA
+"1919","Wiaga Kandema","GHA",218,"Forest Reserve","polygon","Not Reported",26552,0.404,0.712,0.179
+"1920","Wiaga","GHA",217,"Forest Reserve","polygon","Not Reported",26551,0.389,0.669,0.177
+"1921","Woabi","NGA",636,"Forest Reserve","polygon","Not Reported",36582,0.326,0.588,0.217
+"1922","Wologizi","LBR",16,"National Park","polygon","Not Reported",20177,0.526,0.65,0.383
+"1923","Wonegisi","LBR",15,"National Park","polygon","Not Reported",7414,0.513,0.642,0.367
+"1924","Wongo","MLI",17,"National Park","polygon","II",317193,0.496,0.856,0.264
+"1925","Worobong Kwahu","GHA",90,"Forest Reserve","polygon","Not Reported",40790,0.38,0.551,0.294
+"1926","Worobong North","GHA",89,"Forest Reserve","polygon","Not Reported",40789,0.4,0.645,0.322
+"1927","Worobong South","GHA",91,"Forest Reserve","polygon","Not Reported",40791,0.424,0.635,0.334
+"1928","Wuda Taye","NGA",310,"Forest Reserve","polygon","Not Reported",36238,0.404,0.687,0.199
+"1929","Wurkam River","NGA",770,"Forest Reserve","polygon","Not Reported",36720,0.275,0.423,0.182
+"1930","Wuro Bamusa","NGA",548,"Forest Reserve","polygon","Not Reported",36487,0.281,0.408,0.142
+"1931","Wuro Biriji","NGA",547,"Forest Reserve","polygon","Not Reported",36486,0.281,0.408,0.142
+"1932","Wuro Mallum","NGA",762,"Forest Reserve","polygon","Not Reported",36712,0.398,0.67,0.163
+"1933","Wushishi","NGA",657,"Forest Reserve","polygon","Not Reported",36603,0.254,0.438,0.179
+"1934","Wuyo Gube","NGA",564,"Forest Reserve","polygon","Not Reported",36503,0.369,0.629,0.152
+"1935","Yabo","BFA",64,"Classified Forest","polygon","Not Reported",313440,0.382,0.667,0.198
+"1936","Yache","NGA",96,"Forest Reserve","polygon","Not Reported",36926,0.432,0.56,0.331
+"1937","Yakombo","GHA",220,"Forest Reserve","polygon","Not Reported",26558,0.364,0.625,0.245
+"1938","Yalo","CIV",126,"Classified Forest","polygon","Not Reported",29525,0.39,0.562,0.295
+"1939","Yamaltu","NGA",565,"Forest Reserve","polygon","Not Reported",36504,0.316,0.494,0.143
+"1940","Yamdugu","NGA",312,"Forest Reserve","polygon","Not Reported",36240,0.367,0.603,0.222
+"1941","Yammama","NGA",449,"Forest Reserve","polygon","Not Reported",36383,0.228,0.295,0.176
+"1942","Yan Tumaki","NGA",400,"Forest Reserve","polygon","Not Reported",36328,0.254,0.369,0.201
+"1943","Yandev","NGA",69,"Forest Reserve","polygon","Not Reported",36894,0.428,0.637,0.289
+"1944","Yangaiya","NGA",260,"Forest Reserve","polygon","Not Reported",36187,0.319,0.47,0.232
+"1945","Yani","CIV",180,"Classified Forest","polygon","Not Reported",300789,0.358,0.611,0.23
+"1946","Yankari","NGA",221,"Game Reserve","polygon","IV",1332,0.281,0.511,0.133
+"1947","Yankari","NGA",593,"Forest Reserve","polygon","II",36534,0.285,0.517,0.135
+"1948","Yarani","CIV",185,"Classified Forest","polygon","Not Reported",300795,0.411,0.635,0.26
+"1949","Yarda Kangiwa","NGA",333,"Forest Reserve","polygon","Not Reported",36261,0.322,0.53,0.21
+"1950","Yardo","GIN",80,"Classified Forest","polygon","Not Reported",29455,0.341,0.479,0.241
+"1951","Yashi","NGA",369,"Forest Reserve","polygon","Not Reported",36297,0.29,0.449,0.239
+"1952","Yasku","NGA",506,"Forest Reserve","polygon","Not Reported",36445,0.32,0.514,0.159
+"1953","Yautare","NGA",533,"Forest Reserve","polygon","Not Reported",36472,0.254,0.357,0.149
+"1954","Yaya","GHA",163,"Forest Reserve","polygon","Not Reported",40876,0.42,0.607,0.313
+"1955","Yede","NGA",285,"Forest Reserve","polygon","Not Reported",36213,0.425,0.706,0.225
+"1956","Yelwa Fuel","NGA",626,"Forest Reserve","polygon","Not Reported",36571,0.234,0.375,0.134
+"1957","Yendere","BFA",56,"Classified Forest","polygon","Not Reported",313423,0.376,0.61,0.213
+"1958","Yerada","GHA",221,"Forest Reserve","polygon","Not Reported",26559,0.353,0.592,0.232
+"1959","Yerwa","NGA",515,"Forest Reserve","polygon","Not Reported",36454,0.289,0.431,0.144
+"1960","Yo","NGA",282,"Forest Reserve","polygon","Not Reported",36210,0.473,0.744,0.303
+"1961","Yonofere","SEN",26,"Not Reported","polygon","Not Reported",352616,0.591,0.785,0.308
+"1962","Yoyo River","GHA",136,"Forest Reserve","polygon","Not Reported",40844,0.416,0.503,0.332
+"1963","Zaga","NGA",286,"Forest Reserve","polygon","Not Reported",36214,0.425,0.706,0.225
+"1964","Zagoreta","CIV",73,"Classified Forest","polygon","Not Reported",300885,0.51,0.681,0.373
+"1965","Zakouma","TCD",5,"National Park","polygon","II",641,0.338,0.511,0.204
+"1966","Zakpaberi","CIV",105,"Classified Forest","polygon","Not Reported",300941,0.645,0.751,0.458
+"1967","Zala","NGA",590,"Forest Reserve","polygon","Not Reported",36531,0.224,0.295,0.167
+"1968","Zalanga","NGA",591,"Forest Reserve","polygon","Not Reported",36532,0.246,0.347,0.148
+"1969","Zamfara","NGA",256,"Forest Reserve","polygon","Not Reported",36183,0.302,0.428,0.227
+"1970","Zanchita","NGA",651,"Forest Reserve","polygon","Not Reported",36597,0.343,0.622,0.235
+"1971","Zandama Hills","NGA",484,"Forest Reserve","polygon","Not Reported",36423,0.23,0.326,0.178
+"1972","Zandougou","CIV",173,"Classified Forest","polygon","Not Reported",300781,0.348,0.571,0.21
+"1973","Zangula River","NGA",530,"Forest Reserve","polygon","Not Reported",36469,0.322,0.546,0.174
+"1974","Zaranda Hill","NGA",579,"Forest Reserve","polygon","Not Reported",36520,0.301,0.359,0.167
+"1975","Zaria","NGA",458,"Forest Reserve","polygon","Not Reported",36392,0.207,0.263,0.159
+"1976","Zauna","NGA",244,"Forest Reserve","polygon","Not Reported",36171,0.455,0.693,0.309
+"1977","Zawli Hills","GHA",226,"Forest Reserve","polygon","Not Reported",303935,0.367,0.598,0.166
+"1978","Zigau","NGA",479,"Forest Reserve","polygon","Not Reported",36416,0.245,0.378,0.178
+"1979","Zing","NGA",764,"Forest Reserve","polygon","Not Reported",36714,0.247,0.502,0.169
+"1980","Zok","NGA",742,"Forest Reserve","polygon","Not Reported",36690,0.411,0.621,0.175
+"1981","Zubakpere","NGA",666,"Forest Reserve","polygon","Not Reported",36612,0.358,0.579,0.196
+"1982","Zugurma","NGA",625,"Forest Reserve","polygon","Not Reported",36570,0.324,0.552,0.209
+"1983","Zuguskwak","NGA",425,"Forest Reserve","polygon","Not Reported",36353,0.385,0.617,0.184
+"1984","Zuma Hill","NGA",689,"Forest Reserve","polygon","Not Reported",36637,0.358,0.598,0.218
+"1985","Zuoke","CIV",35,"Classified Forest","polygon","Not Reported",29634,0.502,0.712,0.376
+"1986","Zurak","NGA",743,"Forest Reserve","polygon","Not Reported",36691,0.41,0.622,0.172
+"1987","Zwedru","LBR",14,"National Park","polygon","Not Reported",555512170,0.446,0.683,0.342
