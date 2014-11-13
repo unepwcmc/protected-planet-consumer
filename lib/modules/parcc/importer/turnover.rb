@@ -1,6 +1,6 @@
 require 'csv'
 
-class Parcc::Importer
+class Parcc::Importer::Turnover
   
   MATCH_COLUMNS = {parcc_id: '', name: 'name', iso_3: 'country',
                    poly_id: 'polyID', designation: 'designation',

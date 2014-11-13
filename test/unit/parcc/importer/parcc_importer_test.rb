@@ -43,7 +43,7 @@ class TestParccImporter < ActiveSupport::TestCase
     Parcc::ProtectedArea.expects(:create).with(values_to_save_1)
     Parcc::ProtectedArea.expects(:create).with(values_to_save_2)
 
-    importer = Parcc::Importer.new
+    importer = Parcc::Importer::Turnover.new
     importer.create_pas file_path: filename
   end
 
@@ -90,7 +90,7 @@ class TestParccImporter < ActiveSupport::TestCase
     Parcc::SpeciesTurnover.expects(:create).with(values_to_save_2)
     Parcc::SpeciesTurnover.expects(:create).with(values_to_save_3)
 
-    importer = Parcc::Importer.new
+    importer = Parcc::Importer::Turnover.new
     importer.populate_values file_path: filename
   end
 end
