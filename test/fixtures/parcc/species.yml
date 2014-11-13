@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parcc_taxonomic_order_id: 1
+  name: MyString
+  iucn_cat: MyString
+  sensivity: MyString
+  adaptability: MyString
+  exposure_2025: MyString
+  exposure_2055: MyString
+  cc_vulnerable: false
+
+two:
+  parcc_taxonomic_order_id: 1
+  name: MyString
+  iucn_cat: MyString
+  sensivity: MyString
+  adaptability: MyString
+  exposure_2025: MyString
+  exposure_2055: MyString
+  cc_vulnerable: false
