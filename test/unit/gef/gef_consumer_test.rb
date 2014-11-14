@@ -1,3 +1,5 @@
+require 'test_helper'
+
 class TestGefConsumer < ActiveSupport::TestCase
 
   test '.data returns a hash with protected planet data' do 
