@@ -3,7 +3,8 @@ require 'csv'
 class Parcc::Importer::Species
 
   SPECIES_COLUMNS_MATCH = [:sensivity, :adaptability,
-                           :exposure_2025, :exposure_2055, :cc_vulnerable]
+                           :exposure_2025, :exposure_2055,
+                           :cc_vulnerable]
 
   def initialize filename: filename
     @filename = filename
@@ -11,21 +12,28 @@ class Parcc::Importer::Species
   end
 
   def import_taxo
-    @csv_reader.each do |row|
-      taxo_class_name = row[:species_taxon]
-      taxo_order_name = row[:species_order]
-      Parcc::TaxonomicClass.create(name: taxo_class_name)
-      taxo_class_id = Parcc::TaxonomicClass.where('name = ?', taxo_class_name).first.id
-      Parcc::TaxonomicOrder.create(name: taxo_order_name, parcc_taxonomic_class_id: taxo_class_id)
-      species_input = species_data csv_record: row
-      Parcc::Species.create(species_input)
+    @csv_reader.each do |record|
+      create_class csv_record: record
+      create_order csv_record: record
+      create_species csv_record: record
+      join_protected_area csv_record: record
     end
   end
 
-  def species_data csv_record: csv_record
+  def create_class csv_record: csv_record
+    Parcc::TaxonomicClass.create(name: csv_record[:species_taxon])
+  end
+
+  def create_order csv_record: csv_record
+    class_name = csv_record[:species_taxon]
+    class_id = Parcc::TaxonomicClass.where('name = ?', class_name).first.id
+    Parcc::TaxonomicOrder.create(name: csv_record[:species_order], parcc_taxonomic_class_id: class_id)
+  end
+
+  def create_species csv_record: csv_record
     species_hash = {}
     csv_record.each do |k,v|
-      species_hash[:k] = v if SPECIES_COLUMNS_MATCH.include? k
+      species_hash[k] = v if SPECIES_COLUMNS_MATCH.include? k
       species_hash[:iucn_cat] = v if k == :species_iucn_cat
       species_hash[:name] = v if k == :species_binomial
       if k == :cc_vulnerability
@@ -35,6 +43,15 @@ class Parcc::Importer::Species
         species_hash[:parcc_taxonomic_order_id] = order_id
       end
     end
-    species_hash
+    Parcc::Species.create(species_hash)
+  end
+
+  def join_protected_area csv_record: csv_record
+    protected_area = Parcc::ProtectedArea.where('wdpa_id = ?', csv_record[:wdpa_id]).first
+    species = Parcc::Species.where('name = ?', csv_record[:species_binomial]).first
+    Parcc::SpeciesProtectedArea.create(parcc_species_id: species.id,
+                                       parcc_protected_area_id: protected_area.id,
+                                       intersection_area: csv_record[:species_wdpa_intersept_area_sum],
+                                       overlap_percentage: csv_record[:overlap_wdpa_percent])
   end
 end
