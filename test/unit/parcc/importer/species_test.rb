@@ -41,7 +41,7 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
     pa_id_mock.expects(:id).returns(54321)
 
     pa_mock = mock
-    pa_mock.expects(:first).returns(pa_id_mock)
+    pa_mock.expects(:first_or_create).returns(pa_id_mock)
 
     species_id_mock = mock
     species_id_mock.expects(:id).returns(12345)
@@ -53,7 +53,7 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
 
     Parcc::Species.expects(:where).with('name = ?', 'Unepus Wicimesensis').returns(species_mock)
 
-    Parcc::SpeciesProtectedArea.expects(:create).with(parcc_protected_area_id: 54321, parcc_species_id: 12345, overlap_percentage: 50, intersection_area: 2333.5)
+    Parcc::SpeciesProtectedArea.expects(:create).with(parcc_protected_areas_id: 54321, parcc_species_id: 12345, overlap_percentage: 50, intersection_area: 2333.5)
 
     importer = Parcc::Importer::Species.new filename: filename
     importer.import_taxo

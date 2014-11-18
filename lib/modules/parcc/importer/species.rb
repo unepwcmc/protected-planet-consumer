@@ -47,11 +47,18 @@ class Parcc::Importer::Species
   end
 
   def join_protected_area csv_record: csv_record
-    protected_area = Parcc::ProtectedArea.where('wdpa_id = ?', csv_record[:wdpa_id]).first
+    protected_area = protected_area_query csv_record: csv_record
     species = Parcc::Species.where('name = ?', csv_record[:species_binomial]).first
     Parcc::SpeciesProtectedArea.create(parcc_species_id: species.id,
-                                       parcc_protected_area_id: protected_area.id,
+                                       parcc_protected_areas_id: protected_area.id,
                                        intersection_area: csv_record[:species_wdpa_intersept_area_sum],
                                        overlap_percentage: csv_record[:overlap_wdpa_percent])
+  end
+
+  def protected_area_query csv_record: csv_record
+    Parcc::ProtectedArea.where('wdpa_id = ?', csv_record[:wdpa_id])
+                        .first_or_create(name: csv_record[:wdpa_name],
+                                         iso_3: csv_record[:wdpa_country],
+                                         iucn_cat: csv_record[:wdpa_iucn_cat])
   end
 end
