@@ -68,7 +68,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     get '/gef/area/1'
 
-    assert page.has_link?('/Willbear/', :href => 'http://alpha.protectedplanet.net/999888'),
+    assert page.has_link?('Willbear', :href => 'http://alpha.protectedplanet.net/999888'),
       'Has no 999888 PP.net link'
   end
 
