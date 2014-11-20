@@ -15,7 +15,7 @@ class Gef::WdpaRecordTest < ActiveSupport::TestCase
 
     Gef::Consumer.expects(:new).returns(consumer_mock)
 
-    result = [{ wdpa_name: 'Manbone', wdpa_id: 555999 }]
+    result = [{ wdpa_name: 'Manbone', wdpa_id: 555999, protected_planet_url: 'http://alpha.protectedplanet.net/555999'}]
 
     assert_equal result, Gef::WdpaRecord.wdpa_name(gef_pmis_id: 8888)
   end

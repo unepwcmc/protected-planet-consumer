@@ -10,12 +10,16 @@ class Gef::AreaTest < ActiveSupport::TestCase
         wdpa_id: 555999
       )
 
-    Gef::WdpaRecord.expects(:wdpa_name).with(gef_pmis_id: 8888).returns([wdpa_id: 555999, wdpa_name: 'Manbone'])
+    Gef::WdpaRecord.expects(:wdpa_name)
+                   .with(gef_pmis_id: 8888)
+                   .returns([wdpa_id: 555999, wdpa_name: 'Manbone',
+                             protected_planet_url: 'http://alpha.protectedplanet.net/555999'])
 
     result = [{
       gef_pmis_id: 8888,
       wdpa_id: 555999,
-      wdpa_name: 'Manbone'
+      wdpa_name: 'Manbone',
+      protected_planet_url: 'http://alpha.protectedplanet.net/555999'
     }]
 
     assert_equal result, Gef::Area.where(gef_pmis_id: 8888).first.generate_data
