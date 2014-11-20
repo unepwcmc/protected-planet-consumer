@@ -15,6 +15,11 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
     FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
 
+    consumer_mock = mock
+    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
+
+    Gef::Consumer.expects(:new).returns(consumer_mock)
+
     visit '/gef/area/1'
     
     assert page.has_selector?('h2', text: 'GEF ID #1'), 'h2 does not match'
@@ -54,10 +59,10 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
   test 'renders Protected Planet Link' do
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
 
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, pa_name_mett: 'Killbear', wdpa_id: 999888)
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
 
     consumer_mock = mock
-    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, name: 'Killbear', wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
+    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 999888,  wdpa_data: {name: 'Willbear'})
 
     Gef::Consumer.expects(:new).returns(consumer_mock)
 
@@ -70,16 +75,16 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
   test 'has links to pame page' do
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
 
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, pa_name_mett: 'Killbear', wdpa_id: 999888)
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
 
     consumer_mock = mock
-    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, name: 'Willbear', wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
+    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 999888,  wdpa_data: {name: 'Manbone'})
 
     Gef::Consumer.expects(:new).returns(consumer_mock)
 
     visit '/gef/area/1'
 
-    assert page.has_link?('Link', /999888/)
+    assert page.has_link?('Link', /1/)
 
   end
 

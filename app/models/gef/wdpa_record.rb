@@ -10,7 +10,7 @@ class Gef::WdpaRecord < ActiveRecord::Base
     wdpa_data = []
     wdpa_areas.each do |pa|
       pa_data = {}
-      api_data = consumer.api_data(wdpa_id: pa.wdpa_id)
+      api_data = consumer.api_data(wdpa_id: pa.wdpa_id) rescue {wdpa_data: {name: 'Not Available in WDPA'}}
       pa_data[:protected_planet_url] = protected_planet_url wdpa_id: pa.wdpa_id
       pa_data[:wdpa_name] = api_data[:wdpa_data][:name]
       pa_data[:wdpa_id] = pa.wdpa_id

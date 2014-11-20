@@ -18,8 +18,14 @@
       <% @protected_areas.each do |pa| %>
         <tr>
           <td><%= pa[:wdpa_id] %></td>
-          <td><%= link_to 'Link', @protected_planet_link %></td>
-          <td><%= link_to pa[:wdpa_data][:name], path_to_pame_records %></td>
+          <td>
+            <% if pa[:wdpa_name] == 'Not Available in WDPA' %>
+              <%= pa[:wdpa_name] %>
+            <% else %>
+              <%= link_to  pa[:wdpa_name], pa[:protected_planet_url] %>
+            <% end %>
+          </td>
+          <td><%= link_to 'Link', pame_records_path(pa[:gef_pmis_id]) %></td>
         </tr>
       <% end %>
     </table>
