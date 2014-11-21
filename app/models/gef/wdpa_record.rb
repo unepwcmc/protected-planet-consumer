@@ -1,5 +1,6 @@
 class Gef::WdpaRecord < ActiveRecord::Base
   belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id
+  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_wdpa_record_id
   validates_uniqueness_of :wdpa_id
 
   PP_BASE_URL = 'http://alpha.protectedplanet.net/'
