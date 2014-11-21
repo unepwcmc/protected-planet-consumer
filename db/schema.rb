@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118175418) do
+ActiveRecord::Schema.define(version: 20141120180959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(version: 20141118175418) do
   end
 
   create_table "gef_pame_records", force: true do |t|
-    t.integer  "gef_area_id"
     t.text     "pa_name_mett"
     t.integer  "mett_original_uid"
     t.string   "mett_new_uid"
@@ -73,9 +72,8 @@ ActiveRecord::Schema.define(version: 20141118175418) do
     t.integer  "overall_percentage"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "gef_wdpa_record_id"
   end
-
-  add_index "gef_pame_records", ["gef_area_id"], name: "index_gef_pame_records_on_gef_area_id", using: :btree
 
   create_table "gef_wdpa_records", force: true do |t|
     t.integer  "wdpa_id"
