@@ -78,9 +78,14 @@ class TestGefImporter < ActiveSupport::TestCase
 
     Gef::Area.expects(:where).with('gef_pmis_id = ?', 1).returns(area_mock)
 
-    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_area_id: 1122)
-
     Gef::WdpaRecord.expects(:create).with(wdpa_id: 999888, gef_area_id: 1122)
+
+    wdpa_mock = mock
+    wdpa_mock.expects(:first).returns(id: 3344)
+
+    Gef::WdpaRecord.expects(:where).with('wdpa_id = ?',999888).returns(wdpa_mock)
+
+    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 3344)
 
     s3_response_mock = mock
     s3_response_mock.expects(:download_from_bucket)
