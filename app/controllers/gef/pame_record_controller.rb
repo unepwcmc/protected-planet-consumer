@@ -5,6 +5,6 @@ class Gef::PameRecordController < ApplicationController
   end
 
   def show
-
+    @assessment = Gef::PameRecord.includes(:gef_wdpa_record).where('mett_original_uid = ?', params[:mett_original_uid])
   end
 end

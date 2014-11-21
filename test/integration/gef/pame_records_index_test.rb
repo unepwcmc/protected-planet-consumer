@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
-  test 'returns a page for given gef_id' do
+  test 'returns a page for given gef_id and wdpa_id' do
 
     gef_area = FactoryGirl.create(:gef_area, gef_pmis_id: 666777)
 
