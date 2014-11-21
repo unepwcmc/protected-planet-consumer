@@ -1,0 +1,22 @@
+<main class="protected-areas">
+
+  <div class="container">
+    <h1><img src="/images/gef_logo.png" /> Protected Planet Tool</h1>
+  </div>
+
+  <div class="col-xs-9">
+    <h2>
+      WDPA ID #<%= @assessment.first.gef_wdpa_record.wdpa_id %> - <%= @assessment.first.mett_original_uid %> Assessment
+    </h2>
+  </div>
+  <div class="col-xs-6">
+    <table class="table">
+      <% @assessment.first.attributes.each do |parameter,value| %>
+          <tr>
+            <td colspan="3"><%= parameter %></td>
+            <td><%= value %></td>
+          </tr>
+      <% end %>
+    </table>
+  </div>
+</main>

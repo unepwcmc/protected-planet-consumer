@@ -64,17 +64,28 @@ class TestGefImporter < ActiveSupport::TestCase
 
     filename = 'long_tables.csv'
 
-    parsed_csv = [['GEF PMIS ID','name in file'], [1, 'wolf']]
+    parsed_csv = [['GEF PMIS ID','name in file', 'WDPA ID (WDPA)'], [1, 'wolf', 999888]]
 
     CSV.expects(:read).with(filename).returns(parsed_csv)
     CSV.expects(:foreach).yields(1)
 
     FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
     FactoryGirl.create(:gef_column_match, model_columns: 'gef_pmis_id', xls_columns: 'GEF PMIS ID')
+    FactoryGirl.create(:gef_column_match, model_columns: 'wdpa_id', xls_columns: 'WDPA ID (WDPA)')
 
+    area_mock = mock
+    area_mock.expects(:first).returns(id: 1122)
 
-    Gef::WdpaRecord.expects(:create).once
+    Gef::Area.expects(:where).with('gef_pmis_id = ?', 1).returns(area_mock)
 
+    Gef::WdpaRecord.expects(:create).with(wdpa_id: 999888, gef_area_id: 1122)
+
+    wdpa_mock = mock
+    wdpa_mock.expects(:first).returns(id: 3344)
+
+    Gef::WdpaRecord.expects(:where).with('wdpa_id = ?',999888).returns(wdpa_mock)
+
+    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 3344)
 
     s3_response_mock = mock
     s3_response_mock.expects(:download_from_bucket)
