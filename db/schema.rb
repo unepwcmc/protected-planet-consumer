@@ -95,12 +95,48 @@ ActiveRecord::Schema.define(version: 20141120180959) do
     t.datetime "updated_at"
   end
 
+  create_table "parcc_species", force: true do |t|
+    t.integer  "parcc_taxonomic_order_id"
+    t.string   "name"
+    t.string   "iucn_cat"
+    t.string   "sensivity"
+    t.string   "adaptability"
+    t.string   "exposure_2025"
+    t.string   "exposure_2055"
+    t.boolean  "cc_vulnerable"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "parcc_species_protected_areas", force: true do |t|
+    t.integer  "parcc_species_id"
+    t.integer  "parcc_protected_areas_id"
+    t.integer  "parcc_chenge_type_id"
+    t.float    "intersection_area"
+    t.float    "overlap_percentage"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "parcc_species_turnovers", force: true do |t|
     t.integer  "parcc_protected_area_id"
     t.string   "taxonomic_class"
     t.integer  "year"
     t.string   "stat"
     t.float    "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "parcc_taxonomic_classes", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "parcc_taxonomic_orders", force: true do |t|
+    t.integer  "parcc_taxonomic_class_id"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
