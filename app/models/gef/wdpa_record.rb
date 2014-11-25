@@ -3,7 +3,7 @@ class Gef::WdpaRecord < ActiveRecord::Base
   has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_wdpa_record_id
   validates_uniqueness_of :wdpa_id
 
-  PP_BASE_URL = 'http://alpha.protectedplanet.net/'
+  PP_BASE_URL = 'http://www.protectedplanet.net/sites/'
 
   def self.wdpa_name gef_pmis_id: gef_pmis_id
     consumer = Gef::Consumer.new
