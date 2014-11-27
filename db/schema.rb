@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141117131304) do
+ActiveRecord::Schema.define(version: 20141120180959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,8 +29,7 @@ ActiveRecord::Schema.define(version: 20141117131304) do
     t.datetime "updated_at"
   end
 
-  create_table "gef_wdpa_records", force: true do |t|
-    t.integer  "wdpa_id"
+  create_table "gef_pame_records", force: true do |t|
     t.text     "pa_name_mett"
     t.integer  "mett_original_uid"
     t.string   "mett_new_uid"
@@ -71,6 +70,13 @@ ActiveRecord::Schema.define(version: 20141117131304) do
     t.integer  "total_mett_score"
     t.integer  "total_possible_score"
     t.integer  "overall_percentage"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "gef_wdpa_record_id"
+  end
+
+  create_table "gef_wdpa_records", force: true do |t|
+    t.integer  "wdpa_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "gef_area_id"
@@ -134,5 +140,4 @@ ActiveRecord::Schema.define(version: 20141117131304) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
 end

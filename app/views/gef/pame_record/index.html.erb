@@ -1,0 +1,19 @@
+<main class="protected-areas">
+
+  <div class="container">
+    <h1><img src="/images/gef_logo.png" /> Protected Planet Tool</h1>
+  </div>
+
+  <div class="col-xs-9">
+    <h2>WDPA ID #<%= @pame_assessments.first.wdpa_id %></h2>
+  </div>
+
+  <div class="col-xs-6">
+    <h3>Assessments List </h3>
+    <% @pame_assessments.first.gef_pame_records.each do |assessment| %>
+    <ul>
+      <%= link_to assessment.mett_original_uid, pame_record_path(@pame_assessments.first.gef_area.gef_pmis_id, @pame_assessments.first.wdpa_id, assessment.mett_original_uid) %>
+    </ul>
+    <% end %>
+ </div>
+</main>

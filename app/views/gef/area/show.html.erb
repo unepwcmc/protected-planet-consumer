@@ -1,7 +1,7 @@
 <main class="protected-areas">
 
   <div class="container">
-    <h1>GEF Protected Planet Tool</h1>
+    <h1><img src="/images/gef_logo.png" /> Protected Planet Tool</h1>
   </div>
 
   <div class="col-xs-9">
@@ -13,13 +13,19 @@
       <tr>
         <th>WDPA ID</td>
         <th>WDPA Name</td>
-        <th>Protected Area Page</td>
+        <th>PAME Page</td>
       </tr>
       <% @protected_areas.each do |pa| %>
         <tr>
           <td><%= pa[:wdpa_id] %></td>
-          <td><%= link_to pa[:wdpa_data][:name], "/gef/area/838/wdpa_record/#{pa[:wdpa_id]}" %></td>
-          <td><%= link_to 'Link', "http://alpha.protectedplanet.net/#{pa[:wdpa_id]}" %></td>
+          <td>
+            <% if pa[:wdpa_name] == 'Not Available in WDPA' %>
+              <%= pa[:wdpa_name] %>
+            <% else %>
+              <%= link_to  pa[:wdpa_name], pa[:protected_planet_url] %>
+            <% end %>
+          </td>
+          <td><%= link_to 'Link', pame_records_path(pa[:gef_pmis_id], pa[:wdpa_id]) %></td>
         </tr>
       <% end %>
     </table>

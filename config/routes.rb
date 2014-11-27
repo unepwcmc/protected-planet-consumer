@@ -3,13 +3,12 @@ Rails.application.routes.draw do
   namespace :gef do
     resources :protected_areas
   end
-  get '/api/gef/:gef_pmis_id', to: 'api/gef#index', as: 'gef_home'
 
   get '/gef/', to: 'gef#index', as: 'gef'
 
-  get '/gef/area/:gef_pmis_id',  to: 'gef/area#index', as: 'gef_area'
+  get '/gef/area/:gef_pmis_id',  to: 'gef/area#show', as: 'gef_area'
 
-  get '/gef/area/:gef_pmis_id/wdpa_record', to: 'gef/wdpa_record#index', as: 'area_wdpa_records'
+  get '/gef/area/:gef_pmis_id/wdpa-record/:wdpa_id/pame-record', to: 'gef/pame_record#index', as: 'pame_records'
 
-  get '/gef/area/:gef_pmis_id/wdpa_record/:wdpa_id', to: 'gef/wdpa_record#show', as: 'area_wdpa_record'
+  get '/gef/area/:gef_pmis_id/wdpa-record/:wdpa_id/pame-record/:mett_original_uid', to: 'gef/pame_record#show', as: 'pame_record'
 end
