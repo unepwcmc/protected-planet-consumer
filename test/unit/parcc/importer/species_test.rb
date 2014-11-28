@@ -58,4 +58,23 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
     importer = Parcc::Importer::Species.new filename: filename
     importer.import_taxo
   end
+
+  test '.counts imports species count for each protected area' do
+
+    filename = 'another really big file.csv'
+
+    FactoryGirl.create(:parcc_protected_area, id: 1, parcc_id: 111222, wdpa_id: 888999, name: 'Abdoulaye')
+
+    parsed_csv = [
+                  {
+                    wdpa_id: 111222, wdpa_name: 'Abdoulaye', count_total_species: 999, other_column: 1234
+                  }
+                 ]
+    CSV.expects(:read).with(filename, headers: true, header_converters: :symbol).returns(parsed_csv)
+
+    Parcc::SpeciesTurnover.expects(:create).with(parcc_protected_areas_id: 1, total_species: 999)
+
+    importer = Parcc::Importer::Species.new
+    importer.counts file_path: filename
+  end
 end
