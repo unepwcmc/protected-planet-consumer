@@ -63,3 +63,6 @@ en:
   overall_percentage: "Overall Percentage"
   created_at: "Date of creation"
   updated_at: "Date last updated"
+  region: "Region"
+  biome: "Biome"
+  id: "ID"
