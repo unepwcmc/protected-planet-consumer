@@ -13,7 +13,7 @@
     <table class="table">
       <% @assessment.first.attributes.each do |parameter,value| %>
           <tr>
-            <td colspan="3"><%= parameter %></td>
+            <td colspan="3"><%=t parameter %></td>
             <td><%= value %></td>
           </tr>
       <% end %>
