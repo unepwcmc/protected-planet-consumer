@@ -55,28 +55,24 @@ class TestGefImporter < ActiveSupport::TestCase
 
     result = { pa_name_mett:  'wolf', research: 4 }
 
-    importer = Gef::Importer.new(filename: filename, bucket_name: 'a_s3_bucket')
+    importer = Gef::Importer.new(filename: @filename, bucket_name: 'a_s3_bucket')
 
     assert_equal result, importer.find_fields(protected_area)
   end
 
   test 'import creates protected areas from csv file' do
 
-    filename = 'long_tables.csv'
-
-    parsed_csv = [['GEF PMIS ID','name in file', 'WDPA ID (WDPA)'], [1, 'wolf', 999888]]
-
-    CSV.expects(:read).with(filename).returns(parsed_csv)
-    CSV.expects(:foreach).yields(1)
-
     FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
     FactoryGirl.create(:gef_column_match, model_columns: 'gef_pmis_id', xls_columns: 'GEF PMIS ID')
     FactoryGirl.create(:gef_column_match, model_columns: 'wdpa_id', xls_columns: 'WDPA ID (WDPA)')
 
-    area_mock = mock
-    area_mock.expects(:first).returns(id: 1122)
 
-    Gef::Area.expects(:where).with('gef_pmis_id = ?', 1).returns(area_mock)
+    Gef::Area.expects(:find_or_create_by).with(gef_pmis_id: 111222, name: 'wolf')
+
+    area_mock_1 = mock
+    area_mock_1.expects(:first).returns(id: 1122)
+
+    Gef::Area.expects(:where).with('gef_pmis_id = ?', 111222).returns(area_mock_1)
 
     Gef::WdpaRecord.expects(:create).with(wdpa_id: 999888, gef_area_id: 1122)
 
