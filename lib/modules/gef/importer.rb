@@ -2,14 +2,14 @@ require 'csv'
 
 class Gef::Importer
   def initialize(filename: filename, bucket_name: bucket_name)
-    @filename = filename
     @bucket_name = bucket_name
-    @csv_table = CSV.read(@filename, headers: true)
+    @filename = filename
   end
 
   def import
     download
-    @csv_table.each do |pa|
+    csv_table = CSV.read(@filename, headers: true)
+    csv_table.each do |pa|
       pa_converted = find_fields pa
       Gef::Area.find_or_create_by(gef_pmis_id: pa_converted[:gef_pmis_id].to_i, name: pa_converted[:pa_name_mett])
       gef_area_id = Gef::Area.where('gef_pmis_id = ?', pa_converted[:gef_pmis_id].to_i).first[:id]
