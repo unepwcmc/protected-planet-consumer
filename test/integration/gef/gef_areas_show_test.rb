@@ -85,7 +85,17 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
     visit '/gef/area/1'
 
     assert page.has_link?('Link', /1/)
-
   end
 
+  test 'renders gef_name if not in wdpa' do
+    gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1, name: 'Womanbone')
+
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
+
+    Gef::WdpaRecord.expects(:wdpa_name).with(gef_pmis_id: 1).returns([{wdpa_id: 999888, wdpa_name: 'Not Available in WDPA'}])
+
+    get '/gef/area/1'
+
+    assert_match /Womanbone/, @response.body
+  end
 end

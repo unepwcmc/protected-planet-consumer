@@ -6,7 +6,7 @@ class Gef::AreaController < ApplicationController
   end
 
   def show
-    @protected_areas = @gef_area.generate_data
+    @protected_areas = @gef_area.generate_data.sort_by  { |h| h[:wdpa_id] }
   end
 
   

@@ -1,7 +1,7 @@
 class Gef::PameRecordController < ApplicationController
 
   def index
-    @pame_assessments =  Gef::WdpaRecord.includes(:gef_pame_records, :gef_area).where('wdpa_id = ?', params[:wdpa_id])
+    @pame_assessments =  Gef::WdpaRecord.includes(:gef_pame_records, :gef_area).where('wdpa_id = ?', params[:wdpa_id]).order('gef_pame_records.assessment_year ASC')
   end
 
   def show
