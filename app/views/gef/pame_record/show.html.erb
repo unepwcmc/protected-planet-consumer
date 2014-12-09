@@ -1,7 +1,7 @@
 <main class="protected-areas">
 
   <div class="container">
-    <h1><img src="/images/gef_logo.png" /> Protected Planet Tool</h1>
+    <h1><img src="/images/gef_logo.png" /> Protected Area Database</h1>
   </div>
 
   <div class="col-xs-9">
@@ -14,7 +14,7 @@
       <% @assessment.first.attributes.each do |parameter,value| %>
           <tr>
             <td colspan="3"><%=t parameter %></td>
-            <td><%= value %></td>
+            <td class="text-center"><%= value %></td>
           </tr>
       <% end %>
     </table>
