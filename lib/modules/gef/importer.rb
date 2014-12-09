@@ -11,12 +11,12 @@ class Gef::Importer
     csv_table = CSV.read(@filename, headers: true)
     csv_table.each do |pa|
       pa_converted = find_fields pa
-      Gef::Area.find_or_create_by(gef_pmis_id: pa_converted[:gef_pmis_id].to_i, name: pa_converted[:pa_name_mett])
+      Gef::Area.create(gef_pmis_id: pa_converted[:gef_pmis_id].to_i, name: pa_converted[:pa_name_mett])
       gef_area_id = Gef::Area.where('gef_pmis_id = ?', pa_converted[:gef_pmis_id].to_i).first[:id]
-      Gef::WdpaRecord.create(wdpa_id: pa_converted[:wdpa_id], gef_area_id: gef_area_id)
+      Gef::WdpaRecord.find_or_create_by(wdpa_id: pa_converted[:wdpa_id], gef_area_id: gef_area_id)
       wdpa_record_id = Gef::WdpaRecord.where('wdpa_id = ?', pa_converted[:wdpa_id].to_i).first[:id]
       pa_converted.except!(:gef_pmis_id, :wdpa_id)
-      Gef::PameRecord.create(pa_converted.merge(gef_wdpa_record_id: wdpa_record_id))
+      Gef::PameRecord.create(pa_converted.merge(gef_wdpa_record_id: wdpa_record_id, gef_area_id:gef_area_id))
     end
   end
 

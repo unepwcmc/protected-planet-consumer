@@ -21,9 +21,9 @@ class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
 
     wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
+    FactoryGirl.create(:gef_pame_record, gef_area: gef_area, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 888999)
+    FactoryGirl.create(:gef_pame_record, gef_area: gef_area, gef_wdpa_record: wdpa_area, mett_original_uid: 888999)
 
     get '/gef/area/666777/wdpa-record/333444/pame-record'
 
@@ -37,7 +37,7 @@ class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
 
     wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
+    FactoryGirl.create(:gef_pame_record, gef_area: gef_area, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
 
     visit '/gef/area/666777/wdpa-record/333444/pame-record'
 

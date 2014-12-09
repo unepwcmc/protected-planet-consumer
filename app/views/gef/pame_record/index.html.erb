@@ -16,7 +16,7 @@
         <th>Assessment Type</td>
         <th>METT Page</td>
       </tr>
-      <% @pame_assessments.first.gef_pame_records.each do |assessment| %>
+      <% @pame_assessments.each do |assessment| %>
       <tr class="text-center">
         <td><%= assessment.assessment_year %></td>
         <td><%= assessment.assessment_type %></td>

@@ -38,28 +38,42 @@ class TestGefImporter < ActiveSupport::TestCase
     assert_equal result, importer.find_fields(protected_area)
   end
 
-  test 'import creates protected areas from csv file' do
+  test 'import creates protected areas from csv file with same pmis id and different wdpa_id' do
 
-    FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'name in file')
+    FactoryGirl.create(:gef_column_match, model_columns: 'pa_name_mett', xls_columns: 'PA NAME (METT)')
     FactoryGirl.create(:gef_column_match, model_columns: 'gef_pmis_id', xls_columns: 'GEF PMIS ID')
-    FactoryGirl.create(:gef_column_match, model_columns: 'wdpa_id', xls_columns: 'WDPA ID (WDPA)')
+    FactoryGirl.create(:gef_column_match, model_columns: 'wdpa_id', xls_columns: 'WDPA ID (METT)')
+    FactoryGirl.create(:gef_column_match, model_columns: 'mett_original_uid', xls_columns: 'METT UID1')
 
+    parsed_csv = [ {"GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 999888, 'METT UID1' => 1122},
+                   {"GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 666777, 'METT UID1' => 1234},
+                   {"GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 666777, 'METT UID1' => 4321}
+                 ]
 
-    Gef::Area.expects(:find_or_create_by).with(gef_pmis_id: 111222, name: 'wolf')
+    CSV.stubs(:read).with('long_tables.csv', {:headers => true}).returns(parsed_csv)
+
+    Gef::Area.expects(:create).with(gef_pmis_id: 111222, name: 'wolf').times(3)
 
     area_mock_1 = mock
-    area_mock_1.expects(:first).returns(id: 1122)
+    area_mock_1.expects(:first).returns(id: 333444).times(3)
 
-    Gef::Area.expects(:where).with('gef_pmis_id = ?', 111222).returns(area_mock_1)
+    Gef::Area.expects(:where).with('gef_pmis_id = ?', 111222).returns(area_mock_1).times(3)
 
-    Gef::WdpaRecord.expects(:create).with(wdpa_id: 999888, gef_area_id: 1122)
+    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 999888, gef_area_id: 333444)
+    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 666777, gef_area_id: 333444).twice
 
-    wdpa_mock = mock
-    wdpa_mock.expects(:first).returns(id: 3344)
+    wdpa_mock_1 = mock
+    wdpa_mock_1.expects(:first).returns(id: 1111)
 
-    Gef::WdpaRecord.expects(:where).with('wdpa_id = ?',999888).returns(wdpa_mock)
+    wdpa_mock_2 = mock
+    wdpa_mock_2.expects(:first).returns(id: 2222).twice
 
-    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 3344)
+    Gef::WdpaRecord.expects(:where).with('wdpa_id = ?', 999888).returns(wdpa_mock_1).once
+    Gef::WdpaRecord.expects(:where).with('wdpa_id = ?', 666777).returns(wdpa_mock_2).twice
+
+    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 1111, mett_original_uid: 1122, gef_area_id: 333444)
+    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 2222, mett_original_uid: 1234, gef_area_id: 333444)
+    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 2222, mett_original_uid: 4321, gef_area_id: 333444)
 
     s3_response_mock = mock
     s3_response_mock.expects(:download_from_bucket)

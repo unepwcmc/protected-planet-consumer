@@ -31,7 +31,6 @@ class Parcc::Importer
   def populate_values file_path: file_path
     filename_splitted = File.basename(file_path).split
     csv_values = read_csv file_path: file_path  
-    
     csv_values.each do |pa|
       values_to_populate = {}
       values_to_populate[:taxonomic_class] = filename_splitted[0]
