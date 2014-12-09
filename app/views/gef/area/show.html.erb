@@ -19,10 +19,10 @@
         <tr>
           <td><%= pa[:wdpa_id] %></td>
           <td>
-            <% if pa[:wdpa_name] == 'Not Available in WDPA' %>
-              <%= pa[:name] %>
-            <% else %>
+            <% if pa[:wdpa_exists] %>
               <%= link_to  pa[:wdpa_name], pa[:protected_planet_url] %>
+            <% else %>
+              <%= pa[:wdpa_name] %>
             <% end %>
           </td>
           <td class="text-center"><%= link_to 'Link', pame_records_path(pa[:gef_pmis_id], pa[:wdpa_id]) %></td>

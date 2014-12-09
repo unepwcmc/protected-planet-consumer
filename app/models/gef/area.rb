@@ -6,7 +6,14 @@ class Gef::Area < ActiveRecord::Base
   def generate_data
     gef_pmis_id = self.gef_pmis_id
     wdpa_data = Gef::WdpaRecord.wdpa_name(gef_pmis_id: gef_pmis_id)
-    wdpa_data.map { |pa| pa.merge!({ gef_pmis_id: gef_pmis_id, name: name }) }
+    wdpa_data.map { |pa| merge_data protected_area: pa }
     wdpa_data
+  end
+
+  private
+
+  def merge_data protected_area: protected_area
+    protected_area.merge!({ gef_pmis_id: gef_pmis_id, name: name })
+    protected_area[:wdpa_name] = name if not protected_area[:wdpa_name]
   end
 end

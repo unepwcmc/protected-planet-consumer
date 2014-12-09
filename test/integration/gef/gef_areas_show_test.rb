@@ -92,7 +92,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
 
-    Gef::WdpaRecord.expects(:wdpa_name).with(gef_pmis_id: 1).returns([{wdpa_id: 999888, wdpa_name: 'Not Available in WDPA'}])
+    Gef::WdpaRecord.expects(:wdpa_name).with(gef_pmis_id: 1).returns([{wdpa_id: 999888, wdpa_exists: false}])
 
     get '/gef/area/1'
 

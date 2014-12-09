@@ -10,10 +10,10 @@ class Gef::WdpaRecord < ActiveRecord::Base
     wdpa_areas = Gef::WdpaRecord.joins(:gef_area).where('gef_areas.gef_pmis_id = ?', gef_pmis_id)
     wdpa_data = []
     wdpa_areas.each do |pa|
-      pa_data = {}
-      api_data = consumer.api_data(wdpa_id: pa.wdpa_id) rescue {wdpa_data: {name: 'Not Available in WDPA'}}
+      pa_data = {wdpa_exists: true}
+      api_data = consumer.api_data(wdpa_id: pa.wdpa_id) rescue pa_data[:wdpa_exists] = false
       pa_data[:protected_planet_url] = protected_planet_url wdpa_id: pa.wdpa_id
-      pa_data[:wdpa_name] = api_data[:wdpa_data][:name]
+      pa_data[:wdpa_name] = api_data[:wdpa_data][:name] if pa_data[:wdpa_exists]
       pa_data[:wdpa_id] = pa.wdpa_id
       wdpa_data << pa_data
     end
