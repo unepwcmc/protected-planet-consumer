@@ -13,7 +13,10 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
   test 'renders GEF Heading' do
 
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
+
+    gef_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
+
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
     consumer_mock = mock
     consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
@@ -29,7 +32,9 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
 
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
+    gef_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
+
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
     consumer_mock = mock
     consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
@@ -44,7 +49,9 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
   test 'renders WDPA ID' do
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
 
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
+    gef_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
+
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
     consumer_mock = mock
     consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
@@ -59,7 +66,9 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
   test 'renders Protected Planet Link' do
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
 
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
+    gef_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
+
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
     consumer_mock = mock
     consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 999888,  wdpa_data: {name: 'Willbear'})
@@ -74,8 +83,10 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
   test 'has links to pame page' do
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
+    
+    gef_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
 
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
     consumer_mock = mock
     consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 999888,  wdpa_data: {name: 'Manbone'})
@@ -88,11 +99,13 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
   end
 
   test 'renders gef_name if not in wdpa' do
-    gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1, name: 'Womanbone')
+    gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
 
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 999888)
+    gef_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
 
-    Gef::WdpaRecord.expects(:wdpa_name).with(gef_pmis_id: 1).returns([{wdpa_id: 999888, wdpa_exists: false}])
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
+
+    Gef::WdpaRecord.expects(:wdpa_name).with(gef_pmis_id: 1).returns([{wdpa_id: 999888, wdpa_exists: false, wdpa_name: 'Womanbone'}])
 
     get '/gef/area/1'
 

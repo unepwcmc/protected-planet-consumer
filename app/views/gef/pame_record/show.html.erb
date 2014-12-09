@@ -5,9 +5,10 @@
   </div>
 
   <div class="col-xs-9">
-    <h2>
+    <h2> <%= @assessment.first.name %>
+    <h3>
       WDPA ID #<%= @assessment.first.gef_wdpa_record.wdpa_id %> - <%= @assessment.first.mett_original_uid %> Assessment
-    </h2>
+    </h3>
   </div>
   <div class="col-xs-6">
     <table class="table">
