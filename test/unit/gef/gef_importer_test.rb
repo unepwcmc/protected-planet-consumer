@@ -6,8 +6,6 @@ class TestGefImporter < ActiveSupport::TestCase
     def setup
         @filename = 'long_tables.csv'
         @parsed_csv = [ {"GEF PMIS ID" => '111222', 'name in file' => 'wolf', 'WDPA ID (WDPA)' => 999888}]
-        CSV.stubs(:read).with('long_tables.csv', {:headers => true}).returns(@parsed_csv)
-
     end
 
   test '.find_fields creates a hash with columns of model and values' do
