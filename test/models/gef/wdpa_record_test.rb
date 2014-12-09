@@ -5,8 +5,11 @@ class Gef::WdpaRecordTest < ActiveSupport::TestCase
 
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 8888)
 
+    gef_pame_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
+
     FactoryGirl.create(:gef_wdpa_record,
       gef_area: gef_area_1,
+      gef_pame_name: gef_pame_name,
       wdpa_id: 555999
       )
 
