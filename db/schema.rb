@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209160005) do
+ActiveRecord::Schema.define(version: 20141209183700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20141209160005) do
     t.integer  "gef_pmis_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
   end
 
   create_table "gef_column_matches", force: true do |t|
@@ -37,7 +36,6 @@ ActiveRecord::Schema.define(version: 20141209160005) do
   end
 
   create_table "gef_pame_records", force: true do |t|
-    t.text     "pa_name_mett"
     t.integer  "mett_original_uid"
     t.string   "mett_new_uid"
     t.text     "assessment_type"
