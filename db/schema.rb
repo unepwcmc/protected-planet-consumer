@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209112838) do
+ActiveRecord::Schema.define(version: 20141209160005) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,12 @@ ActiveRecord::Schema.define(version: 20141209112838) do
   create_table "gef_column_matches", force: true do |t|
     t.string   "model_columns"
     t.text     "xls_columns"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_pame_names", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -83,6 +89,7 @@ ActiveRecord::Schema.define(version: 20141209112838) do
     t.string   "quaternary_biome"
     t.string   "quaternary_biome_area"
     t.integer  "gef_area_id"
+    t.integer  "gef_pame_name_id"
   end
 
   create_table "gef_wdpa_records", force: true do |t|
@@ -90,6 +97,7 @@ ActiveRecord::Schema.define(version: 20141209112838) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "gef_area_id"
+    t.integer  "gef_pame_name_id"
   end
 
   create_table "parcc_protected_areas", force: true do |t|

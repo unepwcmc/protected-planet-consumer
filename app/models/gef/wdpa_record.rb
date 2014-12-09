@@ -1,7 +1,7 @@
 class Gef::WdpaRecord < ActiveRecord::Base
   belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id
   has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_wdpa_record_id
-
+  belongs_to :gef_pame_name, class_name: 'Gef::PameName', foreign_key: :gef_pame_name_id
 
   PP_BASE_URL = 'http://www.protectedplanet.net/sites/'
 
