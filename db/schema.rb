@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202150220) do
+ActiveRecord::Schema.define(version: 20141209112838) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(version: 20141202150220) do
     t.string   "tertiary_biome_area"
     t.string   "quaternary_biome"
     t.string   "quaternary_biome_area"
+    t.integer  "gef_area_id"
   end
 
   create_table "gef_wdpa_records", force: true do |t|
