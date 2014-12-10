@@ -32,7 +32,7 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
 
     visit '/gef/area/666777/wdpa-record/333444/pame-record/999888'
 
-    assert page.has_selector?('h2', text: 'WDPA ID #333444 - 999888 Assessment'), 'h2 does not match'
+    assert page.has_selector?('h2', text: 'WDPA ID #333444 - Assessment 999888'), 'h2 does not match'
   end
 
   test 'renders pa_name in attributes table' do
@@ -42,10 +42,10 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
 
     wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444, gef_pame_name: gef_name)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888, gef_pame_name: gef_name)
+    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888, gef_pame_name: gef_name, assessment_year: 2007)
 
     visit '/gef/area/666777/wdpa-record/333444/pame-record/999888'
 
-    assert page.has_selector?('table', text: /Killbear/), 'pa_name not in table'
+    assert page.has_selector?('table', text: /2007/), 'assessment_year not in table'
   end
 end
