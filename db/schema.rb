@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209112838) do
+ActiveRecord::Schema.define(version: 20141209183700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20141209112838) do
     t.integer  "gef_pmis_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
   end
 
   create_table "gef_column_matches", force: true do |t|
@@ -30,8 +29,13 @@ ActiveRecord::Schema.define(version: 20141209112838) do
     t.datetime "updated_at"
   end
 
+  create_table "gef_pame_names", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "gef_pame_records", force: true do |t|
-    t.text     "pa_name_mett"
     t.integer  "mett_original_uid"
     t.string   "mett_new_uid"
     t.text     "assessment_type"
@@ -83,6 +87,7 @@ ActiveRecord::Schema.define(version: 20141209112838) do
     t.string   "quaternary_biome"
     t.string   "quaternary_biome_area"
     t.integer  "gef_area_id"
+    t.integer  "gef_pame_name_id"
   end
 
   create_table "gef_wdpa_records", force: true do |t|
@@ -90,6 +95,7 @@ ActiveRecord::Schema.define(version: 20141209112838) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "gef_area_id"
+    t.integer  "gef_pame_name_id"
   end
 
   create_table "parcc_protected_areas", force: true do |t|

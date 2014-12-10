@@ -50,15 +50,21 @@ class TestGefImporter < ActiveSupport::TestCase
 
     CSV.stubs(:read).with('long_tables.csv', {:headers => true}).returns(parsed_csv)
 
-    Gef::Area.expects(:create).with(gef_pmis_id: 111222, name: 'wolf').times(3)
+    Gef::Area.expects(:find_or_create_by).with(gef_pmis_id: 111222).times(3)
+    Gef::PameName.expects(:find_or_create_by).with(name: 'wolf').times(3)
 
     area_mock_1 = mock
     area_mock_1.expects(:first).returns(id: 333444).times(3)
 
     Gef::Area.expects(:where).with('gef_pmis_id = ?', 111222).returns(area_mock_1).times(3)
 
-    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 999888, gef_area_id: 333444)
-    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 666777, gef_area_id: 333444).twice
+    name_mock = mock
+    name_mock.expects(:first).returns(id: 5566).times(3)
+
+    Gef::PameName.expects(:where).with('name = ?', 'wolf').returns(name_mock).times(3)
+
+    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 999888, gef_area_id: 333444, gef_pame_name_id: 5566)
+    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 666777, gef_area_id: 333444, gef_pame_name_id: 5566).twice
 
     wdpa_mock_1 = mock
     wdpa_mock_1.expects(:first).returns(id: 1111)
@@ -69,9 +75,9 @@ class TestGefImporter < ActiveSupport::TestCase
     Gef::WdpaRecord.expects(:where).with('wdpa_id = ?', 999888).returns(wdpa_mock_1).once
     Gef::WdpaRecord.expects(:where).with('wdpa_id = ?', 666777).returns(wdpa_mock_2).twice
 
-    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 1111, mett_original_uid: 1122, gef_area_id: 333444)
-    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 2222, mett_original_uid: 1234, gef_area_id: 333444)
-    Gef::PameRecord.expects(:create).with(pa_name_mett: 'wolf', gef_wdpa_record_id: 2222, mett_original_uid: 4321, gef_area_id: 333444)
+    Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 1111, mett_original_uid: 1122, gef_area_id: 333444)
+    Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 2222, mett_original_uid: 1234, gef_area_id: 333444)
+    Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 2222, mett_original_uid: 4321, gef_area_id: 333444)
 
     s3_response_mock = mock
     s3_response_mock.expects(:download_from_bucket)
