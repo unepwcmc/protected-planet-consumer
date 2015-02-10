@@ -24,4 +24,30 @@ class Gef::AreaTest < ActiveSupport::TestCase
 
     assert_equal result, Gef::Area.where(gef_pmis_id: 8888).first.generate_data
   end
+
+  test 'generate_api_data returns a hash with all the data requested' do
+    gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 8888)
+    wdpa_area_1 = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 333444)
+    FactoryGirl.create(:gef_pame_record, gef_area: gef_area_1, gef_wdpa_record: wdpa_area_1,
+                        mett_original_uid: 888999, assessment_year: 2003)
+    FactoryGirl.create(:gef_pame_record, gef_area: gef_area_1, gef_wdpa_record: wdpa_area_1,
+                        mett_original_uid: 999888, assessment_year: 2005)
+
+    Gef::WdpaRecord.expects(:wdpa_name)
+                   .with(gef_pmis_id: 8888)
+                   .returns([wdpa_id: 333444, wdpa_name: 'Manbone',
+                             protected_planet_url: 'http://alpha.protectedplanet.net/555999'])
+
+    result = [{
+      wdpa_id: 333444,
+      wdpa_name: 'Manbone',
+      protected_planet_url: 'http://alpha.protectedplanet.net/555999',
+      gef_pmis_id: 8888,
+      assessments: [{ mett_original_uid: 888999, assessment_year: "2003" },
+                    { mett_original_uid: 999888, assessment_year: "2005" }]
+      }]
+
+    assert_equal result, Gef::Area.where(gef_pmis_id: 8888).first.generate_api_data
+
+  end
 end
