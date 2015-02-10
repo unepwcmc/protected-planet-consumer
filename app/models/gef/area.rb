@@ -4,12 +4,11 @@ class Gef::Area < ActiveRecord::Base
   validates_uniqueness_of :gef_pmis_id
 
   def generate_data
-    query_wdpa
+    query_wdpa gef_pmis_id: self.gef_pmis_id
   end
 
   def generate_api_data
-    gef_pmis_id = self.gef_pmis_id
-    wdpa_data = query_wdpa
+    wdpa_data = query_wdpa gef_pmis_id: self.gef_pmis_id
     api_data = []
     wdpa_data.each do |protected_area|
       assessments_data = assessments(wdpa_id: protected_area[:wdpa_id], gef_pmis_id: gef_pmis_id)
@@ -21,8 +20,7 @@ class Gef::Area < ActiveRecord::Base
 
   private
 
-  def query_wdpa
-    gef_pmis_id = self.gef_pmis_id
+  def query_wdpa gef_pmis_id: gef_pmis_id
     wdpa_data = Gef::WdpaRecord.wdpa_name(gef_pmis_id: gef_pmis_id)
     wdpa_data.map { |pa| pa.merge!({ gef_pmis_id: gef_pmis_id })}
   end
