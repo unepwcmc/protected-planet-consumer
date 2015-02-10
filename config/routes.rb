@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   namespace :gef do
     resources :protected_areas
+    namespace :api do
+      resources :area, only: :index
+    end
   end
 
   get '/gef/', to: 'gef#index', as: 'gef'
