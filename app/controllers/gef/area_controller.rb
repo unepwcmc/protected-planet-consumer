@@ -12,5 +12,9 @@ class Gef::AreaController < ApplicationController
   
   respond_to do |format|
     format.html # show.html.erb
+    format.csv do
+      headers['Content-Disposition'] = "attachment; filename=\"gef-id-#{params[:gef_pmis_id]}\""
+      headers['Content-Type'] ||= 'text/csv'
+    end
   end
 end

@@ -31,7 +31,6 @@ class Gef::Area < ActiveRecord::Base
         csv_headers = csv_hash.keys
       end
     end
-
     csv.insert(0,csv_headers)
   end
 
