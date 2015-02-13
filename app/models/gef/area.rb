@@ -25,7 +25,7 @@ class Gef::Area < ActiveRecord::Base
     wdpa_data.each do |protected_area|
       pame_records = pame_records(wdpa_id: protected_area[:wdpa_id], gef_pmis_id: gef_pmis_id)
       pame_records.each do |assessment|
-        csv_hash = assessment.attributes.merge! protected_area
+        csv_hash = protected_area.merge! assessment.attributes
         csv_hash.except!('id', 'created_at', 'updated_at', 'gef_wdpa_record_id', 'gef_area_id')
         csv << csv_hash.values
         csv_headers = csv_hash.keys

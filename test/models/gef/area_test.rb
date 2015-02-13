@@ -63,10 +63,9 @@ class Gef::AreaTest < ActiveSupport::TestCase
                    .returns([wdpa_id: 333444, wdpa_name: 'Manbone',
                              protected_planet_url: 'http://alpha.protectedplanet.net/555999'])
 
-    result = [["mett_original_uid", "gef_pmis_id", "wdpa_name" ],[888999, 8888, 'Manbone']]
+    result = [[:wdpa_name],['Manbone']]
 
     request =  Gef::Area.where(gef_pmis_id: 8888).first.to_csv
-    assert_equal result[0][0], request[0][0]
-    assert_equal result[1][0], request[1][0]
+    assert_equal result[0][0], request[0][1]
   end
 end
