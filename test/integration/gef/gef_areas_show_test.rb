@@ -111,4 +111,15 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     assert_match /Womanbone/, @response.body
   end
+
+  test 'renders csv button with link do csv file' do
+
+    gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 1)
+
+    gef_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
+
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
+
+    assert page.has_link?('Download CSV', /.csv/)
+  end
 end

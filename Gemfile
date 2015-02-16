@@ -35,3 +35,4 @@ gem 'dotenv-deployment'
 
 gem 'bootstrap-sass', '~> 3.3.0'
 gem 'autoprefixer-rails'
+gem 'database_cleaner', '~> 1.4.0'

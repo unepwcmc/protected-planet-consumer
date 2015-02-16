@@ -2,7 +2,7 @@ namespace :gef do
   desc 'Import gef data'
   task import: :environment do
     BUCKET_NAME = 'gef-protected-areas'
-    FILENAME = 'tmp/gef.csv'
+    FILENAME = 'public/gef/gef_full_database.csv'
 
     Gef::Area.delete_all
     Gef::WdpaRecord.delete_all
