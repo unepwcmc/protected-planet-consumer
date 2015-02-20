@@ -11,14 +11,26 @@ class Gef::Importer
     csv_table = CSV.read(@filename, headers: true)
     csv_table.each do |pa|
       pa_converted = find_fields pa
+
       Gef::Area.find_or_create_by(gef_pmis_id: pa_converted[:gef_pmis_id].to_i)
       gef_area_id = Gef::Area.where('gef_pmis_id = ?', pa_converted[:gef_pmis_id].to_i).first[:id]
+
+      budget_recurrent = create_budget_type(budget: pa_converted[:budget_recurrent], category: 'recurrent')
+      budget_project = create_budget_type(budget: pa_converted[:budget_project], category: 'project')
+
       Gef::PameName.find_or_create_by(name: pa_converted[:pa_name_mett])
       gef_pame_name_id = Gef::PameName.where('name = ?', pa_converted[:pa_name_mett]).first[:id]
+
       Gef::WdpaRecord.find_or_create_by(wdpa_id: pa_converted[:wdpa_id], gef_area_id: gef_area_id, gef_pame_name_id: gef_pame_name_id)
       wdpa_record_id = Gef::WdpaRecord.where('wdpa_id = ?', pa_converted[:wdpa_id].to_i).first[:id]
-      pa_converted.except!(:gef_pmis_id, :wdpa_id, :pa_name_mett)
-      Gef::PameRecord.create(pa_converted.merge(gef_wdpa_record_id: wdpa_record_id, gef_area_id: gef_area_id, gef_pame_name_id: gef_pame_name_id))
+
+      converted = pa_converted.except(:gef_pmis_id, :wdpa_id, :pa_name_mett, :budget_recurrent, :budget_project)
+      ids = { gef_wdpa_record_id: wdpa_record_id, gef_area_id: gef_area_id, gef_pame_name_id: gef_pame_name_id }
+      pame_record_params = [converted, ids, budget_recurrent, budget_project ]
+      pame_record = pame_record_params.inject(&:merge)
+
+      Gef::PameRecord.create(pame_record)
+
     end
   end
 
@@ -36,8 +48,26 @@ class Gef::Importer
 
   private
 
+  def create_budget_type(budget: budget, category: category)
+    budget_hash = budget_selector(budget: budget)
+    Gef::BudgetType.find_or_create_by(name: budget_hash[:type])
+    type_id = Gef::BudgetType.where('name = ?', budget_hash[:type]).first[:id]
+    budget_selected = {}
+    budget_selected["budget_#{category}_type_id".to_sym] = type_id
+    budget_selected["budget_#{category}_value".to_sym] = budget_hash[:value] if budget_hash.has_key?(:value)
+    budget_selected
+  end
+
   def download
     s3 = S3.new(@bucket_name)
     s3.download_from_bucket(filename: @filename)
+  end
+
+  def budget_selector budget: budget
+    if budget.is_a? Numeric
+        { type: 'Given', value: budget }
+    else
+        { type: budget }
+    end
   end
 end
