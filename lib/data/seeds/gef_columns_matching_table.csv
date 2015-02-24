@@ -1,5 +1,5 @@
 model_columns,xls_columns
-gef_pmis_id,GEF PMIS ID
+gef_pmis_id,GEF  ID
 wdpa_id,WDPA ID (METT)
 pa_name_mett,PA NAME (METT)
 primary_biome,Primary Biome
