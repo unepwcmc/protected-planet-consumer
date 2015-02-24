@@ -9,10 +9,7 @@ class Gef::PameRecordController < ApplicationController
   end
 
   def show
-    @assessment = Gef::PameRecord.select('*')
-                                 .joins(:gef_wdpa_record, :gef_pame_name)
-                                 .where('mett_original_uid = ? AND gef_wdpa_records.wdpa_id = ? ',
-                                          params[:mett_original_uid],
-                                          params[:wdpa_id])
+    @assessment = Gef::PameRecord.data_list(mett_original_uid: params[:mett_original_uid],
+                                            wdpa_id: params[:wdpa_id])
   end
 end

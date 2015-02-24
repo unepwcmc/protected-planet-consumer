@@ -5,13 +5,13 @@
   </div>
 
   <div class="col-xs-9">
-    <h2> <%= @assessment.first.name %>
+    <h2> <%= @assessment[:name] %>
     <h3>
-      WDPA ID #<%= @assessment.first.gef_wdpa_record.wdpa_id %> - Assessment <%= @assessment.first.mett_original_uid %>
+      WDPA ID #<%= @assessment[:wdpa_id] %> - Assessment <%= @assessment[:mett_original_uid] %>
   </div>
   <div class="col-xs-6">
     <table class="table">
-      <% @assessment.first.attributes.except("wdpa_id", "gef_pame_name_id", "gef_area_id", "id", "name").each do |parameter,value| %>
+      <% @assessment.each do |parameter,value| %>
           <tr>
             <td colspan="3"><%=t parameter %></td>
             <td class="text-center"><%= value %></td>
