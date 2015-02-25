@@ -25,6 +25,8 @@ class Gef::Area < ActiveRecord::Base
     wdpa_data.each do |protected_area|
       pame_records = pame_records(wdpa_id: protected_area[:wdpa_id], gef_pmis_id: gef_pmis_id)
       pame_records.each do |assessment|
+        Gef::PameRecord.data_list(mett_original_uid: assessment[:mett_original_uid],
+                                    wdpa_id: protected_area[:wdpa_id])
         csv_hash = protected_area.merge! assessment.attributes
         csv_hash.except!('id', 'created_at', 'updated_at', 'gef_wdpa_record_id', 'gef_area_id')
         csv << csv_hash.values
@@ -54,7 +56,8 @@ class Gef::Area < ActiveRecord::Base
   end
 
   def pame_records wdpa_id: wdpa_id, gef_pmis_id: gef_pmis_id
-    pame_records = Gef::PameRecord.joins(:gef_wdpa_record, :gef_area)
+    pame_records = Gef::PameRecord
+                .joins(:gef_wdpa_record, :gef_area)
                 .where('gef_wdpa_records.wdpa_id = ? AND gef_areas.gef_pmis_id = ?',
                         wdpa_id, gef_pmis_id)
                 .order('mett_original_uid ASC')

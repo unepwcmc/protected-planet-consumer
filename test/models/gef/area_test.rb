@@ -54,8 +54,16 @@ class Gef::AreaTest < ActiveSupport::TestCase
 
     gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 8888)
     wdpa_area_1 = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, wdpa_id: 333444)
+
     FactoryGirl.create(:gef_pame_record, gef_area: gef_area_1, gef_wdpa_record: wdpa_area_1,
                         mett_original_uid: 888999, assessment_year: 2003)
+
+    Gef::PameRecord.expects(:data_list)
+                   .with(mett_original_uid: 888999,
+                         wdpa_id: 333444)
+                   .returns(gef_pmis_id: 666777, wdpa_id: 333444, assessment_year: 2003,
+                            budget_project_type: 'Given', budget_recurrent_type: 'Given',
+                            mett_original_uid: 888999)
 
 
     Gef::WdpaRecord.expects(:wdpa_name)
