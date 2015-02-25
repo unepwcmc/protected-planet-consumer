@@ -38,13 +38,29 @@ class Gef::AreaTest < ActiveSupport::TestCase
                    .returns([wdpa_id: 333444, wdpa_name: 'Manbone',
                              protected_planet_url: 'http://alpha.protectedplanet.net/555999'])
 
+    Gef::PameRecord.expects(:data_list)
+                   .with(mett_original_uid: 888999,
+                         wdpa_id: 333444)
+                   .returns(gef_pmis_id: 666777, wdpa_id: 333444, assessment_year: 2003,
+                            budget_project_type: 'Given', budget_recurrent_type: 'Given',
+                            mett_original_uid: 888999)
+
+    Gef::PameRecord.expects(:data_list)
+                   .with(mett_original_uid: 999888,
+                         wdpa_id: 333444)
+                   .returns(gef_pmis_id: 666777, wdpa_id: 333444, assessment_year: 2005,
+                            budget_project_type: 'n/a', budget_recurrent_type: 'n/a',
+                            mett_original_uid: 999888)
+
     result = [{
       wdpa_id: 333444,
       wdpa_name: 'Manbone',
       protected_planet_url: 'http://alpha.protectedplanet.net/555999',
       gef_pmis_id: 8888,
-      assessments: [{ mett_original_uid: 888999, assessment_year: "2003" },
-                    { mett_original_uid: 999888, assessment_year: "2005" }]
+      assessments: [{ mett_original_uid: 888999, assessment_year: 2003,
+                      budget_project_type: 'Given', budget_recurrent_type: 'Given' },
+                    { mett_original_uid: 999888, assessment_year: 2005,
+                      budget_project_type: 'n/a', budget_recurrent_type: 'n/a' }]
       }]
 
     assert_equal result, Gef::Area.where(gef_pmis_id: 8888).first.generate_api_data

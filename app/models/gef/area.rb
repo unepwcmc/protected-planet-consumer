@@ -45,12 +45,11 @@ class Gef::Area < ActiveRecord::Base
 
   def assessments wdpa_id: wdpa_id, gef_pmis_id: gef_pmis_id
     pame_records = pame_records (wdpa_id: wdpa_id, gef_pmis_id: gef_pmis_id)
+    pame_hash = []
+    pame_records.each do |record|
+      pame_hash << Gef::PameRecord.data_list(mett_original_uid: record[:mett_original_uid],
+                                             wdpa_id: wdpa_id).except(:gef_pmis_id, :wdpa_id)
 
-    pame_hash = pame_records.map{ |record| record.attributes }
-    pame_hash.each do |record|
-      record.symbolize_keys!
-      record.delete_if { |k, v| v.nil? }
-      record.except!(:id, :created_at, :updated_at, :gef_wdpa_record_id, :gef_area_id)
     end
     pame_hash
   end
