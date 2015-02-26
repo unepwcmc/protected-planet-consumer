@@ -47,9 +47,9 @@ class TestGefImporter < ActiveSupport::TestCase
     parsed_csv = [ { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 999888,
                     'METT UID1' => 1122, 'Budget (Recurrent)' => 'n/a', 'Budget (Project)' => 'Not Given' },
                    { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 666777,
-                    'METT UID1' => 1234, 'Budget (Recurrent)' => 'Not Given', 'Budget (Project)' =>  654321},
+                    'METT UID1' => 1234, 'Budget (Recurrent)' => 'Not Given', 'Budget (Project)' =>  '654321'},
                    { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 666777,
-                    'METT UID1' => 4321, 'Budget (Recurrent)' => 123456, 'Budget (Project)' => 'n/a' },
+                    'METT UID1' => 4321, 'Budget (Recurrent)' => '123456', 'Budget (Project)' => 'n/a' },
                  ]
 
     CSV.stubs(:read).with('long_tables.csv', {:headers => true}).returns(parsed_csv)
@@ -99,9 +99,9 @@ class TestGefImporter < ActiveSupport::TestCase
     Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 1111, mett_original_uid: 1122, gef_area_id: 333444,
                                           budget_recurrent_type_id: 969, budget_project_type_id: 666)
     Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 2222, mett_original_uid: 1234, gef_area_id: 333444,
-                                          budget_recurrent_type_id: 666, budget_project_type_id: 999, budget_project_value: 654321)
+                                          budget_recurrent_type_id: 666, budget_project_type_id: 999, budget_project_value: '654321')
     Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 2222, mett_original_uid: 4321, gef_area_id: 333444,
-                                          budget_recurrent_type_id: 999, budget_project_type_id: 969, budget_recurrent_value: 123456)
+                                          budget_recurrent_type_id: 999, budget_project_type_id: 969, budget_recurrent_value: '123456')
 
     s3_response_mock = mock
     s3_response_mock.expects(:download_from_bucket)

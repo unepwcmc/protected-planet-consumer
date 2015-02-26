@@ -10,6 +10,6 @@ class Gef::PameRecordController < ApplicationController
 
   def show
     @assessment = Gef::PameRecord.data_list(mett_original_uid: params[:mett_original_uid],
-                                            wdpa_id: params[:wdpa_id])
+                                            wdpa_id: params[:wdpa_id]).delete_if { |k, v| v == '' }
   end
 end

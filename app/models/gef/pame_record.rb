@@ -27,12 +27,12 @@ class Gef::PameRecord < ActiveRecord::Base
 
     result = ActiveRecord::Base.connection.execute(query).first
 
-
     result.symbolize_keys!
     result.except!(:id, :created_at, :updated_at, :gef_wdpa_record_id, :gef_area_id,
                    :budget_recurrent_type_id, :budget_project_type_id, :gef_pame_name_id)
-    result.delete_if { |k, v| v.nil? }
 
     result.each{ |k,v|  result[k] = v.to_i if v.to_i.to_s == v }
+
+    result.each { |k, v| result[k] = '' if v.nil? }
   end
 end
