@@ -55,7 +55,7 @@ class Gef::Area < ActiveRecord::Base
 
   def data_list mett_original_uid: mett_original_uid, wdpa_id: wdpa_id
     Gef::PameRecord.data_list(mett_original_uid: mett_original_uid,
-                                    wdpa_id: wdpa_id)
+                                    wdpa_id: wdpa_id).delete_if { |k, v| v.nil? }
   end
 
   def pame_records wdpa_id: wdpa_id, gef_pmis_id: gef_pmis_id

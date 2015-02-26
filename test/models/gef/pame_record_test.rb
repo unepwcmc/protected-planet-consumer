@@ -16,9 +16,11 @@ class Gef::PameRecordTest < ActiveSupport::TestCase
                         budget_recurrent_type_id: budget_type.id)
 
     result = { gef_pmis_id: 666777, name: 'Killbear', wdpa_id: 333444, assessment_year: 2007,
-                budget_project_type: 'Given', budget_recurrent_type: 'Given', mett_original_uid: 999888,
+                budget_recurrent_type: 'Given', mett_original_uid: 999888,
                 assessment_year: 2007 }
 
-    assert_equal result, Gef::PameRecord.data_list(mett_original_uid: 999888, wdpa_id: 333444)
+    assert_equal result[:budget_recurrent_type], Gef::PameRecord.data_list(mett_original_uid: 999888, wdpa_id: 333444)[:budget_recurrent_type]
+    assert_equal result[:assessment_year], Gef::PameRecord.data_list(mett_original_uid: 999888, wdpa_id: 333444)[:assessment_year]
+    assert_equal result[:gef_pmis_id], Gef::PameRecord.data_list(mett_original_uid: 999888, wdpa_id: 333444)[:gef_pmis_id]
   end
 end
