@@ -48,7 +48,7 @@ class TestGefConsumer < ActiveSupport::TestCase
       returns(pp_data)
 
     result = {
-        name: 'Manbone',
+        wdpa_name: 'Manbone',
         original_name: "Manboné",
         marine: true,
         reported_area: 20,
@@ -58,7 +58,8 @@ class TestGefConsumer < ActiveSupport::TestCase
         designation: 'National',
         jurisdiction: 'International',
         legal_status: 'Proposed',
-        governance: "Bone Man"
+        governance: "Bone Man",
+        wdpa_exists: true
       }
 
 
@@ -131,7 +132,7 @@ class TestGefConsumer < ActiveSupport::TestCase
       returns(pp_data)
 
     result = {
-        name: 'Manbone',
+        wdpa_name: 'Manbone',
         original_name: "Manboné",
         marine: true,
         reported_area: 20,
@@ -141,7 +142,8 @@ class TestGefConsumer < ActiveSupport::TestCase
         designation: 'National',
         jurisdiction: 'International',
         legal_status: 'Proposed',
-        governance: "Bone Man"
+        governance: "Bone Man",
+        wdpa_exists: true
       }
 
 

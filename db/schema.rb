@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150226145410) do
+ActiveRecord::Schema.define(version: 20150226180744) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -120,7 +120,7 @@ ActiveRecord::Schema.define(version: 20150226145410) do
     t.datetime "updated_at"
     t.integer  "gef_area_id"
     t.integer  "gef_pame_name_id"
-    t.string   "name"
+    t.string   "wdpa_name"
     t.string   "original_name"
     t.boolean  "marine"
     t.decimal  "reported_area"
@@ -130,6 +130,7 @@ ActiveRecord::Schema.define(version: 20150226145410) do
     t.string   "jurisdiction"
     t.string   "legal_status"
     t.string   "governance"
+    t.boolean  "wdpa_exists"
   end
 
   create_table "parcc_protected_areas", force: true do |t|

@@ -6,6 +6,21 @@ class Gef::WdpaRecord < ActiveRecord::Base
   PP_BASE_URL = 'http://www.protectedplanet.net/sites/'
 
   def self.wdpa_name gef_pmis_id: gef_pmis_id
+    wdpa_areas = Gef::WdpaRecord.select('*').joins(:gef_area, :gef_pame_name)
+                                .where('gef_areas.gef_pmis_id = ?', gef_pmis_id)
+
+    wdpa_data = []
+    wdpa_areas.each do |pa|
+      protected_area = pa.attributes.symbolize_keys!
+      protected_area[:protected_planet_url] = protected_planet_url wdpa_id: protected_area[:wdpa_id]
+      wdpa_data << protected_area
+    end
+
+    wdpa_data
+  end
+
+
+  def self.old_wdpa_name gef_pmis_id: gef_pmis_id
     consumer = Gef::Consumer.new
     wdpa_areas = Gef::WdpaRecord.select('*').joins(:gef_area, :gef_pame_name).where('gef_areas.gef_pmis_id = ?', gef_pmis_id)
     wdpa_data = []

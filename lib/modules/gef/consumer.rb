@@ -1,13 +1,18 @@
 class Gef::Consumer
 
-  DIRECT_VALUES = [:name, :reported_area, :original_name, :marine]
+  DIRECT_VALUES = [:reported_area, :original_name, :marine]
   WITH_NAME = [:designation, :iucn_category, :governance, :legal_status]
 
   def api_data wdpa_id: wdpa_id
     reader = ProtectedPlanetReader.new
-    @full_api_data = reader.protected_area_from_wdpaid(id: wdpa_id)
     @consumer_data = {}
-    direct_values && jurisdiction && sub_location && only_name #&& status_year && countries
+    @full_api_data = reader.protected_area_from_wdpaid(id: wdpa_id) rescue @consumer_data[:wdpa_exists] = false
+
+    if @consumer_data == {}
+      @consumer_data[:wdpa_exists] = true
+      direct_values && name && jurisdiction && sub_location && only_name   #&& status_year && countries
+    end
+
     wdpa_record = Gef::WdpaRecord.find_by(wdpa_id: wdpa_id)
 
     wdpa_record.update(@consumer_data)
@@ -39,6 +44,10 @@ class Gef::Consumer
       }
     end
     @consumer_data[:countries] = countries
+  end
+
+  def name
+    @consumer_data[:wdpa_name] = @full_api_data[:name]
   end
 
   def status_year
