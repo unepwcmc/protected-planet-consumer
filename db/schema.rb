@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150219165304) do
+ActiveRecord::Schema.define(version: 20150226145410) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,14 @@ ActiveRecord::Schema.define(version: 20150219165304) do
   create_table "gef_column_matches", force: true do |t|
     t.string   "model_columns"
     t.text     "xls_columns"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_countries", force: true do |t|
+    t.integer  "region_id"
+    t.string   "name"
+    t.string   "iso_3"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -100,12 +108,28 @@ ActiveRecord::Schema.define(version: 20150219165304) do
     t.float    "budget_project_value"
   end
 
+  create_table "gef_regions", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "gef_wdpa_records", force: true do |t|
     t.integer  "wdpa_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "gef_area_id"
     t.integer  "gef_pame_name_id"
+    t.string   "name"
+    t.string   "original_name"
+    t.boolean  "marine"
+    t.decimal  "reported_area"
+    t.string   "sub_location"
+    t.string   "iucn_category"
+    t.string   "designation"
+    t.string   "jurisdiction"
+    t.string   "legal_status"
+    t.string   "governance"
   end
 
   create_table "parcc_protected_areas", force: true do |t|

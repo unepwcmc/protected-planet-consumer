@@ -1,15 +1,21 @@
 class Gef::Consumer
 
-  DIRECT_VALUES = [:wdpa_id, :name, :reported_area]
+  DIRECT_VALUES = [:name, :reported_area, :original_name, :marine]
   WITH_NAME = [:designation, :iucn_category, :governance, :legal_status]
 
   def api_data wdpa_id: wdpa_id
     reader = ProtectedPlanetReader.new
     @full_api_data = reader.protected_area_from_wdpaid(id: wdpa_id)
     @consumer_data = {}
-    direct_values && designation_type && only_name && status_year && countries 
-    { wdpa_data: @consumer_data }
+    direct_values && jurisdiction && sub_location && only_name #&& status_year && countries
+    wdpa_record = Gef::WdpaRecord.find_by(wdpa_id: wdpa_id)
+
+    wdpa_record.update(@consumer_data)
+
+    return true
   end
+
+  private
 
   def direct_values
     DIRECT_VALUES.each do |value|
@@ -39,7 +45,11 @@ class Gef::Consumer
     @consumer_data[:status_year] = Date.parse(@full_api_data[:legal_status_updated_at]).year rescue nil
   end
 
-  def designation_type
-    @consumer_data[:designation_type] = @full_api_data[:designation][:jurisdiction][:name]
+  def jurisdiction
+    @consumer_data[:jurisdiction] = @full_api_data[:designation][:jurisdiction][:name]
+  end
+
+  def sub_location
+    @consumer_data[:sub_location] = @full_api_data[:sub_locations][0][:english_name]
   end
 end

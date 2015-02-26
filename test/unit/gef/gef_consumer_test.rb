@@ -47,30 +47,32 @@ class TestGefConsumer < ActiveSupport::TestCase
       with(id: 555999).
       returns(pp_data)
 
-    result = { wdpa_data:
-      {
-        wdpa_id: 555999,
+    result = {
         name: 'Manbone',
+        original_name: "Manboné",
+        marine: true,
         reported_area: 20,
-        designation_type: 'International',
-        designation: 'National',
+        sub_location: "Manboneland City",
+        designation: 'International',
         iucn_category: 'IA',
-        governance: 'Bone Man',
+        designation: 'National',
+        jurisdiction: 'International',
         legal_status: 'Proposed',
-        status_year: 2008,
-        countries: [{
-          name: 'Manboneland',
-          iso_3: 'MBN',
-          region: 'North Manmerica'
-        }]
+        governance: "Bone Man"
       }
-    }
+
 
     ProtectedPlanetReader.expects(:new).returns(pp_hash)
 
     reader = Gef::Consumer.new
 
-    assert_equal result, reader.api_data(wdpa_id: 555999)
+    wdpa_mock = mock
+
+    Gef::WdpaRecord.expects(:find_by).with(wdpa_id: 555999).returns(wdpa_mock)
+
+    wdpa_mock.expects(:update).with(result)
+
+    assert_equal true, reader.api_data(wdpa_id: 555999)
   end
 
   test '.data returns a hash with protected planet data for 2 countries pa' do
@@ -128,36 +130,31 @@ class TestGefConsumer < ActiveSupport::TestCase
       with(id: 555999).
       returns(pp_data)
 
-    result = { wdpa_data:
-      {
-        wdpa_id: 555999,
+    result = {
         name: 'Manbone',
+        original_name: "Manboné",
+        marine: true,
         reported_area: 20,
-        designation_type: 'International',
-        designation: 'National',
+        sub_location: "Manboneland City",
+        designation: 'International',
         iucn_category: 'IA',
-        governance: 'Bone Man',
+        designation: 'National',
+        jurisdiction: 'International',
         legal_status: 'Proposed',
-        status_year: 2008,
-        countries: [
-          {
-            name: 'Manboneland',
-            iso_3: 'MBN',
-            region: 'North Manmerica'
-          },
-          {
-            name: 'Killbearbourg',
-            iso_3: 'KBR',
-            region: 'North Manmerica'
-          }
-        ]
+        governance: "Bone Man"
       }
-    }
+
 
     ProtectedPlanetReader.expects(:new).returns(pp_hash)
 
     reader = Gef::Consumer.new
 
-    assert_equal result, reader.api_data(wdpa_id: 555999)
+    wdpa_mock = mock
+
+    Gef::WdpaRecord.expects(:find_by).with(wdpa_id: 555999).returns(wdpa_mock)
+
+    wdpa_mock.expects(:update).with(result)
+
+    assert_equal true, reader.api_data(wdpa_id: 555999)
   end
 end
