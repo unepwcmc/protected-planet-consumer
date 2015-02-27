@@ -13,9 +13,9 @@ class Gef::WdpaRecord < ActiveRecord::Base
     wdpa_areas.each do |pa|
       protected_area = pa.attributes.symbolize_keys!
       protected_area[:protected_planet_url] = protected_planet_url wdpa_id: protected_area[:wdpa_id]
+      protected_area[:wdpa_name] = protected_area[:wdpa_exists] ? protected_area[:wdpa_name] : pa.name
       wdpa_data << protected_area
     end
-
     wdpa_data
   end
 

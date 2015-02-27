@@ -12,5 +12,11 @@ namespace :gef do
 
     importer = Gef::Importer.new(filename: FILENAME, bucket_name: BUCKET_NAME)
     importer.import
+
+    consumer = Gef::Consumer.new
+
+    Gef::WdpaRecord.each do |pa|
+      consumer.api_data(wdpa_id: pa.wdpa_id)
+    end
   end
 end

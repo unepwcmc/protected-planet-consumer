@@ -4,13 +4,19 @@ class Gef::Consumer
   WITH_NAME = [:designation, :iucn_category, :governance, :legal_status]
 
   def api_data wdpa_id: wdpa_id
+    puts wdpa_id
     reader = ProtectedPlanetReader.new
     @consumer_data = {}
-    @full_api_data = reader.protected_area_from_wdpaid(id: wdpa_id) rescue @consumer_data[:wdpa_exists] = false
+    @consumer_data[:wdpa_exists] = false if wdpa_id == 999999999
+    if wdpa_id == 999999999
+      @consumer_data[:wdpa_exists] = false
+    else
+      @full_api_data = reader.protected_area_from_wdpaid(id: wdpa_id) rescue @consumer_data[:wdpa_exists] = false
+    end
 
     if @consumer_data == {}
       @consumer_data[:wdpa_exists] = true
-      direct_values && name && jurisdiction && sub_location && only_name   #&& status_year && countries
+      direct_values && name && jurisdiction && only_name   ##sub_location &&  status_year && countries 
     end
 
     wdpa_record = Gef::WdpaRecord.find_by(wdpa_id: wdpa_id)
@@ -24,13 +30,13 @@ class Gef::Consumer
 
   def direct_values
     DIRECT_VALUES.each do |value|
-      @consumer_data[value] =  @full_api_data[value]
+      @consumer_data[value] =  @full_api_data[value] rescue nil
     end
   end
 
   def only_name
     WITH_NAME.each do |value|
-      @consumer_data[value] =  @full_api_data[value][:name]
+      @consumer_data[value] =  @full_api_data[value][:name] rescue nil
     end
   end
 
@@ -47,7 +53,7 @@ class Gef::Consumer
   end
 
   def name
-    @consumer_data[:wdpa_name] = @full_api_data[:name]
+    @consumer_data[:wdpa_name] = @full_api_data[:name] rescue nil
   end
 
   def status_year
@@ -55,10 +61,10 @@ class Gef::Consumer
   end
 
   def jurisdiction
-    @consumer_data[:jurisdiction] = @full_api_data[:designation][:jurisdiction][:name]
+    @consumer_data[:jurisdiction] = @full_api_data[:designation][:jurisdiction][:name] rescue nil
   end
 
   def sub_location
-    @consumer_data[:sub_location] = @full_api_data[:sub_locations][0][:english_name]
+    @consumer_data[:sub_location] = @full_api_data[:sub_locations][0][:english_name] rescue nil
   end
 end
