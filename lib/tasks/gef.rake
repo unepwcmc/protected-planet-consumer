@@ -15,8 +15,5 @@ namespace :gef do
 
     consumer = Gef::Consumer.new
 
-    Gef::WdpaRecord.each do |pa|
-      consumer.api_data(wdpa_id: pa.wdpa_id)
-    end
   end
 end
