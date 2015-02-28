@@ -20,8 +20,22 @@ class Gef::Consumer
     end
 
     wdpa_record = Gef::WdpaRecord.find_by(wdpa_id: wdpa_id)
-
     wdpa_record.update(@consumer_data)
+
+    if @consumer_data[:wdpa_exists] == true
+      @full_api_data[:countries].each do |country|
+        puts country
+        Gef::Region.find_or_create_by(name: country[:region][:name])
+        region_id = Gef::Region.where(name: country[:region][:name]).first[:id]
+
+        Gef::Country.find_or_create_by(name: country[:name], iso_3: country[:iso_3], gef_region_id: region_id)
+        country_id = Gef::Country.where(iso_3: country[:iso_3]).first[:id]
+
+        wdpa_record.each do |record|
+          Gef::CountryWdpaRecord.find_or_create_by(gef_country_id: country_id, gef_wdpa_record_id: record.id)
+        end
+      end
+    end
 
     return true
   end
