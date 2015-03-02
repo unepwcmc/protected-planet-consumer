@@ -12,5 +12,8 @@ namespace :gef do
 
     importer = Gef::Importer.new(filename: FILENAME, bucket_name: BUCKET_NAME)
     importer.import
+
+    consumer = Gef::Consumer.new
+
   end
 end

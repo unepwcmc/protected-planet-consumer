@@ -4,6 +4,7 @@ class Gef::Importer
   def initialize(filename: filename, bucket_name: bucket_name)
     @bucket_name = bucket_name
     @filename = filename
+    @consumer = Gef::Consumer.new
   end
 
   def import
@@ -32,6 +33,8 @@ class Gef::Importer
       Gef::PameRecord.create(pame_record)
 
     end
+    wdpa_ids_list = Gef::WdpaRecord.select(:wdpa_id).group(:wdpa_id)
+    wdpa_ids_list.each { |pa| @consumer.api_data(wdpa_id: pa.wdpa_id) }
   end
 
 
@@ -65,9 +68,9 @@ class Gef::Importer
 
   def budget_selector budget: budget
     if budget.to_i.to_s == budget
-        { type: 'Given', value: budget }
+      { type: 'Given', value: budget }
     else
-        { type: budget }
+      { type: budget }
     end
   end
 end

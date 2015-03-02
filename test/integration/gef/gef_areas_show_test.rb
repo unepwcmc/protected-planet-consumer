@@ -18,10 +18,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
-    consumer_mock = mock
-    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
-
-    Gef::Consumer.expects(:new).returns(consumer_mock)
+    Gef::WdpaRecord.expects(:wdpa_name).returns([wdpa_id: 999888])
 
     visit '/gef/area/1'
     
@@ -34,12 +31,9 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     gef_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
 
-    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
+    FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888, wdpa_name: 'Willbear')
 
-    consumer_mock = mock
-    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
-
-    Gef::Consumer.expects(:new).returns(consumer_mock)
+    Gef::WdpaRecord.expects(:wdpa_name).returns([wdpa_id: 999888, wdpa_name: 'Willbear'])
 
     get '/gef/area/1'
 
@@ -53,10 +47,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
-    consumer_mock = mock
-    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 1, gef_pmis_id: 1, wdpa_id: 999888, wdpa_data: {name: 'Willbear'})
-
-    Gef::Consumer.expects(:new).returns(consumer_mock)
+    Gef::WdpaRecord.expects(:wdpa_name).returns([wdpa_id: 999888])
 
     get '/gef/area/1'
 
@@ -70,13 +61,11 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
-    consumer_mock = mock
-    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 999888,  wdpa_data: {name: 'Willbear'})
-
-    Gef::Consumer.expects(:new).returns(consumer_mock)
+    Gef::WdpaRecord.expects(:wdpa_name).returns([{wdpa_id: 999888, wdpa_exists: true, wdpa_name: 'Willbear', protected_planet_url: 'http://www.protectedplanet.net/sites/999888'}])
 
     get '/gef/area/1'
 
+    puts page.body
     assert page.has_link?('Willbear', :href => 'http://www.protectedplanet.net/sites/999888'),
       'Has no 999888 PP.net link'
   end
@@ -88,10 +77,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, gef_pame_name: gef_name, wdpa_id: 999888)
 
-    consumer_mock = mock
-    consumer_mock.expects(:api_data).with(wdpa_id: 999888).returns(wdpa_id: 999888,  wdpa_data: {name: 'Manbone'})
-
-    Gef::Consumer.expects(:new).returns(consumer_mock)
+    Gef::WdpaRecord.expects(:wdpa_name).returns([{wdpa_id: 999888, wdpa_name: 'Manbone'}])
 
     visit '/gef/area/1'
 
