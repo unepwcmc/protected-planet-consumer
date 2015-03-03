@@ -1,0 +1,2 @@
+module Gef::SearchesHelper
+end

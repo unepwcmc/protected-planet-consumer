@@ -1,0 +1,40 @@
+<%= form_for(@gef_search) do |f| %>
+  <% if @gef_search.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gef_search.errors.count, "error") %> prohibited this gef_search_two from being saved:</h2>
+
+      <ul>
+      <% @gef_search.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="field">
+    <%= f.label :gef_pmis_id %><br />
+    <%= f.text_field :gef_pmis_id %>
+  </div>
+  <div class="field">
+    <%= f.label :gef_country_id %><br />
+    <%= f.collection_select :gef_country_id, Gef::Country.order(:name), :id, :name, include_blank: true %>
+  </div>
+  <div class="field">
+    <%= f.label :gef_region_id %><br />
+    <%= f.collection_select :gef_region_id, Gef::Region.order(:name), :id, :name, include_blank: true %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_biome %><br />
+    <%= f.collection_select :primary_biome, Gef::PameRecord.select(:primary_biome).order(:primary_biome).uniq, :primary_biome, :primary_biome, include_blank: true %>
+  </div>
+  <div class="field">
+    <%= f.label :wdpa_name %><br />
+    <%= f.collection_select :wdpa_name, Gef::WdpaRecord.select(:wdpa_name).order(:wdpa_name).uniq, :wdpa_name, :wdpa_name, include_blank: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wdpa_id %><br />
+    <%= f.text_field :wdpa_id %>
+  </div>
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>

@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     namespace :api do
       resources :area, only: :index
     end
+    resources :searches
+
   end
 
   get '/gef/', to: 'gef#index', as: 'gef'
