@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gef_country_id: 1
+  gef_region_id: 1
+  primary_biome: MyString
+  gef_area_id: 1
+  wdpa_id: 1
+  wdpa_name: MyString
+
+two:
+  gef_country_id: 1
+  gef_region_id: 1
+  primary_biome: MyString
+  gef_area_id: 1
+  wdpa_id: 1
+  wdpa_name: MyString

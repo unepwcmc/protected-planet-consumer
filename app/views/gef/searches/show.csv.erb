@@ -1,0 +1,5 @@
+<%- headers = @gef_area.to_csv[0] -%>
+<%= CSV.generate_line(headers).html_safe.strip %>
+<%- @gef_search.to_csv[1..-1].each do |row| -%>
+  <%= CSV.generate_line(row, row_sep: ?\t ).html_safe %>
+<%- end -%>
