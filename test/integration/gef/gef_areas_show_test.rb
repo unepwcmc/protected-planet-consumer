@@ -63,9 +63,8 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     Gef::WdpaRecord.expects(:wdpa_name).returns([{wdpa_id: 999888, wdpa_exists: true, wdpa_name: 'Willbear', protected_planet_url: 'http://www.protectedplanet.net/sites/999888'}])
 
-    get '/gef/area/1'
+    visit '/gef/area/1'
 
-    puts page.body
     assert page.has_link?('Willbear', :href => 'http://www.protectedplanet.net/sites/999888'),
       'Has no 999888 PP.net link'
   end
