@@ -69,7 +69,7 @@ class TestGefConsumer < ActiveSupport::TestCase
 
     wdpa_mock = mock
     wdpa_mock.expects(:each).yields(wdpa_each_mock)
-    Gef::WdpaRecord.expects(:find_by).with(wdpa_id: 555999).returns(wdpa_mock)
+    Gef::WdpaRecord.expects(:where).with(wdpa_id: 555999).returns(wdpa_mock)
 
     region_mock = mock
     region_mock.expects(:first).returns(id: 111111)
@@ -167,7 +167,7 @@ class TestGefConsumer < ActiveSupport::TestCase
     wdpa_mock = mock
     wdpa_mock.expects(:each).yields(wdpa_each_mock)
 
-    Gef::WdpaRecord.expects(:find_by).with(wdpa_id: 555999).returns(wdpa_mock)
+    Gef::WdpaRecord.expects(:where).with(wdpa_id: 555999).returns(wdpa_mock)
 
     region_mock = mock
     region_mock.expects(:first).returns(id: 111111).twice

@@ -18,7 +18,7 @@ class Gef::Consumer
       direct_values && name && jurisdiction && only_name   ##sub_location &&  status_year && countries 
     end
 
-    wdpa_record = Gef::WdpaRecord.find_by(wdpa_id: wdpa_id)
+    wdpa_record = Gef::WdpaRecord.where(wdpa_id: wdpa_id)
     wdpa_record.each { |record| record.update(@consumer_data)}
 
     if @consumer_data[:wdpa_exists] == true
