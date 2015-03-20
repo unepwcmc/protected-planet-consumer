@@ -36,6 +36,7 @@ class Gef::SearchNewTest < ActionDispatch::IntegrationTest
   end
 
   test 'dropdowns list all options' do
+
     visit '/gef/searches/new'
 
     assert page.has_select?("gef_search_gef_country_id", :options => ['','Bonewomanland', 'Manboneland' ])
@@ -46,6 +47,7 @@ class Gef::SearchNewTest < ActionDispatch::IntegrationTest
   end
 
   test 'has all labelss' do
+
     visit '/gef/searches/new'
 
     assert page.has_selector?('label', text: 'Country')
@@ -60,6 +62,4 @@ class Gef::SearchNewTest < ActionDispatch::IntegrationTest
 
     assert page.has_selector?('label', text: 'WDPA ID')
   end
-
-
 end
