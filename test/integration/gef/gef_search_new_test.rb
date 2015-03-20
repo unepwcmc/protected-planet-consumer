@@ -36,13 +36,13 @@ class Gef::SearchNewTest < ActionDispatch::IntegrationTest
   end
 
   test 'dropdowns list all options' do
-
     visit '/gef/searches/new'
 
-    assert page.has_selector?('option', text: /Manarctica/)
+    assert page.has_select?("gef_search_gef_country_id", :options => ['','Bonewomanland', 'Manboneland' ])
 
-    assert page.has_selector?('option', text: /Womanarctica/)
-    
+    assert page.has_select?("gef_search_gef_region_id", :options => ['','Manarctica', 'Womanarctica' ])
+
+    assert page.has_select?("gef_search_primary_biome", :options => ['','Manbone Biome', 'Womanbone Biome' ])
   end
 
 
