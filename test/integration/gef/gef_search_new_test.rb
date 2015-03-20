@@ -45,5 +45,21 @@ class Gef::SearchNewTest < ActionDispatch::IntegrationTest
     assert page.has_select?("gef_search_primary_biome", :options => ['','Manbone Biome', 'Womanbone Biome' ])
   end
 
+  test 'has all labelss' do
+    visit '/gef/searches/new'
+
+    assert page.has_selector?('label', text: 'Country')
+
+    assert page.has_selector?('label', text: 'Region')
+
+    assert page.has_selector?('label', text: 'GEF ID')
+
+    assert page.has_selector?('label', text: 'Primary Biome')
+
+    assert page.has_selector?('label', text: 'WDPA Name')
+
+    assert page.has_selector?('label', text: 'WDPA ID')
+  end
+
 
 end

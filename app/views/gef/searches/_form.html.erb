@@ -12,28 +12,28 @@
   <% end %>
 
 <div class="field">
-    <%= f.label :gef_pmis_id %><br />
+    <%= f.label :gef_pmis_id, 'GEF ID' %><br />
     <%= f.text_field :gef_pmis_id %>
   </div>
   <div class="field">
-    <%= f.label :gef_country_id %><br />
+    <%= f.label :gef_country_id, 'Country' %><br />
     <%= f.collection_select :gef_country_id, Gef::Country.order(:name), :id, :name, include_blank: true %>
   </div>
   <div class="field">
-    <%= f.label :gef_region_id %><br />
+    <%= f.label :gef_region_id, 'Region' %><br />
     <%= f.collection_select :gef_region_id, Gef::Region.order(:name), :id, :name, include_blank: true %>
   </div>
   <div class="field">
-    <%= f.label :primary_biome %><br />
+    <%= f.label :primary_biome, 'Primary Biome' %><br />
     <%= f.collection_select :primary_biome, Gef::PameRecord.select(:primary_biome).order(:primary_biome).uniq, :primary_biome, :primary_biome, include_blank: true %>
   </div>
   <div class="field">
-    <%= f.label :wdpa_name %><br />
+    <%= f.label :wdpa_name, 'WDPA Name' %><br />
     <%= f.collection_select :wdpa_name, Gef::WdpaRecord.select(:wdpa_name).order(:wdpa_name).uniq, :wdpa_name, :wdpa_name, include_blank: true %>
   </div>
 
   <div class="field">
-    <%= f.label :wdpa_id %><br />
+    <%= f.label :wdpa_id, 'WDPA ID' %><br />
     <%= f.text_field :wdpa_id %>
   </div>
   <div class="actions"><%= f.submit "Search" %></div>
