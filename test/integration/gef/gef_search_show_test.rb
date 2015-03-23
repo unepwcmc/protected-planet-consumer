@@ -30,7 +30,7 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     wdpa_record_2 = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_2, 
                                       gef_pame_name: gef_name_2, wdpa_id: 999888,
-                                      wdpa_name: 'Womanbonal')
+                                      wdpa_name: 'Womanbonal', wdpa_exists: true)
 
     FactoryGirl.create(:gef_country_wdpa_record, gef_country: gef_country_2,  gef_wdpa_record: wdpa_record_2)
 
@@ -66,13 +66,31 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     visit '/gef/searches/1/'
 
-    puts page.body
-
     assert page.has_selector?('td', text: '999888', count: 1)
 
     assert page.has_link?('Manbonal', :href => 'http://www.protectedplanet.net/sites/999888', count: 1)
 
     assert page.has_link?('Link', href: '/gef/area/888999/wdpa-record/999888/pame-record', count: 1)
+  end
+
+  test 'opens not in wdpa links' do
+    wdpa_record_3 = FactoryGirl.create(:gef_wdpa_record, gef_area: @gef_area_1,
+                                      gef_pame_name: @gef_name_1, wdpa_id: 999999,
+                                      wdpa_name: nil, wdpa_exists: false)
+
+    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_record_3,
+                        gef_area: @gef_area_1, gef_pame_name: @gef_name_1,
+                        primary_biome: 'Manbone Biome', mett_original_uid: 222333)
+
+    FactoryGirl.create(:gef_search, gef_pmis_id: 888999, id: 1)
+
+    visit '/gef/searches/1/'
+
+    assert page.has_selector?('td', text: '999888', count: 1)
+
+    assert page.has_selector?('td', text: 'Manbone', count: 1)
+
+    assert page.has_link?('Link', href: '/gef/area/888999/wdpa-record/999999/pame-record', count: 1)
 
   end
 end
