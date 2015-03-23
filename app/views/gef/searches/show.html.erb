@@ -10,12 +10,14 @@
   <div class="col-xs-6">
     <table class="table-condensed">
       <tr>
-        <th>WDPA ID</td>
-        <th>WDPA Name</td>
-        <th>METT Page</td>
+        <th>GEF ID </th>
+        <th>WDPA ID</th>
+        <th>WDPA Name</th>
+        <th>METT Page</th>
       </tr>
       <% @gef_search.areas.each do |pa| %>
         <tr>
+          <td><%= pa[:gef_pmis_id] %></td>
           <td><%= pa[:wdpa_id] %></td>
           <td>
             <% if pa[:wdpa_exists] %>

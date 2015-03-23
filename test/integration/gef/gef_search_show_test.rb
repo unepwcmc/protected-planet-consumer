@@ -48,6 +48,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     visit '/gef/searches/1/'
 
+    assert page.has_selector?('td', text: '888999', count: 1)
+
     assert page.has_selector?('td', text: '999888', count: 1)
 
     assert page.has_link?('Manbonal', :href => 'http://www.protectedplanet.net/sites/999888')
@@ -65,6 +67,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
     FactoryGirl.create(:gef_search, gef_pmis_id: 888999, id: 1)
 
     visit '/gef/searches/1/'
+
+    assert page.has_selector?('td', text: '888999', count: 1)
 
     assert page.has_selector?('td', text: '999888', count: 1)
 
@@ -85,6 +89,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
     FactoryGirl.create(:gef_search, gef_pmis_id: 888999, id: 1)
 
     visit '/gef/searches/1/'
+
+    assert page.has_selector?('td', text: '888999', count: 2)
 
     assert page.has_selector?('td', text: '999888', count: 1)
 
