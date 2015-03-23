@@ -11,7 +11,7 @@ class Gef::SearchesController < ApplicationController
   
   def show
     @gef_search = Gef::Search.find(params[:id])
-  
+
     respond_to do |format|
       format.html # show.html.erb
       format.csv do
@@ -26,6 +26,6 @@ class Gef::SearchesController < ApplicationController
 
   def user_params
     params.require(:gef_search).permit(:gef_country_id, :gef_region_id, :primary_biome,
-                                   :gef_pmis_id, :wdpa_id, :wdpa_name)
+                                       :gef_pmis_id, :wdpa_id, :wdpa_name)
   end
 end
