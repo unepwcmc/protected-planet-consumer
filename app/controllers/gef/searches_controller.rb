@@ -15,7 +15,7 @@ class Gef::SearchesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.csv do
-        headers['Content-Disposition'] = "attachment; filename=\"search-recults.csv\""
+        headers['Content-Disposition'] = "attachment; filename=\"search-results.csv\""
         headers['Content-Type'] ||= 'text/csv'
       end
     end
