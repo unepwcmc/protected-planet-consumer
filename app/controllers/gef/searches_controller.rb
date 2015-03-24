@@ -15,12 +15,12 @@ class Gef::SearchesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.csv do
-        headers['Content-Disposition'] = "attachment; filename=\"gef-id-#{params[:gef_pmis_id]}\""
+        headers['Content-Disposition'] = "attachment; filename=\"search-recults.csv\"
         headers['Content-Type'] ||= 'text/csv'
       end
     end
-
   end
+
 
   private
 

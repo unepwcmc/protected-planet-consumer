@@ -5,6 +5,17 @@ class Gef::Search < ActiveRecord::Base
   def areas
     @areas ||= find_areas
   end
+
+  def to_csv
+    @areas ||= find_areas
+    csv = []
+    csv_headers = []
+    @areas.each do |protected_area|
+      csv << protected_area.values
+      csv_headers = protected_area.keys
+    end
+    csv.insert(0,csv_headers)
+  end
   
 private
 
