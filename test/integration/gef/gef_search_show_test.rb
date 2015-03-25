@@ -101,10 +101,22 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
   test 'renders csv button with link do csv file' do
 
-  FactoryGirl.create(:gef_search, gef_pmis_id: 888999, id: 1)
+    FactoryGirl.create(:gef_search, gef_pmis_id: 888999, id: 1)
 
     visit '/gef/searches/1/'
 
     assert page.has_link?('Download CSV', /.csv/)
   end
+
+  test 'renders a not found page when nothing matches' do
+
+    FactoryGirl.create(:gef_search, gef_pmis_id: 546465345, id: 1)
+
+    visit '/gef/searches/1/'
+
+    assert page.has_selector?('div', text: /Your search did not find any protected areas/)
+
+    assert page.has_link?('Please try again', href: '/gef/searches/new')
+  end
+
 end
