@@ -1,33 +1,40 @@
-<h1>Search Results</h1>
-
 <main class="protected-areas">
 
   <div class="container">
     <h1><img src="/images/gef_logo.png" /> Protected Area Database</h1>
   </div>
 
-
+  <div class="col-xs-8">
+    <h2>Search Results</h2>
+    <%= link_to 'Download CSV', gef_search_path(params[:id], format: 'csv') if @gef_search.areas.any? %>
+  </div>
   <div class="col-xs-6">
-    <table class="table-condensed">
-      <tr>
-        <th>WDPA ID</td>
-        <th>WDPA Name</td>
-        <th>METT Page</td>
-      </tr>
-      <% @gef_search.areas.each do |pa| %>
+    <% if @gef_search.areas.any? %>
+      <table class="table-condensed">
         <tr>
-          <td><%= pa[:wdpa_id] %></td>
-          <td>
-            <% if pa[:wdpa_exists] %>
-              <%= link_to  pa[:wdpa_name], pa[:protected_planet_url] %>
-            <% else %>
-              <%= pa[:wdpa_name] %>
-            <% end %>
-          </td>
-          <td class="text-center"><%= link_to 'Link', pame_records_path(pa[:gef_pmis_id], pa[:wdpa_id]) %></td>
+          <th>GEF ID </th>
+          <th>WDPA ID</th>
+          <th>WDPA Name</th>
+          <th>METT Page</th>
         </tr>
-      <% end %>
-    </table>
+        <% @gef_search.areas.each do |pa| %>
+          <tr>
+            <td><%= pa[:gef_pmis_id] %></td>
+            <td><%= pa[:wdpa_id] %></td>
+            <td>
+              <% if pa[:wdpa_exists] %>
+                <%= link_to  pa[:wdpa_name], pa[:protected_planet_url] %>
+              <% else %>
+                <%= pa[:wdpa_name] %>
+              <% end %>
+            </td>
+            <td class="text-center"><%= link_to 'Link', pame_records_path(pa[:gef_pmis_id], pa[:wdpa_id]) %></td>
+          </tr>
+        <% end %>
+      </table>
+    <% else %>
+      <br>Your search did not find any protected areas. <%= link_to 'Please try again', new_gef_search_path %></br>
+    <% end %>
   </div>
 </main>
 

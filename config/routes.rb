@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   end
 
+  get '/gef/not_found/', :to => redirect('/gef/not_found.html'), as: 'gef_not_found'
+
   get '/gef/', to: 'gef#index', as: 'gef'
 
   get '/gef/area/:gef_pmis_id',  to: 'gef/area#show', as: 'gef_area'

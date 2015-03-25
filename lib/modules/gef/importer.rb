@@ -67,7 +67,9 @@ class Gef::Importer
   end
 
   def budget_selector budget: budget
-    if budget.to_i.to_s == budget
+    if budget.blank?
+      { type: 'Not Given' }
+    elsif budget.to_i.to_s == budget
       { type: 'Given', value: budget }
     else
       { type: budget }

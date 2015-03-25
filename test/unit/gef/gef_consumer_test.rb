@@ -48,31 +48,28 @@ class TestGefConsumer < ActiveSupport::TestCase
       returns(pp_data)
 
     result = {
-        wdpa_name: 'Manbone',
-        original_name: "Manboné",
-        marine: true,
-        reported_area: 20,
-        designation: 'International',
-        iucn_category: 'IA',
-        designation: 'National',
-        jurisdiction: 'International',
-        legal_status: 'Proposed',
-        governance: "Bone Man",
-        wdpa_exists: true
+        :wdpa_exists => true,
+        :reported_area => 20,
+        :original_name => 'Manboné',
+        :marine => true,
+        :wdpa_name => 'Manbone',
+        :jurisdiction => 'International',
+        :designation => 'National',
+        :iucn_category => 'IA',
+        :governance => 'Bone Man',
+        :legal_status => 'Proposed'
       }
-
-
-
 
     ProtectedPlanetReader.expects(:new).returns(pp_hash)
 
     reader = Gef::Consumer.new
 
+    wdpa_each_mock = mock
+    wdpa_each_mock.expects(:update).with(result)
+
     wdpa_mock = mock
-
-    Gef::WdpaRecord.expects(:find_by).with(wdpa_id: 555999).returns(wdpa_mock)
-
-    wdpa_mock.expects(:update).with(result)
+    wdpa_mock.expects(:each).yields(wdpa_each_mock)
+    Gef::WdpaRecord.expects(:where).with(wdpa_id: 555999).returns(wdpa_mock)
 
     region_mock = mock
     region_mock.expects(:first).returns(id: 111111)
@@ -83,8 +80,7 @@ class TestGefConsumer < ActiveSupport::TestCase
     country_mock.expects(:first).returns(id: 222222)
     Gef::Country.expects(:find_or_create_by).with(name: "Manboneland", iso_3: 'MBN', gef_region_id: 111111)
     Gef::Country.expects(:where).with(iso_3:  "MBN").returns(country_mock)
-    
-    wdpa_each_mock = mock
+
     wdpa_each_mock.stubs(:id).returns(333333)
     wdpa_mock.expects(:each).yields(wdpa_each_mock)
 
@@ -149,28 +145,29 @@ class TestGefConsumer < ActiveSupport::TestCase
       returns(pp_data)
 
     result = {
-        wdpa_name: 'Manbone',
-        original_name: "Manboné",
-        marine: true,
-        reported_area: 20,
-        designation: 'International',
-        iucn_category: 'IA',
-        designation: 'National',
-        jurisdiction: 'International',
-        legal_status: 'Proposed',
-        governance: "Bone Man",
-        wdpa_exists: true
+        :wdpa_exists => true,
+        :reported_area => 20,
+        :original_name => 'Manboné',
+        :marine => true,
+        :wdpa_name => 'Manbone',
+        :jurisdiction => 'International',
+        :designation => 'National',
+        :iucn_category => 'IA',
+        :governance => 'Bone Man',
+        :legal_status => 'Proposed'
       }
 
     ProtectedPlanetReader.expects(:new).returns(pp_hash)
 
     reader = Gef::Consumer.new
 
+    wdpa_each_mock = mock
+    wdpa_each_mock.expects(:update).with(result)
+
     wdpa_mock = mock
+    wdpa_mock.expects(:each).yields(wdpa_each_mock)
 
-    Gef::WdpaRecord.expects(:find_by).with(wdpa_id: 555999).returns(wdpa_mock)
-
-    wdpa_mock.expects(:update).with(result)
+    Gef::WdpaRecord.expects(:where).with(wdpa_id: 555999).returns(wdpa_mock)
 
     region_mock = mock
     region_mock.expects(:first).returns(id: 111111).twice
@@ -188,7 +185,6 @@ class TestGefConsumer < ActiveSupport::TestCase
     Gef::Country.expects(:where).with(iso_3:  "MBN").returns(country_mock)
     Gef::Country.expects(:where).with(iso_3:  "KBR").returns(country_mock_2)
 
-    wdpa_each_mock = mock
     wdpa_each_mock.stubs(:id).returns(333333).twice
     wdpa_mock.expects(:each).yields(wdpa_each_mock).twice
 

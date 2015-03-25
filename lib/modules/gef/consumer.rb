@@ -4,10 +4,9 @@ class Gef::Consumer
   WITH_NAME = [:designation, :iucn_category, :governance, :legal_status]
 
   def api_data wdpa_id: wdpa_id
-    puts wdpa_id
     reader = ProtectedPlanetReader.new
     @consumer_data = {}
-    @consumer_data[:wdpa_exists] = false if wdpa_id == 999999999
+    # avoids constant calls for 999999999
     if wdpa_id == 999999999
       @consumer_data[:wdpa_exists] = false
     else

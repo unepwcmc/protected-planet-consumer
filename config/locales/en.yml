@@ -34,6 +34,10 @@ en:
   pa_boundary_demarcation: "Protected Area Boundary Demarcation"
   management_plan: "Management Plan"
   regular_work_plan: "Regular Work Plan"
+  budget_recurrent_type_id: "Budget Recurrent Type"
+  budget_recurrent_value: "Budget Recurrent Value (USD)"
+  budget_project_type_id: "Budget Project Type"
+  budget_project_value: "Budget Project Value"
   resource_inventory: "Resource inventory"
   protection_systems: "Protection Systems (METT3 ONLY)"
   research: "Research"
@@ -62,7 +66,9 @@ en:
   total_possible_score: "Total Possible Score"
   overall_percentage: "Overall Percentage"
   created_at: "Date of creation"
-  updated_at: "Date last updated"
+  updated_at: "Date of last update"
   region: "Region"
   biome: "Biome"
   id: "ID"
+  wdpa_name: WDPA Name
+  wdpa_id: WDPA ID
