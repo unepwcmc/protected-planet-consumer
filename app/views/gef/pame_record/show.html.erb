@@ -11,7 +11,7 @@
   </div>
   <div class="col-xs-6">
     <table class="table">
-      <% @assessment.sort.each do |parameter,value| %>
+      <% @assessment.each do |parameter,value| %>
           <tr>
             <td colspan="3"><%=t parameter %></td>
             <td class="text-center"><%= value %></td>
