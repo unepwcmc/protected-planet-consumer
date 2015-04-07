@@ -1,13 +1,14 @@
 <main class="protected-areas">
-
+  
   <div class="container">
-    <h1><img src="/images/gef_logo.png" /> Protected Area Database</h1>
+    <h1><%= link_to image_tag("/images/gef_logo.png"), new_gef_search_path %>Protected Area Database</h1>
   </div>
 
   <div class="col-xs-8">
     <h2>Search Results</h2>
     <%= link_to 'Download CSV', gef_search_path(params[:id], format: 'csv') if @gef_search.areas.any? %>
   </div>
+
   <div class="col-xs-6">
     <% if @gef_search.areas.any? %>
       <table class="table-condensed">
