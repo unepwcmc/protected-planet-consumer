@@ -9,7 +9,7 @@ class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_pame_record, gef_area: gef_area, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
 
-    get '/gef/area/666777/wdpa-record/333444/pame-record'
+    get '/gef/areas/666777/wdpa_records/333444/pame_records'
 
     assert_equal 200, response.status
 
@@ -25,7 +25,7 @@ class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_pame_record, gef_area: gef_area, gef_wdpa_record: wdpa_area, mett_original_uid: 888999)
 
-    get '/gef/area/666777/wdpa-record/333444/pame-record'
+    get '/gef/areas/666777/wdpa_records/333444/pame_records'
 
     assert_match /999888/, @response.body
     assert_match /888999/, @response.body
@@ -39,7 +39,7 @@ class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_pame_record, gef_area: gef_area, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
 
-    visit '/gef/area/666777/wdpa-record/333444/pame-record'
+    visit '/gef/areas/666777/wdpa_records/333444/pame_records'
 
     assert page.has_link?('999888', /999888/)
 

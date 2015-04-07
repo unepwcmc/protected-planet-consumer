@@ -1,4 +1,4 @@
-class Gef::AreaController < ApplicationController
+class Gef::AreasController < ApplicationController
   before_filter :gef_area
 
   def gef_area

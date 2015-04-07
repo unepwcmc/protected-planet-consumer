@@ -5,7 +5,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     FactoryGirl.create(:gef_area, gef_pmis_id: 1)
     
-    get '/gef/area/1'
+    get '/gef/areas/1'
 
     assert_equal 200, response.status
   end
@@ -20,7 +20,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     Gef::WdpaRecord.expects(:wdpa_name).returns([wdpa_id: 999888])
 
-    visit '/gef/area/1'
+    visit '/gef/areas/1'
     
     assert page.has_selector?('h2', text: 'GEF ID #1'), 'h2 does not match'
   end
@@ -35,7 +35,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     Gef::WdpaRecord.expects(:wdpa_name).returns([wdpa_id: 999888, wdpa_name: 'Willbear'])
 
-    get '/gef/area/1'
+    get '/gef/areas/1'
 
     assert_match /Willbear/, @response.body
   end
@@ -49,7 +49,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     Gef::WdpaRecord.expects(:wdpa_name).returns([wdpa_id: 999888])
 
-    get '/gef/area/1'
+    get '/gef/areas/1'
 
     assert_match /999888/, @response.body
   end
@@ -63,7 +63,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     Gef::WdpaRecord.expects(:wdpa_name).returns([{wdpa_id: 999888, wdpa_exists: true, wdpa_name: 'Willbear', protected_planet_url: 'http://www.protectedplanet.net/sites/999888'}])
 
-    visit '/gef/area/1'
+    visit '/gef/areas/1'
 
     assert page.has_link?('Willbear', :href => 'http://www.protectedplanet.net/sites/999888'),
       'Has no 999888 PP.net link'
@@ -78,7 +78,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     Gef::WdpaRecord.expects(:wdpa_name).returns([{wdpa_id: 999888, wdpa_name: 'Manbone'}])
 
-    visit '/gef/area/1'
+    visit '/gef/areas/1'
 
     assert page.has_link?('Link', /1/)
   end
@@ -92,7 +92,7 @@ class Gef::AreaShowTest < ActionDispatch::IntegrationTest
 
     Gef::WdpaRecord.expects(:wdpa_name).with(gef_pmis_id: 1).returns([{wdpa_id: 999888, wdpa_exists: false, wdpa_name: 'Womanbone'}])
 
-    get '/gef/area/1'
+    get '/gef/areas/1'
 
     assert_match /Womanbone/, @response.body
   end

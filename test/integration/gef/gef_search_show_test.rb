@@ -54,7 +54,7 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     assert page.has_link?('Manbonal', :href => 'http://www.protectedplanet.net/sites/999888')
 
-    assert page.has_link?('Link', href: '/gef/area/888999/wdpa-record/999888/pame-record')
+    assert page.has_link?('Link', href: '/gef/areas/888999/wdpa_records/999888/pame_records')
 
   end
 
@@ -74,7 +74,7 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     assert page.has_link?('Manbonal', :href => 'http://www.protectedplanet.net/sites/999888', count: 1)
 
-    assert page.has_link?('Link', href: '/gef/area/888999/wdpa-record/999888/pame-record', count: 1)
+    assert page.has_link?('Link', href: '/gef/areas/888999/wdpa_records/999888/pame_records', count: 1)
   end
 
   test 'opens not in wdpa links' do
@@ -96,7 +96,7 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     assert page.has_selector?('td', text: 'Manbone', count: 1)
 
-    assert page.has_link?('Link', href: '/gef/area/888999/wdpa-record/999999/pame-record', count: 1)
+    assert page.has_link?('Link', href: '/gef/areas/888999/wdpa_records/999999/pame_records', count: 1)
   end
 
   test 'renders csv button with link do csv file' do

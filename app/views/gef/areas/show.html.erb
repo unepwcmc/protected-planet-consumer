@@ -28,7 +28,7 @@
               <%= pa[:wdpa_name] %>
             <% end %>
           </td>
-          <td class="text-center"><%= link_to 'Link', pame_records_path(pa[:gef_pmis_id], pa[:wdpa_id]) %></td>
+          <td class="text-center"><%= link_to 'Link', gef_area_wdpa_record_pame_records_path(pa[:gef_pmis_id], pa[:wdpa_id]) %></td>
         </tr>
       <% end %>
     </table>
