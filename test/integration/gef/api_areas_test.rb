@@ -19,7 +19,7 @@ class Gef::ApiAreasTest < ActionDispatch::IntegrationTest
                             budget_project_type: 'Given', budget_recurrent_type: 'Given',
                             mett_original_uid: 999888)
 
-    get '/gef/api/area?id=666777'
+    get '/gef/api/areas?id=666777'
 
     assert response.success?
     

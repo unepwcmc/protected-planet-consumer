@@ -15,7 +15,7 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
                         gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
                         budget_recurrent_type_id: budget_type.id)
 
-    get '/gef/area/666777/wdpa-record/333444/pame-record/999888'
+    get '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
     assert_equal 200, response.status
   end
@@ -33,7 +33,7 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
                         gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
                         budget_recurrent_type_id: budget_type.id)
 
-    visit '/gef/area/666777/wdpa-record/333444/pame-record/999888'
+    visit '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
     assert page.has_selector?('h2', text: 'WDPA ID #333444 - Assessment 999888'), 'h2 does not match'
   end
@@ -51,7 +51,7 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
                         gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
                         budget_recurrent_type_id: budget_type.id)
 
-    visit '/gef/area/666777/wdpa-record/333444/pame-record/999888'
+    visit '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
     assert page.has_selector?('table', text: /2007/), 'assessment_year not in table'
   end
@@ -72,7 +72,7 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
                         budget_recurrent_type_id: budget_type_2.id, budget_project_value: 123456, 
                         budget_recurrent_value: 654321)
 
-    visit '/gef/area/666777/wdpa-record/333444/pame-record/999888'
+    visit '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
     assert page.has_selector?('table', text: /Given/), 'budget_type not in table'
     assert page.has_selector?('table', text: /Not Given/), 'budget_type not in table'

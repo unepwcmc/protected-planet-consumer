@@ -20,7 +20,7 @@
       <tr class="text-center">
         <td><%= assessment.assessment_year %></td>
         <td><%= assessment.assessment_type %></td>
-        <td><%= link_to assessment.mett_original_uid, pame_record_path(@pame_assessments.first.gef_area.gef_pmis_id, @pame_assessments.first.wdpa_id, assessment.mett_original_uid) %></td>
+        <td><%= link_to assessment.mett_original_uid, gef_area_wdpa_record_pame_record_path(@pame_assessments.first.gef_area.gef_pmis_id, @pame_assessments.first.wdpa_id, assessment.mett_original_uid) %></td>
       </tr>
     <% end %>
  </div>
