@@ -1,12 +1,16 @@
 class Gef::SearchesController < ApplicationController
   def new
     @gef_search = Gef::Search.new
-    
   end
   
   def create
-    @gef_search = Gef::Search.create!(user_params)
-    redirect_to @gef_search
+    check_params = user_params.values.map{ |param| true if not param.blank? }
+    if check_params.include? true
+      @gef_search = Gef::Search.create!(user_params)
+      redirect_to @gef_search
+    else
+      redirect_to '/gef/not_found'
+    end
   end
   
   def show

@@ -32,6 +32,7 @@ private
     areas = areas.joins(gef_countries: :gef_region).where(gef_countries: {gef_region_id: gef_region_id}) if gef_region_id.present?
     areas = areas.where(gef_pame_records: {primary_biome: primary_biome}) if primary_biome.present?
     areas = areas.where(wdpa_name: wdpa_name) if wdpa_name.present?
+    areas = areas.where(wdpa_id: wdpa_id) if wdpa_id.present?
     areas
   end
 
