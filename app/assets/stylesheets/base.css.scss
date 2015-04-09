@@ -1,0 +1,144 @@
+@import 'colors';
+
+$zIndex-2:   200;
+
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+#wrap
+{
+  min-height: 100%;  
+}
+ 
+#main
+{
+    overflow:auto;
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+ 
+
+nav {
+  z-index: $zIndex-2;
+  overflow: hidden;
+  font-size: 0.938em;
+  width: 100%;
+  float: left;
+  list-style: none;
+  padding-right: 20px;
+
+  li {
+    line-height: 60px;
+    float: left;
+    text-align: -webkit-match-parent;
+    font-size: 2em;
+    margin-left: 15px;
+
+    a { color: $color--nav-link; }
+    a:hover { text-decoration: none; 
+      color: $color--nav-active-link;  }
+    a:last-child { margin-right: 0; }
+
+  }
+
+  ul {
+    ul {
+    position: absolute;
+      z-index: 999;
+    }
+  }
+}
+
+.nav-main {
+  background-color: $color--nav-bg;
+
+}
+
+a.download-all{
+  padding-top: 15px;
+  display: block;
+}
+
+.download-search{
+  margin-top: 20px;
+}
+
+label{
+  margin-top: 10px;
+}
+
+input {
+  margin-top: 10px;
+  color: $color--input-text;
+  background-color: $color--input-bg;
+  height: 31px;
+}
+
+select{
+  margin-top: 10px;
+  color: $color--input-text;
+  background-color: $color--input-bg;
+  height: 31px;
+  overflow: hidden
+}
+
+
+div.actions{
+  input{
+    margin-top: 10px;
+    display: block;
+    color: $color--input-text;
+    background-color: $color--input-bg;
+    height: 31px;
+  }
+}
+
+
+
+footer {
+  height: 60px;
+  background: $color--footer-bg;
+  font-size: 0.938em;
+
+  a {
+    &, &:visited {
+      color: $color--footer-link;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    text-decoration: none;
+    margin-right: 20px;
+    &:last-child { margin-right: 0px; }
+  }
+
+  .footer-inner {
+    display: block;
+    line-height: 41px;
+    padding: 20px 0;
+    margin: 0px auto;
+    width: 95%;
+
+    p { color: $color--footer; }
+  }
+}
+
+.footer-logos {
+  margin-right: 20px;
+  img { margin-right: 0px; }
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.footer-copyright, .footer-logos { float: left; color: $white;}
+
+.footer-copyright{
+  display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
