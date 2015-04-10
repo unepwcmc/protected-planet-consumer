@@ -56,6 +56,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     assert page.has_link?('Link', href: '/gef/areas/888999/wdpa_records/999888/pame_records')
 
+    assert page.has_link?('888999', href: 'http://www.thegef.org/gef/project_detail?projID=888999')
+
   end
 
   test 'Not duplicate assessments' do
@@ -75,6 +77,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
     assert page.has_link?('Manbonal', :href => 'http://www.protectedplanet.net/sites/999888', count: 1)
 
     assert page.has_link?('Link', href: '/gef/areas/888999/wdpa_records/999888/pame_records', count: 1)
+
+    assert page.has_link?('888999', href: 'http://www.thegef.org/gef/project_detail?projID=888999')
   end
 
   test 'opens not in wdpa links' do
@@ -97,6 +101,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
     assert page.has_selector?('td', text: 'Manbone', count: 1)
 
     assert page.has_link?('Link', href: '/gef/areas/888999/wdpa_records/999999/pame_records', count: 1)
+
+    assert page.has_link?('888999', href: 'http://www.thegef.org/gef/project_detail?projID=888999')
   end
 
   test 'renders csv button with link do csv file' do
@@ -106,6 +112,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
     visit '/gef/searches/1/'
 
     assert page.has_link?('Download CSV', /.csv/)
+
+    assert page.has_link?('888999', href: 'http://www.thegef.org/gef/project_detail?projID=888999')
   end
 
   test 'renders a not found page when nothing matches' do
@@ -117,6 +125,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
     assert page.has_selector?('div', text: /Your search did not find any protected areas/)
 
     assert page.has_link?('Please try again', href: '/gef/searches/new')
+
+    assert page.has_link?('546465345', href: 'http://www.thegef.org/gef/project_detail?projID=546465345')
   end
 
 end

@@ -15,7 +15,9 @@
         </tr>
         <% @gef_search.areas.each do |pa| %>
           <tr>
-            <td><%= pa[:gef_pmis_id] %></td>
+            <td>
+              <%= link_to  pa[:gef_pmis_id], "http://www.thegef.org/gef/project_detail?projID=#{pa[:gef_pmis_id]}" %>
+            </td>
             <td><%= pa[:wdpa_id] %></td>
             <td>
               <% if pa[:wdpa_exists] %>
