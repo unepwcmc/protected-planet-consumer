@@ -28,7 +28,7 @@ class Gef::Importer
       biome_types = [:primary_biome, :secondary_biome, :tertiary_biome, :quaternary_biome]
       biomes = {}
       pa_converted.each do |key, value|
-        if (biome_types.include? key && value)
+        if (biome_types.include?(key) && value)
           Gef::Biome.find_or_create_by(name: pa_converted[key])
           biome_id = Gef::Biome.where('name = ?', pa_converted[key]).first[:id]
           biomes["#{key}_id".to_sym] = biome_id
