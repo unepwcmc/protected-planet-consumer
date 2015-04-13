@@ -26,11 +26,11 @@ private
   end
 
   def query_areas
-    areas =  Gef::WdpaRecord.joins({gef_area: :gef_pame_records}, :gef_pame_name)
-    areas = areas.where(gef_areas: {gef_pmis_id: gef_pmis_id}) if gef_pmis_id.present?
+    areas =  Gef::PameRecord.joins(:gef_area, :gef_pame_name, :gef_wdpa_records)
+    areas = areas.where(gef_area: {gef_pmis_id: gef_pmis_id}) if gef_pmis_id.present?
     areas = areas.joins(gef_countries: :gef_region).where(gef_countries: {id: gef_country_id}) if gef_country_id.present?
     areas = areas.joins(gef_countries: :gef_region).where(gef_countries: {gef_region_id: gef_region_id}) if gef_region_id.present?
-    areas = areas.where(gef_pame_records: {primary_biome: primary_biome}) if primary_biome.present?
+    areas = areas.joins(:primary_biome).where(gef_biomes: { name: primary_biome}) if primary_biome.present?
     areas = areas.where(wdpa_name: wdpa_name) if wdpa_name.present?
     areas = areas.where(wdpa_id: wdpa_id) if wdpa_id.present?
     areas

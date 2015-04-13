@@ -1,13 +1,14 @@
 class Gef::PameRecord < ActiveRecord::Base
   has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_pame_record_wdpa_records
-  has_many :gef__record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_pame_record_id
+  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_pame_record_id
   belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id
   belongs_to :gef_pame_name, class_name: 'Gef::PameName', foreign_key: :gef_pame_name_id
   belongs_to :gef_budget_type, class_name: 'Gef::BudgetType', foreign_key: :budget_recurrent_type_id
-  belongs_to :gef_biome, class_name: 'Gef::Biome', foreign_key: :primary_biome
-  belongs_to :gef_biome, class_name: 'Gef::Biome', foreign_key: :secondary_biome
-  belongs_to :gef_biome, class_name: 'Gef::Biome', foreign_key: :terciary_biome
-  belongs_to :gef_biome, class_name: 'Gef::Biome', foreign_key: :quaternary_biome
+  belongs_to :gef_budget_type, class_name: 'Gef::BudgetType', foreign_key: :budget_project_type_id
+  belongs_to :primary_biome, class_name: 'Gef::Biome', foreign_key: :primary_biome_id
+  belongs_to :secondary_biome, class_name: 'Gef::Biome', foreign_key: :secondary_biome_id
+  belongs_to :terciary_biome, class_name: 'Gef::Biome', foreign_key: :terciary_biome_id
+  belongs_to :quaternary_biome, class_name: 'Gef::Biome', foreign_key: :quaternary_biome_id
 
   def self.data_list mett_original_uid: mett_original_uid, wdpa_id: wdpa_id
 
