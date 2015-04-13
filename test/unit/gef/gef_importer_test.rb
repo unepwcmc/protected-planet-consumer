@@ -116,9 +116,9 @@ class TestGefImporter < ActiveSupport::TestCase
     biome_mock_3.expects(:first).returns(id:1002).once
 
 
-    Gef::Biome.expects(:where).with('name = ?', 'Manbone Taiga').returns(biome_mock_1).twice
+    Gef::Biome.expects(:where).with('name = ?', 'Manbone Taiga').returns(biome_mock_1).once
     Gef::Biome.expects(:where).with('name = ?', 'Killbear Taiga').returns(biome_mock_2).twice
-    Gef::Biome.expects(:where).with('name = ?', 'Taiga Taiga').returns(biome_mock_3).twice
+    Gef::Biome.expects(:where).with('name = ?', 'Taiga Taiga').returns(biome_mock_3).once
 
     Gef::PameRecord.expects(:find_or_create_by).with(gef_pame_name_id: 5566, mett_original_uid: 1122, gef_area_id: 333444,
                                           budget_recurrent_type_id: 969, budget_project_type_id: 666, primary_biome_id: 1000,
