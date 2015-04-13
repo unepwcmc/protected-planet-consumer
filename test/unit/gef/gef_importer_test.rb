@@ -47,17 +47,14 @@ class TestGefImporter < ActiveSupport::TestCase
     FactoryGirl.create(:gef_column_match, model_columns: 'secondary_biome', xls_columns: 'Secondary Biome')
 
     parsed_csv = [ { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 999888,
-                    'METT UID1' => 1122, 'Budget (Recurrent)' => 'n/a', 'Budget (Project)' => 'Not Given'
-                    #,'Primary Biome' => 'Manbone Taiga', 'Secondary Biome' => 'Killbear Taiga' 
-                    },
+                    'METT UID1' => 1122, 'Budget (Recurrent)' => 'n/a', 'Budget (Project)' => 'Not Given',
+                    'Primary Biome' => 'Manbone Taiga', 'Secondary Biome' => 'Killbear Taiga'},
                    { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 666777,
-                    'METT UID1' => 1234, 'Budget (Recurrent)' => 'Not Given', 'Budget (Project)' =>  '654321'
-                    #, 'Primary Biome' => 'Killbear Taiga'
-                    },
+                    'METT UID1' => 1234, 'Budget (Recurrent)' => 'Not Given', 'Budget (Project)' =>  '654321', 
+                    'Primary Biome' => 'Killbear Taiga'},
                    { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 666777,
-                    'METT UID1' => 4321, 'Budget (Recurrent)' => '123456', 'Budget (Project)' => 'n/a'
-                    #,'Primary Biome' => 'Taiga Taiga'
-                    },
+                    'METT UID1' => 4321, 'Budget (Recurrent)' => '123456', 'Budget (Project)' => 'n/a',
+                    'Primary Biome' => 'Taiga Taiga'},
                  ]
 
     CSV.stubs(:read).with('long_tables.csv', {:headers => true}).returns(parsed_csv)
@@ -105,12 +102,33 @@ class TestGefImporter < ActiveSupport::TestCase
     Gef::BudgetType.expects(:where).with('name = ?', 'Given').returns(budget_mock_2).twice
     Gef::BudgetType.expects(:where).with('name = ?', 'n/a').returns(budget_mock_3).twice
 
+
+    Gef::Biome.expects(:find_or_create_by).with(name: 'Manbone Taiga').once
+    Gef::Biome.expects(:find_or_create_by).with(name: 'Killbear Taiga').twice
+    Gef::Biome.expects(:find_or_create_by).with(name: 'Taiga Taiga').once
+
+
+    biome_mock_1 = mock
+    biome_mock_1.expects(:first).returns(id:1000).once
+    biome_mock_2 = mock
+    biome_mock_2.expects(:first).returns(id:1001).twice
+    biome_mock_3 = mock
+    biome_mock_3.expects(:first).returns(id:1002).once
+
+
+    Gef::Biome.expects(:where).with('name = ?', 'Manbone Taiga').returns(biome_mock_1).twice
+    Gef::Biome.expects(:where).with('name = ?', 'Killbear Taiga').returns(biome_mock_2).twice
+    Gef::Biome.expects(:where).with('name = ?', 'Taiga Taiga').returns(biome_mock_3).twice
+
     Gef::PameRecord.expects(:find_or_create_by).with(gef_pame_name_id: 5566, mett_original_uid: 1122, gef_area_id: 333444,
-                                          budget_recurrent_type_id: 969, budget_project_type_id: 666)
+                                          budget_recurrent_type_id: 969, budget_project_type_id: 666, primary_biome_id: 1000,
+                                          secondary_biome_id: 1001)
     Gef::PameRecord.expects(:find_or_create_by).with(gef_pame_name_id: 5566, mett_original_uid: 1234, gef_area_id: 333444,
-                                          budget_recurrent_type_id: 666, budget_project_type_id: 999, budget_project_value: '654321')
+                                          budget_recurrent_type_id: 666, budget_project_type_id: 999, budget_project_value: '654321',
+                                          primary_biome_id: 1001)
     Gef::PameRecord.expects(:find_or_create_by).with(gef_pame_name_id: 5566, mett_original_uid: 4321, gef_area_id: 333444,
-                                          budget_recurrent_type_id: 999, budget_project_type_id: 969, budget_recurrent_value: '123456')
+                                          budget_recurrent_type_id: 999, budget_project_type_id: 969, budget_recurrent_value: '123456',
+                                          primary_biome_id: 1002)
 
     pame_mock_1 = mock
     pame_mock_1.expects(:first).returns(id: 1001)
