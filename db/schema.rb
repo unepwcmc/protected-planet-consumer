@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150413143006) do
+ActiveRecord::Schema.define(version: 20150413155642) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -112,13 +112,9 @@ ActiveRecord::Schema.define(version: 20150413143006) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "gef_wdpa_record_id"
-    t.string   "primary_biome"
     t.string   "primary_biome_area"
-    t.string   "secondary_biome"
     t.string   "secondary_biome_area"
-    t.string   "tertiary_biome"
     t.string   "tertiary_biome_area"
-    t.string   "quaternary_biome"
     t.string   "quaternary_biome_area"
     t.integer  "gef_area_id"
     t.integer  "gef_pame_name_id"
@@ -126,6 +122,10 @@ ActiveRecord::Schema.define(version: 20150413143006) do
     t.float    "budget_recurrent_value"
     t.integer  "budget_project_type_id"
     t.float    "budget_project_value"
+    t.integer  "primary_biome_id"
+    t.integer  "secondary_biome_id"
+    t.integer  "tertiary_biome_id"
+    t.integer  "quaternary_biome_id"
   end
 
   create_table "gef_regions", force: true do |t|

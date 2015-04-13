@@ -3,14 +3,8 @@ require 'test_helper'
 class Gef::WdpaRecordTest < ActiveSupport::TestCase
   test '.name returns a array with all the data requested and pp url' do
 
-    gef_area_1 = FactoryGirl.create(:gef_area, gef_pmis_id: 8888)
-
-    gef_pame_name = FactoryGirl.create(:gef_pame_name, name: 'Womanbone')
-
     FactoryGirl.create(:gef_wdpa_record,
       wdpa_exists: true,
-      gef_area: gef_area_1,
-      gef_pame_name: gef_pame_name,
       wdpa_id: 555999,
       original_name: 'Manboné',
       wdpa_name: 'Manbone'
