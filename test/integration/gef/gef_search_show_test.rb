@@ -126,7 +126,5 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     assert page.has_link?('Please try again', href: '/gef/searches/new')
 
-    assert page.has_link?('546465345', href: 'http://www.thegef.org/gef/project_detail?projID=546465345')
   end
-
 end

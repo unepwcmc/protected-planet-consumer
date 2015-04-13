@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gef_pame_record_id: 1
+  gef_wdpa_record_id: 1
+
+two:
+  gef_pame_record_id: 1
+  gef_wdpa_record_id: 1

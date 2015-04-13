@@ -1,5 +1,4 @@
 class Gef::Area < ActiveRecord::Base
-  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', foreign_key: :gef_area_id
   has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_area_id
   validates_uniqueness_of :gef_pmis_id
 

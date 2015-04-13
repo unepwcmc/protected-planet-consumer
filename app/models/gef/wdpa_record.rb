@@ -1,7 +1,6 @@
 class Gef::WdpaRecord < ActiveRecord::Base
-  belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id
-  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_wdpa_record_id
-  belongs_to :gef_pame_name, class_name: 'Gef::PameName', foreign_key: :gef_pame_name_id
+  has_many :gef_pame_records, class_name: 'Gef::PameRecord', through: :gef_pame_record_wdpa_records
+  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_wdpa_record_id
   has_many :gef_countries, class_name: 'Gef::Country', through: :gef_country_wdpa_records
   has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_wdpa_record_id
 

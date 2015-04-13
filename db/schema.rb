@@ -11,13 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150302192610) do
+ActiveRecord::Schema.define(version: 20150413143006) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "gef_areas", force: true do |t|
     t.integer  "gef_pmis_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_biomes", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -52,6 +58,13 @@ ActiveRecord::Schema.define(version: 20150302192610) do
 
   create_table "gef_pame_names", force: true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_pame_record_wdpa_records", force: true do |t|
+    t.integer  "gef_pame_record_id"
+    t.integer  "gef_wdpa_record_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
