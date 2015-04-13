@@ -22,15 +22,19 @@ class Gef::Importer
       Gef::PameName.find_or_create_by(name: pa_converted[:pa_name_mett])
       gef_pame_name_id = Gef::PameName.where('name = ?', pa_converted[:pa_name_mett]).first[:id]
 
-      Gef::WdpaRecord.find_or_create_by(wdpa_id: pa_converted[:wdpa_id], gef_area_id: gef_area_id, gef_pame_name_id: gef_pame_name_id)
+      Gef::WdpaRecord.find_or_create_by(wdpa_id: pa_converted[:wdpa_id])
       wdpa_record_id = Gef::WdpaRecord.where('wdpa_id = ?', pa_converted[:wdpa_id].to_i).first[:id]
 
       converted = pa_converted.except(:gef_pmis_id, :wdpa_id, :pa_name_mett, :budget_recurrent, :budget_project)
-      ids = { gef_wdpa_record_id: wdpa_record_id, gef_area_id: gef_area_id, gef_pame_name_id: gef_pame_name_id }
+      ids = { gef_area_id: gef_area_id, gef_pame_name_id: gef_pame_name_id }
       pame_record_params = [converted, ids, budget_recurrent, budget_project ]
       pame_record = pame_record_params.inject(&:merge)
 
-      Gef::PameRecord.create(pame_record)
+      Gef::PameRecord.find_or_create_by(pame_record)
+
+      pame_record_id = Gef::PameRecord.where('mett_original_uid = ?', pa_converted[:mett_original_uid]).first[:id]
+
+      Gef::PameRecordWdpaRecord.find_or_create_by(gef_pame_record_id: pame_record_id, gef_wdpa_record_id: wdpa_record_id)
 
     end
     wdpa_ids_list = Gef::WdpaRecord.select(:wdpa_id).group(:wdpa_id)
