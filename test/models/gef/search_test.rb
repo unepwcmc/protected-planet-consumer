@@ -19,10 +19,10 @@ class Gef::SearchTest < ActiveSupport::TestCase
                         primary_biome_id: gef_biome.id, mett_original_uid: 333222)
 
 
-    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record, 
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record,
                         gef_pame_record: gef_pame_record_1)
 
-    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record, 
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record,
                         gef_pame_record: gef_pame_record_2)
 
     search = FactoryGirl.create(:gef_search, id: 1, gef_pmis_id: nil, primary_biome_id: gef_biome.id)

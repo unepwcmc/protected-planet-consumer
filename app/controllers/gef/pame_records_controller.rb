@@ -1,10 +1,9 @@
 class Gef::PameRecordsController < ApplicationController
 
   def index
-    @pame_assessments =  Gef::PameRecord.joins(:gef_wdpa_record, :gef_area)
-                                        .select('*')
-                                        .where('gef_wdpa_records.wdpa_id = ? AND gef_areas.gef_pmis_id = ?',
-                                                params[:wdpa_record_wdpa_id], params[:area_gef_pmis_id])
+    @pame_assessments =  Gef::PameRecord.joins(:gef_wdpa_records, :gef_area)
+                                        .where(gef_wdpa_records: {wdpa_id: params[:wdpa_record_wdpa_id]},
+                                               gef_areas: {gef_pmis_id: params[:area_gef_pmis_id] })
                                         .order('gef_pame_records.assessment_year ASC')
   end
 
