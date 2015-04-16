@@ -25,7 +25,7 @@ class Gef::SearchTest < ActiveSupport::TestCase
     FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record, 
                         gef_pame_record: gef_pame_record_2)
 
-    search = FactoryGirl.create(:gef_search, id: 1, gef_pmis_id: nil, primary_biome: 'Manbone Biome')
+    search = FactoryGirl.create(:gef_search, id: 1, gef_pmis_id: nil, primary_biome_id: gef_biome.id)
 
     result =
             [
