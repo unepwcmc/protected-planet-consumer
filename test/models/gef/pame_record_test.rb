@@ -11,9 +11,11 @@ class Gef::PameRecordTest < ActiveSupport::TestCase
 
     budget_type = FactoryGirl.create(:gef_budget_type, name: 'Given')
 
+    gef_biome_1 = FactoryGirl.create(:gef_biome, name: 'Manbone Biome')
+
     pame_record = FactoryGirl.create(:gef_pame_record, mett_original_uid: 999888, gef_area: gef_area,
                         gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
-                        budget_recurrent_type_id: budget_type.id)
+                        budget_recurrent_type_id: budget_type.id, primary_biome_id: gef_biome_1.id)
 
     FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_area, gef_pame_record: pame_record)
 
