@@ -27,7 +27,7 @@ private
 
   def query_areas
     areas =  Gef::PameRecord.joins(:gef_area, :gef_pame_name, :gef_wdpa_records)
-    areas = areas.where(gef_area: {gef_pmis_id: gef_pmis_id}) if gef_pmis_id.present?
+    areas = areas.where(gef_areas: {gef_pmis_id: gef_pmis_id}) if gef_pmis_id.present?
     areas = areas.joins(gef_countries: :gef_region).where(gef_countries: {id: gef_country_id}) if gef_country_id.present?
     areas = areas.joins(gef_countries: :gef_region).where(gef_countries: {gef_region_id: gef_region_id}) if gef_region_id.present?
     areas = areas.joins(:primary_biome).where(gef_biomes: { id: primary_biome_id}) if primary_biome_id.present?
@@ -39,14 +39,18 @@ private
   def information areas: areas, type: type
     @all_data = []
     areas.each do |pa|
-      protected_area = pa.attributes.symbolize_keys!
-      protected_area.merge!( pa.gef_area.attributes.symbolize_keys! )
-      protected_area[:protected_planet_url] = protected_planet_url wdpa_id: protected_area[:wdpa_id]
-      protected_area[:wdpa_name] = protected_area[:wdpa_exists] ? protected_area[:wdpa_name] : pa.gef_pame_name.name
-      if type == 'page'
-        @all_data << protected_area
-      else
-        get_pame_records pa: pa, protected_area: protected_area
+      pa.gef_wdpa_records.each do |wdpa_area|
+        protected_area = pa.attributes.symbolize_keys!
+        protected_area.merge!( pa.gef_area.attributes.symbolize_keys! )
+        protected_area.merge!( pa.gef_pame_name.attributes.symbolize_keys! )
+        protected_area.merge!( wdpa_area.attributes.symbolize_keys! )
+        protected_area[:protected_planet_url] = protected_planet_url wdpa_id: protected_area[:wdpa_id]
+        protected_area[:wdpa_name] = protected_area[:wdpa_exists] ? protected_area[:wdpa_name] : pa.gef_pame_name.name
+        if type == 'page'
+          @all_data << protected_area
+        else
+          get_pame_records pa: pa, protected_area: protected_area
+        end
       end
     end
     @all_data.uniq!
