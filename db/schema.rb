@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150413155642) do
+ActiveRecord::Schema.define(version: 20150416133805) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -148,12 +148,12 @@ ActiveRecord::Schema.define(version: 20150413155642) do
   create_table "gef_searches", force: true do |t|
     t.integer  "gef_country_id"
     t.integer  "gef_region_id"
-    t.string   "primary_biome"
     t.integer  "gef_pmis_id"
     t.integer  "wdpa_id"
     t.string   "wdpa_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "primary_biome_id"
   end
 
   create_table "gef_wdpa_records", force: true do |t|

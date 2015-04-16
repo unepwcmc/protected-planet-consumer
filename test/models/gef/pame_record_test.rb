@@ -7,13 +7,18 @@ class Gef::PameRecordTest < ActiveSupport::TestCase
 
     gef_name = FactoryGirl.create(:gef_pame_name, name: 'Killbear')
 
-    wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444, gef_pame_name: gef_name)
+    wdpa_area = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 333444)
 
     budget_type = FactoryGirl.create(:gef_budget_type, name: 'Given')
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888, gef_area: gef_area,
+    pame_record = FactoryGirl.create(:gef_pame_record, mett_original_uid: 999888, gef_area: gef_area,
                         gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
                         budget_recurrent_type_id: budget_type.id)
+
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_area, gef_pame_record: pame_record)
+
+
+
 
     result = { gef_pmis_id: 666777, name: 'Killbear', wdpa_id: 333444, assessment_year: 2007,
                 budget_recurrent_type: 'Given', mett_original_uid: 999888,
