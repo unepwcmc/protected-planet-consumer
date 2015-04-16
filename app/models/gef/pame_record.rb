@@ -15,7 +15,8 @@ class Gef::PameRecord < ActiveRecord::Base
     dirty_sql = """
         SELECT a.*, r.*, brt.budget_recurrent_type, bpt.budget_project_type, n.*, wr.*
           FROM gef_pame_records r
-          JOIN gef_wdpa_records wr ON r.gef_wdpa_record_id = wr.id
+          JOIN gef_pame_record_wdpa_records prwr ON r.id = prwr.gef_pame_record_id
+          JOIN gef_wdpa_records wr ON prwr.gef_wdpa_record_id = wr.id
           JOIN gef_areas a ON r.gef_area_id = a.id
           JOIN gef_pame_names n ON r.gef_pame_name_id = n.id
           JOIN
