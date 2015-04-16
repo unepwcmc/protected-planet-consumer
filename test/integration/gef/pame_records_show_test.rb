@@ -7,13 +7,17 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
 
     gef_name = FactoryGirl.create(:gef_pame_name, name: 'Killbear')
 
-    wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444, gef_pame_name: gef_name)
+    wdpa_area = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 333444)
 
     budget_type = FactoryGirl.create(:gef_budget_type, name: 'Given')
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888, gef_area: gef_area,
-                        gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
-                        budget_recurrent_type_id: budget_type.id)
+    gef_pame_record = FactoryGirl.create(:gef_pame_record, mett_original_uid: 999888, gef_area: gef_area,
+                                         gef_pame_name: gef_name, assessment_year: 2007,
+                                         budget_project_type_id: budget_type.id,
+                                         budget_recurrent_type_id: budget_type.id)
+
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_area,
+                        gef_pame_record: gef_pame_record)
 
     get '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
@@ -25,13 +29,17 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
 
     gef_name = FactoryGirl.create(:gef_pame_name, name: 'Killbear')
 
-    wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444, gef_pame_name: gef_name)
+    wdpa_area = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 333444)
 
     budget_type = FactoryGirl.create(:gef_budget_type, name: 'Given')
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888, gef_area: gef_area,
-                        gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
-                        budget_recurrent_type_id: budget_type.id)
+    gef_pame_record = FactoryGirl.create(:gef_pame_record, mett_original_uid: 999888, gef_area: gef_area,
+                                         gef_pame_name: gef_name, assessment_year: 2007,
+                                         budget_project_type_id: budget_type.id,
+                                         budget_recurrent_type_id: budget_type.id)
+
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_area,
+                        gef_pame_record: gef_pame_record)
 
     visit '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
@@ -43,13 +51,17 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
 
     gef_name = FactoryGirl.create(:gef_pame_name, name: 'Killbear')
 
-    wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444, gef_pame_name: gef_name)
+    wdpa_area = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 333444)
 
     budget_type = FactoryGirl.create(:gef_budget_type, name: 'Given')
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888, gef_area: gef_area,
-                        gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
-                        budget_recurrent_type_id: budget_type.id)
+    gef_pame_record = FactoryGirl.create(:gef_pame_record, mett_original_uid: 999888, gef_area: gef_area,
+                                         gef_pame_name: gef_name, assessment_year: 2007,
+                                         budget_project_type_id: budget_type.id,
+                                         budget_recurrent_type_id: budget_type.id)
+
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_area,
+                        gef_pame_record: gef_pame_record)
 
     visit '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
@@ -61,16 +73,19 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
 
     gef_name = FactoryGirl.create(:gef_pame_name, name: 'Killbear')
 
-    wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444, gef_pame_name: gef_name)
+    wdpa_area = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 333444)
 
     budget_type = FactoryGirl.create(:gef_budget_type, name: 'Given')
 
     budget_type_2 = FactoryGirl.create(:gef_budget_type, name: 'Not Given')
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888, gef_area: gef_area,
+    gef_pame_record = FactoryGirl.create(:gef_pame_record, mett_original_uid: 999888, gef_area: gef_area,
                         gef_pame_name: gef_name, assessment_year: 2007, budget_project_type_id: budget_type.id,
-                        budget_recurrent_type_id: budget_type_2.id, budget_project_value: 123456, 
+                        budget_recurrent_type_id: budget_type_2.id, budget_project_value: 123456,
                         budget_recurrent_value: 654321)
+
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_area,
+                        gef_pame_record: gef_pame_record)
 
     visit '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
