@@ -35,7 +35,7 @@ class Gef::PameRecord < ActiveRecord::Base
     result.except!(:gef_wdpa_record_id, :gef_area_id, :id,
                    :budget_recurrent_type_id, :budget_project_type_id, :gef_pame_name_id,
                    :wdpa_exists, :primary_biome_id, :secondary_biome_id, :tertiary_biome_id,
-                   :quaternary_biome_id)
+                   :quaternary_biome_id, :marine)
 
     result.each{ |k,v|  result[k] = v.to_i if v.to_i.to_s == v }
 

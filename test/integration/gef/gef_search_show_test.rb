@@ -99,6 +99,8 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     visit '/gef/searches/1/'
 
+    puts page.body
+
     assert page.has_selector?('td', text: '888999', count: 2)
 
     assert page.has_selector?('td', text: '999888', count: 1)
