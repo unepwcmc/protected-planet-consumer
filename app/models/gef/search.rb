@@ -49,7 +49,7 @@ private
         if type == 'page'
           @all_data << protected_area.slice(:gef_pmis_id, :wdpa_id, :wdpa_name, :wdpa_exists, )
         else
-          get_pame_records pa: pa, protected_area: protected_area
+          @all_data << protected_area
         end
       end
     end
@@ -59,13 +59,5 @@ private
 
   def protected_planet_url wdpa_id: wdpa_id
     PP_BASE_URL + wdpa_id.to_s
-  end
-
-  def get_pame_records pa: pa, protected_area: protected_area
-    csv_data = []
-    pa.gef_area.gef_pame_records.each do |record|
-      protected_area.merge!( record.attributes.symbolize_keys! )
-      @all_data << protected_area
-    end
   end
 end
