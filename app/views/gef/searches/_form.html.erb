@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :primary_biome_id, 'Primary Biome' %><br />
-    <%= f.collection_select :primary_biome_id, Gef::Biome.order(:name), :id, :name, include_blank: true %>
+    <%= f.collection_select :primary_biome_id, Gef::PameRecord.select('gef_biomes.*').joins(:primary_biome).order('gef_biomes.name').uniq, :id, :name, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :wdpa_name, 'WDPA Name' %><br />

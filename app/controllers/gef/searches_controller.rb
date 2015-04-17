@@ -29,7 +29,7 @@ class Gef::SearchesController < ApplicationController
   private
 
   def user_params
-    params.require(:gef_search).permit(:gef_country_id, :gef_region_id, :primary_biome,
+    params.require(:gef_search).permit(:gef_country_id, :gef_region_id, :primary_biome_id,
                                        :gef_pmis_id, :wdpa_id, :wdpa_name)
   end
 end
