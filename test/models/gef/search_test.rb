@@ -10,13 +10,15 @@ class Gef::SearchTest < ActiveSupport::TestCase
 
     gef_biome = FactoryGirl.create(:gef_biome, name: 'Manbone Biome')
 
+    gef_biome_2 = FactoryGirl.create(:gef_biome, name: 'Woanbone Biome')
+
     gef_pame_record_1 = FactoryGirl.create(:gef_pame_record,
                         gef_area: gef_area, gef_pame_name: gef_name,
                         primary_biome_id: gef_biome.id, mett_original_uid: 222333)
 
     gef_pame_record_2 = FactoryGirl.create(:gef_pame_record,
                         gef_area: gef_area, gef_pame_name: gef_name,
-                        primary_biome_id: gef_biome.id, mett_original_uid: 333222)
+                        primary_biome_id: gef_biome_2.id, mett_original_uid: 333222)
 
 
     FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record,
