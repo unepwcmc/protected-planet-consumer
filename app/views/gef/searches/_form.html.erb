@@ -24,8 +24,8 @@
     <%= f.collection_select :gef_region_id, Gef::Region.order(:name), :id, :name, include_blank: true %>
   </div>
   <div class="field">
-    <%= f.label :primary_biome, 'Primary Biome' %><br />
-    <%= f.collection_select :primary_biome, Gef::PameRecord.select(:primary_biome).order(:primary_biome).uniq, :primary_biome, :primary_biome, include_blank: true %>
+    <%= f.label :primary_biome_id, 'Primary Biome' %><br />
+    <%= f.collection_select :primary_biome_id, Gef::PameRecord.select('gef_biomes.*').joins(:primary_biome).order('gef_biomes.name').uniq, :id, :name, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :wdpa_name, 'WDPA Name' %><br />

@@ -43,13 +43,18 @@ class TestGefImporter < ActiveSupport::TestCase
     FactoryGirl.create(:gef_column_match, model_columns: 'mett_original_uid', xls_columns: 'METT UID1')
     FactoryGirl.create(:gef_column_match, model_columns: 'budget_recurrent', xls_columns: 'Budget (Recurrent)')
     FactoryGirl.create(:gef_column_match, model_columns: 'budget_project', xls_columns: 'Budget (Project)')
+    FactoryGirl.create(:gef_column_match, model_columns: 'primary_biome', xls_columns: 'Primary Biome')
+    FactoryGirl.create(:gef_column_match, model_columns: 'secondary_biome', xls_columns: 'Secondary Biome')
 
     parsed_csv = [ { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 999888,
-                    'METT UID1' => 1122, 'Budget (Recurrent)' => 'n/a', 'Budget (Project)' => 'Not Given' },
+                    'METT UID1' => 1122, 'Budget (Recurrent)' => 'n/a', 'Budget (Project)' => 'Not Given',
+                    'Primary Biome' => 'Manbone Taiga', 'Secondary Biome' => 'Killbear Taiga'},
                    { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 666777,
-                    'METT UID1' => 1234, 'Budget (Recurrent)' => 'Not Given', 'Budget (Project)' =>  '654321'},
+                    'METT UID1' => 1234, 'Budget (Recurrent)' => 'Not Given', 'Budget (Project)' =>  '654321', 
+                    'Primary Biome' => 'Killbear Taiga'},
                    { "GEF PMIS ID" => '111222', 'PA NAME (METT)' => 'wolf', 'WDPA ID (METT)' => 666777,
-                    'METT UID1' => 4321, 'Budget (Recurrent)' => '123456', 'Budget (Project)' => 'n/a' },
+                    'METT UID1' => 4321, 'Budget (Recurrent)' => '123456', 'Budget (Project)' => 'n/a',
+                    'Primary Biome' => 'Taiga Taiga'},
                  ]
 
     CSV.stubs(:read).with('long_tables.csv', {:headers => true}).returns(parsed_csv)
@@ -71,8 +76,8 @@ class TestGefImporter < ActiveSupport::TestCase
 
     Gef::PameName.expects(:where).with('name = ?', 'wolf').returns(name_mock).times(3)
 
-    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 999888, gef_area_id: 333444, gef_pame_name_id: 5566)
-    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 666777, gef_area_id: 333444, gef_pame_name_id: 5566).twice
+    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 999888)
+    Gef::WdpaRecord.expects(:find_or_create_by).with(wdpa_id: 666777).twice
 
     wdpa_mock_1 = mock
     wdpa_mock_1.expects(:first).returns(id: 1111)
@@ -92,16 +97,55 @@ class TestGefImporter < ActiveSupport::TestCase
     budget_mock_3 = mock
     budget_mock_3.expects(:first).returns(id:969).twice
 
+
     Gef::BudgetType.expects(:where).with('name = ?', 'Not Given').returns(budget_mock_1).twice
     Gef::BudgetType.expects(:where).with('name = ?', 'Given').returns(budget_mock_2).twice
     Gef::BudgetType.expects(:where).with('name = ?', 'n/a').returns(budget_mock_3).twice
 
-    Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 1111, mett_original_uid: 1122, gef_area_id: 333444,
-                                          budget_recurrent_type_id: 969, budget_project_type_id: 666)
-    Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 2222, mett_original_uid: 1234, gef_area_id: 333444,
-                                          budget_recurrent_type_id: 666, budget_project_type_id: 999, budget_project_value: '654321')
-    Gef::PameRecord.expects(:create).with(gef_pame_name_id: 5566, gef_wdpa_record_id: 2222, mett_original_uid: 4321, gef_area_id: 333444,
-                                          budget_recurrent_type_id: 999, budget_project_type_id: 969, budget_recurrent_value: '123456')
+
+    Gef::Biome.expects(:find_or_create_by).with(name: 'Manbone Taiga').once
+    Gef::Biome.expects(:find_or_create_by).with(name: 'Killbear Taiga').twice
+    Gef::Biome.expects(:find_or_create_by).with(name: 'Taiga Taiga').once
+
+
+    biome_mock_1 = mock
+    biome_mock_1.expects(:first).returns(id:1000).once
+    biome_mock_2 = mock
+    biome_mock_2.expects(:first).returns(id:1001).twice
+    biome_mock_3 = mock
+    biome_mock_3.expects(:first).returns(id:1002).once
+
+
+    Gef::Biome.expects(:where).with('name = ?', 'Manbone Taiga').returns(biome_mock_1).once
+    Gef::Biome.expects(:where).with('name = ?', 'Killbear Taiga').returns(biome_mock_2).twice
+    Gef::Biome.expects(:where).with('name = ?', 'Taiga Taiga').returns(biome_mock_3).once
+
+    Gef::PameRecord.expects(:find_or_create_by).with(gef_pame_name_id: 5566, mett_original_uid: 1122, gef_area_id: 333444,
+                                          budget_recurrent_type_id: 969, budget_project_type_id: 666, primary_biome_id: 1000,
+                                          secondary_biome_id: 1001)
+    Gef::PameRecord.expects(:find_or_create_by).with(gef_pame_name_id: 5566, mett_original_uid: 1234, gef_area_id: 333444,
+                                          budget_recurrent_type_id: 666, budget_project_type_id: 999, budget_project_value: '654321',
+                                          primary_biome_id: 1001)
+    Gef::PameRecord.expects(:find_or_create_by).with(gef_pame_name_id: 5566, mett_original_uid: 4321, gef_area_id: 333444,
+                                          budget_recurrent_type_id: 999, budget_project_type_id: 969, budget_recurrent_value: '123456',
+                                          primary_biome_id: 1002)
+
+    pame_mock_1 = mock
+    pame_mock_1.expects(:first).returns(id: 1001)
+
+    pame_mock_2 = mock
+    pame_mock_2.expects(:first).returns(id: 1002)
+
+    pame_mock_3 = mock
+    pame_mock_3.expects(:first).returns(id: 1003)
+
+    Gef::PameRecord.expects(:where).with('mett_original_uid = ?', 1122).returns(pame_mock_1).once
+    Gef::PameRecord.expects(:where).with('mett_original_uid = ?', 1234).returns(pame_mock_2).once
+    Gef::PameRecord.expects(:where).with('mett_original_uid = ?', 4321).returns(pame_mock_3).once
+
+    Gef::PameRecordWdpaRecord.expects(:create).with(gef_wdpa_record_id: 1111, gef_pame_record_id: 1001)
+    Gef::PameRecordWdpaRecord.expects(:create).with(gef_wdpa_record_id: 2222, gef_pame_record_id: 1002)
+    Gef::PameRecordWdpaRecord.expects(:create).with(gef_wdpa_record_id: 2222, gef_pame_record_id: 1003)
 
     s3_response_mock = mock
     s3_response_mock.expects(:download_from_bucket)

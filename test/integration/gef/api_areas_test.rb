@@ -11,12 +11,16 @@ class Gef::ApiAreasTest < ActionDispatch::IntegrationTest
 
     gef_name_1 = FactoryGirl.create(:gef_pame_name, name: 'Manbone')
 
-    wdpa_record_1 = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area_1, 
-                                      gef_pame_name: gef_name_1, wdpa_id: 999888)
+    wdpa_record_1 = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 999888)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_record_1, 
-                        gef_area: gef_area_1, gef_pame_name: gef_name_1, 
-                        primary_biome: 'Biome', legal_status: 'legal')
+    gef_biome = FactoryGirl.create(:gef_biome, name: 'Manbone Biome')
+
+    gef_pame_record_1 = FactoryGirl.create(:gef_pame_record, gef_area: gef_area_1, 
+                        gef_pame_name: gef_name_1, primary_biome_id: gef_biome.id, legal_status: 'legal')
+
+
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record_1,
+                        gef_pame_record: gef_pame_record_1)
 
     get '/gef/api/areas?gef_pmis_id=888999&primary_biome=Biome&country=Manboneland&region=Manarctica&wdpa_id=999888'
 
