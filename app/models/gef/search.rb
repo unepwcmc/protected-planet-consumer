@@ -47,7 +47,7 @@ private
         protected_area[:protected_planet_url] = protected_planet_url wdpa_id: protected_area[:wdpa_id]
         protected_area[:wdpa_name] = protected_area[:wdpa_exists] ? protected_area[:wdpa_name] : pa.gef_pame_name.name
         if type == 'page'
-          @all_data << protected_area.slice(:gef_pmis_id, :wdpa_id, :wdpa_name, :wdpa_exists)
+          @all_data << protected_area.slice(:gef_pmis_id, :wdpa_id, :wdpa_name, :wdpa_exists, :protected_planet_url)
         else
           @all_data << protected_area
         end

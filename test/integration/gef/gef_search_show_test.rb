@@ -88,22 +88,21 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
     assert page.has_link?('888999', href: 'http://www.thegef.org/gef/project_detail?projID=888999')
   end
 
-  test 'opens not in wdpa links' do
+  test 'shows only name if has no wdpa links' do
     wdpa_record_3 = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 999999,
                                       wdpa_name: nil, wdpa_exists: false)
 
-    FactoryGirl.create(:gef_pame_record, gef_area: @gef_area_1, gef_pame_name: @gef_name_1,
+    pame_record_3 = FactoryGirl.create(:gef_pame_record, gef_area: @gef_area_1, gef_pame_name: @gef_name_1,
                         primary_biome_id: @gef_biome_1, mett_original_uid: 222333)
+
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record_3,
+                         gef_pame_record: pame_record_3)
 
     FactoryGirl.create(:gef_search, gef_pmis_id: 888999, id: 1)
 
     visit '/gef/searches/1/'
 
-    puts page.body
-
-    assert page.has_selector?('td', text: '888999', count: 2)
-
-    assert page.has_selector?('td', text: '999888', count: 1)
+    assert page.has_selector?('td', text: '999999', count: 1)
 
     assert page.has_selector?('td', text: 'Manbone', count: 1)
 
