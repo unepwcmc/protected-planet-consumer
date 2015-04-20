@@ -7,8 +7,33 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <nav class="nav-main">
+   <li>
+    <%= link_to image_tag("/images/gef_logo.png") + 'protected area database', new_gef_search_path %>
+   </li>
+  </nav>
+</header>
 
-<%= yield %>
+<div id="wrap">
+  <div class="container clear-top">
+    <%= yield %>
+  </div>
+</div>
 
+<footer>
+  <div class="footer-logos">
+    <a href="http://unep-wcmc.org" title="UNEP-WCMC Website">
+      <%= image_tag 'wcmc-footer-logo@2x.png', style: 'width: 73px; height: 39px' %>
+    </a>
+    <a href="http://protectedplanet.net" title="ProtectedPlanet Website">
+          <%= image_tag 'logo-white.png', style: 'width: 110px; height: 39px' %>
+    </a>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p>&copy; UNEP-WCMC 2015. All rights reserved</p>
+  </div>
+</footer>
 </body>
 </html>

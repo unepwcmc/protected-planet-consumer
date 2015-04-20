@@ -1,0 +1,41 @@
+<main class="protected-areas">
+
+  <div class="col-xs-8">
+    <h2>Search Results</h2>
+  </div>
+
+  <div class="col-xs-6">
+    <% if @gef_search.areas.any? %>
+      <table class="table-condensed">
+        <tr>
+          <th>GEF ID </th>
+          <th>WDPA ID</th>
+          <th>WDPA Name</th>
+          <th>METT Page</th>
+        </tr>
+        <% @gef_search.areas.each do |pa| %>
+          <tr>
+            <td>
+              <%= link_to  pa[:gef_pmis_id], "http://www.thegef.org/gef/project_detail?projID=#{pa[:gef_pmis_id]}" %>
+            </td>
+            <td><%= pa[:wdpa_id] %></td>
+            <td>
+              <% if pa[:wdpa_exists] %>
+                <%= link_to  pa[:wdpa_name], pa[:protected_planet_url] %>
+              <% else %>
+                <%= pa[:wdpa_name] %>
+              <% end %>
+            </td>
+            <td class="text-center"><%= link_to 'Link', gef_area_wdpa_record_pame_records_path(pa[:gef_pmis_id], pa[:wdpa_id]) %></td>
+          </tr>
+        <% end %>
+      </table>
+      <div class="download-search">
+        <%= link_to 'Download CSV', gef_search_path(params[:id], format: 'csv') %>
+      </div>
+    <% else %>
+      <br>Your search did not find any protected areas. <%= link_to 'Please try again', new_gef_search_path %></br>
+    <% end %>
+  </div>
+</main>
+

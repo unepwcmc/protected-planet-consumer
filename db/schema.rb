@@ -11,13 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141120180959) do
+ActiveRecord::Schema.define(version: 20150416133805) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "gef_areas", force: true do |t|
     t.integer  "gef_pmis_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_biomes", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_budget_types", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -29,8 +41,35 @@ ActiveRecord::Schema.define(version: 20141120180959) do
     t.datetime "updated_at"
   end
 
+  create_table "gef_countries", force: true do |t|
+    t.integer  "gef_region_id"
+    t.string   "name"
+    t.string   "iso_3"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_country_wdpa_records", force: true do |t|
+    t.integer  "gef_wdpa_record_id"
+    t.integer  "gef_country_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_pame_names", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_pame_record_wdpa_records", force: true do |t|
+    t.integer  "gef_pame_record_id"
+    t.integer  "gef_wdpa_record_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "gef_pame_records", force: true do |t|
-    t.text     "pa_name_mett"
     t.integer  "mett_original_uid"
     t.string   "mett_new_uid"
     t.text     "assessment_type"
@@ -73,6 +112,48 @@ ActiveRecord::Schema.define(version: 20141120180959) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "gef_wdpa_record_id"
+    t.string   "primary_biome_area"
+    t.string   "secondary_biome_area"
+    t.string   "tertiary_biome_area"
+    t.string   "quaternary_biome_area"
+    t.integer  "gef_area_id"
+    t.integer  "gef_pame_name_id"
+    t.integer  "budget_recurrent_type_id"
+    t.float    "budget_recurrent_value"
+    t.integer  "budget_project_type_id"
+    t.float    "budget_project_value"
+    t.integer  "primary_biome_id"
+    t.integer  "secondary_biome_id"
+    t.integer  "tertiary_biome_id"
+    t.integer  "quaternary_biome_id"
+  end
+
+  create_table "gef_regions", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_search_twos", force: true do |t|
+    t.integer  "gef_country_id"
+    t.integer  "gef_region_id"
+    t.string   "primary_biome"
+    t.integer  "gef_area_id"
+    t.integer  "wdpa_id"
+    t.string   "wdpa_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gef_searches", force: true do |t|
+    t.integer  "gef_country_id"
+    t.integer  "gef_region_id"
+    t.integer  "gef_pmis_id"
+    t.integer  "wdpa_id"
+    t.string   "wdpa_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "primary_biome_id"
   end
 
   create_table "gef_wdpa_records", force: true do |t|
@@ -80,6 +161,18 @@ ActiveRecord::Schema.define(version: 20141120180959) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "gef_area_id"
+    t.integer  "gef_pame_name_id"
+    t.string   "wdpa_name"
+    t.string   "original_name"
+    t.boolean  "marine"
+    t.decimal  "reported_area"
+    t.string   "sub_location"
+    t.string   "iucn_category"
+    t.string   "designation"
+    t.string   "jurisdiction"
+    t.string   "legal_status"
+    t.string   "governance"
+    t.boolean  "wdpa_exists"
   end
 
   create_table "parcc_protected_areas", force: true do |t|
@@ -95,48 +188,12 @@ ActiveRecord::Schema.define(version: 20141120180959) do
     t.datetime "updated_at"
   end
 
-  create_table "parcc_species", force: true do |t|
-    t.integer  "parcc_taxonomic_order_id"
-    t.string   "name"
-    t.string   "iucn_cat"
-    t.string   "sensivity"
-    t.string   "adaptability"
-    t.string   "exposure_2025"
-    t.string   "exposure_2055"
-    t.boolean  "cc_vulnerable"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "parcc_species_protected_areas", force: true do |t|
-    t.integer  "parcc_species_id"
-    t.integer  "parcc_protected_areas_id"
-    t.integer  "parcc_chenge_type_id"
-    t.float    "intersection_area"
-    t.float    "overlap_percentage"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "parcc_species_turnovers", force: true do |t|
     t.integer  "parcc_protected_area_id"
     t.string   "taxonomic_class"
     t.integer  "year"
     t.string   "stat"
     t.float    "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "parcc_taxonomic_classes", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "parcc_taxonomic_orders", force: true do |t|
-    t.integer  "parcc_taxonomic_class_id"
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -5,11 +5,14 @@ class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
 
     gef_area = FactoryGirl.create(:gef_area, gef_pmis_id: 666777)
 
-    wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444)
+    wdpa_record = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 333444)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
+    gef_pame_record = FactoryGirl.create(:gef_pame_record, gef_area: gef_area, mett_original_uid: 999888)
 
-    get '/gef/area/666777/wdpa-record/333444/pame-record'
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record, 
+                        gef_pame_record: gef_pame_record)
+
+    get '/gef/areas/666777/wdpa_records/333444/pame_records'
 
     assert_equal 200, response.status
 
@@ -19,13 +22,19 @@ class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
 
     gef_area = FactoryGirl.create(:gef_area, gef_pmis_id: 666777)
 
-    wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444)
+    wdpa_record = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 333444)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
+    gef_pame_record_1 = FactoryGirl.create(:gef_pame_record, gef_area: gef_area, mett_original_uid: 999888)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 888999)
+    gef_pame_record_2 = FactoryGirl.create(:gef_pame_record, gef_area: gef_area, mett_original_uid: 888999)
 
-    get '/gef/area/666777/wdpa-record/333444/pame-record'
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record, 
+                        gef_pame_record: gef_pame_record_1)
+
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record, 
+                        gef_pame_record: gef_pame_record_2)
+
+    get '/gef/areas/666777/wdpa_records/333444/pame_records'
 
     assert_match /999888/, @response.body
     assert_match /888999/, @response.body
@@ -35,11 +44,14 @@ class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest
   test 'has links to pame show page' do
     gef_area = FactoryGirl.create(:gef_area, gef_pmis_id: 666777)
 
-    wdpa_area = FactoryGirl.create(:gef_wdpa_record, gef_area: gef_area, wdpa_id: 333444)
+    wdpa_record = FactoryGirl.create(:gef_wdpa_record, wdpa_id: 333444)
 
-    FactoryGirl.create(:gef_pame_record, gef_wdpa_record: wdpa_area, mett_original_uid: 999888)
+    gef_pame_record = FactoryGirl.create(:gef_pame_record, gef_area: gef_area, mett_original_uid: 999888)
 
-    visit '/gef/area/666777/wdpa-record/333444/pame-record'
+    FactoryGirl.create(:gef_pame_record_wdpa_record, gef_wdpa_record: wdpa_record, 
+                        gef_pame_record: gef_pame_record)
+
+    visit '/gef/areas/666777/wdpa_records/333444/pame_records'
 
     assert page.has_link?('999888', /999888/)
 

@@ -2,13 +2,24 @@ Rails.application.routes.draw do
 
   namespace :gef do
     resources :protected_areas
+    namespace :api do
+      resources :areas, only: :index
+    end
+    resources :searches
+    resources :areas, param: :gef_pmis_id do
+      resources :wdpa_records, param: :wdpa_id do
+        resources :pame_records, param: :mett_original_uid
+      end
+    end
   end
 
-  get '/gef/', to: 'gef#index', as: 'gef'
+  get '/gef/not_found/', :to => redirect('/gef/not_found.html'), as: 'gef_not_found'
 
-  get '/gef/area/:gef_pmis_id',  to: 'gef/area#show', as: 'gef_area'
+  get '/gef/', to: 'gef/searches#new', as: 'gef'
 
-  get '/gef/area/:gef_pmis_id/wdpa-record/:wdpa_id/pame-record', to: 'gef/pame_record#index', as: 'pame_records'
+  #get '/gef/areas/:gef_pmis_id',  to: 'gef/area#show', as: 'gef_areas'
 
-  get '/gef/area/:gef_pmis_id/wdpa-record/:wdpa_id/pame-record/:mett_original_uid', to: 'gef/pame_record#show', as: 'pame_record'
+  #get '/gef/area/:gef_pmis_id/wdpa-records/:wdpa_id/pame-records', to: 'gef/pame_record#index', as: 'pame_records'
+
+  #get '/gef/area/:gef_pmis_id/wdpa-records/:wdpa_id/pame-records/:mett_original_uid', to: 'gef/pame_record#show', as: 'pame_record'
 end

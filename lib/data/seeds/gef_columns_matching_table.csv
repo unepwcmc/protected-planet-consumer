@@ -1,7 +1,15 @@
 model_columns,xls_columns
-gef_pmis_id,GEF PMIS ID
+gef_pmis_id,GEF  ID
 wdpa_id,WDPA ID (METT)
 pa_name_mett,PA NAME (METT)
+primary_biome,Primary Biome
+primary_biome_area,Primary Biome Area
+secondary_biome,Secondary Biome
+secondary_biome_area,Secondary Biome Area
+tertiary_biome,Tertiary Biome
+tertiary_biome_area,Tertiary Biome Area
+quaternary_biome,Quaternary Biome
+quaternary_biome_area,Quaternary Biome Area
 mett_original_uid,METT UID1
 mett_new_uid,METT UID2
 assessment_type,Assessment Type
@@ -41,3 +49,5 @@ access_assessment,Access Assessment (METT1 ONLY)
 total_mett_score,Total METT Score
 total_possible_score,Total Possible Score
 overall_percentage,Overall Percentage
+budget_recurrent,Budget (Recurrent)
+budget_project,Budget (Project)

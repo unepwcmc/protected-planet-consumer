@@ -1,9 +1,5 @@
 <main class="gef-area">
 
-  <div class="container">
-    <h1><img src="/images/gef_logo.png" /> Protected Planet Tool</h1>
-  </div>
-
   <div class="col-xs-9">
     <h6>Please type the GEF ID you want to search</h6>
   </div>
@@ -13,5 +9,9 @@
        <%= text_field_tag :description %>
        <%= @button = submit_tag "Search" %>
     <% end %>
+    <%= link_to 'Advanced Search', new_gef_search_path %>
+  </div>
+  <div class="col-xs-9" id="csv-link">
+    <a href='/gef/gef_full_database.csv'>Download All Areas in CSV format</a><br />
   </div>
 </main>
