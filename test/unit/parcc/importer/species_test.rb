@@ -4,20 +4,23 @@ require 'csv'
 class TestParccImporterSpecies < ActiveSupport::TestCase
 
   test '.import_taxo_order imports classes' do
-
-    filename = 'huge_csv'
-
-    response = {species_taxon: 'Bird', species_order: 'Nematelmintes',
-                species_binomial: 'Unepus Wicimesensis', cc_vulnerability: 'no',
-                species_iucn_cat: 'VIII', wdpa_id: 999888, overlap_wdpa_percent: 50,
-                species_wdpa_intersept_area_sum: 2333.5}
+    response = {
+      species_taxon: 'Bird',
+      species_order: 'Nematelmintes',
+      species_binomial: 'Unepus Wicimesensis',
+      cc_vulnerability: 'no',
+      species_iucn_cat: 'VIII',
+      wdpa_id: 999888,
+      overlap_wdpa_percent: 50,
+      species_wdpa_intersept_area_sum: 2333.5
+    }
 
     csv_mock = mock
 
     csv_mock.expects(:each).yields(response)
 
-    CSV.expects(:read).with(filename, headers: true, header_converters: :symbol).returns(csv_mock)
-    
+    CSV.expects(:foreach).with('huge.csv', headers: true, header_converters: :symbol).returns(csv_mock)
+
     Parcc::TaxonomicClass.expects(:create).with(name: 'Bird')
 
     bird_id_mock = mock
@@ -30,8 +33,8 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
     nema_mock = mock
     nema_mock.expects(:first).returns(nema_id_mock)
 
-    Parcc::TaxonomicClass.expects(:where).with('name = ?', 'Bird').returns(bird_mock)
-    Parcc::TaxonomicOrder.expects(:where).with('name = ?', 'Nematelmintes').returns(nema_mock)
+    Parcc::TaxonomicClass.expects(:where).with(name: 'Bird').returns(bird_mock)
+    Parcc::TaxonomicOrder.expects(:where).with(name: 'Nematelmintes').returns(nema_mock)
     Parcc::TaxonomicOrder.expects(:create).with(name: 'Nematelmintes', parcc_taxonomic_class_id: 1)
     Parcc::Species.expects(:create).with(name: 'Unepus Wicimesensis', parcc_taxonomic_order_id: 2, cc_vulnerable: false, iucn_cat: 'VIII')
 
@@ -49,9 +52,9 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
     species_mock = mock
     species_mock.expects(:first).returns(species_id_mock)
 
-    Parcc::ProtectedArea.expects(:where).with('wdpa_id = ?', 999888).returns(pa_mock)
+    Parcc::ProtectedArea.expects(:where).with(wdpa_id: 999888).returns(pa_mock)
 
-    Parcc::Species.expects(:where).with('name = ?', 'Unepus Wicimesensis').returns(species_mock)
+    Parcc::Species.expects(:where).with(name: 'Unepus Wicimesensis').returns(species_mock)
 
     Parcc::SpeciesProtectedArea.expects(:create).with(parcc_protected_areas_id: 54321, parcc_species_id: 12345, overlap_percentage: 50, intersection_area: 2333.5)
 
@@ -60,16 +63,11 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
   end
 
   test '.counts imports species count for each protected area' do
-
-    filename = 'another really big file.csv'
-
     FactoryGirl.create(:parcc_protected_area, id: 1, parcc_id: 111222, wdpa_id: 888999, name: 'Abdoulaye')
 
-    parsed_csv = [
-                  {
-                    wdpa_id: 111222, wdpa_name: 'Abdoulaye', count_total_species: 999, other_column: 1234
-                  }
-                 ]
+    filename = 'another really big file.csv'
+    parsed_csv = [{wdpa_id: 111222, wdpa_name: 'Abdoulaye', count_total_species: 999, other_column: 1234}]
+
     CSV.expects(:read).with(filename, headers: true, header_converters: :symbol).returns(parsed_csv)
 
     Parcc::SpeciesTurnover.expects(:create).with(parcc_protected_areas_id: 1, total_species: 999)
