@@ -44,6 +44,18 @@ class Parcc::Importer::Species
     end
   end
 
+  def import_counts
+    @csv_reader.each do |record|
+      protected_area = fetch_protected_area(record[:WDPA_ID])
+
+      add_counts_to_pa(protected_area, {
+        count_total_species: record[:COUNT_TOTAL_SPECIES],
+        percentage_vulnerable_species: record[:PERCENT_CC_VULNERABLE_SPECIES],
+        count_vulnerable_species: record[:COUNT_CC_VULNERABLE_SPECIES]
+      })
+    end
+  end
+
   private
 
   def create_class csv_record
@@ -79,6 +91,10 @@ class Parcc::Importer::Species
       intersection_area: csv_record[:species_wdpa_intersept_area_sum],
       overlap_percentage: csv_record[:overlap_wdpa_percent]
     )
+  end
+
+  def add_counts_to_pa protected_area, counts
+    protected_area.update_attributes(counts)
   end
 
   def fetch_protected_area wdpa_id
