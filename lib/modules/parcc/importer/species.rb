@@ -2,7 +2,7 @@ require 'csv'
 
 class Parcc::Importer::Species
   IDENTITY = -> (value) { value }
-  SPECIAL_COLUMNS = {
+  SPECIES_CONVERSIONS = {
     sensivity:        { dest: :sensivity,     block: IDENTITY },
     adaptability:     { dest: :adaptability,  block: IDENTITY },
     exposure_2025:    { dest: :exposure_2025, block: IDENTITY },
@@ -20,7 +20,17 @@ class Parcc::Importer::Species
     }
   }
 
-  def initialize filename: filename
+  def self.import_taxo filename
+    instance = new filename
+    instance.import_taxo
+  end
+
+  def self.import_counts filename
+    instance = new filename
+    instance.import_counts
+  end
+
+  def initialize filename
     @filename = filename
     @csv_reader = CSV.foreach(@filename, headers: true, header_converters: :symbol)
   end
@@ -52,7 +62,7 @@ class Parcc::Importer::Species
 
   def create_species csv_record
     species = csv_record.each_with_object({}) do |(key, value), dest|
-      next unless conversion = SPECIAL_COLUMNS[key]
+      next unless conversion = SPECIES_CONVERSIONS[key]
       dest[conversion[:dest]] = conversion[:block].call(value)
     end
 
@@ -60,8 +70,8 @@ class Parcc::Importer::Species
   end
 
   def join_protected_area csv_record
-    protected_area = protected_area_query csv_record
-    species = Parcc::Species.where(name: csv_record[:species_binomial]).first
+    protected_area = fetch_protected_area csv_record[:wdpa_id]
+    species = Parcc::Species.find_by_name csv_record[:species_binomial]
 
     Parcc::SpeciesProtectedArea.create(
       parcc_species_id: species.id,
@@ -71,11 +81,7 @@ class Parcc::Importer::Species
     )
   end
 
-  def protected_area_query csv_record
-    Parcc::ProtectedArea.where(wdpa_id: csv_record[:wdpa_id]).first_or_create(
-      name: csv_record[:wdpa_name],
-      iso_3: csv_record[:wdpa_country],
-      iucn_cat: csv_record[:wdpa_iucn_cat]
-    )
+  def fetch_protected_area wdpa_id
+    Parcc::ProtectedArea.find_by_wdpa_id wdpa_id
   end
 end

@@ -3,8 +3,9 @@ require 'csv'
 
 class TestParccImporterSpecies < ActiveSupport::TestCase
 
-  test '.import_taxo_order imports classes' do
-    response = {
+  test '.import_taxo imports classes' do
+    filename = 'huge.csv'
+    response = [{
       species_taxon: 'Bird',
       species_order: 'Nematelmintes',
       species_binomial: 'Unepus Wicimesensis',
@@ -13,14 +14,9 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
       wdpa_id: 999888,
       overlap_wdpa_percent: 50,
       species_wdpa_intersept_area_sum: 2333.5
-    }
+    }]
 
-    csv_mock = mock
-
-    csv_mock.expects(:each).yields(response)
-
-    CSV.expects(:foreach).with('huge.csv', headers: true, header_converters: :symbol).returns(csv_mock)
-
+    CSV.expects(:foreach).with(filename, headers: true, header_converters: :symbol).returns(response)
     Parcc::TaxonomicClass.expects(:create).with(name: 'Bird')
 
     bird_id_mock = mock
@@ -36,43 +32,46 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
     Parcc::TaxonomicClass.expects(:where).with(name: 'Bird').returns(bird_mock)
     Parcc::TaxonomicOrder.expects(:where).with(name: 'Nematelmintes').returns(nema_mock)
     Parcc::TaxonomicOrder.expects(:create).with(name: 'Nematelmintes', parcc_taxonomic_class_id: 1)
-    Parcc::Species.expects(:create).with(name: 'Unepus Wicimesensis', parcc_taxonomic_order_id: 2, cc_vulnerable: false, iucn_cat: 'VIII')
+    Parcc::Species.expects(:create).with(
+      name: 'Unepus Wicimesensis',
+      parcc_taxonomic_order_id: 2,
+      cc_vulnerable: false,
+      iucn_cat: 'VIII'
+    )
 
-    FactoryGirl.create(:parcc_protected_area, wdpa_id: 999888, id:54321)
+    FactoryGirl.create(:parcc_protected_area, wdpa_id: 999888, id: 54321)
+    FactoryGirl.create(:parcc_species, id: 12345, name: 'Unepus Wicimesensis')
 
-    pa_id_mock = mock
-    pa_id_mock.expects(:id).returns(54321)
+    Parcc::SpeciesProtectedArea.expects(:create).with(
+      parcc_protected_areas_id: 54321,
+      parcc_species_id: 12345,
+      overlap_percentage: 50,
+      intersection_area: 2333.5
+    )
 
-    pa_mock = mock
-    pa_mock.expects(:first_or_create).returns(pa_id_mock)
-
-    species_id_mock = mock
-    species_id_mock.expects(:id).returns(12345)
-
-    species_mock = mock
-    species_mock.expects(:first).returns(species_id_mock)
-
-    Parcc::ProtectedArea.expects(:where).with(wdpa_id: 999888).returns(pa_mock)
-
-    Parcc::Species.expects(:where).with(name: 'Unepus Wicimesensis').returns(species_mock)
-
-    Parcc::SpeciesProtectedArea.expects(:create).with(parcc_protected_areas_id: 54321, parcc_species_id: 12345, overlap_percentage: 50, intersection_area: 2333.5)
-
-    importer = Parcc::Importer::Species.new filename: filename
-    importer.import_taxo
+    Parcc::Importer::Species.import_taxo filename
   end
 
-  test '.counts imports species count for each protected area' do
-    FactoryGirl.create(:parcc_protected_area, id: 1, parcc_id: 111222, wdpa_id: 888999, name: 'Abdoulaye')
+  test '.import_counts adds counts to the found pa' do
+    pa = FactoryGirl.create(:parcc_protected_area, wdpa_id: 111222)
 
-    filename = 'another really big file.csv'
-    parsed_csv = [{wdpa_id: 111222, wdpa_name: 'Abdoulaye', count_total_species: 999, other_column: 1234}]
+    parsed_csv = [{
+      WDPA_ID: 111222,
+      WDPA_NAME: 'Abdoulaye',
+      COUNT_TOTAL_SPECIES: 1000,
+      COUNT_CC_VULNERABLE_SPECIES: 100,
+      PERCENT_CC_VULNERABLE_SPECIES: 10
+    }]
 
-    CSV.expects(:read).with(filename, headers: true, header_converters: :symbol).returns(parsed_csv)
+    CSV.stubs(:foreach)
+      .with('species_counts.csv', headers: true, header_converters: :symbol)
+      .returns(parsed_csv)
 
-    Parcc::SpeciesTurnover.expects(:create).with(parcc_protected_areas_id: 1, total_species: 999)
+    Parcc::Importer::Species.import_counts 'species_counts.csv'
 
-    importer = Parcc::Importer::Species.new
-    importer.counts file_path: filename
+    pa = pa.reload
+    assert_equal 1000, pa.count_total_species
+    assert_equal 100, pa.count_vulnerable_species
+    assert_equal 10, pa.percentage_vulnerable_species
   end
 end
