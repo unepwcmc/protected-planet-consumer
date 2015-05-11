@@ -1,10 +1,8 @@
 require 'test_helper'
 require 'csv'
 
-class TestParccImporterSpecies < ActiveSupport::TestCase
-
-  test '.import_taxo imports classes' do
-    filename = 'huge.csv'
+class TestParccImportersSpeciesTaxonomies < ActiveSupport::TestCase
+  test '.import imports classes' do
     response = [{
       species_taxon: 'Bird',
       species_order: 'Nematelmintes',
@@ -16,7 +14,7 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
       species_wdpa_intersept_area_sum: 2333.5
     }]
 
-    CSV.expects(:foreach).with(filename, headers: true, header_converters: :symbol).returns(response)
+    CSV.expects(:foreach).with(anything, headers: true, header_converters: :symbol).returns(response)
     Parcc::TaxonomicClass.expects(:create).with(name: 'Bird')
 
     bird_id_mock = mock
@@ -49,29 +47,6 @@ class TestParccImporterSpecies < ActiveSupport::TestCase
       intersection_area: 2333.5
     )
 
-    Parcc::Importer::Species.import_taxo filename
-  end
-
-  test '.import_counts adds counts to the found pa' do
-    pa = FactoryGirl.create(:parcc_protected_area, wdpa_id: 111222)
-
-    parsed_csv = [{
-      WDPA_ID: 111222,
-      WDPA_NAME: 'Abdoulaye',
-      COUNT_TOTAL_SPECIES: 1000,
-      COUNT_CC_VULNERABLE_SPECIES: 100,
-      PERCENT_CC_VULNERABLE_SPECIES: 10
-    }]
-
-    CSV.stubs(:foreach)
-      .with('species_counts.csv', headers: true, header_converters: :symbol)
-      .returns(parsed_csv)
-
-    Parcc::Importer::Species.import_counts 'species_counts.csv'
-
-    pa = pa.reload
-    assert_equal 1000, pa.count_total_species
-    assert_equal 100, pa.count_vulnerable_species
-    assert_equal 10, pa.percentage_vulnerable_species
+    Parcc::Importers::Species::Taxonomies.import
   end
 end

@@ -1,6 +1,6 @@
 require 'csv'
 
-class Parcc::Importer::Turnover
+class Parcc::Importers::Turnover
   STATS = ['median', 'upper', 'lower']
   MATCH_COLUMNS = {
     parcc_id: '',
@@ -12,6 +12,11 @@ class Parcc::Importer::Turnover
     iucn_cat: 'iucn_cat',
     wdpa_id: 'WDPAID'
   }
+
+  def self.import
+    instance = new
+    instance.import
+  end
 
   def import
     create_pas files.first
@@ -50,17 +55,26 @@ class Parcc::Importer::Turnover
   end
 
   def create_turnover parcc_values, parcc_id
-    pa = Parcc::ProtectedArea.where(parcc_id: parcc_id).select(:id).first
-
-    parcc_values.merge!(parcc_protected_area_id: pa.id)
+    parcc_values.merge!(parcc_protected_area_id: pa_id_from_parcc_id(parcc_id))
     Parcc::SpeciesTurnover.create parcc_values
   end
 
   def files
-    @files ||= Dir['lib/data/parcc/*']
+    @files ||= Dir['lib/data/parcc/turnover/*']
   end
 
   def read_csv file_path
     CSV.foreach(file_path, headers: true)
+  end
+
+  def pa_id_from_parcc_id parcc_id
+    @pa_ids ||= {}
+    @pa_ids[parcc_id] ||= db.select_value(
+      "SELECT id from parcc_protected_areas where parcc_id = #{parcc_id.to_i}"
+    ).instance_eval { to_i unless nil? }
+  end
+
+  def db
+    ActiveRecord::Base.connection
   end
 end

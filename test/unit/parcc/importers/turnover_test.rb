@@ -1,11 +1,9 @@
 require 'test_helper'
 require 'csv'
 
-class TestParccImporterTurnover < ActiveSupport::TestCase
+class TestParccImportersTurnover < ActiveSupport::TestCase
 
   test '.create_pas imports protected_areas'  do
-    filename = 'Amphibian species turnover 2040 wt WDPAID.csv'
-
     parsed_csv = [{
       '' => '666777',
       'name' => 'Abdoulaye',
@@ -28,7 +26,7 @@ class TestParccImporterTurnover < ActiveSupport::TestCase
       'lower' => '0.411'
     }]
 
-    CSV.expects(:foreach).with(filename, headers: true).returns(parsed_csv)
+    CSV.expects(:foreach).with('pas.csv', headers: true).returns(parsed_csv)
 
     values_to_save_1 = {
       parcc_id: '666777',
@@ -51,8 +49,8 @@ class TestParccImporterTurnover < ActiveSupport::TestCase
     Parcc::ProtectedArea.expects(:create).with(values_to_save_1)
     Parcc::ProtectedArea.expects(:create).with(values_to_save_2)
 
-    importer = Parcc::Importer::Turnover.new
-    importer.create_pas filename
+    importer = Parcc::Importers::Turnover.new
+    importer.create_pas 'pas.csv'
   end
 
   test '.populate_values adds values to species turnover for amphibians' do
@@ -104,7 +102,7 @@ class TestParccImporterTurnover < ActiveSupport::TestCase
     Parcc::SpeciesTurnover.expects(:create).with(values_to_save_2)
     Parcc::SpeciesTurnover.expects(:create).with(values_to_save_3)
 
-    importer = Parcc::Importer::Turnover.new
+    importer = Parcc::Importers::Turnover.new
     importer.populate_values filename
   end
 end
