@@ -1,0 +1,37 @@
+{
+  "countries": [
+    {
+      "iso_3": "BEN",
+      "name": "Benin",
+      "region": {
+        "name": "Africa"
+      }
+    }
+  ],
+  "designation": {
+    "jurisdiction": {
+      "name": "National"
+    },
+    "name": "National Park"
+  },
+  "governance": {
+    "name": "Not Reported"
+  },
+  "iucn_category": {
+    "name": "II"
+  },
+  "legal_status": {
+    "name": "Designated"
+  },
+  "legal_status_updated_at": "1961-01-01T00:00:00.000Z",
+  "marine": false,
+  "name": "Boucle de la Pendjari",
+  "original_name": "Boucle de la Pendjari",
+  "reported_area": "2755.0",
+  "sub_locations": [
+    {
+      "english_name": "Atakora"
+    }
+  ],
+  "wdpa_id": 234
+}
