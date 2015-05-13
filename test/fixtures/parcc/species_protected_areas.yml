@@ -2,14 +2,14 @@
 
 one:
   parcc_species_id: 1
-  parcc_protected_areas_id: 1
+  parcc_protected_area_id: 1
   parcc_chenge_type_id: 1
   intersection_area: 1.5
   overlap_percentage: 1.5
 
 two:
   parcc_species_id: 1
-  parcc_protected_areas_id: 1
+  parcc_protected_area_id: 1
   parcc_chenge_type_id: 1
   intersection_area: 1.5
   overlap_percentage: 1.5
