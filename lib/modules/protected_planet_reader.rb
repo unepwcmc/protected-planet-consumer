@@ -1,6 +1,8 @@
 require 'open-uri'
 
 class ProtectedPlanetReader
+  class ProtectedAreaRetrievalError < StandardError; end;
+
   def initialize
     @pp_api_url = Rails.application.secrets.protected_planet_api_url
   end
@@ -9,6 +11,8 @@ class ProtectedPlanetReader
     url = url_generator(value: id)
     protected_area_json = open(url).read
     JSON.parse(protected_area_json, symbolize_names: true) if protected_area_json
+  rescue OpenURI::HTTPError
+    raise ProtectedAreaRetrievalError, "Can't retrieve Protected Area with wdpa_id #{id}"
   end
 
   private

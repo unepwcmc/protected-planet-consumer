@@ -23,12 +23,19 @@ class Parcc::Importers::ProtectedAreas
   end
 
   def import
-    wdpa_ids.map { |wdpa_id|
-      Parcc::ProtectedArea.create(pa_props(wdpa_id))
-    }.instance_eval { length == 1 ? first : self }
+    wdpa_ids.map(
+      &method(:create_pa)
+    ).instance_eval { length <= 1 ? first : self }
   end
 
   private
+
+  def create_pa wdpa_id
+    properties = pa_props(wdpa_id)
+    return unless properties
+
+    Parcc::ProtectedArea.create(properties)
+  end
 
   def pa_props wdpa_id
     json_pa = protected_planet_reader.protected_area_from_wdpaid id: wdpa_id
@@ -37,6 +44,9 @@ class Parcc::Importers::ProtectedAreas
       next unless conv = CONVERSIONS[key]
       props[conv[:dest]] = conv[:block].(value)
     end
+  rescue ProtectedPlanetReader::ProtectedAreaRetrievalError => e
+    Rails.logger.warn e.message
+    return nil
   end
 
   def protected_planet_reader
