@@ -1,16 +1,16 @@
 class Parcc::Importers::ProtectedAreas
   IDENTITY = -> (value) { value }
-  PROPERTY = -> (prop) {
-    lambda { |value| value[prop] }
-  }
+  PROPERTY = -> (prop) { lambda { |value| value[prop] } }
+
   CONVERSIONS = {
-    wdpa_id: {dest: :wdpa_id, block: IDENTITY},
-    iucn_category: {dest: :iucn_cat, block: PROPERTY.(:name) },
-    designation: {dest: :designation, block: PROPERTY.(:name) },
+    name:          {dest: :name,        block: IDENTITY},
+    wdpa_id:       {dest: :wdpa_id,     block: IDENTITY},
+    iucn_category: {dest: :iucn_cat,    block: PROPERTY.(:name) },
+    designation:   {dest: :designation, block: PROPERTY.(:name) },
     countries: {
       dest: :iso_3,
       block: -> (countries) { countries.first[:iso_3] }
-    },
+    }
   }
 
   def self.from_wdpa_id wdpa_id
