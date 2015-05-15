@@ -8,6 +8,11 @@ class TestProtectedPlanetReader < ActiveSupport::TestCase
     @reader = ProtectedPlanetReader.new
   end
 
+  test '::protected_area_from_wdpaid calls #protected_area_from_wdpaid' do
+    ProtectedPlanetReader.any_instance.expects(:protected_area_from_wdpaid).with(123)
+    ProtectedPlanetReader.protected_area_from_wdpaid 123
+  end
+
   test '#protected_area_from_wdpaid returns a hash with the given protected area from ProtectedPlanet API' do
     stub_request(
       :get,'http://mywebsite.com/api/protected_areas/1'
