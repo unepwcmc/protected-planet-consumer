@@ -6,32 +6,35 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
     symbolize_names: true
   )
 
-  PA_234_JSON = JSON.parse(
-    File.read(Rails.root.join('test/fixtures/parcc/pp_area_234.json')),
-    symbolize_names: true
-  )
+  test '::import calls #import on a new instance' do
+    Parcc::Importers::ProtectedAreas.expects(:new)
+      .returns(mock.tap { |m| m.expects(:import) })
 
-  test '::from_wdpa_id, given a wdpa_id, returns a newly created protected area' do
-    ProtectedPlanetReader.stubs(:new).returns(mock.tap { |mock|
-      mock.stubs(:protected_area_from_wdpaid).returns(PA_123_JSON)
-    })
-
-    new_pa = Parcc::Importers::ProtectedAreas.from_wdpa_id 123
-
-    assert_kind_of Parcc::ProtectedArea, new_pa
-    assert_equal PA_123_JSON[:wdpa_id], new_pa.wdpa_id
+    Parcc::Importers::ProtectedAreas.import
   end
 
-  test '::from_wdpa_id, given an array of wdpa_ids, returns newly created protected areas' do
-    ProtectedPlanetReader.stubs(:new).returns(mock.tap { |mock|
-      mock.stubs(:protected_area_from_wdpaid).returns(PA_123_JSON, PA_234_JSON)
-    })
+  test '#import creates a Parcc::ProtectedArea from CSV and PP' do
+    ProtectedPlanetReader.stubs(:protected_area_from_wdpaid)
+      .returns PA_123_JSON
 
-    new_pas = Parcc::Importers::ProtectedAreas.from_wdpa_id [123, 234]
+    CSV.stubs(:foreach).returns([{
+      wdpa_id: 123,
+      '' => '321',
+      polyID: 321,
+      point: 'polygon'
+    }])
 
-    assert_kind_of Array, new_pas
+    Parcc::ProtectedArea.expects(:create).with(
+      name: 'Manbone',
+      wdpa_id: 123,
+      iucn_cat: 'II',
+      designation: 'National Park',
+      iso_3: 'BEN',
+      parcc_id: '321',
+      poly_id: 321,
+      geom_type: 'polygon'
+    )
 
-    new_pas.sort_by!(&:wdpa_id)
-    assert_equal [123, 234], new_pas.map(&:wdpa_id)
+    Parcc::Importers::ProtectedAreas.import
   end
 end

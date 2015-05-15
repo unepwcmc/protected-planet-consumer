@@ -1,59 +1,64 @@
-class Parcc::Importers::ProtectedAreas
+class Parcc::Importers::ProtectedAreas < Parcc::Importers::Base
   IDENTITY = -> (value) { value }
-  PROPERTY = -> (prop) { lambda { |value| value[prop] } }
+  PROPERTY = -> (prop)  { lambda { |value| value[prop] } }
 
-  CONVERSIONS = {
-    name:          {dest: :name,        block: IDENTITY},
-    wdpa_id:       {dest: :wdpa_id,     block: IDENTITY},
-    iucn_category: {dest: :iucn_cat,    block: PROPERTY.(:name) },
-    designation:   {dest: :designation, block: PROPERTY.(:name) },
-    countries: {
-      dest: :iso_3,
+  PA_PROPERTIES = {
+    name:        {source: :api, key: :name,          block: IDENTITY},
+    wdpa_id:     {source: :api, key: :wdpa_id,       block: IDENTITY},
+    iucn_cat:    {source: :api, key: :iucn_category, block: PROPERTY[:name] },
+    designation: {source: :api, key: :designation,   block: PROPERTY[:name] },
+    parcc_id:    {source: :csv, key: :'',            block: IDENTITY },
+    poly_id:     {source: :csv, key: :polyid,        block: IDENTITY },
+    geom_type:   {source: :csv, key: :point,         block: IDENTITY },
+    iso_3: {
+      source: :api,
+      key: :countries,
       block: -> (countries) { countries.first[:iso_3] }
     }
   }
 
-  def self.from_wdpa_id wdpa_id
-    instance = new wdpa_id
+  def self.import
+    instance = new
     instance.import
   end
 
-  def initialize wdpa_ids
-    @wdpa_ids = Array.wrap(wdpa_ids)
-  end
-
   def import
-    wdpa_ids.map(
-      &method(:create_pa)
-    ).instance_eval { length <= 1 ? first : self }
+    csv_reader.each do |record|
+      next unless properties = merge_properties(
+        api: props_from_pp(record[:wdpaid]),
+        csv: record
+      )
+
+      Parcc::ProtectedArea.create(properties)
+    end
   end
 
   private
 
   def create_pa wdpa_id
-    properties = pa_props(wdpa_id)
+    properties = props_from_pp wdpa_id
     return unless properties
 
     Parcc::ProtectedArea.create(properties)
   end
 
-  def pa_props wdpa_id
-    json_pa = protected_planet_reader.protected_area_from_wdpaid id: wdpa_id
-
-    json_pa.each_with_object({}) do |(key, value), props|
-      next unless conv = CONVERSIONS[key]
-      props[conv[:dest]] = conv[:block].(value)
-    end
+  def props_from_pp wdpa_id
+    ProtectedPlanetReader.protected_area_from_wdpaid wdpa_id
   rescue ProtectedPlanetReader::ProtectedAreaRetrievalError => e
-    Rails.logger.warn e.message
-    return nil
+    Rails.logger.info e.message
+    return {}
   end
 
-  def protected_planet_reader
-    ProtectedPlanetReader.new
+  def merge_properties sources
+    PA_PROPERTIES.each_with_object({}) do |(key, config), props|
+      raw_value = sources[config[:source]][config[:key]]
+      next unless raw_value
+
+      props[key] = config[:block].(raw_value)
+    end
   end
 
-  def wdpa_ids
-    @wdpa_ids
+  def source_file_path
+    Rails.root.join('lib/data/parcc/protected_areas.csv')
   end
 end
