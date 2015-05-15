@@ -42,7 +42,10 @@ class Parcc::Importers::Turnover
   end
 
   def create_turnover parcc_values, parcc_id
-    parcc_values.merge!(parcc_protected_area_id: pa_id_from_parcc_id(parcc_id))
+    parcc_values.merge!(
+      parcc_protected_area_id: pa_id_from_parcc_id(parcc_id)
+    )
+
     Parcc::SpeciesTurnover.create parcc_values
   end
 
