@@ -19,20 +19,7 @@ class Parcc::Importers::Turnover
   end
 
   def import
-    create_pas files.first
     files.each { |file| populate_values file }
-  end
-
-  def create_pas file_path
-    protected_areas = read_csv(file_path)
-
-    protected_areas.each do |pa|
-      pa_props = MATCH_COLUMNS.each_with_object({}) do |(final, original), props|
-        props[final] = pa[original] if pa[original]
-      end
-
-      Parcc::ProtectedArea.create(pa_props)
-    end
   end
 
   def populate_values file_path

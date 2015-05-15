@@ -20,10 +20,6 @@ class Parcc::Importers::Base
 
   def fetch_protected_area wdpa_id
     @pas ||= {}
-
-    @pas[wdpa_id] ||= begin
-      model, importer = [Parcc::ProtectedArea, Parcc::Importers::ProtectedAreas]
-      model.find_by_wdpa_id(wdpa_id) || importer.from_wdpa_id(wdpa_id)
-    end
+    @pas[wdpa_id] ||= Parcc::ProtectedArea.find_by_wdpa_id(wdpa_id)
   end
 end
