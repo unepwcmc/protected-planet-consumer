@@ -19,7 +19,8 @@ class ProtectedPlanetReader
     url = url_generator(value: wdpa_id)
     protected_area_json = open(url).read
     JSON.parse(protected_area_json, symbolize_names: true) if protected_area_json
-  rescue OpenURI::HTTPError
+  rescue OpenURI::HTTPError, SocketError => e
+    Rails.logger.info e.message
     raise ProtectedAreaRetrievalError, "Can't retrieve Protected Area with wdpa_id #{wdpa_id}"
   end
 
