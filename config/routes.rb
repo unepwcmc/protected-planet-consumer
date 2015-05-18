@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   namespace :gef do
     resources :protected_areas
     namespace :api do
@@ -22,4 +21,10 @@ Rails.application.routes.draw do
   #get '/gef/area/:gef_pmis_id/wdpa-records/:wdpa_id/pame-records', to: 'gef/pame_record#index', as: 'pame_records'
 
   #get '/gef/area/:gef_pmis_id/wdpa-records/:wdpa_id/pame-records/:mett_original_uid', to: 'gef/pame_record#show', as: 'pame_record'
+
+  namespace :parcc do
+    namespace :api do
+      resources :protected_areas, only: :index
+    end
+  end
 end
