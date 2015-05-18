@@ -21,6 +21,7 @@ group :test do
   gem 'mocha', '~> 1.0.0'
   gem 'webmock', '~> 1.18.0', require: false
   gem 'capybara', '~> 2.4.4'
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :test, :development do

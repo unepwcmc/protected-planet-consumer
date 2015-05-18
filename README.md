@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/unepwcmc/protected-planet-consumer/badges/gpa.svg)](https://codeclimate.com/github/unepwcmc/protected-planet-consumer)
+[![Test Coverage](https://codeclimate.com/github/unepwcmc/protected-planet-consumer/badges/coverage.svg)](https://codeclimate.com/github/unepwcmc/protected-planet-consumer/coverage)
+
 protected-planet-consumer
 =========================
 
