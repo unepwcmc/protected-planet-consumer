@@ -18,10 +18,12 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
       .returns PA_123_JSON
 
     CSV.stubs(:foreach).returns([{
-      wdpa_id: 123,
+      wdpaid: 123,
       :'' => '321',
       polyid: 321,
-      point: 'polygon'
+      point: 'polygon',
+      iucn_cat: 'II',
+      designation: 'National Park',
     }])
 
     Parcc::ProtectedArea.expects(:create).with(
