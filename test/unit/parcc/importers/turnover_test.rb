@@ -2,7 +2,6 @@ require 'test_helper'
 require 'csv'
 
 class TestParccImportersTurnover < ActiveSupport::TestCase
-
   test '.populate_values adds values to species turnover for amphibians' do
     FactoryGirl.create(
       :parcc_protected_area,

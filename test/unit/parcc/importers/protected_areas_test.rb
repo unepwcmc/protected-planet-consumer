@@ -19,8 +19,8 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
 
     CSV.stubs(:foreach).returns([{
       wdpa_id: 123,
-      '' => '321',
-      polyID: 321,
+      :'' => '321',
+      polyid: 321,
       point: 'polygon'
     }])
 

@@ -32,11 +32,11 @@ class Parcc::Importers::Turnover
       }
 
       pa.each do |k,v|
-        if STATS.include? k
-          parcc_props[:stat] = k
-          parcc_props[:value] = v
-          create_turnover parcc_props, pa['']
-        end
+        next unless STATS.include? k
+
+        parcc_props[:stat] = k
+        parcc_props[:value] = v
+        create_turnover parcc_props, pa['']
       end
     end
   end
