@@ -19,6 +19,7 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
 
     CSV.stubs(:foreach).returns([{
       wdpaid: 123,
+      name: 'Manbone',
       :'' => '321',
       polyid: 321,
       point: 'polygon',
