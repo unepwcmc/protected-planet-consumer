@@ -1,12 +1,16 @@
 require 'test_helper'
 
 class Parcc::ProtectedAreaTest < ActiveSupport::TestCase
+  PA_123_JSON = File.read(
+    Rails.root.join('test/fixtures/parcc/api_protected_area_123.json')
+  )
+
   PAS_JSON = File.read(
     Rails.root.join('test/fixtures/parcc/api_index.json')
   )
 
-  test '.for_api, given no arguments, returns all protected_areas as JSON string' do
-    FactoryGirl.create(:parcc_protected_area, {
+  def setup
+    @protected_area = FactoryGirl.create(:parcc_protected_area, {
       parcc_id: 1,
       name: "Manbone",
       iso_3: "NB",
@@ -19,7 +23,9 @@ class Parcc::ProtectedAreaTest < ActiveSupport::TestCase
       count_vulnerable_species: 500,
       percentage_vulnerable_species: 10
     })
+  end
 
+  test '::for_api, given no arguments, returns all protected_areas as JSON string' do
     FactoryGirl.create(:parcc_protected_area, {
       parcc_id: 2,
       name: "San Guillermo",
@@ -35,5 +41,22 @@ class Parcc::ProtectedAreaTest < ActiveSupport::TestCase
     })
 
     assert_equal JSON.parse(PAS_JSON), JSON.parse(Parcc::ProtectedArea.for_api)
+  end
+
+  test '#for_api, given no arguments, returns the protected area as JSON string' do
+    assert_equal JSON.parse(PA_123_JSON), JSON.parse(@protected_area.for_api)
+  end
+
+  test '#for_api, given with_species: true, returns the protected area JSON with species' do
+    species = FactoryGirl.create(
+      :parcc_species, parcc_protected_areas: [@protected_area]
+    )
+
+    protected_area_json = JSON.parse(@protected_area.for_api(with_species: true))
+
+    assert_equal(
+      JSON.parse(species.to_json),
+      protected_area_json['parcc_species'].first
+    )
   end
 end

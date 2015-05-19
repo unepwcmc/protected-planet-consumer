@@ -6,9 +6,11 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
     symbolize_names: true
   )
 
+
   test '::import calls #import on a new instance' do
-    Parcc::Importers::ProtectedAreas.expects(:new)
-      .returns(mock.tap { |m| m.expects(:import) })
+    Parcc::Importers::ProtectedAreas.expects(:new).returns(
+      mock.tap { |m| m.expects(:import) }
+    )
 
     Parcc::Importers::ProtectedAreas.import
   end
