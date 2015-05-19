@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 
   namespace :parcc do
     namespace :api do
-      resources :protected_areas, only: :index
+      resources :protected_areas, only: [:index, :show]
     end
   end
 end
