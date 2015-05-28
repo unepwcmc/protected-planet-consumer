@@ -18,9 +18,9 @@ class Gef::Api::Area < ActiveRecord::Base
   def self.areas_querier
     areas =  Gef::PameRecord.joins(:gef_area, :gef_pame_name, :gef_wdpa_records, :budget_recurrent_type, :budget_project_type)
     areas = areas.where(gef_areas: {gef_pmis_id: @params[:gef_pmis_id]}) if @params[:gef_pmis_id].present?
-    areas = areas.joins(gef_wdpa_records: { gef_countries: :gef_region }).where(gef_countries: {id: @params[:gef_country_id]}) if @params[:gef_country_id].present?
-    areas = areas.joins(gef_wdpa_records: { gef_countries: :gef_region }).where(gef_countries: {gef_region_id: @params[:gef_region_id]}) if @params[:gef_region_id].present?
-    areas = areas.joins(:primary_biome).where(gef_biomes: { id: @params[:primary_biome_id]}) if @params[:primary_biome_id].present?
+    areas = areas.joins(gef_wdpa_records: { gef_countries: :gef_region }).where(gef_countries: {iso_3: @params[:iso3]}) if @params[:iso3].present?
+    areas = areas.joins(gef_wdpa_records: { gef_countries: :gef_region }).where(gef_countries: {gef_regions: {name: @params[:region]}}) if @params[:gef_region_id].present?
+    areas = areas.joins(:primary_biome).where(gef_biomes: { name: @params[:primary_biome]}) if @params[:primary_biome].present?
     areas = areas.where(gef_wdpa_records: {wdpa_name: @params[:wdpa_name]}) if @params[:wdpa_name].present?
     areas = areas.where(gef_wdpa_records: {wdpa_id: @params[:wdpa_id]}) if @params[:wdpa_id].present?
     areas
