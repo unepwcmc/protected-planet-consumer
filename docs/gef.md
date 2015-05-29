@@ -39,9 +39,10 @@ You can use the following parameters:
 
 * gef_pmis_id (GEF ID);
 * primary_biome (Primary Biome);
+* region (Region Name);
 * iso3 (Country ISO 3 digit code);
-* wdpa_id (WDPA ID)
-* wdpa_name (WDPA Name)
+* wdpa_id (WDPA ID);
+* wdpa_name (WDPA Name).
 
 Example:
 
