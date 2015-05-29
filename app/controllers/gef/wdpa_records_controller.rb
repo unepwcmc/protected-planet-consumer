@@ -1,4 +1,4 @@
-class Gef::WdpaRecordsController < ApplicationController
+class Gef::WdpaRecordsController < GefController
   before_filter :gef_area
 
   def gef_area

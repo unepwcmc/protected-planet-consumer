@@ -39,8 +39,6 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
-    bootstrap-sass (3.3.0.1)
-      sass (~> 3.2)
     builder (3.2.2)
     byebug (3.2.0)
       columnize (~> 0.8)
@@ -183,7 +181,6 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   aws-sdk (~> 1.3.9)
-  bootstrap-sass (~> 3.3.0)
   byebug
   capybara (~> 2.4.4)
   codeclimate-test-reporter
@@ -199,6 +196,7 @@ DEPENDENCIES
   pg
   rails (= 4.1.0)
   rubocop (~> 0.26.1)
+  sass (~> 3.2)
   sass-rails (~> 4.0.3)
   spring
   turbolinks

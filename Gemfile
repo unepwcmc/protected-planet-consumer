@@ -28,12 +28,12 @@ group :test, :development do
   gem 'byebug'
 end
 
+gem 'sass', '~> 3.2'
 gem 'aws-sdk', '~> 1.3.9'
 gem 'rubocop', '~> 0.26.1'
 gem 'minitest'
 gem 'dotenv', '~> 0.11.1'
 gem 'dotenv-deployment'
 
-gem 'bootstrap-sass', '~> 3.3.0'
 gem 'autoprefixer-rails'
 gem 'database_cleaner', '~> 1.4.0'
