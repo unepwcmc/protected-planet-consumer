@@ -4,7 +4,7 @@ class Parcc::Api::ProtectedAreasController < ApplicationController
   end
 
   def show
-    render json: protected_area.for_api
+    render json: protected_area.for_api(show_params)
   end
 
   private
@@ -16,5 +16,9 @@ class Parcc::Api::ProtectedAreasController < ApplicationController
 
   def wdpa_id
     params[:id]
+  end
+
+  def show_params
+    params.slice(:with_species).symbolize_keys
   end
 end
