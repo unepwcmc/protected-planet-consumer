@@ -8,48 +8,29 @@ class TestParccImportersTurnover < ActiveSupport::TestCase
       {id: 1, parcc_id: 666777, wdpa_id: 888999, name: 'Abdoulaye'}
     )
 
+    amphibian = FactoryGirl.create(:parcc_taxonomic_class, name: 'Amphibian')
     filename = 'lib/data/parcc/Amphibian species turnover 2040 wt WDPAID.csv'
-    parsed_csv = [{
-      '' => '666777',
-      'name' => 'Abdoulaye',
-      'country' => 'NGO',
-      'polyID' => '123',
-      'point' => 'polygon',
-      'WDPAID' => '888999',
-      'median' => '0.222',
-      'upper' => '0.333',
-      'lower' => '0.111'
-    }]
 
-    values_to_save_1 = {
-      taxonomic_class: 'Amphibian',
-      year: '2040',
-      stat: 'median',
-      value: '0.222',
-      parcc_protected_area_id: 1
-    }
+    CSV.expects(:foreach).returns([{
+      :'' => '666777',
+      name: 'Abdoulaye',
+      country: 'NGO',
+      polyID: '123',
+      point: 'polygon',
+      WDPAID: '888999',
+      median: '0.222',
+      upper: '0.333',
+      lower: '0.111'
+    }])
 
-    values_to_save_2 = {
-      taxonomic_class: 'Amphibian',
+    Parcc::SpeciesTurnover.expects(:create).with({
+      taxonomic_class_id: amphibian.id,
       year: '2040',
-      stat: 'lower',
-      value: '0.111',
       parcc_protected_area_id: 1,
-    }
-
-    values_to_save_3 = {
-      taxonomic_class: 'Amphibian',
-      year: '2040',
-      stat: 'upper',
-      value: '0.333',
-      parcc_protected_area_id: 1,
-    }
-
-    CSV.expects(:foreach).with(filename, headers: true).returns(parsed_csv)
-
-    Parcc::SpeciesTurnover.expects(:create).with(values_to_save_1)
-    Parcc::SpeciesTurnover.expects(:create).with(values_to_save_2)
-    Parcc::SpeciesTurnover.expects(:create).with(values_to_save_3)
+      upper: '0.333',
+      median: '0.222',
+      lower: '0.111'
+    })
 
     importer = Parcc::Importers::Turnover.new
     importer.populate_values filename

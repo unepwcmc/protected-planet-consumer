@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150424104630) do
+ActiveRecord::Schema.define(version: 20150602145017) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -205,12 +205,13 @@ ActiveRecord::Schema.define(version: 20150424104630) do
 
   create_table "parcc_species_turnovers", force: true do |t|
     t.integer  "parcc_protected_area_id"
-    t.string   "taxonomic_class"
     t.integer  "year"
-    t.string   "stat"
-    t.float    "value"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "taxonomic_class_id"
+    t.float    "lower"
+    t.float    "median"
+    t.float    "upper"
   end
 
   create_table "parcc_taxonomic_classes", force: true do |t|
