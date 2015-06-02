@@ -41,14 +41,17 @@ class Parcc::Importers::Turnover
     Dir['lib/data/parcc/turnover/*']
   end
 
-  def pa_id_from_parcc_id parcc_id
-    @pa_ids ||= {}
-    @pa_ids[parcc_id] ||= db.select_value(
+  memoize def pa_id_from_parcc_id parcc_id
+    db.select_value(
       "SELECT id from parcc_protected_areas where parcc_id = #{parcc_id.to_i}"
     ).instance_eval { to_i unless nil? }
   end
 
-  def db
-    ActiveRecord::Base.connection
+  memoize def taxon_class_id_from_name name
+    db.select_value(
+      "SELECT id from parcc_taxonomic_classes where name = '#{name}'"
+    ).instance_eval { to_i unless nil? }
   end
+
+  define_method(:db) { ActiveRecord::Base.connection }
 end
