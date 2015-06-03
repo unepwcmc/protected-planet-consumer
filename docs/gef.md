@@ -32,7 +32,7 @@ rake gef:import
 This project has a JSON API. You can use it search by GEF PMIS ID on:
 
 ```
-http://#{host}/gef/api/area?
+http://#{host}/gef/api/areas?
 ```
 
 You can use the following parameters:
