@@ -17,8 +17,8 @@ namespace :parcc do
       end
 
       CSV.open(PROTECTED_AREAS_DEST, 'wb') do |dest|
-        copy_first_8_rows = -> (row) { dest << row.first(8) }
-        CSV.foreach(PROTECTED_AREAS_SOURCE, &copy_first_8_rows)
+        copy_first_8_columns = -> (row) { dest << row.first(8) }
+        CSV.foreach(PROTECTED_AREAS_SOURCE, &copy_first_8_columns)
       end
 
       Parcc::Importers::ProtectedAreas.import

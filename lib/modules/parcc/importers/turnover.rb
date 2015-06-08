@@ -27,7 +27,7 @@ class Parcc::Importers::Turnover
   end
 
   def create_record defaults, record
-    stats = record.slice(*STATS)
+    stats = record.to_hash.slice(*STATS)
     pa_id = {parcc_protected_area_id: pa_id_from_parcc_id(record[COLUMN_FOR_PARCC_ID])}
 
     Parcc::SpeciesTurnover.create defaults.merge(stats).merge(pa_id)
