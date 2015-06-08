@@ -47,7 +47,7 @@ class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest
 
     visit '/gef/areas/666777/wdpa_records/333444/pame_records/999888'
 
-    assert page.has_selector?('h2', text: 'WDPA ID #333444 - Assessment 999888'), 'h2 does not match'
+    assert page.has_selector?('h1', text: 'WDPA ID #333444 - Assessment 999888'), 'h2 does not match'
   end
 
   test 'renders pa_name in attributes table' do

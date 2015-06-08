@@ -1,4 +1,4 @@
-class Gef::SearchesController < ApplicationController
+class Gef::SearchesController < GefController
   def new
     @gef_search = Gef::Search.new
   end

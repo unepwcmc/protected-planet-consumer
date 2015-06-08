@@ -32,7 +32,25 @@ rake gef:import
 This project has a JSON API. You can use it search by GEF PMIS ID on:
 
 ```
-http://#{host}/gef/api/area?id=#{GEF PMIS ID}
+http://#{host}/gef/api/areas?
 ```
 
+You can use the following parameters:
+
+* gef_pmis_id (GEF ID);
+* primary_biome (Primary Biome);
+* region (Region Name);
+* iso3 (Country ISO 3 digit code);
+* wdpa_id (WDPA ID);
+* wdpa_name (WDPA Name).
+
+Example:
+
+```
+http://#{host}/gef/api/area?gef/api/areas?gef_pmis_id=888999&primary_biome=Manbone+Biome&iso3=MBN&region=Manarctica&wdpa_id=999888
+```
+
+
 The API currently shows data from ProtectedPlanet (WDPA name, WDPA ID and url) ands from METT Assessments.
+
+It consists in an array of assessments that meet the search parameters.

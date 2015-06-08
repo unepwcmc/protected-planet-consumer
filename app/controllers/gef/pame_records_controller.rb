@@ -1,4 +1,4 @@
-class Gef::PameRecordsController < ApplicationController
+class Gef::PameRecordsController < GefController
 
   def index
     @pame_assessments =  Gef::PameRecord.joins(:gef_wdpa_records, :gef_area)

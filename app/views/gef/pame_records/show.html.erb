@@ -1,10 +1,7 @@
-<main class="protected-areas">
-  <div class="col-xs-9">
-    <h2> <%= @assessment[:name] %>
-    <h3>
-      WDPA ID #<%= @assessment[:wdpa_id] %> - Assessment <%= @assessment[:mett_original_uid] %>
-  </div>
-  <div class="col-xs-6">
+  <h1> <%= @assessment[:name] %>
+      WDPA ID #<%= @assessment[:wdpa_id] %> - Assessment <%= @assessment[:mett_original_uid] %></h1>
+
+  <div class="gef-main-container">
     <table class="table">
       <% @assessment.each do |parameter,value| %>
           <tr>
@@ -14,4 +11,3 @@
       <% end %>
     </table>
   </div>
-</main>

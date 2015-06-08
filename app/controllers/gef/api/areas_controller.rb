@@ -3,7 +3,7 @@ class Gef::Api::AreasController < ApplicationController
     check_params = params.values.map{ |param| true if not param.blank? }
 
     if check_params.include? true
-      areas = Gef::Area.where('gef_pmis_id = ?', gef_pmis_id).first.generate_api_data
+      areas = Gef::Api::Area.area_finder params: params
     end
     render json: areas, status: 200
   end

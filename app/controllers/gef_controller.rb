@@ -1,4 +1,5 @@
 class GefController < ApplicationController
+  layout 'gef'
   def index
     if params[:description]
       areas = Gef::Area.where(gef_pmis_id: params[:description]).first

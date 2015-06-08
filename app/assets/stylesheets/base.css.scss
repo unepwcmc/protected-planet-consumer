@@ -2,21 +2,92 @@
 
 $zIndex-2:   200;
 
+
 body {
+  margin: 60px 0 60px;
   height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* The html and body elements cannot have any padding or margin. */
+  font-size: 14px;
+  line-height: 1.428571429;
 }
 
-#wrap
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+header {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  page-break-after: avoid;
+}
+
+h1 {
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+img {
+  border: 0;
+  page-break-inside: avoid;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.download-all{
+  padding-top: 15px;
+  display: block;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a:hover, a:focus{
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+
+.gef-wrap
 {
   min-height: 100%; 
   height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -70px;
-  /* Pad bottom by footer height */
-  padding: 0 0px 60px; 
+  margin: 10px 345px -60px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
- 
+
+footer {
+  height: 60px;
+}
 
 
 nav {
@@ -52,31 +123,59 @@ nav {
 
 .nav-main {
   background-color: $color--nav-bg;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  a {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:active,
+  a:hover {
+    outline: 0;
+  }
 
+  a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  }
 }
 
-a.download-all{
-  padding-top: 15px;
-  display: block;
-}
+div.gef-search-body{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+ }
+
 
 .download-search{
   margin-top: 20px;
+  margin-bottom: 80px
 }
 
-label{
+label {
+  display: inline-block;
+  max-width: 100%;
   margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input {
-  margin-top: 10px;
+  margin-top: 0px;
   color: $color--input-text;
   background-color: $color--input-bg;
   height: 31px;
 }
 
 select{
-  margin-top: 10px;
+  margin-top: 0px;
   color: $color--input-text;
   background-color: $color--input-bg;
   height: 31px;
@@ -94,10 +193,62 @@ div.actions{
   }
 }
 
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
 
+.table-condensed{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
 
 footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   height: 60px;
+  width: 100%;
   background: $color--footer-bg;
   font-size: 0.938em;
 
@@ -114,6 +265,7 @@ footer {
     margin-right: 20px;
     &:last-child { margin-right: 0px; }
   }
+
 
   .footer-inner {
     display: block;
@@ -137,10 +289,7 @@ footer {
 
 .footer-copyright{
   display: block;
--webkit-margin-before: 1em;
--webkit-margin-after: 1em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
+  vertical-align: middle;
 }
 
 @media (max-width: 767px) {
