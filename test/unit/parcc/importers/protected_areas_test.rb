@@ -6,9 +6,11 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
     symbolize_names: true
   )
 
+
   test '::import calls #import on a new instance' do
-    Parcc::Importers::ProtectedAreas.expects(:new)
-      .returns(mock.tap { |m| m.expects(:import) })
+    Parcc::Importers::ProtectedAreas.expects(:new).returns(
+      mock.tap { |m| m.expects(:import) }
+    )
 
     Parcc::Importers::ProtectedAreas.import
   end
@@ -18,10 +20,13 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
       .returns PA_123_JSON
 
     CSV.stubs(:foreach).returns([{
-      wdpa_id: 123,
+      wdpaid: 123,
+      name: 'Manbone',
       :'' => '321',
       polyid: 321,
-      point: 'polygon'
+      point: 'polygon',
+      iucn_cat: 'II',
+      designation: 'National Park',
     }])
 
     Parcc::ProtectedArea.expects(:create).with(

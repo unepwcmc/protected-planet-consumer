@@ -1,20 +1,16 @@
 class Parcc::Importers::ProtectedAreas < Parcc::Importers::Base
   IDENTITY = -> (value) { value }
-  PROPERTY = -> (prop)  { lambda { |value| value[prop] } }
+  FIRST_ISO_3 = -> (countries) { countries.first[:iso_3] }
 
   PA_PROPERTIES = {
-    name:        {source: :api, key: :name,          block: IDENTITY},
-    wdpa_id:     {source: :api, key: :wdpa_id,       block: IDENTITY},
-    iucn_cat:    {source: :api, key: :iucn_category, block: PROPERTY[:name] },
-    designation: {source: :api, key: :designation,   block: PROPERTY[:name] },
-    parcc_id:    {source: :csv, key: :'',            block: IDENTITY },
-    poly_id:     {source: :csv, key: :polyid,        block: IDENTITY },
-    geom_type:   {source: :csv, key: :point,         block: IDENTITY },
-    iso_3: {
-      source: :api,
-      key: :countries,
-      block: -> (countries) { countries.first[:iso_3] }
-    }
+    iso_3:       {source: :api, key: :countries,   block: FIRST_ISO_3},
+    name:        {source: :csv, key: :name,        block: IDENTITY},
+    wdpa_id:     {source: :csv, key: :wdpaid,      block: IDENTITY},
+    poly_id:     {source: :csv, key: :polyid,      block: IDENTITY},
+    parcc_id:    {source: :csv, key: :'',          block: IDENTITY},
+    iucn_cat:    {source: :csv, key: :iucn_cat,    block: IDENTITY},
+    designation: {source: :csv, key: :designation, block: IDENTITY},
+    geom_type:   {source: :csv, key: :point,       block: IDENTITY}
   }
 
   def self.import

@@ -1,17 +1,9 @@
 require 'csv'
 
 class Parcc::Importers::Turnover
-  STATS = ['median', 'upper', 'lower']
-  MATCH_COLUMNS = {
-    parcc_id: '',
-    name: 'name',
-    iso_3: 'country',
-    poly_id: 'polyID',
-    designation: 'designation',
-    geom_type: 'point',
-    iucn_cat: 'iucn_cat',
-    wdpa_id: 'WDPAID'
-  }
+  extend Memoist
+  STATS = [:median, :upper, :lower]
+  COLUMN_FOR_PARCC_ID = :'' # yes, as odd as it looks
 
   def self.import
     instance = new
@@ -24,47 +16,42 @@ class Parcc::Importers::Turnover
 
   def populate_values file_path
     split_filename = File.basename(file_path).split
+    turnover_defaults = {
+      taxonomic_class_id: taxon_class_id_from_name(split_filename.first),
+      year: split_filename[3]
+    }
 
-    read_csv(file_path).each do |pa|
-      parcc_props = {
-        taxonomic_class: split_filename.first,
-        year: split_filename[3]
-      }
-
-      pa.each do |k,v|
-        next unless STATS.include? k
-
-        parcc_props[:stat] = k
-        parcc_props[:value] = v
-        create_turnover parcc_props, pa['']
-      end
+    read_csv(file_path).each do |record|
+      create_record(turnover_defaults, record)
     end
   end
 
-  def create_turnover parcc_values, parcc_id
-    parcc_values.merge!(
-      parcc_protected_area_id: pa_id_from_parcc_id(parcc_id)
-    )
+  def create_record defaults, record
+    stats = record.to_hash.slice(*STATS)
+    pa_id = {parcc_protected_area_id: pa_id_from_parcc_id(record[COLUMN_FOR_PARCC_ID])}
 
-    Parcc::SpeciesTurnover.create parcc_values
-  end
-
-  def files
-    @files ||= Dir['lib/data/parcc/turnover/*']
+    Parcc::SpeciesTurnover.create defaults.merge(stats).merge(pa_id)
   end
 
   def read_csv file_path
-    CSV.foreach(file_path, headers: true)
+    CSV.foreach(file_path, headers: true, header_converters: :symbol)
   end
 
-  def pa_id_from_parcc_id parcc_id
-    @pa_ids ||= {}
-    @pa_ids[parcc_id] ||= db.select_value(
+  memoize def files
+    Dir['lib/data/parcc/turnover/*']
+  end
+
+  memoize def pa_id_from_parcc_id parcc_id
+    db.select_value(
       "SELECT id from parcc_protected_areas where parcc_id = #{parcc_id.to_i}"
     ).instance_eval { to_i unless nil? }
   end
 
-  def db
-    ActiveRecord::Base.connection
+  memoize def taxon_class_id_from_name name
+    db.select_value(
+      "SELECT id from parcc_taxonomic_classes where name = '#{name}'"
+    ).instance_eval { to_i unless nil? }
   end
+
+  define_method(:db) { ActiveRecord::Base.connection }
 end
