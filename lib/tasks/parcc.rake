@@ -27,6 +27,7 @@ namespace :parcc do
       Parcc::Importers::Species.import_counts
 
       Parcc::Importers::Turnover.import
+      Parcc::Importers::SuitabilityChanges.import
     end
   end
 end
