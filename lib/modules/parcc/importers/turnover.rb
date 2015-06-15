@@ -15,7 +15,7 @@ class Parcc::Importers::Turnover
   end
 
   def populate_values file_path
-    split_filename = File.basename(file_path).split
+    split_filename = File.basename(file_path, '.csv').split
     turnover_defaults = {
       taxonomic_class_id: taxon_class_id_from_name(split_filename.first),
       year: split_filename[3]
