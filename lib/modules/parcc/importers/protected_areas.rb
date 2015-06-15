@@ -3,14 +3,14 @@ class Parcc::Importers::ProtectedAreas < Parcc::Importers::Base
   FIRST_ISO_3 = -> (countries) { countries.first[:iso_3] }
 
   PA_PROPERTIES = {
-    iso_3:       {source: :api, key: :countries,   block: FIRST_ISO_3},
-    name:        {source: :csv, key: :name,        block: IDENTITY},
-    wdpa_id:     {source: :csv, key: :wdpaid,      block: IDENTITY},
-    poly_id:     {source: :csv, key: :polyid,      block: IDENTITY},
-    parcc_id:    {source: :csv, key: :'',          block: IDENTITY},
-    iucn_cat:    {source: :csv, key: :iucn_cat,    block: IDENTITY},
-    designation: {source: :csv, key: :designation, block: IDENTITY},
-    geom_type:   {source: :csv, key: :point,       block: IDENTITY}
+    iso_3:       :country,
+    name:        :name,
+    wdpa_id:     :wdpaid,
+    poly_id:     :polyid,
+    parcc_id:    :'',
+    iucn_cat:    :iucn_cat,
+    designation: :designation,
+    geom_type:   :point
   }
 
   def self.import
@@ -20,37 +20,17 @@ class Parcc::Importers::ProtectedAreas < Parcc::Importers::Base
 
   def import
     csv_reader.each do |record|
-      next unless properties = merge_properties(
-        api: props_from_pp(record[:wdpaid]),
-        csv: record
+      Parcc::ProtectedArea.create(
+        collect_properties(record)
       )
-
-      Parcc::ProtectedArea.create(properties)
     end
   end
 
   private
 
-  def create_pa wdpa_id
-    properties = props_from_pp wdpa_id
-    return unless properties
-
-    Parcc::ProtectedArea.create(properties)
-  end
-
-  def props_from_pp wdpa_id
-    ProtectedPlanetReader.protected_area_from_wdpaid wdpa_id
-  rescue ProtectedPlanetReader::ProtectedAreaRetrievalError => e
-    Rails.logger.info e.message
-    return {}
-  end
-
-  def merge_properties sources
-    PA_PROPERTIES.each_with_object({}) do |(key, config), props|
-      raw_value = sources[config[:source]][config[:key]]
-      next unless raw_value
-
-      props[key] = config[:block].(raw_value)
+  def collect_properties record
+    PA_PROPERTIES.each_with_object({}) do |(key, original_key), props|
+      props[key] = record[original_key]
     end
   end
 
