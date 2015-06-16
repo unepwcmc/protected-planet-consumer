@@ -19,7 +19,7 @@ class Parcc::Importers::ProtectedAreas < Parcc::Importers::Base
   end
 
   def import
-    csv_reader.each do |record|
+    csv_reader(source_file_path).each do |record|
       next unless properties = merge_properties(
         api: props_from_pp(record[:wdpaid]),
         csv: record

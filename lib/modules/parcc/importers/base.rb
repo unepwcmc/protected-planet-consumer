@@ -8,11 +8,9 @@ class Parcc::Importers::Base
 
   private
 
-  def csv_reader
-    @csv_reader ||= CSV.foreach(source_file_path, headers: true, header_converters: :symbol)
+  def csv_reader file_path
+    CSV.foreach(file_path, headers: true, header_converters: :symbol)
   end
-
-  private
 
   def source_file_path
     raise NotImplementedError, 'Define a source file for the specific importer'
