@@ -12,7 +12,8 @@ namespace :parcc do
           Parcc::SpeciesProtectedArea,
           Parcc::SpeciesTurnover,
           Parcc::TaxonomicClass,
-          Parcc::TaxonomicOrder
+          Parcc::TaxonomicOrder,
+          Parcc::SuitabilityChange
         ].each(&:delete_all)
       end
 

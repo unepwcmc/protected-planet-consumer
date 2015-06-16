@@ -28,7 +28,7 @@ class Parcc::Importers::SuitabilityChanges
       name = species_name.split('_').join(' ')
 
       Parcc::Species.find_or_create_by(name: name) do |species|
-        species.parcc_taxonomic_order_id = Parcc::TaxonomicOrder.create!(
+        species.parcc_taxonomic_order_id = Parcc::TaxonomicOrder.find_or_create_by(
           name: 'Not Available',
           parcc_taxonomic_class_id: taxonomic_class_id
         ).id
