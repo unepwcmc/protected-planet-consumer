@@ -6,25 +6,16 @@ class Parcc::Importers::HighPriorityProtectedAreas < Parcc::Importers::Base
   end
 
   def import
-    populate_values source_file_path
-  end
-
-  def populate_values file_path
-    read_csv(file_path).each do |record|
+    csv_reader(source_file_path).each do |record|
       update_area(record)
     end
   end
 
+  private
+
   def update_area record
-    Parcc::ProtectedArea.find_by({name: name(record)}).try(:update, high_priority: true)
-  end
-
-  def name record
-    record.to_hash[:name]
-  end
-
-  def read_csv file_path
-    CSV.read(file_path, headers: true, header_converters: :symbol)
+    Parcc::ProtectedArea.find_by(name: record[:name],
+      designation: record[:designation]).try(:update, high_priority: true)
   end
 
   def source_file_path
