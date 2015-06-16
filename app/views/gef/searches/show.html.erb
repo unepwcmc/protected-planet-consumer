@@ -34,7 +34,8 @@
         <% end %>
       </table>
       <div class="download-search">
-        <%= link_to 'Download CSV', gef_search_path(params[:id], format: 'csv') %>
+        Download Results: [<%= link_to 'CSV', gef_search_path(params[:id], format: 'csv') %>]
+        [<%= link_to 'XLS', gef_search_path(params[:id], format: 'xls') %>]
       </div>
     <% else %>
       <br>Your search did not find any protected areas. <%= link_to 'Please try again', new_gef_search_path %></br>

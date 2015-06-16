@@ -1,6 +1,6 @@
 class Parcc::Importers::Species::Counts < Parcc::Importers::Base
   def import
-    csv_reader.each do |record|
+    csv_reader(source_file_path).each do |record|
       protected_area = fetch_protected_area(record[:wdpa_id])
       next unless protected_area
 

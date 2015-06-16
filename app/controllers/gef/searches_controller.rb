@@ -22,6 +22,7 @@ class Gef::SearchesController < GefController
         headers['Content-Disposition'] = "attachment; filename=\"search-results.csv\""
         headers['Content-Type'] ||= 'text/csv'
       end
+      format.xls { render :xls => 'search-results.xls' }
     end
   end
 

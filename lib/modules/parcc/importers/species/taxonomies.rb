@@ -6,7 +6,7 @@ class Parcc::Importers::Species::Taxonomies < Parcc::Importers::Base
   end
 
   def import
-    csv_reader.each do |record|
+    csv_reader(source_file_path).each do |record|
       next unless protected_area = fetch_protected_area(record[:wdpa_id])
       taxon_class = taxon_class(record[:species_taxon])
       taxon_order = taxon_order(record[:species_order], taxon_class)

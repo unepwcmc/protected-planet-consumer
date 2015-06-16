@@ -1,6 +1,4 @@
-require 'csv'
-
-class Parcc::Importers::Turnover
+class Parcc::Importers::Turnover < Parcc::Importers::Base
   extend Memoist
   STATS = [:median, :upper, :lower]
   COLUMN_FOR_PARCC_ID = :'' # yes, as odd as it looks
@@ -21,7 +19,7 @@ class Parcc::Importers::Turnover
       year: split_filename[3]
     }
 
-    read_csv(file_path).each do |record|
+    csv_reader(file_path).each do |record|
       create_record(turnover_defaults, record)
     end
   end
@@ -31,10 +29,6 @@ class Parcc::Importers::Turnover
     pa_id = {parcc_protected_area_id: pa_id_from_parcc_id(record[COLUMN_FOR_PARCC_ID])}
 
     Parcc::SpeciesTurnover.create defaults.merge(stats).merge(pa_id)
-  end
-
-  def read_csv file_path
-    CSV.foreach(file_path, headers: true, header_converters: :symbol)
   end
 
   memoize def files

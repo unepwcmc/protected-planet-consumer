@@ -22,7 +22,7 @@ private
   def find_areas type: type
     areas = query_areas
     all_data = information areas: areas, type: type
-    all_data
+    all_data.sort_by  { |h| h[:wdpa_name] }
   end
 
   def query_areas
