@@ -117,7 +117,7 @@ class Gef::SearchShowTest < ActionDispatch::IntegrationTest
 
     visit '/gef/searches/1/'
 
-    assert page.has_link?('Download CSV', /.csv/)
+    assert page.has_link?('CSV', /.csv/)
 
     assert page.has_link?('888999', href: 'http://www.thegef.org/gef/project_detail?projID=888999')
   end
