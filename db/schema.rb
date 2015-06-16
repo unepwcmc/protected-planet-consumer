@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150608122312) do
+ActiveRecord::Schema.define(version: 20150616130817) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -180,6 +180,8 @@ ActiveRecord::Schema.define(version: 20150608122312) do
     t.integer  "percentage_vulnerable_species"
   end
 
+  add_index "parcc_protected_areas", ["wdpa_id"], name: "index_parcc_protected_areas_on_wdpa_id", using: :btree
+
   create_table "parcc_species", force: true do |t|
     t.integer  "parcc_taxonomic_order_id"
     t.string   "name"
@@ -203,6 +205,8 @@ ActiveRecord::Schema.define(version: 20150608122312) do
     t.datetime "updated_at"
   end
 
+  add_index "parcc_species_protected_areas", ["parcc_protected_area_id"], name: "index_parcc_species_protected_areas_on_parcc_protected_area_id", using: :btree
+
   create_table "parcc_species_turnovers", force: true do |t|
     t.integer  "parcc_protected_area_id"
     t.integer  "year"
@@ -214,6 +218,8 @@ ActiveRecord::Schema.define(version: 20150608122312) do
     t.float    "upper"
   end
 
+  add_index "parcc_species_turnovers", ["parcc_protected_area_id"], name: "index_parcc_species_turnovers_on_parcc_protected_area_id", using: :btree
+
   create_table "parcc_suitability_changes", force: true do |t|
     t.integer  "parcc_species_id"
     t.integer  "parcc_protected_area_id"
@@ -222,6 +228,8 @@ ActiveRecord::Schema.define(version: 20150608122312) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "parcc_suitability_changes", ["parcc_protected_area_id"], name: "index_parcc_suitability_changes_on_parcc_protected_area_id", using: :btree
 
   create_table "parcc_taxonomic_classes", force: true do |t|
     t.string   "name"
