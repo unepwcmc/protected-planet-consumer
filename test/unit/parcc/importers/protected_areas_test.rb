@@ -15,10 +15,7 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
     Parcc::Importers::ProtectedAreas.import
   end
 
-  test '#import creates a Parcc::ProtectedArea from CSV and PP' do
-    ProtectedPlanetReader.stubs(:protected_area_from_wdpaid)
-      .returns PA_123_JSON
-
+  test '#import creates a Parcc::ProtectedArea from CSV' do
     CSV.stubs(:foreach).returns([{
       wdpaid: 123,
       name: 'Manbone',
@@ -27,6 +24,7 @@ class ParccImportersProtectedAreasTest < ActiveSupport::TestCase
       point: 'polygon',
       iucn_cat: 'II',
       designation: 'National Park',
+      country: 'BEN'
     }])
 
     Parcc::ProtectedArea.expects(:create).with(

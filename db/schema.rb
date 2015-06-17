@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150602145017) do
+ActiveRecord::Schema.define(version: 20150616141402) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -134,17 +134,6 @@ ActiveRecord::Schema.define(version: 20150602145017) do
     t.datetime "updated_at"
   end
 
-  create_table "gef_search_twos", force: true do |t|
-    t.integer  "gef_country_id"
-    t.integer  "gef_region_id"
-    t.string   "primary_biome"
-    t.integer  "gef_area_id"
-    t.integer  "wdpa_id"
-    t.string   "wdpa_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "gef_searches", force: true do |t|
     t.integer  "gef_country_id"
     t.integer  "gef_region_id"
@@ -189,7 +178,10 @@ ActiveRecord::Schema.define(version: 20150602145017) do
     t.integer  "count_total_species"
     t.integer  "count_vulnerable_species"
     t.integer  "percentage_vulnerable_species"
+    t.boolean  "high_priority",                 default: false
   end
+
+  add_index "parcc_protected_areas", ["wdpa_id"], name: "index_parcc_protected_areas_on_wdpa_id", using: :btree
 
   create_table "parcc_species", force: true do |t|
     t.integer  "parcc_taxonomic_order_id"
@@ -207,12 +199,13 @@ ActiveRecord::Schema.define(version: 20150602145017) do
   create_table "parcc_species_protected_areas", force: true do |t|
     t.integer  "parcc_species_id"
     t.integer  "parcc_protected_area_id"
-    t.integer  "parcc_chenge_type_id"
     t.float    "intersection_area"
     t.float    "overlap_percentage"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "parcc_species_protected_areas", ["parcc_protected_area_id"], name: "index_parcc_species_protected_areas_on_parcc_protected_area_id", using: :btree
 
   create_table "parcc_species_turnovers", force: true do |t|
     t.integer  "parcc_protected_area_id"
@@ -224,6 +217,19 @@ ActiveRecord::Schema.define(version: 20150602145017) do
     t.float    "median"
     t.float    "upper"
   end
+
+  add_index "parcc_species_turnovers", ["parcc_protected_area_id"], name: "index_parcc_species_turnovers_on_parcc_protected_area_id", using: :btree
+
+  create_table "parcc_suitability_changes", force: true do |t|
+    t.integer  "parcc_species_id"
+    t.integer  "parcc_protected_area_id"
+    t.integer  "year"
+    t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "parcc_suitability_changes", ["parcc_protected_area_id"], name: "index_parcc_suitability_changes_on_parcc_protected_area_id", using: :btree
 
   create_table "parcc_taxonomic_classes", force: true do |t|
     t.string   "name"

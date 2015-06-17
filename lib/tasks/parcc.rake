@@ -12,7 +12,8 @@ namespace :parcc do
           Parcc::SpeciesProtectedArea,
           Parcc::SpeciesTurnover,
           Parcc::TaxonomicClass,
-          Parcc::TaxonomicOrder
+          Parcc::TaxonomicOrder,
+          Parcc::SuitabilityChange
         ].each(&:delete_all)
       end
 
@@ -27,6 +28,7 @@ namespace :parcc do
       Parcc::Importers::Species.import_counts
 
       Parcc::Importers::Turnover.import
+      Parcc::Importers::SuitabilityChanges.import
     end
   end
 end
