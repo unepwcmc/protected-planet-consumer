@@ -22,9 +22,9 @@ class Parcc::Importers::SuitabilityChanges < Parcc::Importers::Base
 
   def populate_species record, taxonomic_class_id
     @all_species = record[SPECIES_RANGE].map do |species_name|
-      species_name.gsub!('_', ' ')
+      name = species_name.gsub('_', ' ')
 
-      Parcc::Species.find_or_create_by(name: species_name) do |species|
+      Parcc::Species.find_or_create_by(name: name) do |species|
         species.parcc_taxonomic_order_id = Parcc::TaxonomicOrder.find_or_create_by(
           name: 'Not Available',
           parcc_taxonomic_class_id: taxonomic_class_id
