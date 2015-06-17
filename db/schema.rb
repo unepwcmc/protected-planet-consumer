@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150616130817) do
+ActiveRecord::Schema.define(version: 20150616141402) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -178,6 +178,7 @@ ActiveRecord::Schema.define(version: 20150616130817) do
     t.integer  "count_total_species"
     t.integer  "count_vulnerable_species"
     t.integer  "percentage_vulnerable_species"
+    t.boolean  "high_priority",                 default: false
   end
 
   add_index "parcc_protected_areas", ["wdpa_id"], name: "index_parcc_protected_areas_on_wdpa_id", using: :btree

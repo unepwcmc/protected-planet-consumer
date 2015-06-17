@@ -1,12 +1,9 @@
-require 'csv'
-
-class Parcc::Importers::SuitabilityChanges
+class Parcc::Importers::SuitabilityChanges < Parcc::Importers::Base
   extend Memoist
   SPECIES_RANGE = (5..-3)
 
   def self.import
-    instance = new
-    instance.import
+    new.import
   end
 
   def import
@@ -17,7 +14,7 @@ class Parcc::Importers::SuitabilityChanges
     split_filename = File.basename(file_path, '.csv').split
     year = split_filename[4]
 
-    csv = read_csv(file_path).to_a
+    csv = csv_reader(file_path).to_a
     populate_species(csv.shift, taxon_class_id_from_name(split_filename.first))
 
     csv.each { |record| create_record(record, year) }
@@ -25,9 +22,9 @@ class Parcc::Importers::SuitabilityChanges
 
   def populate_species record, taxonomic_class_id
     @all_species = record[SPECIES_RANGE].map do |species_name|
-      name = species_name.split('_').join(' ')
+      species_name.gsub!('_', ' ')
 
-      Parcc::Species.find_or_create_by(name: name) do |species|
+      Parcc::Species.find_or_create_by(name: species_name) do |species|
         species.parcc_taxonomic_order_id = Parcc::TaxonomicOrder.find_or_create_by(
           name: 'Not Available',
           parcc_taxonomic_class_id: taxonomic_class_id
@@ -50,9 +47,11 @@ class Parcc::Importers::SuitabilityChanges
     end
   end
 
-  def read_csv file_path
+  def csv_reader file_path
     CSV.read(file_path, headers: true)
   end
+
+  define_method(:db) { ActiveRecord::Base.connection }
 
   memoize def files
     Dir['lib/data/parcc/suitability_changes/*']
@@ -69,6 +68,4 @@ class Parcc::Importers::SuitabilityChanges
       "SELECT id from parcc_taxonomic_classes where name = '#{name}'"
     ).instance_eval { to_i unless nil? }
   end
-
-  define_method(:db) { ActiveRecord::Base.connection }
 end
