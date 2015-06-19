@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield :title %></title>
+  <%= stylesheet_link_tag    'parcc', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <nav class="nav-main">
+      <ul>
+        <li class="logo">
+          <%= link_to "Protected Planet", protected_planet_path(:root) %>
+        </li>
+      </ul>
+
+      <ul class="right">
+        <li><%= link_to 'About', protected_planet_path(:about) %></li>
+        <li><%= link_to 'Resources', protected_planet_path(:blog) %></li>
+        <li><%= link_to 'UN List', protected_planet_path(:un_list) %></li>
+
+        <li class="search-button">
+          <%= link_to 'Protected Planet', protected_planet_path(:root) %>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="main-container">
+      <%= yield %>
+    </div>
+
+    <footer>
+      <div class="footer-logos">
+        <a href="http://unep-wcmc.org" title="UNEP-WCMC Website">
+          <%= image_tag 'wcmc-footer-logo@2x.png', style: 'width: 73px; height: 39px' %>
+        </a>
+        <a href="<%= protected_planet_path(:root) %>" title="ProtectedPlanet Website">
+          <%= image_tag 'logo-white.png', style: 'width: 110px; height: 39px' %>
+        </a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; UNEP-WCMC 2015. All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

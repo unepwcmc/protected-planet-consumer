@@ -26,5 +26,6 @@ Rails.application.routes.draw do
     namespace :api do
       resources :protected_areas, only: [:index, :show]
     end
+    get '/:id', to: 'protected_areas#show', as: 'protected_area'
   end
 end
