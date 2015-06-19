@@ -1,7 +1,9 @@
 set :rails_env, "staging"
+
 # Primary domain name of your application. Used in the Apache configs
 set :domain, "unepwcmc-012.vm.brightbox.net"
-## List of servers
+
+# List of servers
 server "unepwcmc-012.vm.brightbox.net", :app, :web, :db, :primary => true
 
 set :application, "ppe-reader"
@@ -48,7 +50,9 @@ task :config_vhost do
       }
     }
   EOF
+
   put vhost_config, "/tmp/vhost_config"
+
   sudo "mv /tmp/vhost_config /etc/nginx/sites-available/#{application}"
   sudo "ln -s /etc/nginx/sites-available/#{application} /etc/nginx/sites-enabled/#{application}"
 end

@@ -58,10 +58,10 @@ set :branch, "master"
 # you automatically). If you're not using bundler, uncomment the
 # following line to explicitly disable it
 # set :bundle_disable, true
-# 
+#
 # Gem with a source (such as github)
 # depend :remote, :gem, "tmm1-amqp", ">=0.6.0", :source => "http://gems.github.com"
-# 
+#
 # Specify your specific Rails version if it is not vendored
 # depend :remote, :gem, "rails", "=2.2.2"
 #
@@ -206,7 +206,7 @@ require 'yaml'
   spec = {
     "AWS_ACCESS_KEY_ID:" => aws_access_key,
     "AWS_SECRET_ACCESS_KEY:" => aws_secret_access_key
-    
+
 }
   run "mkdir -p #{shared_path}/config"
   put(spec.to_yaml, "#{shared_path}/config/.env")

@@ -14,6 +14,10 @@ gem 'jbuilder', '~> 2.0'
 
 group :development do
   gem 'spring'
+
+  gem 'rvm-capistrano'
+  gem 'capistrano', '~> 2.15.0', require: false
+  gem 'brightbox', '~> 2.4.4'
 end
 
 group :test do
