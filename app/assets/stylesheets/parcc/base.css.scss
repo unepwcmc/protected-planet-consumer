@@ -76,6 +76,7 @@ select {
 
 header {
   background-color: $color--header-bg;
+  height: 60px;
 
   li {
     &.active { a { background-color: $color--header-active-link; } }

@@ -4,6 +4,7 @@
 *= require parcc/transitions
 *= require parcc/z-index
 *= require parcc/base
+*= require parcc/protected_areas
 *= require parcc/navigation
 *= require parcc/buttons
 *= require parcc/footer

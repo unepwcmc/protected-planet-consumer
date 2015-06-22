@@ -1,3 +1,15 @@
-<div>
+<div class="section">
+  <a href="<%= protected_planet_path(:protected_area)[@protected_area.wdpa_id] %>">
+    < Return to Official Record for <strong><%= @protected_area.name %></strong>
+  </a>
+</div>
 
+<div class="section">
+  <h1> Climate change vulnerability assessments </h1>
+  <div class="line"></div>
+
+  <div class="pa-card">
+    <div id="map"></div>
+    <div class="factsheet"></div>
+  </div>
 </div>
