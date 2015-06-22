@@ -26,7 +26,32 @@ h1 {
   height: 335px;
   width: 100%;
 
-  div { float: left; height: 100%; }
+  > div { float: left; height: 100%; }
   #map { width: 540px; }
-  .factsheet { width: 520px; }
+  .factsheet {
+    width: 520px;
+    background-color: $color--factsheet-background;
+    padding: 20px;
+    box-sizing: border-box;
+    .pa-name {
+      padding-bottom: 40px;
+    }
+    .other-info > li{
+      float:left;
+      &:not(:first-child) {
+        padding-left: 35px;
+      }
+    }
+    .column-name {
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+    .column-value {
+      font-family: "MuseoSans-500";
+      font-size: 26px;
+    }
+    .column-name, .column-value{
+      color: $color--pa-info-column;
+    }
+  }
 }
