@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require 'mapbox'
+//= require 'cartodb.core'
+//= require 'modules/parcc/protected_area_overlay'
+//= require 'modules/parcc/map'
+//= require 'modules/parcc.js'
