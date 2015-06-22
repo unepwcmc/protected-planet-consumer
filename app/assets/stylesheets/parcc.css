@@ -1,3 +1,10 @@
 /*
+*= require reset
 *= require parcc/colors
+*= require parcc/transitions
+*= require parcc/z-index
+*= require parcc/base
+*= require parcc/navigation
+*= require parcc/buttons
+*= require parcc/footer
 */

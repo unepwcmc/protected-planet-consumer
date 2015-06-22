@@ -78,7 +78,7 @@ a:hover, a:focus{
 
 .gef-wrap
 {
-  min-height: 100%; 
+  min-height: 100%;
   height: auto;
   margin: 10px 345px -60px;
   padding-right: 15px;
@@ -107,7 +107,7 @@ nav {
     margin-left: 15px;
 
     a { color: $color--nav-link; }
-    a:hover { text-decoration: none; 
+    a:hover { text-decoration: none;
       color: $color--nav-active-link;  }
     a:last-child { margin-right: 0; }
 
@@ -299,4 +299,8 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
 }
+}
+
+.right{
+  float: right;
 }
