@@ -6,7 +6,7 @@
   margin: auto;
 }
 
-.section {
+section {
   margin-top: 35px;
   width: 100%;
 }
@@ -16,20 +16,34 @@ h1 {
   color: $color--header-font;
 }
 
+h2 {
+  font-size: 20px;
+  font-family: "MuseoSans-500";
+  color: $dark-grey;
+}
+
+p.subtitle {
+  margin-top: 10px;
+  font-family: "MuseoSans-300";
+  color: $medium-grey;
+}
+
 .line {
   margin: 20px 0 25px 0;
   border-bottom: solid 1px;
   border-color: $color--line-border-bottom;
+  height: 0;
+  &.medium {
+    border-color: $color--line-border-bottom-medium;
+  }
 }
 
 .pa-card {
   height: 335px;
   width: 100%;
 
-  > div { float: left; height: 100%; }
-  #map { width: 540px; }
+  > div { height: 100%; }
   .factsheet {
-    width: 520px;
     background-color: $color--factsheet-background;
     padding: 20px;
     box-sizing: border-box;
@@ -53,5 +67,45 @@ h1 {
     .column-name, .column-value{
       color: $color--pa-info-column;
     }
+  }
+}
+
+section div.left {
+  float: left;
+  width: 540px;
+}
+
+section div.right {
+  float: left;
+  width: 520px;
+}
+
+section.tva-sdm {
+  height: 380px;
+  .left {
+    padding-right: 25px;
+    box-sizing: border-box;
+  }
+}
+
+.tva-values {
+  width: 65%;
+  li {
+    margin-bottom: 20px;
+    span {
+      font-size: 14px;
+      font-family: "MuseoSans-300";
+      &.right-value { float: right; }
+    }
+  }
+}
+
+.percentage-bar {
+  margin: 35px 0 15px 0;
+  background-color: $light-grey;
+  height: 35px;
+  .percentage {
+    height: 100%;
+    background-color: $color--vulnerability-percentage;
   }
 }

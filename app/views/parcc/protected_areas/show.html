@@ -1,16 +1,16 @@
-<div class="section">
+<section>
   <a href="<%= protected_planet_path(:protected_area)[@protected_area.wdpa_id] %>">
     < Return to Official Record for <strong><%= @protected_area.name %></strong>
   </a>
-</div>
+</section>
 
-<div class="section">
+<section>
   <h1> Climate change vulnerability assessments </h1>
   <div class="line"></div>
 
   <div class="pa-card">
-    <div id="map" data-wdpa-id="<%= @protected_area.wdpa_id %>"></div>
-    <div class="factsheet">
+    <div id="map" class="left" data-wdpa-id="<%= @protected_area.wdpa_id %>"></div>
+    <div class="factsheet right">
       <div class="pa-name">
         <p class="column-name">Name</p>
         <h3 class="column-value"><%= @protected_area.name %></h3>
@@ -22,4 +22,32 @@
       </ul>
     </div>
   </div>
-</div>
+</section>
+
+<section class="tva-sdm">
+  <div class="fifty left">
+    <h2> Species vulnerable to climate change </h2>
+    <p class="subtitle"> According to Traits-based Vulnerability Assessments (TVAs) </p>
+    <div class="line medium"></div>
+    <ul class="tva-values">
+      <li>
+        <span class="left-value"> Total number of species assessed </span>
+        <span class="right-value"> <%= @protected_area.count_total_species %> </span>
+      </li>
+      <li>
+        <span class="left-value"> Number of vulnerable species </span>
+        <span class="right-value"> <%= @protected_area.count_vulnerable_species %> </span>
+      </li>
+    </ul>
+    <div class="percentage-bar">
+      <div class="percentage" style="width:<%= @protected_area.percentage_vulnerable_species %>%"></div>
+    </div>
+    <p class="subtitle"> <%= @protected_area.percentage_vulnerable_species %> % of species vulnerable to climate change </p>
+  </div>
+  <div class="fifty right">
+    <h2> Expected species turnover </h2>
+    <p class="subtitle"> According to Species Distribution Models (SDMs) </p>
+    <div class="line medium"></div>
+    <p class="subtitle"> Percentage of species turnover </p>
+  </div>
+</section>
