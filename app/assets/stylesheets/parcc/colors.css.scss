@@ -13,6 +13,8 @@ $green: #83ad35;
 
 $white: rgb(255,255,255);
 
+$lava: #D50C17;
+
 $color--base: $dark-grey;
 $color--base-btn-bg: $green;
 $color--base-btn-hover-bg: $dark-green;
@@ -94,8 +96,11 @@ $color--download-modal-overlay-bg: rgba(0,0,0,0.5);
 $color--download-modal-input-bg: $light-grey;
 
 $color--line-border-bottom: $light-grey;
+$color--line-border-bottom-medium: $medium-light-grey;
 
 $color--header-font: $medium-grey;
 $color--factsheet-background: $green;
 
 $color--pa-info-column: $white;
+
+$color--vulnerability-percentage: $lava;
