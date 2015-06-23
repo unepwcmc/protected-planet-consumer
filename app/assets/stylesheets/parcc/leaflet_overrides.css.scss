@@ -1,9 +1,5 @@
 @import 'colors';
 
-.leaflet-left {
-  left: 10px;
-}
-
 .leaflet-control-layers,
 .leaflet-bar,
 .leaflet-bar a {
@@ -26,11 +22,6 @@
 }
 
 .leaflet-control-container {
-  .leaflet-top.leaflet-right div {
-    display: inline-block;
-    clear: none;
-  }
-
   .leaflet-control-layers {
     margin-left: 1px;
     margin-right: 0;
