@@ -1,0 +1,15 @@
+<div class="pa-card">
+  <div id="map" class="left" data-wdpa-id="<%= @protected_area.wdpa_id %>"></div>
+  <div class="factsheet right">
+    <div class="pa-name">
+      <p class="column-name">Name</p>
+      <h3 class="column-value"><%= @protected_area.name %></h3>
+    </div>
+    <ul class="pa-info">
+      <li><p class="column-name">WDPA ID</p><h3 class="column-value"><%= @protected_area.wdpa_id %></h3></li>
+      <li><p class="column-name">Country</p><h3 class="column-value"><%= @protected_area.iso_3 %></h3></li>
+      <li><p class="column-name">IUCN category</p><h3 class="column-value"><%= @protected_area.iucn_cat %></h3></li>
+    </ul>
+    <%= high_priority_warning @protected_area %>
+  </div>
+</div>
