@@ -20,6 +20,8 @@ class Parcc::ProtectedArea < ActiveRecord::Base
   has_many :species, class_name: 'Parcc::Species',
     through: :species_protected_areas
 
+  scope :with_turnovers, -> { includes(species_turnovers: :taxonomic_class) }
+
   def self.for_api
     select(COLUMNS_FOR_API).to_json only: COLUMNS_FOR_API
   end
