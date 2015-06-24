@@ -1,10 +1,10 @@
 <div class="turnover-box">
   <ul class="first-row">
     <li class="subsubtitle">MEDIAN</li>
-    <li class="median-value">50.0%</li>
+    <li class="median-value"><%= turnover.percentage(:median) %>%</li>
   </ul>
   <ul class="second-row">
-    <li><span class="subsubtitle">Upper</span> <span>50.0%</span> <i class="fa fa-arrow-circle-up"></i></li>
-    <li><span class="subsubtitle">Lower</span> <span>50.0%</span> <i class="fa fa-arrow-circle-down"></i></li>
+    <li><span class="subsubtitle">Upper</span> <span><%= turnover.percentage(:upper) %>%</span> <i class="fa fa-arrow-circle-up"></i></li>
+    <li><span class="subsubtitle">Lower</span> <span><%= turnover.percentage(:lower) %>%</span> <i class="fa fa-arrow-circle-down"></i></li>
   </ul>
 </div>
