@@ -48,16 +48,32 @@ h2 {
 
   > div { height: 100%; }
   .factsheet {
+    position: relative;
     background-color: $color--factsheet-background;
     padding: 20px;
     box-sizing: border-box;
     .pa-name {
       padding-bottom: 40px;
     }
-    .other-info > li{
+    .pa-info > li{
       float:left;
       &:not(:first-child) {
         padding-left: 35px;
+      }
+    }
+    .other-info {
+      word-wrap: break-word;
+      position: absolute;
+      bottom: 10px;
+      .info {
+        font-size: 16px;
+        line-height: 1.3;
+        strong {
+          color: white;
+        }
+        i {
+          font-size: 22px;
+        }
       }
     }
     .column-name {
@@ -68,7 +84,7 @@ h2 {
       font-family: "MuseoSans-500";
       font-size: 26px;
     }
-    .column-name, .column-value{
+    .column-name, .column-value, .info{
       color: $color--pa-info-column;
     }
   }

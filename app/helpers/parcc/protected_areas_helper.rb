@@ -10,4 +10,15 @@ module Parcc::ProtectedAreasHelper
       protected_area: PATH_TO_PROTECTED_AREA
     }[page]
   end
+
+  def high_priority_warning protected_area
+    "<div class=\"other-info\">
+      <p class=\"info\">
+        <i class=\"fa fa-exclamation-circle\"></i>
+        <strong>#{protected_area.name}</strong> is among the top 75 protected areas
+          assessed as being the <strong>most vulnerable to climate change by 2025</strong>
+          (with a 95% uncertainty level)
+      </p>
+    </div>".html_safe if protected_area.high_priority
+  end
 end
