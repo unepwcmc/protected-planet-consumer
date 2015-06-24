@@ -15,9 +15,9 @@ module Parcc::ProtectedAreasHelper
     "<div class=\"other-info\">
       <p class=\"info\">
         <i class=\"fa fa-exclamation-circle\"></i>
-        <strong>#{protected_area.name}</strong> has been consistently identified as being vulnerable to climate
-          change for at least two of the three taxonomic groups considered
-          (with projected species turnovers in the upper quartile and ≥95% confidence level)
+        <strong>#{protected_area.name}</strong> is among the top 75 protected areas
+          assessed as being the <strong>most vulnerable to climate change by 2025</strong>
+          (with a 95% uncertainty level)
       </p>
     </div>".html_safe if protected_area.high_priority
   end
