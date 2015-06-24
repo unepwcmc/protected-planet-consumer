@@ -15,7 +15,7 @@ class Gef::Consumer
 
     if @consumer_data == {}
       @consumer_data[:wdpa_exists] = true
-      direct_values && name && jurisdiction && only_name   ##sub_location &&  status_year && countries 
+      direct_values && name && jurisdiction && only_name   ##sub_location &&  status_year && countries
     end
 
     wdpa_record = Gef::WdpaRecord.where(wdpa_id: wdpa_id)
@@ -23,7 +23,6 @@ class Gef::Consumer
 
     if @consumer_data[:wdpa_exists] == true
       @full_api_data[:countries].each do |country|
-        puts country
         Gef::Region.find_or_create_by(name: country[:region][:name])
         region_id = Gef::Region.where(name: country[:region][:name]).first[:id]
 
