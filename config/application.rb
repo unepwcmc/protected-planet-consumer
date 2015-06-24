@@ -21,7 +21,7 @@ module ProtectedPlanetConsumer
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.assets.precompile =  ['*.png', '*.js', '*.css', '*.css.erb', '*.eof', '*.ttf',
-      '*.svg', '*.swf', '*.woff', '*gif', '*.eot']
+      '*.svg', '*.swf', '*.woff', '*.woff2', '*gif', '*.eot']
     config.assets.precompile += %w(parcc.css)
 
     config.autoload_paths += %W(#{config.root}/lib/modules)

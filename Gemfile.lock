@@ -86,6 +86,8 @@ GEM
     factory_girl_rails (4.4.1)
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
+    font-awesome-rails (4.3.0.0)
+      railties (>= 3.2, < 5.0)
     highline (1.6.21)
     hike (1.2.3)
     httparty (0.13.1)
@@ -218,6 +220,7 @@ DEPENDENCIES
   dotenv-deployment
   excelinator
   factory_girl_rails (~> 4.4.1)
+  font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
   memoist (~> 0.12.0)

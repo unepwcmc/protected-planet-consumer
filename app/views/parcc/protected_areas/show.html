@@ -48,7 +48,7 @@
     <h2> Expected species turnover </h2>
     <p class="subtitle"> According to Species Distribution Models (SDMs) </p>
     <div class="line medium"></div>
-    <p class="subtitle"> Percentage of species turnover </p>
+    <p class="subsubtitle"> Percentage of species turnover </p>
     <table class="turnover-table">
       <thead>
         <th></th>
@@ -61,17 +61,20 @@
         <tr>
           <td>Amphibian</td>
           <td></td>
-          <td></td>
+          <td><%= render "turnover_cell" %></td>
+          <td><%= render "turnover_cell" %></td>
         </tr>
         <tr>
           <td>Bird</td>
           <td></td>
-          <td></td>
+          <td><%= render "turnover_cell" %></td>
+          <td><%= render "turnover_cell" %></td>
         </tr>
         <tr>
           <td>Mammal</td>
           <td></td>
-          <td></td>
+          <td><%= render "turnover_cell" %></td>
+          <td><%= render "turnover_cell" %></td>
         </tr>
       </tbody>
     </table>
