@@ -39,7 +39,7 @@ class Parcc::Importers::SuitabilityChanges < Parcc::Importers::Base
 
     record[SPECIES_RANGE].zip(@all_species).each do |value, species|
       Parcc::SuitabilityChange.create(
-        parcc_species: species,
+        species: species,
         value: value,
         year: year,
         parcc_protected_area_id: protected_area_id

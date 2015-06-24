@@ -11,14 +11,14 @@ class Parcc::ProtectedArea < ActiveRecord::Base
 
   validates :parcc_id, uniqueness: true
 
-  has_many :parcc_species_protected_areas,
+  has_many :species_protected_areas,
     class_name: 'Parcc::SpeciesProtectedArea',
     foreign_key: :parcc_protected_area_id
-  has_many :parcc_species_turnovers,
+  has_many :species_turnovers,
     class_name: 'Parcc::SpeciesTurnover',
     foreign_key: :parcc_protected_area_id
-  has_many :parcc_species, class_name: 'Parcc::Species',
-    through: :parcc_species_protected_areas
+  has_many :species, class_name: 'Parcc::Species',
+    through: :species_protected_areas
 
   def self.for_api
     select(COLUMNS_FOR_API).to_json only: COLUMNS_FOR_API
@@ -26,7 +26,7 @@ class Parcc::ProtectedArea < ActiveRecord::Base
 
   def for_api with_species: with_species
     to_json({only: COLUMNS_FOR_API}.tap{ |opts|
-      opts[:include] = :parcc_species if with_species
+      opts[:include] = :species if with_species
     })
   end
 end

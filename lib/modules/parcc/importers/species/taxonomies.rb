@@ -25,7 +25,7 @@ class Parcc::Importers::Species::Taxonomies < Parcc::Importers::Base
   def taxon_order order_name, taxon_class
     @taxon_orders[order_name] ||= Parcc::TaxonomicOrder.find_or_create_by(
       name: order_name,
-      parcc_taxonomic_class: taxon_class
+      taxonomic_class: taxon_class
     )
   end
 
@@ -33,7 +33,7 @@ class Parcc::Importers::Species::Taxonomies < Parcc::Importers::Base
     species = species_props record
 
     Parcc::Species.create_with(
-      species.merge(parcc_taxonomic_order: taxon_order)
+      species.merge(taxonomic_order: taxon_order)
     ).find_or_create_by(
       name: species[:name]
     )
@@ -48,8 +48,8 @@ class Parcc::Importers::Species::Taxonomies < Parcc::Importers::Base
 
   def join_protected_area species, protected_area, record
     Parcc::SpeciesProtectedArea.create(
-      parcc_species: species,
-      parcc_protected_area: protected_area,
+      species: species,
+      protected_area: protected_area,
       intersection_area: record[:species_wdpa_intersept_area_sum],
       overlap_percentage: record[:overlap_wdpa_percent]
     )

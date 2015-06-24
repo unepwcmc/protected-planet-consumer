@@ -49,14 +49,14 @@ class Parcc::ProtectedAreaTest < ActiveSupport::TestCase
 
   test '#for_api, given with_species: true, returns the protected area JSON with species' do
     species = FactoryGirl.create(
-      :parcc_species, parcc_protected_areas: [@protected_area]
+      :parcc_species, protected_areas: [@protected_area]
     )
 
     protected_area_json = JSON.parse(@protected_area.for_api(with_species: true))
 
     assert_equal(
       JSON.parse(species.to_json),
-      protected_area_json['parcc_species'].first
+      protected_area_json['species'].first
     )
   end
 end

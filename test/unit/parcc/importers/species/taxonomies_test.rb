@@ -33,7 +33,7 @@ class TestParccImportersSpeciesTaxonomies < ActiveSupport::TestCase
     Parcc::TaxonomicClass.stubs(:find_or_create_by).returns(bird_class_mock)
 
     Parcc::TaxonomicOrder.expects(:find_or_create_by)
-      .with(name: 'Nematelmintes', parcc_taxonomic_class: bird_class_mock)
+      .with(name: 'Nematelmintes', taxonomic_class: bird_class_mock)
 
     Parcc::Importers::Species::Taxonomies.import
   end
@@ -54,7 +54,7 @@ class TestParccImportersSpeciesTaxonomies < ActiveSupport::TestCase
       sensitivity: 'High',
       iucn_cat: 'VIII',
       name: 'Unepus Wicimesensis',
-      parcc_taxonomic_order: nematelmintes_mock
+      taxonomic_order: nematelmintes_mock
     }
 
     Parcc::Species.expects(:create_with)
@@ -71,8 +71,8 @@ class TestParccImportersSpeciesTaxonomies < ActiveSupport::TestCase
     )
 
     Parcc::SpeciesProtectedArea.expects(:create).with(
-      parcc_species: unepus_species,
-      parcc_protected_area: @pa,
+      species: unepus_species,
+      protected_area: @pa,
       intersection_area: 2333.5,
       overlap_percentage: 50
     )

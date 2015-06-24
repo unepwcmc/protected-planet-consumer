@@ -47,13 +47,13 @@ class ParccImportersSuitabilityChangesTest < ActiveSupport::TestCase
     CSV.stubs(:read).returns(csv)
 
     Parcc::SuitabilityChange.expects(:create).with(
-      parcc_species: guillermona,
+      species: guillermona,
       value: 'None',
       year: '2040',
       parcc_protected_area_id: san_guillermo.id
     )
     Parcc::SuitabilityChange.expects(:create).with(
-      parcc_species: telefonino,
+      species: telefonino,
       value: 'Inc',
       year: '2040',
       parcc_protected_area_id: san_guillermo.id
