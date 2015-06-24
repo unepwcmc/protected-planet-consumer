@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :parcc_taxonomic_class, class: Parcc::TaxonomicClass do
-    name 'Bird'
+    sequence(:name) { |n| "Class n.#{n}" }
   end
 end
 
