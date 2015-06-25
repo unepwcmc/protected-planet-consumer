@@ -15,3 +15,8 @@
   <%= render "tva_percentage" %>
   <%= render "sdm_percentage" %>
 </section>
+
+<section class="vulnerable-species">
+  <h2>Vulnerable <%= select_tag "class_id", options_for_select([["Amphibian",6], ["Bird",7], ["Mammal",9]]) %> species</h2>
+  <%= render "vulnerable_species_table" %>
+</section>

@@ -186,3 +186,23 @@ section.tva-sdm {
     }
   }
 }
+
+div.species-table-container{
+  overflow-x:scroll;
+}
+
+.vulnerable-species-table {
+  border-collapse:separate; border-top: 3px solid grey;
+  th { min-width: 200px; }
+  td {
+
+    margin:0;
+    white-space:nowrap;
+  }
+  .headcol {
+    width: 200px;
+    margin-right: 200px;
+    position:absolute;
+    width:5em;
+  }
+}
