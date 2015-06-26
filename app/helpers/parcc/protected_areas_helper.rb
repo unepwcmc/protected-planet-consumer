@@ -1,24 +1,39 @@
 module Parcc::ProtectedAreasHelper
-
-  PATH_TO_PROTECTED_AREA = -> wdpa_id { "http://www.protectedplanet.net/#{wdpa_id}" }
+  URL_TO_PROTECTED_AREA = -> wdpa_id { "http://www.protectedplanet.net/#{wdpa_id}" }
   def protected_planet_path page
     {
       root: 'http://www.protectedplanet.net',
       blog: 'http://blog.protectedplanet.net',
       about: 'http://www.protectedplanet.net/about',
       un_list: 'http://blog.protectedplanet.net/post/102481051829/2014-united-nations-list-of-protected-areas',
-      protected_area: PATH_TO_PROTECTED_AREA
+      protected_area: URL_TO_PROTECTED_AREA
     }[page]
   end
 
   def high_priority_warning protected_area
-    "<div class=\"other-info\">
-      <p class=\"info\">
-        <i class=\"fa fa-exclamation-circle\"></i>
-        <strong>#{protected_area.name}</strong> is among the top 75 protected areas
-          assessed as being the <strong>most vulnerable to climate change by 2025</strong>
-          (with a 95% uncertainty level)
-      </p>
-    </div>".html_safe if protected_area.high_priority
+    %Q(
+      <div class="other-info">
+        <p class="info">
+          <i class="fa fa-exclamation-circle"></i>
+          <strong>#{protected_area.name}</strong> is among the top 75 protected areas
+            assessed as being the <strong>most vulnerable to climate change by 2025</strong>
+            (with a 95% uncertainty level)
+        </p>
+      </div>
+    ).html_safe if protected_area.high_priority
+  end
+
+  LEGEND_PATH = Rails.root.join('config/parcc/vulnerability_legend.yml')
+  VULNERABILITY_LEGEND = YAML.load(File.read(LEGEND_PATH))
+
+  def traits type, pa_species
+    all_traits = VULNERABILITY_LEGEND[type.to_s][pa_species.taxonomic_class.name]
+
+    species_traits = pa_species.send(type).to_s
+    species_traits_as_array = species_traits.split(',').map(&:to_i)
+
+    species_traits_as_array.each_with_object(Set.new) do |trait, set|
+      set << all_traits[trait]
+    end.to_a
   end
 end
