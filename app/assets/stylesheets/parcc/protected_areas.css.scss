@@ -188,54 +188,44 @@ section.tva-sdm {
 }
 
 //fights the reset.css file fixing alignment in datatables
-.vulnerable-species-table th {
-  vertical-align: middle;
-}
-
-/* div.species-table-container{
-  overflow-x:scroll;
-}
-
 .vulnerable-species-table {
-  border-collapse:separate;
-  border-top: 3px solid grey;
-  float: left;
-  th { min-width: 200px; }
-  td {
-    margin:0;
-    white-space:nowrap;
+  th {
+    vertical-align: middle;
   }
-  .headcol {
-    width: 200px;
-    margin-right: 200px;
-    position:absolute;
+  .fa-info-circle {
+      color: $green;
   }
-} */
-
-/* div.species-table-container {
-  position: relative;
-  display: inline-block;
-  border: 1px solid red;
-  width: 100%;
-  table {
-    float: left;
-  }
-  th, td {
-    padding: 10px;
-  }
-  td {
-    padding-top: 60px;
-  }
-  .data-table {
-    th, td {
-      max-width: 200px;
+  .exposure {
+    vertical-align: middle;
+    padding: 0px 30px;
+    height: 0;
+    i, div {
+      float: left;
+      color: $medium-grey;
+      font-size: 18px;
     }
-    td {
-      margin: 0;
-      white-space: nowrap;
+    div.vertical-line {
+      border-left: solid 1px;
+      border-color: $grey;
+      height: 100%;
+    }
+    .left-check {
+      padding-right: 25px;
+    }
+    .right-check {
+      padding-left: 25px;
+    }
+    .left-check, .right-check {
+      padding-top: 10%;
+    }
+    .no-icon {
+      width: 18px;
     }
   }
-  .data {
-    overflow: auto;
+  .iucn-cat, .overlap-with-pa{
+    text-align: center;
   }
-} */
+  .trait ul {
+    list-style: disc;
+  }
+}

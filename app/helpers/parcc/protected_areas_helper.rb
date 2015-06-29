@@ -33,7 +33,12 @@ module Parcc::ProtectedAreasHelper
     species_traits_as_array = species_traits.split(',').map(&:to_i)
 
     species_traits_as_array.each_with_object(Set.new) do |trait, set|
-      set << all_traits[trait]
-    end.to_a
+      set << "<li>#{all_traits[trait]}</li>"
+    end.to_a.join("\n").html_safe
+  end
+
+  def exposure_check exposure
+    klass = exposure.present? ? "fa fa-check" : "no-icon"
+    %Q(<i class="#{klass}"></i>).html_safe
   end
 end

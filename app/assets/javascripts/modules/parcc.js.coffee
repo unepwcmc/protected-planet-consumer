@@ -21,8 +21,8 @@ $(document).ready(->
         { "sWidth": "120px"},
         { "sWidth": "120px"},
         { "sWidth": "150px"},
-        { "sWidth": "250px"},
-        { "sWidth": "250px"}
+        { "sWidth": "350px"},
+        { "sWidth": "450px"}
       ]
   })
   new $.fn.dataTable.FixedColumns(table)

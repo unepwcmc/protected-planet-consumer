@@ -1,150 +1,37 @@
 <div class="species-table-container">
-  <!-- <div class="headcol">
-    <table class="headcol-table">
-      <thead>
-        <th>Name</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>SPECIES NAME</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="data">
-    <table class="data-table">
-      <thead>
-        <th>Order</th>
-        <th>Exposure by 2025 by 2050</th>
-        <th>IUCN Red List category</th>
-        <th>Current percentage overlap with PA</th>
-        <th>Biological trait(s) making species sensitive to climate change</th>
-        <th>Another column</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text long long long long long long long long long long long long long long long long long text </td>
-        </tr>
-      </tbody>
-    </table>
-  </div> -->
   <table class="vulnerable-species-table stripe order-column" cellspacing="0">
     <thead>
       <tr>
         <th>Name</th>
         <th>Order</th>
         <th>Exposure by 2025 by 2050</th>
-        <th>IUCN Red List category</th>
+        <th>IUCN Red List category <i class="fa fa-info-circle"></i></th>
         <th>Current percentage overlap with PA</th>
         <th>Biological trait(s) making species sensitive to climate change</th>
-        <th>Another column</th>
+        <th>Biological trait(s) lowering species adaptability</th>
       </tr>
     </thead>
     <tbody>
+      <% @protected_area.species_protected_areas.each do |species_pa| %>
+        <% species = species_pa.species %>
         <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
+          <td class="name"><%= species.name %></td>
+          <td class="order"><%= species.taxonomic_order.name.capitalize %></td>
+          <td class="exposure">
+            <div class="left-check">
+              <%= exposure_check species.exposure_2025 %>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="right-check">
+              <%= exposure_check species.exposure_2055 %>
+            </div>
+          </td>
+          <td class="iucn-cat"><%= species.iucn_cat[0..2] %></td>
+          <td class="overlap-with-pa"><%= species_pa.overlap_percentage %> %</td>
+          <td class="trait"><ul><%= traits(:sensitivity, species) %></ul></td>
+          <td class="trait"><ul><%= traits(:adaptability, species) %></ul></td>
         </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
-        <tr>
-          <td>SOMETHING IMPORTANT</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Some other text very long long long long long long long long long long</td>
-        </tr>
+      <% end %>
     </tbody>
   </table>
 </div>
