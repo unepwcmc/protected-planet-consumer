@@ -7,6 +7,7 @@ class Parcc::Importers::Species::Taxonomies < Parcc::Importers::Base
 
   def import
     csv_reader(source_file_path).each do |record|
+      next unless allowed_taxo_class?(record[:species_taxon])
       next unless protected_area = fetch_protected_area(record[:wdpa_id])
       taxon_class = taxon_class(record[:species_taxon])
       taxon_order = taxon_order(record[:species_order], taxon_class)
@@ -17,6 +18,10 @@ class Parcc::Importers::Species::Taxonomies < Parcc::Importers::Base
   end
 
   private
+
+  def allowed_taxo_class? taxo_class
+    Parcc::Import.configuration['taxonomic_classes'].include?(taxo_class)
+  end
 
   def taxon_class class_name
     @taxon_classes[class_name] ||= Parcc::TaxonomicClass.find_or_create_by(name: class_name)
