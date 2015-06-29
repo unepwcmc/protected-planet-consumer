@@ -44,4 +44,6 @@ gem 'autoprefixer-rails'
 gem 'database_cleaner', '~> 1.4.0'
 
 gem 'memoist', '~> 0.12.0'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+
+gem 'jquery-datatables-rails', '~> 3.3.0'

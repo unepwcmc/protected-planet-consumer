@@ -187,15 +187,21 @@ section.tva-sdm {
   }
 }
 
-div.species-table-container{
+//fights the reset.css file fixing alignment in datatables
+.vulnerable-species-table th {
+  vertical-align: middle;
+}
+
+/* div.species-table-container{
   overflow-x:scroll;
 }
 
 .vulnerable-species-table {
-  border-collapse:separate; border-top: 3px solid grey;
+  border-collapse:separate;
+  border-top: 3px solid grey;
+  float: left;
   th { min-width: 200px; }
   td {
-
     margin:0;
     white-space:nowrap;
   }
@@ -203,6 +209,33 @@ div.species-table-container{
     width: 200px;
     margin-right: 200px;
     position:absolute;
-    width:5em;
   }
-}
+} */
+
+/* div.species-table-container {
+  position: relative;
+  display: inline-block;
+  border: 1px solid red;
+  width: 100%;
+  table {
+    float: left;
+  }
+  th, td {
+    padding: 10px;
+  }
+  td {
+    padding-top: 60px;
+  }
+  .data-table {
+    th, td {
+      max-width: 200px;
+    }
+    td {
+      margin: 0;
+      white-space: nowrap;
+    }
+  }
+  .data {
+    overflow: auto;
+  }
+} */

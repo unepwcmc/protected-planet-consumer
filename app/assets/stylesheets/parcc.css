@@ -12,4 +12,6 @@
 *= require parcc/buttons
 *= require parcc/footer
 *= require font-awesome
+*= require dataTables/jquery.dataTables
+*= require dataTables/extras/dataTables.fixedColumns
 */

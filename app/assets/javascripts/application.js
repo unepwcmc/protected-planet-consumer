@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require dataTables/jquery.dataTables
+//= require dataTables/extras/dataTables.fixedColumns
 //= require turbolinks
 //= require 'mapbox'
 //= require 'cartodb.core'
