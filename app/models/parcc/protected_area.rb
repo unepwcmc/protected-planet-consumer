@@ -19,6 +19,8 @@ class Parcc::ProtectedArea < ActiveRecord::Base
     foreign_key: :parcc_protected_area_id
   has_many :species, class_name: 'Parcc::Species',
     through: :species_protected_areas
+  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange',
+    foreign_key: :parcc_protected_area_id
 
   scope :with_turnovers, -> { includes(species_turnovers: :taxonomic_class) }
 

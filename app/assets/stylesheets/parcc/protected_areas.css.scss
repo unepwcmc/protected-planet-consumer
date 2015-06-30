@@ -235,3 +235,23 @@ section.tva-sdm {
 .DTFC_LeftBodyLiner {
   border-bottom: 1px solid;
 }
+
+.suitability-table {
+  th {
+    vertical-align: middle;
+  }
+  .change-value {
+    text-align: center;
+  }
+  i.fa {
+    font-size: 18px;
+  }
+}
+
+i.red {
+  color: $lava;
+}
+
+i.green {
+  color: $dark-green;
+}

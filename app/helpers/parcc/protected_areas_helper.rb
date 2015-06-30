@@ -41,4 +41,18 @@ module Parcc::ProtectedAreasHelper
     klass = exposure.present? ? "fa fa-check" : "no-icon"
     %Q(<i class="#{klass}"></i>).html_safe
   end
+
+  def taxonomic_classes_options
+    select_tag "class_id", options_for_select(
+      Parcc::Import.configuration["taxonomic_classes"].map do |taxonomic_class|
+        [taxonomic_class, Parcc::TaxonomicClass.find_by(name: taxonomic_class).id]
+      end
+    )
+  end
+
+  ICONS = {"Inc" => "fa-arrow-circle-up green", "Dec" => "fa-arrow-circle-down red"}
+  def suitability_value_icon value
+    %Q(#{value} <i class="fa #{ICONS[value]}"></i>).html_safe
+  end
+
 end

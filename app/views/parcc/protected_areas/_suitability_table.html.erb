@@ -1,0 +1,22 @@
+<div class="suitability-table-container">
+  <table class="suitability-table display">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>By 2040</th>
+        <th>By 2070</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @suitability_changes.each do |species_name, suitability_changes| %>
+        <tr>
+          <td><%= species_name %></td>
+          <td class="change-value"><%= suitability_value_icon suitability_changes[2040] %></td>
+          <td class="change-value"><%= suitability_value_icon suitability_changes[2070] %></td>
+          <td></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
