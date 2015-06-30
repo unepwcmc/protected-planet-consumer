@@ -55,12 +55,12 @@ $(document).ready(->
     ]
   })
 
-  $(".dataTables_scrollBody").scroll(->
-    if($(this).scrollLeft())
-      console.log("Scrolled")
-      $(".scrolling-shadow").addClass("scrolled")
-    else
-      console.log("End scroll")
-      $(".scrolling-shadow").removeClass("scrolled")
-  )
+  # $(".dataTables_scrollBody").scroll(->
+  #   if($(this).scrollLeft())
+  #     console.log("Scrolled")
+  #     $(".scrolling-shadow").addClass("scrolled")
+  #   else
+  #     console.log("End scroll")
+  #     $(".scrolling-shadow").removeClass("scrolled")
+  # )
 )
