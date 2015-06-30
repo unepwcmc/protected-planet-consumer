@@ -189,6 +189,7 @@ section.tva-sdm {
 
 //fights the reset.css file fixing alignment in datatables
 .vulnerable-species-table {
+
   th {
     vertical-align: middle;
   }
@@ -229,4 +230,8 @@ section.tva-sdm {
     list-style: disc;
     padding-left: 10px;
   }
+}
+
+.DTFC_LeftBodyLiner {
+  border-bottom: 1px solid;
 }
