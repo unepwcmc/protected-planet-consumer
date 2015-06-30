@@ -21,8 +21,17 @@ $(document).ready(->
         { "sWidth": "120px"},
         { "sWidth": "120px"},
         { "sWidth": "150px"},
-        { "sWidth": "350px"},
-        { "sWidth": "450px"}
+        { "sWidth": "400px"},
+        { "sWidth": "380px"}
+      ],
+      "columnDefs" : [
+        { "sortable": true, "targets": 0},
+        { "sortable": true, "targets": 1},
+        { "sortable": false, "targets": 2},
+        { "sortable": true, "targets": 3},
+        { "sortable": true, "targets": 4},
+        { "sortable": false, "targets": 5},
+        { "sortable": false, "targets": 6},
       ]
   })
   new $.fn.dataTable.FixedColumns(table)
