@@ -283,3 +283,11 @@ i.grey {
 i.purple {
   color: $purple;
 }
+
+.assessment-info {
+  margin-top: 25px;
+  a {
+    text-decoration: underline;
+    font-family: "MuseoSans-300";
+  }
+}
