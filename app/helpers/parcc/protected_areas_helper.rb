@@ -76,7 +76,7 @@ module Parcc::ProtectedAreasHelper
   end
 
   def download_data_link protected_area
-    link_to "Download the full set of data for #{protected_area.name} (CSV file).", "#"
+    link_to "Download the full set of data for <strong>#{protected_area.name} (CSV file)</strong>.".html_safe, "#"
   end
 
 end
