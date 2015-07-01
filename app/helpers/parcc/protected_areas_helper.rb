@@ -51,18 +51,18 @@ module Parcc::ProtectedAreasHelper
   end
 
   IUCN_COLORS = {
-    "EX" => "black",
-    "EW" => "purple",
-    "CR" => "red",
-    "EN" => "orange",
-    "VU" => "yellow",
-    "NT" => "light-green",
-    "LC" => "medium-green",
-    "DD" => "grey",
-    "NE" => "white"
+    "EX" => "fa-circle black",
+    "EW" => "fa-circle purple",
+    "CR" => "fa-circle red",
+    "EN" => "fa-circle orange",
+    "VU" => "fa-circle yellow",
+    "NT" => "fa-circle light-green",
+    "LC" => "fa-circle medium-green",
+    "DD" => "fa-circle grey",
+    "NE" => "fa-circle-thin"
   }
   def iucn_value_icon value
-    %Q(#{value} <i class="fa fa-circle #{IUCN_COLORS[value]}"></i>).html_safe
+    %Q(#{value} <i class="fa #{IUCN_COLORS[value]}"></i>).html_safe
   end
 
   ICONS = {"Inc" => "fa-arrow-circle-up green", "Dec" => "fa-arrow-circle-down red"}
