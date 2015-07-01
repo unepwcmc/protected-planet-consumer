@@ -55,10 +55,6 @@ $(document).ready(->
     ]
   })
 
-  $("td.change-value > i.fa-arrow-circle-up").parent().css("padding-left", "14px")
-  $("td.change-value > i.fa-circle").parent().css("padding-left", "20px")
-
-
   # $(".dataTables_scrollBody").scroll(->
   #   if($(this).scrollLeft())
   #     console.log("Scrolled")

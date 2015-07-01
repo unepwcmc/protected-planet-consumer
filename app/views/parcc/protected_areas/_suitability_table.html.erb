@@ -12,8 +12,8 @@
       <% @suitability_changes.each do |species_name, suitability_changes| %>
         <tr>
           <td><%= species_name %></td>
-          <td class="change-value"><%= suitability_value_icon suitability_changes[2040] %></td>
-          <td class="change-value"><%= suitability_value_icon suitability_changes[2070] %></td>
+          <td class="change-value"><div class="cell-container"><%= suitability_value_icon suitability_changes[2040] %></div></td>
+          <td class="change-value"><div class="cell-container"><%= suitability_value_icon suitability_changes[2070] %></div></td>
           <td></td>
         </tr>
       <% end %>
