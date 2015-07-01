@@ -57,7 +57,7 @@ module Parcc::ProtectedAreasHelper
     "EN" => "orange",
     "VU" => "yellow",
     "NT" => "light-green",
-    "LC" => "green",
+    "LC" => "medium-green",
     "DD" => "grey",
     "NE" => "white"
   }

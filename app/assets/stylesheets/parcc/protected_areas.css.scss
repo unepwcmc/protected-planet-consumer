@@ -198,7 +198,7 @@ section.tva-sdm {
   }
   .exposure {
     vertical-align: middle;
-    padding: 0px 30px;
+    padding: 0px 72px;
     height: 0;
     i, div {
       float: left;
@@ -248,12 +248,20 @@ section.tva-sdm {
   }
 }
 
+.sub-header {
+  padding-top: 5px;
+}
+
 i.red {
   color: $lava;
 }
 
 i.green {
-  color: $dark-green;
+  color: $green;
+}
+
+i.medium-green {
+  color: $medium-green;
 }
 
 i.light-green {
@@ -273,7 +281,7 @@ i.white {
 }
 
 i.grey {
-  color: $light-grey;
+  color: $icon-grey;
 }
 
 i.purple {

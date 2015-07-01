@@ -18,7 +18,7 @@ $(document).ready(->
     "columns" : [
       { "sWidth": "200px" },
       { "sWidth": "120px" },
-      { "sWidth": "120px" },
+      { "sWidth": "200px" },
       { "sWidth": "120px" },
       { "sWidth": "150px" },
       { "sWidth": "400px" },
