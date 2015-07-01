@@ -65,9 +65,14 @@ module Parcc::ProtectedAreasHelper
     %Q(#{value} <i class="fa #{IUCN_COLORS[value]}"></i>).html_safe
   end
 
-  ICONS = {"Inc" => "fa-arrow-circle-up green", "Dec" => "fa-arrow-circle-down red"}
+  ICONS = {
+    "Inc" => "fa-arrow-circle-up green",
+    "Dec" => "fa-arrow-circle-down red",
+    "NA" => "fa-circle grey"
+  }
   def suitability_value_icon value
-    %Q(#{value} <i class="fa #{ICONS[value]}"></i>).html_safe
+    value ||= "NA"
+    %Q(#{value.upcase} <i class="fa #{ICONS[value]}"></i>).html_safe
   end
 
 end
