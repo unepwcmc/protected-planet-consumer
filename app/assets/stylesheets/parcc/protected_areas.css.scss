@@ -232,9 +232,16 @@ section.tva-sdm {
   }
 }
 
+// -----DataTable adjustments-----
 .DTFC_LeftBodyLiner {
   border-bottom: 1px solid;
 }
+
+.DTFC_LeftHeadWrapper, .dataTables_scrollHeadInner > table.dataTable {
+  border-top: 1px solid;
+  padding-top: 5px;
+}
+//-----End DataTable adjustments-----
 
 .suitability-table {
   th {
