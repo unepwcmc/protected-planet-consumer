@@ -75,4 +75,8 @@ module Parcc::ProtectedAreasHelper
     %Q(#{value.upcase} <i class="fa #{ICONS[value]}"></i>).html_safe
   end
 
+  def download_data_link protected_area
+    link_to "Download the full set of data for #{protected_area.name} (CSV file).", "#"
+  end
+
 end
