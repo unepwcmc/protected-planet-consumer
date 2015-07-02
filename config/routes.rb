@@ -27,5 +27,6 @@ Rails.application.routes.draw do
       resources :protected_areas, only: [:index, :show]
     end
     get '/:id', to: 'protected_areas#show', as: 'protected_area'
+    get '/download/:id', to: 'protected_areas#download', as: 'download'
   end
 end

@@ -3,10 +3,8 @@ require 'test_helper'
 class ParccProtectedAreasControllerTest < ActionController::TestCase
   def setup
     @controller = Parcc::ProtectedAreasController.new
-  end
 
-  test '#show returns a success' do
-    pa = FactoryGirl.create(:parcc_protected_area)
+    @pa = FactoryGirl.create(:parcc_protected_area)
 
     taxonomic_classes = [
       FactoryGirl.create(:parcc_taxonomic_class, name: 'Amphibian'),
@@ -17,19 +15,25 @@ class ParccProtectedAreasControllerTest < ActionController::TestCase
     taxonomic_classes.each_with_object([]) do |tc, turnovers|
       turnovers |= [
         FactoryGirl.create(:parcc_species_turnover,
-          protected_area: pa, taxonomic_class: tc, year: 2040
+          protected_area: @pa, taxonomic_class: tc, year: 2040
         ),
         FactoryGirl.create(:parcc_species_turnover,
-          protected_area: pa, taxonomic_class: tc, year: 2070
+          protected_area: @pa, taxonomic_class: tc, year: 2070
         ),
         FactoryGirl.create(:parcc_species_turnover,
-          protected_area: pa, taxonomic_class: tc, year: 2100
+          protected_area: @pa, taxonomic_class: tc, year: 2100
         )
       ]
     end
+  end
 
+  test '#show returns a success' do
+    get :show, id: @pa.wdpa_id
+    assert_response :success
+  end
 
-    get :show, id: pa.wdpa_id
+  test '#download returns a success' do
+    get :download, id: @pa.wdpa_id
     assert_response :success
   end
 end

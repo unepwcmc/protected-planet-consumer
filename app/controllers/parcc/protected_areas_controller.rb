@@ -10,6 +10,8 @@ class Parcc::ProtectedAreasController < ApplicationController
     )
   end
 
+  def download
+    send_file Parcc::Downloads.generate(@protected_area)
   end
 
   private
