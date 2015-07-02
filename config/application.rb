@@ -24,6 +24,6 @@ module ProtectedPlanetConsumer
       '*.svg', '*.swf', '*.woff', '*.woff2', '*gif', '*.eot', '*.pdf']
     config.assets.precompile += %w(parcc.css)
 
-    config.autoload_paths += %W(#{config.root}/lib/modules)
+    config.autoload_paths += %W(#{config.root}/app/presenters #{config.root}/lib/modules)
   end
 end
