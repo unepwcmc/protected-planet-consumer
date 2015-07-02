@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150625221642) do
+ActiveRecord::Schema.define(version: 20150630134510) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -241,6 +241,8 @@ ActiveRecord::Schema.define(version: 20150625221642) do
   end
 
   add_index "parcc_suitability_changes", ["parcc_protected_area_id"], name: "index_parcc_suitability_changes_on_parcc_protected_area_id", using: :btree
+  add_index "parcc_suitability_changes", ["parcc_species_id"], name: "index_parcc_suitability_changes_on_parcc_species_id", using: :btree
+  add_index "parcc_suitability_changes", ["value"], name: "index_parcc_suitability_changes_on_value", where: "(((value)::text = 'Dec'::text) OR ((value)::text = 'Inc'::text))", using: :btree
 
   create_table "parcc_taxonomic_classes", force: true do |t|
     t.string   "name"
