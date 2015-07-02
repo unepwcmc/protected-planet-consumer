@@ -43,11 +43,20 @@ module Parcc::ProtectedAreasHelper
   end
 
   def taxonomic_classes_options
-    select_tag "class_id", options_for_select(
-      Parcc::Import.configuration["taxonomic_classes"].map do |taxonomic_class|
-        [taxonomic_class, Parcc::TaxonomicClass.find_by(name: taxonomic_class).id]
-      end
-    )
+    Parcc::Import.configuration["taxonomic_classes"].map do |taxonomic_class|
+      %Q(<li><a href="#">#{taxonomic_class}</a></li>)
+    end
+  end
+
+  def taxonomic_classes_dropdown section
+    %Q(
+      <div id="dd-#{section}" class="wrapper-dropdown" tabindex="1">
+        <span>Species</span>
+        <ul class="dropdown">
+          #{taxonomic_classes_options.join}
+        </ul>
+      </div>
+    ).html_safe
   end
 
   IUCN_COLORS = {
