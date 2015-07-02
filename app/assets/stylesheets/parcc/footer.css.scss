@@ -1,11 +1,22 @@
 @import 'colors';
 
-$footer-height: 75px;
+$footer-height: 150px;
 
 footer {
 
+  div.parcc-footer {
+    background-color: $light-grey;
+    p {
+      color: black;
+    }
+  }
+
+  div {
+    height: $footer-height / 2;
+  }
+
   width: 100%;
-  line-height: $footer-height;
+  line-height: $footer-height / 2;
 
   padding: 0, 20px;
   margin: 0px auto;
@@ -17,8 +28,9 @@ footer {
   p { color: $color--footer; }
 
   a {
-    line-height: $footer-height;
+    line-height: $footer-height / 2;
     display: block;
+    height: 100%;
 
     &, &:visited {
       color: $color--footer-link;
@@ -57,7 +69,7 @@ footer, .container:after {
 
 .wcmc-footer-logo {
   width: 90px;
-  height: $footer-height;
+  height: $footer-height / 2;
   background: image-url('parcc/wcmc-footer-logo@2x.png') no-repeat;
   background-size: auto 50%;
   background-position: 10px;
@@ -65,10 +77,26 @@ footer, .container:after {
 
 .iucn-footer-logo {
   width: 60px;
-  height: $footer-height;
+  height: $footer-height / 2;
   background: image-url('parcc/iucn-footer-logo@2x.png') no-repeat;
   background-size: auto 50%;
   background-position: 10px;
+}
+
+.parcc-footer-logo {
+  width: 90px;
+  height: $footer-height / 2;
+  background: image-url('parcc/parcc_logo_footer.png') no-repeat;
+  background-size: auto 50%;
+  background-position: 25px;
+}
+
+.gef-footer-logo {
+  width: 90px;
+  height: $footer-height / 2;
+  background: image-url('parcc/gef_logo_footer.png') no-repeat;
+  background-size: auto 50%;
+  background-position: 15px;
 }
 
 .uservoice {

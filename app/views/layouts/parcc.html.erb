@@ -34,22 +34,40 @@
   </div>
 
   <footer>
-    <ul class="footer-logos">
-      <li class="wcmc-footer-logo">
-        <a href="http://unep-wcmc.org" title="UNEP-WCMC Website"></a>
-      </li>
-      <li class="iucn-footer-logo">
-        <a href="http://iucn.org" title="IUCN Website"></a>
-      </li>
-      <li class="footer-copyright">
-        <p>&copy; ProtectedPlanet 2014-2015. All rights reserved</p>
-      </li>
-    </ul>
+    <div class="parcc-footer">
+      <ul class="footer-logos">
+        <li class="footer-copyright">
+          <p>This dashboard was developed within the framework of the</p>
+        </li>
+        <li class="parcc-footer-logo">
+          <a href="http://parcc-web.org" title="PARCC Website"></a>
+        </li>
+        <li class="footer-copyright">
+          <p>project with the financial support of the</p>
+        </li>
+        <li class="gef-footer-logo">
+          <a href="http://thegef.org" title="GEF Website"></a>
+        </li>
+      </ul>
+    </div>
+    <div class='main-footer'>
+      <ul class="footer-logos">
+        <li class="wcmc-footer-logo">
+          <a href="http://unep-wcmc.org" title="UNEP-WCMC Website"></a>
+        </li>
+        <li class="iucn-footer-logo">
+          <a href="http://iucn.org" title="IUCN Website"></a>
+        </li>
+        <li class="footer-copyright">
+          <p>&copy; ProtectedPlanet 2014-2015. All rights reserved</p>
+        </li>
+      </ul>
 
 
-    <ul class="footer-links">
-      <li class="uservoice"><%= link_to 'About', protected_planet_path(:about) %></li>
-    </ul>
+      <ul class="footer-links">
+        <li class="uservoice"><%= link_to 'About', protected_planet_path(:about) %></li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>
