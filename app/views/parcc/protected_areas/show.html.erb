@@ -15,12 +15,12 @@
 </section>
 
 <section class="vulnerable-species">
-  <h2>Vulnerable <%= taxonomic_classes_options %> species</h2><br>
+  <h2>Vulnerable <%= taxonomic_classes_dropdown "vulnerability"%> species</h2><br>
   <%= render "vulnerable_species_table" %>
 </section>
 
 <section class="suitability">
-  <h2>Expected changes in climate suitability for <%= taxonomic_classes_options %></h2><br>
+  <h2>Expected changes in climate suitability for <%= taxonomic_classes_dropdown "suitability" %></h2><br>
   <%= render "suitability_table" %>
 </section>
 
