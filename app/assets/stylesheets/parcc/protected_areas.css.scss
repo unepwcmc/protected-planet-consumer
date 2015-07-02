@@ -192,6 +192,9 @@ section.tva-sdm {
 
   th {
     vertical-align: middle;
+    span.main-title {
+      float: left;
+    }
   }
   .fa-info-circle {
       color: $green;
@@ -246,6 +249,9 @@ section.tva-sdm {
 .suitability-table {
   th {
     vertical-align: middle;
+    span.main-title {
+      float: left;
+    }
   }
   .change-value {
     text-align: center;
@@ -261,6 +267,7 @@ section.tva-sdm {
 
 .sub-header {
   padding-top: 5px;
+  float: left;
 }
 
 i.red {

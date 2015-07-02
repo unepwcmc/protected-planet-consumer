@@ -20,7 +20,7 @@ $(document).ready(->
       { "sWidth": "120px" },
       { "sWidth": "200px" },
       { "sWidth": "120px" },
-      { "sWidth": "150px" },
+      { "sWidth": "120px" },
       { "sWidth": "400px" },
       { "sWidth": "380px" }
     ],
@@ -54,6 +54,8 @@ $(document).ready(->
       { "sortable": false, "targets": 3 }
     ]
   })
+
+  $(".tooltip").tooltip();
 
   # $(".dataTables_scrollBody").scroll(->
   #   if($(this).scrollLeft())

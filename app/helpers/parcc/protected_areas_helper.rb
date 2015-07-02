@@ -79,4 +79,12 @@ module Parcc::ProtectedAreasHelper
     link_to "Download the full set of data for <strong>#{protected_area.name} (CSV file)</strong>.".html_safe, "#"
   end
 
+  INFO = {
+    "iucn_red_list" => "2014 IUCN Red List categories",
+    "percentage_overlap" => "Percentage of the PA that is part of the species' distribution"
+  }
+  def info_icon title
+    %Q(<i class="fa fa-info-circle tooltip" title="#{INFO[title]}"></i>).html_safe
+  end
+
 end
