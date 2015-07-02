@@ -1,7 +1,5 @@
-<section>
-  <a href="<%= protected_planet_path(:protected_area)[@protected_area.wdpa_id] %>">
-    < Return to Official Record for <strong><%= @protected_area.name %></strong>
-  </a>
+<section class="back-link">
+  <%= render "back_link" %>
 </section>
 
 <section>
@@ -28,4 +26,8 @@
 
 <section class="download">
   <%= render "download_data" %>
+</section>
+
+<section class="back-link">
+  <%= render "back_link" %>
 </section>
