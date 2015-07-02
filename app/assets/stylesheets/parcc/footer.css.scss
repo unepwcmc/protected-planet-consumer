@@ -52,14 +52,22 @@ footer {
 
 .footer-copyright, .footer-logos, .footer-links {
   li {
-    padding: 0 20px;
     float: left;
   }
 }
 
 .footer-copyright, .footer-logos { float: left; }
 
-.footer-links { float: right; }
+.footer-copyright {
+  padding: 0 20px;
+}
+
+.footer-links {
+  li {
+    padding: 0 20px;
+  }
+  float: right;
+}
 
 footer, .container:after {
   height: $footer-height;
@@ -88,7 +96,7 @@ footer, .container:after {
   height: $footer-height / 2;
   background: image-url('parcc/parcc_logo_footer.png') no-repeat;
   background-size: auto 50%;
-  background-position: 25px;
+  background-position: 5px;
 }
 
 .gef-footer-logo {
@@ -96,7 +104,7 @@ footer, .container:after {
   height: $footer-height / 2;
   background: image-url('parcc/gef_logo_footer.png') no-repeat;
   background-size: auto 50%;
-  background-position: 15px;
+  background-position: 0px;
 }
 
 .uservoice {
