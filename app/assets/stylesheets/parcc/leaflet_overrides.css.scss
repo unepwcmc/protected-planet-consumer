@@ -144,3 +144,13 @@
   }
 }
 
+.map-disclaimer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background: $color--map-disclaimer-bg;
+  width: 100%;
+  color: $color--map-disclaimer-text;
+  padding: 8px;
+}
