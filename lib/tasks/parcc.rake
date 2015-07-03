@@ -23,6 +23,7 @@ namespace :parcc do
       end
 
       Parcc::Importers::ProtectedAreas.import
+      Parcc::Importers::HighPriorityProtectedAreas.import
 
       Parcc::Importers::Species.import_taxonomies
       Parcc::Importers::Species.import_counts
