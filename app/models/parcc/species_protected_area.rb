@@ -11,5 +11,6 @@ class Parcc::SpeciesProtectedArea < ActiveRecord::Base
   def self.vulnerability_table_for protected_area_id, taxonomic_class=nil
     scoped = where(parcc_protected_area_id: protected_area_id)
     scoped = scoped.by_taxonomic_class(taxonomic_class) if taxonomic_class.present?
+    scoped
   end
 end
