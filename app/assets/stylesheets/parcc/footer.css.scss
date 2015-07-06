@@ -96,15 +96,15 @@ footer, .container:after {
   height: $footer-height / 2;
   background: image-url('parcc/parcc_logo_footer.png') no-repeat;
   background-size: auto 50%;
-  background-position: 5px;
+  background-position: center center;
 }
 
 .gef-footer-logo {
-  width: 90px;
+  width: 70px;
   height: $footer-height / 2;
   background: image-url('parcc/gef_logo_footer.png') no-repeat;
   background-size: auto 50%;
-  background-position: 0px;
+  background-position: center center;
 }
 
 .uservoice {

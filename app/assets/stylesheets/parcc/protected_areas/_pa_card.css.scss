@@ -1,0 +1,50 @@
+@import '../colors';
+$factsheet-padding: 25px;
+
+.pa-card {
+  height: 380px;
+  width: 100%;
+
+  > div { height: 100%; }
+}
+
+.pa-card .factsheet {
+  position: relative;
+  box-sizing: border-box;
+  padding: $factsheet-padding;
+
+  background-color: $color--factsheet-background;
+
+  .pa-name { padding-bottom: 40px; }
+
+  .pa-info > li {
+    float:left;
+    &:not(:first-child) { padding-left: 35px; }
+  }
+
+  .other-info {
+    position: absolute;
+    bottom: $factsheet-padding;
+    padding-right: $factsheet-padding;
+
+    .info {
+      font-size: 16px;
+      line-height: 1.3;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      strong { color: white; }
+      i { font-size: 22px; }
+    }
+  }
+
+  .column-name, .column-value, .info { color: $color--pa-info-column; }
+  .column-name {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .column-value {
+    font-family: "MuseoSans-500";
+    font-size: 26px;
+  }
+}
