@@ -1,7 +1,7 @@
 @import "colors";
 
 .DTFC_LeftBodyLiner {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $medium-light-grey;
 }
 
 .DTFC_LeftHeadWrapper, .dataTables_scrollHeadInner > table.dataTable {
@@ -10,9 +10,9 @@
 }
 
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $medium-light-grey;
 }
 
 table.dataTable thead th {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $medium-light-grey;
 }
