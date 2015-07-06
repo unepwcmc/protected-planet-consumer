@@ -1,0 +1,44 @@
+@import '../colors';
+
+.main-container {
+  max-width: 1060px;
+  min-width: 890px;
+  margin: auto;
+}
+
+section {
+  margin-top: 35px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  color: $color--header-font;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "MuseoSans-500";
+  color: $dark-grey;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-family: "MuseoSans-300";
+  color: $medium-grey;
+}
+
+.subsubtitle {
+  color: $medium-grey;
+}
+
+.line {
+  margin: 20px 0 25px 0;
+  border-bottom: solid 1px;
+  border-color: $color--line-border-bottom;
+  height: 0;
+  &.medium {
+    border-color: $color--line-border-bottom-medium;
+  }
+}
+

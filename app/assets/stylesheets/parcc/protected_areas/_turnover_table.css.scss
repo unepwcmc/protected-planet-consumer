@@ -1,0 +1,59 @@
+@import '../colors';
+
+.turnover-table {
+  margin-top: 15px;
+  tr:first-child {
+    height: 10px;
+  }
+  th:first-child, td:first-child {
+    width: 100px;
+  }
+  td:first-child {
+    border-right: solid 1px;
+    border-color: $color--line-border-bottom-medium;
+    font-family: "MuseoSans-300";
+  }
+  th:not(:first-child):not(:nth-child(2)){
+    border-bottom: solid 1px;
+    border-color: $color--line-border-bottom-medium;
+  }
+  th:nth-child(2), td:nth-child(2) {
+    width: 10px;
+  }
+  td {
+    vertical-align: middle;
+    height: 70px;
+    width: 200px;
+    .turnover-box {
+      background-color: $color--turnover-box-background;
+      width: 195px;
+      height: 60px;
+    }
+  }
+  th {
+    font-family: "MuseoSans-300";
+    width: 200px;
+    padding-bottom: 10px;
+  }
+  .first-row, .second-row {
+    display: inline-block;
+    padding: 11px 9px;
+
+    li {
+      font-size: 14px;
+      &.median-value {
+        font-size: 16px;
+        font-family: "MuseoSans-300";
+        text-align: center;
+      }
+      &:not(:first-child) {
+        padding-top: 5px;
+      }
+      i.fa {
+        font-size: 16px;
+        color: lightgrey;
+      }
+    }
+  }
+}
+

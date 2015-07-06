@@ -1,0 +1,25 @@
+@import '../colors';
+
+.download-data {
+  height: 85px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: $color--line-border-bottom;
+  .download-box {
+    margin: 24px 0;
+    height: 35px;
+    background-color: $very-light-green;
+    i {
+      color: $dark-green;
+      font-size: 16px;
+      padding-right: 5px;
+    }
+    a {
+      text-decoration: underline;
+    }
+    p {
+      padding: 10px;
+    }
+  }
+}
+
