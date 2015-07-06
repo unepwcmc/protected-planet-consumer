@@ -11,7 +11,15 @@ class Parcc::Api::ProtectedAreasController < ApplicationController
     render(
       json: Parcc::SpeciesProtectedArea.
         vulnerability_table_for(protected_area.id, params[:taxonomic_class]),
-        root: 'species_protected_areas'
+        root: false
+    )
+  end
+
+  def suitability_changes
+    render(
+      json: ParccPresenter.grouped_suitability_changes(
+        protected_area.suitability_changes.with_changes
+      )
     )
   end
 
