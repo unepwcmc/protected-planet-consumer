@@ -134,17 +134,6 @@ ActiveRecord::Schema.define(version: 20150630134510) do
     t.datetime "updated_at"
   end
 
-  create_table "gef_search_twos", force: true do |t|
-    t.integer  "gef_country_id"
-    t.integer  "gef_region_id"
-    t.string   "primary_biome"
-    t.integer  "gef_area_id"
-    t.integer  "wdpa_id"
-    t.string   "wdpa_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "gef_searches", force: true do |t|
     t.integer  "gef_country_id"
     t.integer  "gef_region_id"
