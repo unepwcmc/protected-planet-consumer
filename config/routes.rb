@@ -25,8 +25,12 @@ Rails.application.routes.draw do
   namespace :parcc do
     namespace :api do
       resources :protected_areas, only: [:index, :show]
+      get '/protected_areas/:id/vulnerability', to: 'protected_areas#vulnerability', as: 'vulnerability'
+      get '/protected_areas/:id/suitability_changes', to: 'protected_areas#suitability_changes', as: 'suitability_changes'
     end
     get '/:id', to: 'protected_areas#show', as: 'protected_area'
+    get '/:id/vulnerability_table', to: 'protected_areas#vulnerability_table', as: 'vulnerability_table'
+    get '/:id/suitability_changes_table', to: 'protected_areas#suitability_changes_table', as: 'suitability_changes_table'
     get '/download/:id', to: 'protected_areas#download', as: 'download'
   end
 end

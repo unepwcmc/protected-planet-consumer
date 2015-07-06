@@ -48,10 +48,11 @@ module Parcc::ProtectedAreasHelper
     end
   end
 
+  DEFAULT_TAXONOMIC_CLASS = Parcc::Import.configuration["default_taxonomic_class"]
   def taxonomic_classes_dropdown section
     %Q(
       <div id="dd-#{section}" class="wrapper-dropdown" tabindex="1">
-        <span>Species</span>
+        <span>#{DEFAULT_TAXONOMIC_CLASS}</span>
         <ul class="dropdown">
           #{taxonomic_classes_options.join}
         </ul>

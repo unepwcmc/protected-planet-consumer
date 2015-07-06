@@ -30,7 +30,7 @@ class Parcc::ProtectedArea < ActiveRecord::Base
 
   def for_api with_species: with_species
     to_json({only: COLUMNS_FOR_API}.tap{ |opts|
-      opts[:include] = :species if with_species
+      opts[:include] = :species_protected_areas if with_species
     })
   end
 end
