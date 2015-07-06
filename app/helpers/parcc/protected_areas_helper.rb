@@ -5,6 +5,7 @@ module Parcc::ProtectedAreasHelper
       root: 'http://www.protectedplanet.net',
       blog: 'http://blog.protectedplanet.net',
       about: 'http://www.protectedplanet.net/about',
+      terms: 'http://www.protectedplanet.net/terms',
       un_list: 'http://blog.protectedplanet.net/post/102481051829/2014-united-nations-list-of-protected-areas',
       protected_area: URL_TO_PROTECTED_AREA
     }[page]
