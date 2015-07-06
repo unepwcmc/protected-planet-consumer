@@ -1,38 +1,36 @@
-<div class="vulnerability-table-container">
-  <table class="vulnerable-species-table stripe order-column" cellspacing="0">
-    <thead>
+<table class="vulnerable-species-table stripe order-column" cellspacing="0">
+  <thead>
+    <tr>
+      <th><span class="main-title">Name</span></th>
+      <th><span class="main-title">Order</span></th>
+      <th><span class="main-title">Exposure</span><p class='sub-header'>by 2010-2039 &nbsp; by 2040-2069</p></th>
+      <th><span class="main-title">IUCN Red List category <%= info_icon "iucn_red_list" %></span></th>
+      <th><span class="main-title">Percentage overlap <%= info_icon "percentage_overlap" %></span></th>
+      <th><span class="main-title">Sensitivity</span><br><p class='sub-header'>to climate change</p></th>
+      <th><span class="main-title">Adaptability</span><br><p class='sub-header'>to climate change</p></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @species_protected_areas.each do |species_pa| %>
+      <% species = species_pa.species %>
       <tr>
-        <th><span class="main-title">Name</span></th>
-        <th><span class="main-title">Order</span></th>
-        <th><span class="main-title">Exposure</span><p class='sub-header'>by 2010-2039 &nbsp; by 2040-2069</p></th>
-        <th><span class="main-title">IUCN Red List category <%= info_icon "iucn_red_list" %></span></th>
-        <th><span class="main-title">Percentage overlap <%= info_icon "percentage_overlap" %></span></th>
-        <th><span class="main-title">Sensitivity</span><br><p class='sub-header'>to climate change</p></th>
-        <th><span class="main-title">Adaptability</span><br><p class='sub-header'>to climate change</p></th>
+        <td class="name"><%= species.name %></td>
+        <td class="order"><%= species.taxonomic_order.name.capitalize %></td>
+        <td class="exposure">
+          <div class="left-check">
+            <%= exposure_check species.exposure_2025 %>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="right-check">
+            <%= exposure_check species.exposure_2055 %>
+          </div>
+        </td>
+        <td class="iucn-cat"><%= iucn_value_icon species.iucn_cat[0..1] %></td>
+        <td class="overlap-with-pa"><%= species_pa.overlap_percentage %> %</td>
+        <td class="trait"><ul><%= traits(:sensitivity, species) %></ul></td>
+        <td class="trait"><ul><%= traits(:adaptability, species) %></ul></td>
       </tr>
-    </thead>
-    <tbody>
-      <% @protected_area.species_protected_areas.each do |species_pa| %>
-        <% species = species_pa.species %>
-        <tr>
-          <td class="name"><%= species.name %></td>
-          <td class="order"><%= species.taxonomic_order.name.capitalize %></td>
-          <td class="exposure">
-            <div class="left-check">
-              <%= exposure_check species.exposure_2025 %>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="right-check">
-              <%= exposure_check species.exposure_2055 %>
-            </div>
-          </td>
-          <td class="iucn-cat"><%= iucn_value_icon species.iucn_cat[0..1] %></td>
-          <td class="overlap-with-pa"><%= species_pa.overlap_percentage %> %</td>
-          <td class="trait"><ul><%= traits(:sensitivity, species) %></ul></td>
-          <td class="trait"><ul><%= traits(:adaptability, species) %></ul></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+    <% end %>
+  </tbody>
+</table>
 <%= render "assessment_info", {text: "Species Distribution Models", document_link: asset_path("IUCN_species_vulnerability.pdf") } %>

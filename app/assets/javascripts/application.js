@@ -20,4 +20,6 @@
 //= require 'cartodb.core'
 //= require 'modules/parcc/protected_area_overlay'
 //= require 'modules/parcc/map'
+//= require 'modules/parcc/table'
+//= require 'modules/parcc/dropdown'
 //= require 'modules/parcc.js'

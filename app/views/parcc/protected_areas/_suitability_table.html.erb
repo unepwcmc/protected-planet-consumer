@@ -1,23 +1,21 @@
-<div class="suitability-table-container">
-  <table class="suitability-table display">
-    <thead>
+<table class="suitability-table display">
+  <thead>
+    <tr>
+      <th><span class="main-title">Name</span></th>
+      <th><span class="main-title">By 2010-2039</span></th>
+      <th><span class="main-title">By 2040-2069</span></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @suitability_changes.each do |species_name, suitability_changes| %>
       <tr>
-        <th><span class="main-title">Name</span></th>
-        <th><span class="main-title">By 2010-2039</span></th>
-        <th><span class="main-title">By 2040-2069</span></th>
-        <th></th>
+        <td><%= species_name %></td>
+        <td class="change-value"><div class="cell-container"><%= suitability_value_icon suitability_changes[2040] %></div></td>
+        <td class="change-value"><div class="cell-container"><%= suitability_value_icon suitability_changes[2070] %></div></td>
+        <td></td>
       </tr>
-    </thead>
-    <tbody>
-      <% @suitability_changes.each do |species_name, suitability_changes| %>
-        <tr>
-          <td><%= species_name %></td>
-          <td class="change-value"><div class="cell-container"><%= suitability_value_icon suitability_changes[2040] %></div></td>
-          <td class="change-value"><div class="cell-container"><%= suitability_value_icon suitability_changes[2070] %></div></td>
-          <td></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+    <% end %>
+  </tbody>
+</table>
 <%= render "assessment_info", {text: "Traits-based Assessments", document_link: asset_path("documents/SDM_Durham_Report_2014.pdf") } %>

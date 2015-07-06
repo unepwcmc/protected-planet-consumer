@@ -2,3 +2,5 @@ taxonomic_classes:
   - Amphibian
   - Bird
   - Mammal
+  
+default_taxonomic_class: Amphibian
