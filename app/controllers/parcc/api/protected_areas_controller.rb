@@ -7,6 +7,14 @@ class Parcc::Api::ProtectedAreasController < ApplicationController
     render json: protected_area.for_api(show_params)
   end
 
+  def vulnerability
+    render(
+      json: Parcc::SpeciesProtectedArea.
+        vulnerability_table_for(protected_area.id, params[:taxonomic_class]),
+        root: 'species_protected_areas'
+    )
+  end
+
   private
 
   MESSAGE_404 = -> id { "Can't find PARCC Protected Area with WDPA ID #{id}" }
