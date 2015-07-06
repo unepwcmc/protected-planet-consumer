@@ -13,10 +13,9 @@ window.Table = class Table
     @reload(opts)
 
   reload: ->
-    debugger
     table_opts = $.extend({}, DEFAULTS, @opts)
     table = $(@el).DataTable(table_opts)
-    new $.fn.dataTable.FixedColumns(table)
+    new $.fn.dataTable.FixedColumns(table) if @el == '.vulnerable-species-table'
 
   hide: => @$container_el.hide()
   show: => @$container_el.show()
