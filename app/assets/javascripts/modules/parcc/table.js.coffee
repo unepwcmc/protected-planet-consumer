@@ -10,12 +10,12 @@ window.Table = class Table
   }
 
   constructor: (@el, @$container_el, @opts) ->
-    @reload(opts)
+    @reload()
 
   reload: ->
     table_opts = $.extend({}, DEFAULTS, @opts)
     table = $(@el).DataTable(table_opts)
     new $.fn.dataTable.FixedColumns(table) if @el == '.vulnerability-table'
 
-  hide: => @$container_el.hide()
-  show: => @$container_el.show()
+  loading: => @$container_el.find('.overlay').removeClass('hidden')
+  ready:   => @$container_el.find('.overlay').addClass('hidden')

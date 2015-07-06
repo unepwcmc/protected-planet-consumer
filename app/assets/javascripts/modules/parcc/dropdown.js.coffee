@@ -20,18 +20,17 @@ window.DropDown = class DropDown
       self.placeholder.text(self.val)
       wdpa_id = $('#map').data("wdpa-id")
 
-      self.table.hide()
+      self.table.loading()
       $.ajax(
         url: "#{wdpa_id}/#{self.table_type}?taxonomic_class=#{self.val}"
         error: (jqXHR, textStatus, errorThrown) ->
-          alert("AJAX Error: #{textStatus}")
+          console.log("AJAX Error: #{textStatus}")
         success: (data, textStatus, jqXHR) ->
           self.table.$container_el.html(data)
-          self.table.show()
           self.table.reload()
+          self.table.ready()
       )
     )
 
   getValue: -> @val
-
   getIndex: -> @index
