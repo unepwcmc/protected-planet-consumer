@@ -1,8 +1,18 @@
+@import "colors";
+
 .DTFC_LeftBodyLiner {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid $light-grey;
 }
 
 .DTFC_LeftHeadWrapper, .dataTables_scrollHeadInner > table.dataTable {
-  border-top: 1px solid;
+  border-top: 1px solid $grey;
   padding-top: 5px;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: 1px solid $light-grey;
+}
+
+table.dataTable thead th {
+  border-bottom: 1px solid $light-grey;
 }

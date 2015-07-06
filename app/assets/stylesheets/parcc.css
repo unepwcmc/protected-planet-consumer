@@ -15,5 +15,6 @@
 *= require font-awesome
 *= require dataTables/jquery.dataTables
 *= require dataTables/extras/dataTables.fixedColumns
+*= require parcc/datatables_overrides
 *= require jquery-ui
 */

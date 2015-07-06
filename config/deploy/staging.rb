@@ -10,7 +10,7 @@ set :application, "ppe-reader"
 set :server_name, "ppe-reader.unepwcmc-012.vm.brightbox.net"
 set :sudo_user, "rails"
 set :app_port, "80"
-set :branch, "Brightbox"
+set :branch, "protected_areas_pages"
 
 desc "Configure VHost"
 task :config_vhost do
@@ -67,4 +67,3 @@ namespace :deploy do
     end
   end
 end
-
