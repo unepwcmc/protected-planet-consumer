@@ -1,5 +1,4 @@
 class Parcc::Importers::HighPriorityProtectedAreas < Parcc::Importers::Base
-
   def self.import
     instance = new
     instance.import
@@ -21,5 +20,4 @@ class Parcc::Importers::HighPriorityProtectedAreas < Parcc::Importers::Base
   def source_file_path
     Rails.root.join('lib/data/parcc/high_priority_protected_areas.csv')
   end
-
 end
