@@ -45,29 +45,10 @@ $(document).ready(->
     ]
   }
 
-  vulnerability_table = new Table('.vulnerable-species-table', $('.vulnerability-table-container'), vulnerability_opts)
+  vulnerability_table = new Table('.vulnerability-table', $('.vulnerability-table-container'), vulnerability_opts)
   dd_vulnerability = new DropDown($('#dd-vulnerability'), vulnerability_table, 'vulnerability_table')
   suitability_table = new Table('.suitability-table', $('.suitability-table-container'), suitability_opts)
   dd_suitability = new DropDown($('#dd-suitability'), suitability_table, 'suitability_changes_table')
-
-  # $('.suitability-table').DataTable({
-  #   "bPaginate": false,
-  #   "bLengthChange": false,
-  #   "bFilter": false,
-  #   "bInfo": false,
-  #   "sScrollY": "300px",
-  #   "scrollCollapse": true,
-  #   "columns" : [
-  #     { "sWidth": "30%" },
-  #     { "sWidth": "15%" },
-  #     { "sWidth": "15%" },
-  #     { "sWidth": "40%" }
-  #   ],
-  #   "columnDefs" : [
-  #     { "sortable": true, "targets": [0,1,2] },
-  #     { "sortable": false, "targets": 3 }
-  #   ]
-  # })
 
   new Parcc()
 

@@ -18,7 +18,7 @@ class Parcc::ProtectedAreasController < ApplicationController
       @protected_area.id, params[:taxonomic_class]
     )
 
-    render "parcc/protected_areas/_vulnerable_species_table", layout: false
+    render "parcc/protected_areas/_vulnerability_table", layout: false
   end
 
   def suitability_changes_table
