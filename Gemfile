@@ -32,6 +32,7 @@ end
 
 group :test, :development do
   gem 'byebug'
+  gem 'simplecov', '~> 0.8.2'
 end
 
 gem 'sass', '~> 3.2'
