@@ -36,4 +36,14 @@ class ParccApiProtectedAreasControllerTest < ActionController::TestCase
     get :show, id: 123
     assert_equal 404, @response.status
   end
+
+  test '#vulnerability should render the return vale of vulnerability_table_for' do
+    rendered_json = '[{"wdpa_id": 123},{"wdpa_id":345}]'
+    protected_area = FactoryGirl.create(:parcc_protected_area)
+
+    Parcc::SpeciesProtectedArea.expects(:vulnerability_table_for).with(protected_area.id, 'class').returns(rendered_json)
+
+    get :vulnerability, id: protected_area.wdpa_id, taxonomic_class: "class"
+    assert_equal rendered_json, @response.body.squish
+  end
 end

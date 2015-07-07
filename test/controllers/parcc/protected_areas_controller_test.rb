@@ -36,4 +36,14 @@ class ParccProtectedAreasControllerTest < ActionController::TestCase
     get :download, id: @pa.wdpa_id
     assert_response :success
   end
+
+  test '#vulnerability_table returns a success' do
+    get :vulnerability_table, id: @pa.wdpa_id, taxonomic_class: "class"
+    assert_response :success
+  end
+
+  test '#suitability_changes_table returns a success' do
+    get :suitability_changes_table, id: @pa.wdpa_id, taxonomic_class: "class"
+    assert_response :success
+  end
 end

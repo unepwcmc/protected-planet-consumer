@@ -2,9 +2,13 @@
 
 FactoryGirl.define do
   factory :parcc_protected_area, class: Parcc::ProtectedArea do
-    parcc_id 'MyInteger'
-    name 'MyString'
-    wdpa_id 'MyInteger'
+    sequence(:parcc_id) { |n| n }
+    sequence(:name) { |n| "Name #{n}"}
+    sequence(:wdpa_id) { |n| n }
+
+    factory :parcc_protected_area_with_high_priority do
+      high_priority true
+    end
 
     after(:create) { |pa, evaluator|
       create_list(:parcc_species_turnover, 1, protected_area: pa)
