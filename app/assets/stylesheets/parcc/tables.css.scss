@@ -1,9 +1,5 @@
 @import "colors";
 
-div.species-table-container{
-  overflow-x:scroll;
-}
-
 .vulnerability-table {
   border-collapse:separate; border-top: 3px solid $grey;
   th { min-width: 200px; }
