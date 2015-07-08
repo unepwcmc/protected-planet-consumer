@@ -44,11 +44,11 @@ section.tva-sdm {
 .suitability { margin-top: 70px; }
 .suitability-table-container { position: relative; }
 .suitability-table {
-  th {
+  th, td{
     vertical-align: middle;
-    span.main-title {
-      float: left;
-    }
+  }
+  th span.main-title {
+    float: left;
   }
 
   .change-value { text-align: center; }
