@@ -15,7 +15,6 @@ $(document).ready(->
       { "sWidth": "120px" },
       { "sWidth": "200px" },
       { "sWidth": "120px" },
-      { "sWidth": "120px" },
       { "sWidth": "400px" },
       { "sWidth": "380px" }
     ],
@@ -24,9 +23,8 @@ $(document).ready(->
       { "sortable": true, "targets": 1 },
       { "sortable": false, "targets": 2 },
       { "sortable": true, "targets": 3 },
-      { "sortable": true, "targets": 4 },
+      { "sortable": false, "targets": 4 },
       { "sortable": false, "targets": 5 },
-      { "sortable": false, "targets": 6 },
     ]
   }
 
