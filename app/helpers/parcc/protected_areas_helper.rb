@@ -95,7 +95,8 @@ module Parcc::ProtectedAreasHelper
 
   INFO = {
     "iucn_red_list" => "2014 IUCN Red List categories",
-    "percentage_overlap" => "Percentage of the PA that is part of the species' distribution"
+    "percentage_overlap" => "Percentage of the PA that is part of the species' distribution",
+    "percentage_turnover" => "Percentage of species expected to move in or out of the protected area"
   }
   def info_icon title
     %Q(<i class="fa fa-info-circle tooltip" title="#{INFO[title]}"></i>).html_safe
