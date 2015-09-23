@@ -79,10 +79,10 @@ module Parcc::ProtectedAreasHelper
   ICONS = {
     "Inc" => "fa-arrow-circle-up green",
     "Dec" => "fa-arrow-circle-down red",
-    "NA" => "fa-circle grey"
+    "No change" => "fa-circle grey"
   }
   def suitability_value_icon value
-    value ||= "NA"
+    value ||= "No change"
     %Q(#{value.upcase} <i class="fa #{ICONS[value]}"></i>).html_safe
   end
 
