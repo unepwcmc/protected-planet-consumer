@@ -34,9 +34,9 @@ $(document).ready(->
   suitability_opts = {
     "columns" : [
       { "sWidth": "30%" },
-      { "sWidth": "20%" },
-      { "sWidth": "20%" },
-      { "sWidth": "30%" }
+      { "sWidth": "25%" },
+      { "sWidth": "25%" },
+      { "sWidth": "20%" }
     ],
     "columnDefs": [
       { "sortable": true, "targets": 0 },
