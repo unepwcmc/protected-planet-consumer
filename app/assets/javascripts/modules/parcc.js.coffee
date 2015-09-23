@@ -18,14 +18,17 @@ $(document).ready(->
       { "sWidth": "400px" },
       { "sWidth": "380px" }
     ],
-    "columnDefs" : [
+    "columnDefs": [
       { "sortable": true, "targets": 0 },
       { "sortable": true, "targets": 1 },
       { "sortable": false, "targets": 2 },
       { "sortable": true, "targets": 3 },
       { "sortable": false, "targets": 4 },
       { "sortable": false, "targets": 5 },
-    ]
+    ],
+    "language": {
+      "emptyTable": "No species of this taxon have been assessed as being vulnerable to climate change"
+    }
   }
 
   suitability_opts = {
@@ -35,12 +38,15 @@ $(document).ready(->
       { "sWidth": "15%" },
       { "sWidth": "40%" }
     ],
-    "columnDefs" : [
+    "columnDefs": [
       { "sortable": true, "targets": 0 },
       { "sortable": true, "targets": 1 },
       { "sortable": true, "targets": 2 },
       { "sortable": false, "targets": 3 }
-    ]
+    ],
+    "language": {
+      "emptyTable": "No species of this taxon have been assessed as being vulnerable to climate change"
+    }
   }
 
   vulnerability_table = new Table('.vulnerability-table', $('.vulnerability-table-container'), vulnerability_opts)
