@@ -20,4 +20,9 @@ class Parcc::Importers::Base
     @pas ||= {}
     @pas[wdpa_id] ||= Parcc::ProtectedArea.find_by_wdpa_id(wdpa_id)
   end
+
+  def fetch_taxonomic_class class_name
+    @tc ||= {}
+    @tc[class_name] ||= Parcc::TaxonomicClass.find_by_name(class_name)
+  end
 end
