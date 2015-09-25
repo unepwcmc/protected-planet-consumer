@@ -8,6 +8,7 @@ class Parcc::ProtectedAreasController < ApplicationController
     load_suitability_changes DEFAULT_TAXONOMIC_CLASS
 
     @turnovers = ParccPresenter.grouped_turnovers(@protected_area.species_turnovers)
+    @vulnerability_assessments = ParccPresenter.grouped_vulnerability_assessments(@protected_area.taxonomic_class_protected_areas)
     @species_protected_areas = Parcc::SpeciesProtectedArea.vulnerability_table_for(
       @protected_area.id, DEFAULT_TAXONOMIC_CLASS
     )

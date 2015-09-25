@@ -1,0 +1,49 @@
+@import '../colors';
+
+.tva-table {
+  margin-top: 15px;
+  tr:first-child {
+    height: 10px;
+  }
+  th:first-child, td:first-child {
+    width: 100px;
+  }
+  td:first-child {
+    border-right: solid 1px;
+    border-color: $color--line-border-bottom-medium;
+    font-family: "MuseoSans-300";
+  }
+  th:not(:first-child):not(:nth-child(2)){
+    border-bottom: solid 1px;
+    border-color: $color--line-border-bottom-medium;
+  }
+  th:nth-child(2), td:nth-child(2) {
+    width: 10px;
+  }
+  td {
+    vertical-align: middle;
+    height: 40px;
+    width: 200px;
+    .tva-box {
+      background-color: $color--turnover-box-background;
+      width: 195px;
+      height: 30px;
+      .tva-value { 
+        padding: 9px;
+        font-size: 16px;
+        font-family: "MuseoSans-300";
+        text-align: center;
+      }
+    }
+    &.total { 
+      font-family: "MuseoSans-500";
+      font-size: 18px;
+    }
+  }
+  th {
+    font-family: "MuseoSans-300";
+    width: 100px;
+    padding-bottom: 10px;
+  }
+}
+

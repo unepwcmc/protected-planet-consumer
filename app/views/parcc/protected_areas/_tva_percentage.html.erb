@@ -2,16 +2,7 @@
   <h2> Species vulnerable to climate change </h2>
   <p class="subtitle"> According to Traits-based Vulnerability Assessments (TVAs) </p>
   <div class="line medium"></div>
-  <ul class="tva-values">
-    <li>
-      <span class="left-value"> Total number of species assessed </span>
-      <span class="right-value"> <%= @protected_area.count_total_species %> </span>
-    </li>
-    <li>
-      <span class="left-value"> Number of vulnerable species </span>
-      <span class="right-value"> <%= @protected_area.count_vulnerable_species %> </span>
-    </li>
-  </ul>
+  <%= render "tva_table" %>
   <div class="percentage-bar">
     <div class="percentage" style="width:<%= @protected_area.percentage_vulnerable_species %>%"></div>
   </div>

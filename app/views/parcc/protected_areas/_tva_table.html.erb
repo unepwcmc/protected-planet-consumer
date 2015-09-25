@@ -1,0 +1,35 @@
+<table class="tva-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Vulnerable Species</th>
+      <th>Total Species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+    <% ['Amphibian', 'Bird', 'Mammal'].each do |taxonomic_class| %>
+      <tr>
+        <td><%= taxonomic_class %></td>
+        <td></td>
+        <td>
+          <div class="tva-box">
+            <div class="tva-value"><%= @vulnerability_assessments[taxonomic_class].count_vulnerable_species %></div>
+          </div>
+        </td>
+        <td>
+          <div class="tva-box">
+            <div class="tva-value"><%= @vulnerability_assessments[taxonomic_class].count_total_species  %></div>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+    <tr>
+      <td class="total">Total</td>
+      <td></td>
+      <td><div class="tva-box"><div class="tva-value"><%= @vulnerability_assessments[:total][:vulnerable] %></div></div></td>
+      <td><div class="tva-box"><div class="tva-value"><%= @vulnerability_assessments[:total][:total] %></div></div></td>
+    </tr>
+  </tbody>
+</table>

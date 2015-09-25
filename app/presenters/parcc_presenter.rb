@@ -8,6 +8,19 @@ module ParccPresenter
     }
   end
 
+  def self.grouped_vulnerability_assessments all_vulnerability_assessments
+    all_vulnerability_assessments.each_with_object({}) { |vulnerability_assessment, groups|
+      class_name = vulnerability_assessment.taxonomic_class.name
+
+      groups[class_name] ||= vulnerability_assessment
+    }.tap { |assessments|
+      assessments[:total] = {
+        vulnerable: assessments.values.map(&:count_vulnerable_species).inject(:+),
+        total: assessments.values.map(&:count_total_species).inject(:+)
+      }
+    }
+  end
+
   def self.grouped_suitability_changes all_suitability_changes, opts={with_model: false}
     all_suitability_changes.each_with_object({}) { |suitability_change, groups|
       key = suitability_change.species
