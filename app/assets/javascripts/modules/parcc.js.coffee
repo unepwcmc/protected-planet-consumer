@@ -50,25 +50,12 @@ $(document).ready(->
   }
 
   vulnerability_table = new Table('.vulnerability-table', $('.vulnerability-table-container'), vulnerability_opts)
-  dd_vulnerability = new DropDown($('#dd-vulnerability'), vulnerability_table, 'vulnerability_table')
+  dd_vulnerability = new TabsPane($('#vulnerability-tabs'), vulnerability_table, 'vulnerability_table')
   suitability_table = new Table('.suitability-table', $('.suitability-table-container'), suitability_opts)
-  dd_suitability = new DropDown($('#dd-suitability'), suitability_table, 'suitability_changes_table')
+  dd_suitability = new TabsPane($('#suitability-tabs'), suitability_table, 'suitability_changes_table')
 
   new Parcc()
 
   $(".tooltip").tooltip()
 
-  $(document).click( ->
-    $('.wrapper-dropdown').removeClass('active')
-  )
-
-
-  # $(".dataTables_scrollBody").scroll(->
-  #   if($(this).scrollLeft())
-  #     console.log("Scrolled")
-  #     $(".scrolling-shadow").addClass("scrolled")
-  #   else
-  #     console.log("End scroll")
-  #     $(".scrolling-shadow").removeClass("scrolled")
-  # )
 )

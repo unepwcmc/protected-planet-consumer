@@ -1,23 +1,25 @@
-window.DropDown = class DropDown
+window.TabsPane = class TabsPane
   constructor: (@$container_el, @table, @table_type) ->
-    @placeholder = @$container_el.children('span')
-    @opts = @$container_el.find('ul.dropdown > li')
+    @opts = @$container_el.find('li > a')
     @val = ''
     @index = -1
     @initEvents()
 
   initEvents: ->
     @$container_el.on('click', (event) ->
-      $(this).toggleClass('active')
-      false
+      event.preventDefault()
     )
 
     self = @
     @opts.on('click', ->
       opt = $(this)
+      if opt.hasClass("active")
+        return
+      else
+        self.$container_el.find(".active").removeClass("active")
+        opt.closest('li').addClass("active")
       self.val = opt.text()
       self.index = opt.index()
-      self.placeholder.text(self.val)
       wdpa_id = $('#map').data("wdpa-id")
 
       self.table.loading()

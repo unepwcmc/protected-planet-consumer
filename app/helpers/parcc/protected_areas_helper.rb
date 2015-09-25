@@ -43,13 +43,22 @@ module Parcc::ProtectedAreasHelper
     %Q(<i class="#{klass}"></i>).html_safe
   end
 
+  DEFAULT_TAXONOMIC_CLASS = Parcc::Import.configuration["default_taxonomic_class"]
   def taxonomic_classes_options
     Parcc::Import.configuration["taxonomic_classes"].map do |taxonomic_class|
-      %Q(<li><a href="#">#{taxonomic_class}</a></li>)
+      is_default = taxonomic_class == DEFAULT_TAXONOMIC_CLASS
+      %Q(<li class="#{"active" if is_default}"> <a href="#">#{taxonomic_class}</a></li>)
     end
   end
 
-  DEFAULT_TAXONOMIC_CLASS = Parcc::Import.configuration["default_taxonomic_class"]
+  def taxonomic_classes_tabs section
+    %Q(
+      <ul id="#{section}-tabs" class="tabs">
+        #{taxonomic_classes_options.join}
+      </ul>
+    ).html_safe
+  end
+
   def taxonomic_classes_dropdown section
     %Q(
       <div id="dd-#{section}" class="wrapper-dropdown" tabindex="1">
