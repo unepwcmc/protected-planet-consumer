@@ -43,13 +43,22 @@ module Parcc::ProtectedAreasHelper
     %Q(<i class="#{klass}"></i>).html_safe
   end
 
+  DEFAULT_TAXONOMIC_CLASS = Parcc::Import.configuration["default_taxonomic_class"]
   def taxonomic_classes_options
     Parcc::Import.configuration["taxonomic_classes"].map do |taxonomic_class|
-      %Q(<li><a href="#">#{taxonomic_class}</a></li>)
+      is_default = taxonomic_class == DEFAULT_TAXONOMIC_CLASS
+      %Q(<li class="#{"active" if is_default}"> <a href="#">#{taxonomic_class}</a></li>)
     end
   end
 
-  DEFAULT_TAXONOMIC_CLASS = Parcc::Import.configuration["default_taxonomic_class"]
+  def taxonomic_classes_tabs section
+    %Q(
+      <ul id="#{section}-tabs" class="tabs">
+        #{taxonomic_classes_options.join}
+      </ul>
+    ).html_safe
+  end
+
   def taxonomic_classes_dropdown section
     %Q(
       <div id="dd-#{section}" class="wrapper-dropdown" tabindex="1">
@@ -79,10 +88,10 @@ module Parcc::ProtectedAreasHelper
   ICONS = {
     "Inc" => "fa-arrow-circle-up green",
     "Dec" => "fa-arrow-circle-down red",
-    "NA" => "fa-circle grey"
+    "No change" => "fa-circle grey"
   }
   def suitability_value_icon value
-    value ||= "NA"
+    value ||= "No change"
     %Q(#{value.upcase} <i class="fa #{ICONS[value]}"></i>).html_safe
   end
 
@@ -95,7 +104,8 @@ module Parcc::ProtectedAreasHelper
 
   INFO = {
     "iucn_red_list" => "2014 IUCN Red List categories",
-    "percentage_overlap" => "Percentage of the PA that is part of the species' distribution"
+    "percentage_overlap" => "Percentage of the PA that is part of the species' distribution",
+    "percentage_turnover" => "Percentage of species expected to move in or out of the protected area"
   }
   def info_icon title
     %Q(<i class="fa fa-info-circle tooltip" title="#{INFO[title]}"></i>).html_safe

@@ -7,7 +7,7 @@
   </thead>
   <tbody>
     <tr></tr>
-    <% ['Amphibian', 'Bird', 'Mammal'].each do |taxonomic_class| %>
+    <% Parcc::Import.configuration["taxonomic_classes"].each do |taxonomic_class| %>
       <tr>
         <td><%= taxonomic_class %></td>
         <td></td>

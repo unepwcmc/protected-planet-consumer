@@ -1,0 +1,29 @@
+@import '../colors';
+
+.tabs {
+  width: 100%;  
+  list-style: none;
+  margin-top: 15px;
+  li {
+    display: inline-block;
+    border: 1px $medium-light-grey solid;
+    border-bottom: 1px $medium-light-grey solid; 
+    text-align: center;
+    width: 25%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    background-color: $light-grey;
+    &.active {
+      border-bottom: 0;
+      background-color: $white;
+    }
+    a {
+      display: block;
+      width: 100%;
+      line-height: 50px;
+      font-family: MuseoSans-300;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -15,56 +15,47 @@ $(document).ready(->
       { "sWidth": "120px" },
       { "sWidth": "200px" },
       { "sWidth": "120px" },
-      { "sWidth": "120px" },
       { "sWidth": "400px" },
       { "sWidth": "380px" }
     ],
-    "columnDefs" : [
+    "columnDefs": [
       { "sortable": true, "targets": 0 },
       { "sortable": true, "targets": 1 },
       { "sortable": false, "targets": 2 },
       { "sortable": true, "targets": 3 },
-      { "sortable": true, "targets": 4 },
+      { "sortable": false, "targets": 4 },
       { "sortable": false, "targets": 5 },
-      { "sortable": false, "targets": 6 },
-    ]
+    ],
+    "language": {
+      "emptyTable": "No species of this taxon have been assessed as being vulnerable to climate change"
+    }
   }
 
   suitability_opts = {
     "columns" : [
       { "sWidth": "30%" },
-      { "sWidth": "15%" },
-      { "sWidth": "15%" },
-      { "sWidth": "40%" }
+      { "sWidth": "25%" },
+      { "sWidth": "25%" },
+      { "sWidth": "20%" }
     ],
-    "columnDefs" : [
+    "columnDefs": [
       { "sortable": true, "targets": 0 },
       { "sortable": true, "targets": 1 },
       { "sortable": true, "targets": 2 },
       { "sortable": false, "targets": 3 }
-    ]
+    ],
+    "language": {
+      "emptyTable": "No species of this taxon have been assessed as being vulnerable to climate change"
+    }
   }
 
   vulnerability_table = new Table('.vulnerability-table', $('.vulnerability-table-container'), vulnerability_opts)
-  dd_vulnerability = new DropDown($('#dd-vulnerability'), vulnerability_table, 'vulnerability_table')
+  dd_vulnerability = new TabsPane($('#vulnerability-tabs'), vulnerability_table, 'vulnerability_table')
   suitability_table = new Table('.suitability-table', $('.suitability-table-container'), suitability_opts)
-  dd_suitability = new DropDown($('#dd-suitability'), suitability_table, 'suitability_changes_table')
+  dd_suitability = new TabsPane($('#suitability-tabs'), suitability_table, 'suitability_changes_table')
 
   new Parcc()
 
   $(".tooltip").tooltip()
 
-  $(document).click( ->
-    $('.wrapper-dropdown').removeClass('active')
-  )
-
-
-  # $(".dataTables_scrollBody").scroll(->
-  #   if($(this).scrollLeft())
-  #     console.log("Scrolled")
-  #     $(".scrolling-shadow").addClass("scrolled")
-  #   else
-  #     console.log("End scroll")
-  #     $(".scrolling-shadow").removeClass("scrolled")
-  # )
 )

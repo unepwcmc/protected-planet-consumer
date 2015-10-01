@@ -35,23 +35,16 @@
     width: 200px;
     padding-bottom: 10px;
   }
-  .first-row, .second-row {
-    display: inline-block;
-    padding: 11px 9px;
+  .percentages {
+    padding: 22px 0;
 
     li {
+      display: inline;
       font-size: 14px;
+      padding: 0 0 0 16px;
       &.median-value {
-        font-size: 16px;
+        font-size: 18px;
         font-family: "MuseoSans-300";
-        text-align: center;
-      }
-      &:not(:first-child) {
-        padding-top: 5px;
-      }
-      i.fa {
-        font-size: 16px;
-        color: lightgrey;
       }
     }
   }

@@ -1,6 +1,6 @@
 taxonomic_classes:
-  - Amphibian
   - Bird
   - Mammal
+  - Amphibian
   
-default_taxonomic_class: Amphibian
+default_taxonomic_class: Bird
