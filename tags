@@ -1,0 +1,674 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+AddBudgetsToGefPameRecords	./db/migrate/20150219125722_add_budgets_to_gef_pame_records.rb	/^class AddBudgetsToGefPameRecords < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddCollumnToArea	./db/migrate/20141201140222_add_collumn_to_area.rb	/^class AddCollumnToArea < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddCollumnsToGefPameRecords	./db/migrate/20141202150220_add_collumns_to_gef_pame_records.rb	/^class AddCollumnsToGefPameRecords < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddGefAreaIdToGefPameRecord	./db/migrate/20141209112838_add_gef_area_id_to_gef_pame_record.rb	/^class AddGefAreaIdToGefPameRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddGefAreaIdToGefProtectedArea	./db/migrate/20141104102642_add_gef_area_id_to_gef_protected_area.rb	/^class AddGefAreaIdToGefProtectedArea < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddGefPameNamesIdtoGefPameRecord	./db/migrate/20141209160005_add_gef_pame_names_idto_gef_pame_record.rb	/^class AddGefPameNamesIdtoGefPameRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddGefPameNamesIdtoGefWdpaRecord	./db/migrate/20141209155928_add_gef_pame_names_idto_gef_wdpa_record.rb	/^class AddGefPameNamesIdtoGefWdpaRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddHighPriorityToParccProtectedAreas	./db/migrate/20150616141402_add_high_priority_to_parcc_protected_areas.rb	/^class AddHighPriorityToParccProtectedAreas < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddIndexesInSuitabilityChangesTable	./db/migrate/20150630134510_add_indexes_in_suitability_changes_table.rb	/^class AddIndexesInSuitabilityChangesTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddParccProtectedAreaIdIndexToParccSpeciesProtectedAreasTable	./db/migrate/20150616105958_add_parcc_protected_area_id_index_to_parcc_species_protected_areas_table.rb	/^class AddParccProtectedAreaIdIndexToParccSpeciesProtectedAreasTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddParccProtectedAreaIdIndexToParccSpeciesTurnoversTable	./db/migrate/20150616114549_add_parcc_protected_area_id_index_to_parcc_species_turnovers_table.rb	/^class AddParccProtectedAreaIdIndexToParccSpeciesTurnoversTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddParccProtectedAreaIdIndexToParccSuitabilityChangesTable	./db/migrate/20150616130403_add_parcc_protected_area_id_index_to_parcc_suitability_changes_table.rb	/^class AddParccProtectedAreaIdIndexToParccSuitabilityChangesTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddSpeciesCountsToParccProtectedAreasTable	./db/migrate/20150424104630_add_species_counts_to_parcc_protected_areas_table.rb	/^class AddSpeciesCountsToParccProtectedAreasTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddWdpaExistsToGefWdpaRecord	./db/migrate/20150226180744_add_wdpa_exists_to_gef_wdpa_record.rb	/^class AddWdpaExistsToGefWdpaRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+AddWdpaIdIndexToParccProtectedAreasTable	./db/migrate/20150616105759_add_wdpa_id_index_to_parcc_protected_areas_table.rb	/^class AddWdpaIdIndexToParccProtectedAreasTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ApiAreasTest	./test/integration/gef/api_areas_test.rb	/^class Gef::ApiAreasTest < ActionDispatch::IntegrationTest$/;"	c	class:Gef	inherits:ActionDispatch.IntegrationTest
+Application	./config/application.rb	/^  class Application < Rails::Application$/;"	c	class:ProtectedPlanetConsumer	inherits:Rails.Application
+ApplicationController	./app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c	inherits:ActionController.Base
+ApplicationHelper	./app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+Area	./app/models/gef/api/area.rb	/^class Gef::Api::Area < ActiveRecord::Base$/;"	c	class:Gef.Api	inherits:ActiveRecord.Base
+Area	./app/models/gef/area.rb	/^class Gef::Area < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+AreaIndexTest	./test/integration/gef/gef_areas_index_test.rb	/^class Gef::AreaIndexTest < ActionDispatch::IntegrationTest$/;"	c	class:Gef	inherits:ActionDispatch.IntegrationTest
+AreaTest	./test/models/gef/area_test.rb	/^class Gef::AreaTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+AreasController	./app/controllers/gef/api/areas_controller.rb	/^class Gef::Api::AreasController < ApplicationController$/;"	c	class:Gef.Api	inherits:ApplicationController
+AreasController	./app/controllers/gef/areas_controller.rb	/^class Gef::AreasController < GefController$/;"	c	class:Gef	inherits:GefController
+BASE_PATH	./lib/modules/parcc/downloads.rb	/^  BASE_PATH = Rails.root.join('tmp\/downloads')$/;"	C	class:Parcc.Downloads
+BASE_PATH	./lib/modules/parcc/downloads/generators/protected_area_info.rb	/^  BASE_PATH = Rails.root.join('tmp\/downloads\/')$/;"	C	class:Parcc.Downloads.Generators.ProtectedAreaInfo
+BASE_PATH	./lib/modules/parcc/downloads/generators/suitability_changes.rb	/^  BASE_PATH = Rails.root.join('tmp\/downloads\/')$/;"	C	class:Parcc.Downloads.Generators.SuitabilityChanges
+BASE_PATH	./lib/modules/parcc/downloads/generators/turnovers.rb	/^  BASE_PATH = Rails.root.join('tmp\/downloads\/')$/;"	C	class:Parcc.Downloads.Generators.Turnovers
+BASE_PATH	./lib/modules/parcc/downloads/generators/vulnerability.rb	/^  BASE_PATH = Rails.root.join('tmp\/downloads\/')$/;"	C	class:Parcc.Downloads.Generators.Vulnerability
+Base	./lib/modules/parcc/importers/base.rb	/^class Parcc::Importers::Base$/;"	c	class:Parcc.Importers
+Biome	./app/models/gef/biome.rb	/^class Gef::Biome < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+BiomeColumnName	./db/migrate/20150416133805_biome_column_name.rb	/^class BiomeColumnName < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+BiomeTest	./test/models/gef/biome_test.rb	/^class Gef::BiomeTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+BudgetType	./app/models/gef/budget_type.rb	/^class Gef::BudgetType < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+BudgetTypeTest	./test/models/gef/budget_type_test.rb	/^class Gef::BudgetTypeTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+COLUMNS_FOR_API	./app/models/parcc/protected_area.rb	/^  COLUMNS_FOR_API = [$/;"	C	class:Parcc.ProtectedArea
+COLUMN_FOR_PARCC_ID	./lib/modules/parcc/importers/turnover.rb	/^  COLUMN_FOR_PARCC_ID = :'' # yes, as odd as it looks$/;"	C	class:Parcc.Importers.Turnover
+ChangeBiomesOngefPameRecords	./db/migrate/20150413155642_change_biomes_ongef_pame_records.rb	/^class ChangeBiomesOngefPameRecords < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ChangeColumnGefCountry	./db/migrate/20150227223524_change_column_gef_country.rb	/^class ChangeColumnGefCountry < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ChangeColumnGefSearch	./db/migrate/20150302134844_change_column_gef_search.rb	/^class ChangeColumnGefSearch < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ChangeColumnNameGefWdpaRecord	./db/migrate/20150226175701_change_column_name_gef_wdpa_record.rb	/^class ChangeColumnNameGefWdpaRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ChangePimsFromGefProtectedArea	./db/migrate/20141017150357_change_pims_from_gef_protected_area.rb	/^class ChangePimsFromGefProtectedArea < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ChangeTypeToColumnTypeFromGefColumnMatch	./db/migrate/20141015120330_change_type_to_column_type_from_gef_column_match.rb	/^class ChangeTypeToColumnTypeFromGefColumnMatch < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ColumnMatch	./app/models/gef/column_match.rb	/^class Gef::ColumnMatch < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+ColumnMatchTest	./test/models/gef/column_match_test.rb	/^class Gef::ColumnMatchTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+Consumer	./lib/modules/gef/consumer.rb	/^class Gef::Consumer$/;"	c	class:Gef
+Country	./app/models/gef/country.rb	/^class Gef::Country < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+CountryTest	./test/models/gef/country_test.rb	/^class Gef::CountryTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+CountryWdpaRecord	./app/models/gef/country_wdpa_record.rb	/^class Gef::CountryWdpaRecord < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+CountryWdpaRecordTest	./test/models/gef/country_wdpa_record_test.rb	/^class Gef::CountryWdpaRecordTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+Counts	./lib/modules/parcc/importers/species/counts.rb	/^class Parcc::Importers::Species::Counts < Parcc::Importers::Base$/;"	c	class:Parcc.Importers.Species	inherits:Parcc.Importers.Base
+CreateGefAreas	./db/migrate/20141104101752_create_gef_areas.rb	/^class CreateGefAreas < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefBiomes	./db/migrate/20150413143006_create_gef_biomes.rb	/^class CreateGefBiomes < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefBudgetTypes	./db/migrate/20150219165304_create_gef_budget_types.rb	/^class CreateGefBudgetTypes < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefColumnMatches	./db/migrate/20141015112626_create_gef_column_matches.rb	/^class CreateGefColumnMatches < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefCountries	./db/migrate/20150226145410_create_gef_countries.rb	/^class CreateGefCountries < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefCountryWdpaRecords	./db/migrate/20150227214532_create_gef_country_wdpa_records.rb	/^class CreateGefCountryWdpaRecords < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefPameNames	./db/migrate/20141209154755_create_gef_pame_names.rb	/^class CreateGefPameNames < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefPameRecordWdpaRecords	./db/migrate/20150413142731_create_gef_pame_record_wdpa_records.rb	/^class CreateGefPameRecordWdpaRecords < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefPameRecords	./db/migrate/20141118121712_create_gef_pame_records.rb	/^class CreateGefPameRecords < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefProtectedAreas	./db/migrate/20141015112753_create_gef_protected_areas.rb	/^class CreateGefProtectedAreas < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefRegions	./db/migrate/20150226145129_create_gef_regions.rb	/^class CreateGefRegions < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateGefSearches	./db/migrate/20150302111144_create_gef_searches.rb	/^class CreateGefSearches < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateParccProtectedAreas	./db/migrate/20141110172547_create_parcc_protected_areas.rb	/^class CreateParccProtectedAreas < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateParccSpecies	./db/migrate/20141113155712_create_parcc_species.rb	/^class CreateParccSpecies < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateParccSpeciesProtectedAreas	./db/migrate/20141117131304_create_parcc_species_protected_areas.rb	/^class CreateParccSpeciesProtectedAreas < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateParccSpeciesTurnovers	./db/migrate/20141111175448_create_parcc_species_turnovers.rb	/^class CreateParccSpeciesTurnovers < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateParccTaxonomicClassProtectedArea	./db/migrate/20150924084405_create_parcc_taxonomic_class_protected_area.rb	/^class CreateParccTaxonomicClassProtectedArea < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateParccTaxonomicClasses	./db/migrate/20141113151912_create_parcc_taxonomic_classes.rb	/^class CreateParccTaxonomicClasses < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateParccTaxonomicOrders	./db/migrate/20141113152024_create_parcc_taxonomic_orders.rb	/^class CreateParccTaxonomicOrders < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+CreateTableParccSuitabilityChanges	./db/migrate/20150608122312_create_table_parcc_suitability_changes.rb	/^class CreateTableParccSuitabilityChanges < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+DEFAULT_TAXONOMIC_CLASS	./app/controllers/parcc/protected_areas_controller.rb	/^  DEFAULT_TAXONOMIC_CLASS = Parcc::Import.configuration["default_taxonomic_class"]$/;"	C	class:Parcc.ProtectedAreasController
+DEFAULT_TAXONOMIC_CLASS	./app/helpers/parcc/protected_areas_helper.rb	/^  DEFAULT_TAXONOMIC_CLASS = Parcc::Import.configuration["default_taxonomic_class"]$/;"	C	class:Parcc.ProtectedAreasHelper
+DIRECT_VALUES	./lib/modules/gef/consumer.rb	/^  DIRECT_VALUES = [:reported_area, :original_name, :marine]$/;"	C	class:Gef.Consumer
+DeleteNameFromGefArea	./db/migrate/20141209172325_delete_name_from_gef_area.rb	/^class DeleteNameFromGefArea < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+Downloads	./lib/modules/parcc/downloads.rb	/^module Parcc::Downloads$/;"	m	class:Parcc
+FIRST_ISO_3	./lib/modules/parcc/importers/protected_areas.rb	/^  FIRST_ISO_3 = -> (countries) { countries.first[:iso_3] }$/;"	C	class:Parcc.Importers.ProtectedAreas
+GENERATORS	./lib/modules/parcc/downloads.rb	/^  GENERATORS = [$/;"	C	class:Parcc.Downloads
+Gef	./app/models/gef.rb	/^module Gef$/;"	m
+GefController	./app/controllers/gef_controller.rb	/^class GefController < ApplicationController$/;"	c	inherits:ApplicationController
+HEADERS	./lib/modules/parcc/downloads/generators/protected_area_info.rb	/^  HEADERS = [$/;"	C	class:Parcc.Downloads.Generators.ProtectedAreaInfo
+HEADERS	./lib/modules/parcc/downloads/generators/suitability_changes.rb	/^  HEADERS = ['Name', 'Taxonomic Order', 'Taxonomic Class', 'By 2010-2039', 'By 2040-2069', 'By 2070-2099']$/;"	C	class:Parcc.Downloads.Generators.SuitabilityChanges
+HEADERS	./lib/modules/parcc/downloads/generators/turnovers.rb	/^  HEADERS = [$/;"	C	class:Parcc.Downloads.Generators.Turnovers
+HEADERS	./lib/modules/parcc/downloads/generators/vulnerability.rb	/^  HEADERS = [$/;"	C	class:Parcc.Downloads.Generators.Vulnerability
+HighPriorityProtectedAreas	./lib/modules/parcc/importers/high_priority_protected_areas.rb	/^class Parcc::Importers::HighPriorityProtectedAreas < Parcc::Importers::Base$/;"	c	class:Parcc.Importers	inherits:Parcc.Importers.Base
+ICONS	./app/helpers/parcc/protected_areas_helper.rb	/^  ICONS = {$/;"	C	class:Parcc.ProtectedAreasHelper
+IDENTITY	./lib/modules/parcc/importers/protected_areas.rb	/^  IDENTITY = -> (value) { value }$/;"	C	class:Parcc.Importers.ProtectedAreas
+IDENTITY	./lib/modules/parcc/importers/species/taxonomies.rb	/^  IDENTITY = -> (value) { value }$/;"	C	class:Parcc.Importers.Species.Taxonomies
+IMPORT_CONFIGURATION	./lib/modules/parcc/import.rb	/^  IMPORT_CONFIGURATION = File.read(Rails.root.join('config\/parcc\/import.yml'))$/;"	C	class:Parcc.Import
+INFO	./app/helpers/parcc/protected_areas_helper.rb	/^  INFO = {$/;"	C	class:Parcc.ProtectedAreasHelper
+IUCN_COLORS	./app/helpers/parcc/protected_areas_helper.rb	/^  IUCN_COLORS = {$/;"	C	class:Parcc.ProtectedAreasHelper
+Import	./lib/modules/parcc/import.rb	/^module Parcc::Import$/;"	m	class:Parcc
+Importer	./lib/modules/gef/importer.rb	/^class Gef::Importer$/;"	c	class:Gef
+IntegrationTest	./test/test_helper.rb	/^class ActionDispatch::IntegrationTest$/;"	c	class:ActionDispatch
+JSON_FILE	./test/unit/protected_planet_reader_test.rb	/^  JSON_FILE = File.read(File.join('test', 'fixtures', 'pp_area.json'))$/;"	C	class:TestProtectedPlanetReader
+LEGEND_PATH	./app/helpers/parcc/protected_areas_helper.rb	/^  LEGEND_PATH = Rails.root.join('config\/parcc\/vulnerability_legend.yml')$/;"	C	class:Parcc.ProtectedAreasHelper
+MESSAGE_404	./app/controllers/parcc/api/protected_areas_controller.rb	/^  MESSAGE_404 = -> id { "Can't find PARCC Protected Area with WDPA ID #{id}" }$/;"	C	class:Parcc.Api.ProtectedAreasController
+PAS_JSON	./test/controllers/parcc/api/protected_areas_controller_test.rb	/^  PAS_JSON = File.read($/;"	C	class:ParccApiProtectedAreasControllerTest
+PAS_JSON	./test/models/parcc/protected_area_test.rb	/^  PAS_JSON = File.read($/;"	C	class:Parcc.ProtectedAreaTest
+PA_123_JSON	./test/models/parcc/protected_area_test.rb	/^  PA_123_JSON = File.read($/;"	C	class:Parcc.ProtectedAreaTest
+PA_123_JSON	./test/unit/parcc/importers/protected_areas_test.rb	/^  PA_123_JSON = JSON.parse($/;"	C	class:ParccImportersProtectedAreasTest
+PA_PROPERTIES	./lib/modules/parcc/importers/protected_areas.rb	/^  PA_PROPERTIES = {$/;"	C	class:Parcc.Importers.ProtectedAreas
+PP_BASE_URL	./app/models/gef/api/area.rb	/^  PP_BASE_URL = 'http:\/\/www.protectedplanet.net\/sites\/'$/;"	C	class:Gef.Api.Area
+PP_BASE_URL	./app/models/gef/search.rb	/^  PP_BASE_URL = 'http:\/\/www.protectedplanet.net\/sites\/'$/;"	C	class:Gef.Search
+PP_BASE_URL	./app/models/gef/wdpa_record.rb	/^  PP_BASE_URL = 'http:\/\/www.protectedplanet.net\/sites\/'$/;"	C	class:Gef.WdpaRecord
+PameName	./app/models/gef/pame_name.rb	/^class Gef::PameName < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+PameNameTest	./test/models/gef/pame_name_test.rb	/^class Gef::PameNameTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+PameRecord	./app/models/gef/pame_record.rb	/^class Gef::PameRecord < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+PameRecord	./db/migrate/20141120163720_pame_record.rb	/^class PameRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+PameRecordTest	./test/models/gef/pame_record_test.rb	/^class Gef::PameRecordTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+PameRecordWdpaRecord	./app/models/gef/pame_record_wdpa_record.rb	/^class Gef::PameRecordWdpaRecord < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+PameRecordWdpaRecordTest	./test/models/gef/pame_record_wdpa_record_test.rb	/^class Gef::PameRecordWdpaRecordTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+PameRecordsController	./app/controllers/gef/pame_records_controller.rb	/^class Gef::PameRecordsController < GefController$/;"	c	class:Gef	inherits:GefController
+PameRecordsIndexTest	./test/integration/gef/pame_records_index_test.rb	/^class Gef::PameRecordsIndexTest < ActionDispatch::IntegrationTest$/;"	c	class:Gef	inherits:ActionDispatch.IntegrationTest
+PameRecordsShowTest	./test/integration/gef/pame_records_show_test.rb	/^class Gef::PameRecordsShowTest < ActionDispatch::IntegrationTest$/;"	c	class:Gef	inherits:ActionDispatch.IntegrationTest
+Parcc	./app/models/parcc.rb	/^module Parcc$/;"	m
+ParccApiProtectedAreasControllerTest	./test/controllers/parcc/api/protected_areas_controller_test.rb	/^class ParccApiProtectedAreasControllerTest < ActionController::TestCase$/;"	c	inherits:ActionController.TestCase
+ParccDownloadsGeneratorsProtectedAreaInfoTest	./test/unit/parcc/downloads/generators/protected_area_info_test.rb	/^class ParccDownloadsGeneratorsProtectedAreaInfoTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParccDownloadsGeneratorsSuitabilityChangesTest	./test/unit/parcc/downloads/generators/suitability_changes_test.rb	/^class ParccDownloadsGeneratorsSuitabilityChangesTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParccDownloadsGeneratorsTurnoversTest	./test/unit/parcc/downloads/generators/turnovers_test.rb	/^class ParccDownloadsGeneratorsTurnoversTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParccDownloadsGeneratorsVulnerabilityTest	./test/unit/parcc/downloads/generators/vulnerability_test.rb	/^class ParccDownloadsGeneratorsVulnerabilityTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParccDownloadsTest	./test/unit/parcc/downloads_test.rb	/^class ParccDownloadsTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParccImportTest	./test/unit/parcc/import_test.rb	/^class ParccImportTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParccImportersProtectedAreasTest	./test/unit/parcc/importers/protected_areas_test.rb	/^class ParccImportersProtectedAreasTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParccImportersSuitabilityChangesTest	./test/unit/parcc/importers/suitability_changes_test.rb	/^class ParccImportersSuitabilityChangesTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParccPresenter	./app/presenters/parcc_presenter.rb	/^module ParccPresenter$/;"	m
+ParccProtectedAreasControllerTest	./test/controllers/parcc/protected_areas_controller_test.rb	/^class ParccProtectedAreasControllerTest < ActionController::TestCase$/;"	c	inherits:ActionController.TestCase
+ProtectedArea	./app/models/parcc/protected_area.rb	/^class Parcc::ProtectedArea < ActiveRecord::Base$/;"	c	class:Parcc	inherits:ActiveRecord.Base
+ProtectedArea	./db/migrate/20141104102006_protected_area.rb	/^class ProtectedArea < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ProtectedAreaInfo	./lib/modules/parcc/downloads/generators/protected_area_info.rb	/^module Parcc::Downloads::Generators::ProtectedAreaInfo$/;"	m	class:Parcc.Downloads.Generators
+ProtectedAreaRetrievalError	./lib/modules/protected_planet_reader.rb	/^  class ProtectedAreaRetrievalError < StandardError; end;$/;"	c	class:ProtectedPlanetReader	inherits:StandardError
+ProtectedAreaTest	./test/models/parcc/protected_area_test.rb	/^class Parcc::ProtectedAreaTest < ActiveSupport::TestCase$/;"	c	class:Parcc	inherits:ActiveSupport.TestCase
+ProtectedAreas	./lib/modules/parcc/importers/protected_areas.rb	/^class Parcc::Importers::ProtectedAreas < Parcc::Importers::Base$/;"	c	class:Parcc.Importers	inherits:Parcc.Importers.Base
+ProtectedAreasController	./app/controllers/parcc/api/protected_areas_controller.rb	/^class Parcc::Api::ProtectedAreasController < ApplicationController$/;"	c	class:Parcc.Api	inherits:ApplicationController
+ProtectedAreasController	./app/controllers/parcc/protected_areas_controller.rb	/^class Parcc::ProtectedAreasController < ApplicationController$/;"	c	class:Parcc	inherits:ApplicationController
+ProtectedAreasHelper	./app/helpers/parcc/protected_areas_helper.rb	/^module Parcc::ProtectedAreasHelper$/;"	m	class:Parcc
+ProtectedAreasHelperTest	./test/helpers/parcc/protected_areas_helper_test.rb	/^class Parcc::ProtectedAreasHelperTest < ActionView::TestCase$/;"	c	class:Parcc	inherits:ActionView.TestCase
+ProtectedPlanetConsumer	./config/application.rb	/^module ProtectedPlanetConsumer$/;"	m
+ProtectedPlanetReader	./lib/modules/protected_planet_reader.rb	/^class ProtectedPlanetReader$/;"	c
+Region	./app/models/gef/region.rb	/^class Gef::Region < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+RegionTest	./test/models/gef/region_test.rb	/^class Gef::RegionTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+RemoveColumnsFromWdpaRecord	./db/migrate/20141118175418_remove_columns_from_wdpa_record.rb	/^class RemoveColumnsFromWdpaRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+RemoveCountColumnsFromParccProtectedAreas	./db/migrate/20150924133225_remove_count_columns_from_parcc_protected_areas.rb	/^class RemoveCountColumnsFromParccProtectedAreas < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+RemoveGefAreaIdToGefPameRecord	./db/migrate/20141120174151_remove_gef_area_id_to_gef_pame_record.rb	/^class RemoveGefAreaIdToGefPameRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+RemoveNameFromGefPameRecord	./db/migrate/20141209183700_remove_name_from_gef_pame_record.rb	/^class RemoveNameFromGefPameRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+RemoveParccChengeTypeIdFromParccSpeciesProtectedAreasTable	./db/migrate/20150616130817_remove_parcc_chenge_type_id_from_parcc_species_protected_areas_table.rb	/^class RemoveParccChengeTypeIdFromParccSpeciesProtectedAreasTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+RemovesColumnTypeFromGefColumnMatches	./db/migrate/20141022140524_removes_column_type_from_gef_column_matches.rb	/^class RemovesColumnTypeFromGefColumnMatches < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+RenameGefProtectedAreaToGefPpArea	./db/migrate/20141104110250_rename_gef_protected_area_to_gef_pp_area.rb	/^class RenameGefProtectedAreaToGefPpArea < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+RenameSensivityToSensitivityInParccSpecies	./db/migrate/20150625221642_rename_sensivity_to_sensitivity_in_parcc_species.rb	/^class RenameSensivityToSensitivityInParccSpecies < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+RenamesColumnGefPameRecord	./db/migrate/20141120180959_renames_column_gef_pame_record.rb	/^class RenamesColumnGefPameRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ReplaceStatAndValueColumnsInParccSpeciesTurnoversTable	./db/migrate/20150602145017_replace_stat_and_value_columns_in_parcc_species_turnovers_table.rb	/^class ReplaceStatAndValueColumnsInParccSpeciesTurnoversTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+ReplaceTaxonomicClassColumnInParccSpeciesTurnoversTable	./db/migrate/20150520002028_replace_taxonomic_class_column_in_parcc_species_turnovers_table.rb	/^class ReplaceTaxonomicClassColumnInParccSpeciesTurnoversTable < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+S3	./lib/modules/s3.rb	/^class S3$/;"	c
+SPECIES_CONVERSIONS	./lib/modules/parcc/importers/species/taxonomies.rb	/^  SPECIES_CONVERSIONS = {$/;"	C	class:Parcc.Importers.Species.Taxonomies
+SPECIES_RANGE	./lib/modules/parcc/importers/suitability_changes.rb	/^  SPECIES_RANGE = (5..-3)$/;"	C	class:Parcc.Importers.SuitabilityChanges
+STATS	./lib/modules/parcc/importers/turnover.rb	/^  STATS = [:median, :upper, :lower]$/;"	C	class:Parcc.Importers.Turnover
+STR_TO_BOOL	./lib/modules/parcc/importers/species/taxonomies.rb	/^  STR_TO_BOOL = -> (value) { value =~ \/yes\/i ? true : false }$/;"	C	class:Parcc.Importers.Species.Taxonomies
+Search	./app/models/gef/search.rb	/^class Gef::Search < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+SearchNewTest	./test/integration/gef/gef_search_new_test.rb	/^class Gef::SearchNewTest < ActionDispatch::IntegrationTest$/;"	c	class:Gef	inherits:ActionDispatch.IntegrationTest
+SearchShowTest	./test/integration/gef/gef_search_show_test.rb	/^class Gef::SearchShowTest < ActionDispatch::IntegrationTest$/;"	c	class:Gef	inherits:ActionDispatch.IntegrationTest
+SearchTest	./test/models/gef/search_test.rb	/^class Gef::SearchTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+SearchesController	./app/controllers/gef/searches_controller.rb	/^class Gef::SearchesController < GefController$/;"	c	class:Gef	inherits:GefController
+SearchesHelper	./app/helpers/gef/searches_helper.rb	/^module Gef::SearchesHelper$/;"	m	class:Gef
+Species	./app/models/parcc/species.rb	/^class Parcc::Species < ActiveRecord::Base$/;"	c	class:Parcc	inherits:ActiveRecord.Base
+Species	./lib/modules/parcc/importers/species.rb	/^class Parcc::Importers::Species$/;"	c	class:Parcc.Importers
+SpeciesProtectedArea	./app/models/parcc/species_protected_area.rb	/^class Parcc::SpeciesProtectedArea < ActiveRecord::Base$/;"	c	class:Parcc	inherits:ActiveRecord.Base
+SpeciesProtectedAreaSerializer	./app/serializers/parcc/species_protected_area_serializer.rb	/^class Parcc::SpeciesProtectedAreaSerializer < ActiveModel::Serializer$/;"	c	class:Parcc	inherits:ActiveModel.Serializer
+SpeciesProtectedAreaTest	./test/models/parcc/species_protected_area_test.rb	/^class Parcc::SpeciesProtectedAreaTest < ActiveSupport::TestCase$/;"	c	class:Parcc	inherits:ActiveSupport.TestCase
+SpeciesSerializer	./app/serializers/parcc/species_serializer.rb	/^class Parcc::SpeciesSerializer < ActiveModel::Serializer$/;"	c	class:Parcc	inherits:ActiveModel.Serializer
+SpeciesTest	./test/models/parcc/species_test.rb	/^class Parcc::SpeciesTest < ActiveSupport::TestCase$/;"	c	class:Parcc	inherits:ActiveSupport.TestCase
+SpeciesTurnover	./app/models/parcc/species_turnover.rb	/^class Parcc::SpeciesTurnover < ActiveRecord::Base$/;"	c	class:Parcc	inherits:ActiveRecord.Base
+SpeciesTurnoverTest	./test/models/parcc/species_turnover_test.rb	/^class Parcc::SpeciesTurnoverTest < ActiveSupport::TestCase$/;"	c	class:Parcc	inherits:ActiveSupport.TestCase
+SuitabilityChange	./app/models/parcc/suitability_change.rb	/^class Parcc::SuitabilityChange < ActiveRecord::Base$/;"	c	class:Parcc	inherits:ActiveRecord.Base
+SuitabilityChanges	./lib/modules/parcc/downloads/generators/suitability_changes.rb	/^module Parcc::Downloads::Generators::SuitabilityChanges$/;"	m	class:Parcc.Downloads.Generators
+SuitabilityChanges	./lib/modules/parcc/importers/suitability_changes.rb	/^class Parcc::Importers::SuitabilityChanges < Parcc::Importers::Base$/;"	c	class:Parcc.Importers	inherits:Parcc.Importers.Base
+TaxonomicClass	./app/models/parcc/taxonomic_class.rb	/^class Parcc::TaxonomicClass < ActiveRecord::Base$/;"	c	class:Parcc	inherits:ActiveRecord.Base
+TaxonomicClassProtectedArea	./app/models/parcc/taxonomic_class_protected_area.rb	/^class Parcc::TaxonomicClassProtectedArea < ActiveRecord::Base$/;"	c	class:Parcc	inherits:ActiveRecord.Base
+TaxonomicClassProtectedAreas	./lib/modules/parcc/importers/species/taxonomic_class_protected_areas.rb	/^class Parcc::Importers::Species::TaxonomicClassProtectedAreas < Parcc::Importers::Base$/;"	c	class:Parcc.Importers.Species	inherits:Parcc.Importers.Base
+TaxonomicClassTest	./test/models/parcc/taxonomic_class_test.rb	/^class Parcc::TaxonomicClassTest < ActiveSupport::TestCase$/;"	c	class:Parcc	inherits:ActiveSupport.TestCase
+TaxonomicOrder	./app/models/parcc/taxonomic_order.rb	/^class Parcc::TaxonomicOrder < ActiveRecord::Base$/;"	c	class:Parcc	inherits:ActiveRecord.Base
+TaxonomicOrderSerializer	./app/serializers/parcc/taxonomic_order_serializer.rb	/^class Parcc::TaxonomicOrderSerializer < ActiveModel::Serializer$/;"	c	class:Parcc	inherits:ActiveModel.Serializer
+TaxonomicOrderTest	./test/models/parcc/taxonomic_order_test.rb	/^class Parcc::TaxonomicOrderTest < ActiveSupport::TestCase$/;"	c	class:Parcc	inherits:ActiveSupport.TestCase
+Taxonomies	./lib/modules/parcc/importers/species/taxonomies.rb	/^class Parcc::Importers::Species::Taxonomies < Parcc::Importers::Base$/;"	c	class:Parcc.Importers.Species	inherits:Parcc.Importers.Base
+TestCase	./test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c	class:ActiveSupport
+TestGefConsumer	./test/unit/gef/gef_consumer_test.rb	/^class TestGefConsumer < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TestGefImporter	./test/unit/gef/gef_importer_test.rb	/^class TestGefImporter < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TestParccImportersHighPriorityProtectedAreas	./test/unit/parcc/importers/high_priority_protected_areas_test.rb	/^class TestParccImportersHighPriorityProtectedAreas < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TestParccImportersSpecies	./test/unit/parcc/importers/species_test.rb	/^class TestParccImportersSpecies < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TestParccImportersSpeciesCounts	./test/unit/parcc/importers/species/counts_test.rb	/^class TestParccImportersSpeciesCounts < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TestParccImportersSpeciesTaxonomies	./test/unit/parcc/importers/species/taxonomies_test.rb	/^class TestParccImportersSpeciesTaxonomies < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TestParccImportersTurnover	./test/unit/parcc/importers/turnover_test.rb	/^class TestParccImportersTurnover < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TestProtectedPlanetReader	./test/unit/protected_planet_reader_test.rb	/^class TestProtectedPlanetReader < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TestS3	./test/unit/s3_test.rb	/^class TestS3 < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+Turnover	./lib/modules/parcc/importers/turnover.rb	/^class Parcc::Importers::Turnover < Parcc::Importers::Base$/;"	c	class:Parcc.Importers	inherits:Parcc.Importers.Base
+Turnovers	./lib/modules/parcc/downloads/generators/turnovers.rb	/^module Parcc::Downloads::Generators::Turnovers$/;"	m	class:Parcc.Downloads.Generators
+URL_TO_PROTECTED_AREA	./app/helpers/parcc/protected_areas_helper.rb	/^  URL_TO_PROTECTED_AREA = -> wdpa_id { "http:\/\/www.protectedplanet.net\/#{wdpa_id}" }$/;"	C	class:Parcc.ProtectedAreasHelper
+VULNERABILITY_LEGEND	./app/helpers/parcc/protected_areas_helper.rb	/^  VULNERABILITY_LEGEND = YAML.load(File.read(LEGEND_PATH))$/;"	C	class:Parcc.ProtectedAreasHelper
+Vulnerability	./lib/modules/parcc/downloads/generators/vulnerability.rb	/^module Parcc::Downloads::Generators::Vulnerability$/;"	m	class:Parcc.Downloads.Generators
+WDPA_ID_COLUMN	./lib/modules/parcc/importers/suitability_changes.rb	/^  WDPA_ID_COLUMN = -2$/;"	C	class:Parcc.Importers.SuitabilityChanges
+WITH_NAME	./lib/modules/gef/consumer.rb	/^  WITH_NAME = [:designation, :iucn_category, :governance, :legal_status]$/;"	C	class:Gef.Consumer
+WdpaRecord	./app/models/gef/wdpa_record.rb	/^class Gef::WdpaRecord < ActiveRecord::Base$/;"	c	class:Gef	inherits:ActiveRecord.Base
+WdpaRecord	./db/migrate/20150226144216_wdpa_record.rb	/^class WdpaRecord < ActiveRecord::Migration$/;"	c	inherits:ActiveRecord.Migration
+WdpaRecordTest	./test/models/gef/wdpa_record_test.rb	/^class Gef::WdpaRecordTest < ActiveSupport::TestCase$/;"	c	class:Gef	inherits:ActiveSupport.TestCase
+WdpaRecordsController	./app/controllers/gef/wdpa_records_controller.rb	/^class Gef::WdpaRecordsController < GefController$/;"	c	class:Gef	inherits:GefController
+add_counts_to_pa	./lib/modules/parcc/importers/species/counts.rb	/^  def add_counts_to_pa protected_area, counts$/;"	f	class:Parcc.Importers.Species.Counts
+add_row_to_tcpa	./lib/modules/parcc/importers/species/taxonomic_class_protected_areas.rb	/^  def add_row_to_tcpa counts$/;"	f	class:Parcc.Importers.Species.TaxonomicClassProtectedAreas
+allowed_taxo_class?	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def allowed_taxo_class? taxo_class$/;"	f	class:Parcc.Importers.Species.Taxonomies
+api_data	./lib/modules/gef/consumer.rb	/^  def api_data wdpa_id: wdpa_id$/;"	f	class:Gef.Consumer
+area_finder	./app/models/gef/api/area.rb	/^  def self.area_finder params: params$/;"	F	class:Gef.Api.Area
+area_query	./app/models/gef/pame_record.rb	/^  def self.area_query mett_original_uid: mett_original_uid, wdpa_id: wdpa_id$/;"	F	class:Gef.PameRecord
+areas	./app/models/gef/search.rb	/^  def areas$/;"	f	class:Gef.Search
+areas_querier	./app/models/gef/api/area.rb	/^  def self.areas_querier$/;"	F	class:Gef.Api.Area
+assessments	./app/models/gef/area.rb	/^  def assessments wdpa_id: wdpa_id, gef_pmis_id: gef_pmis_id$/;"	f	class:Gef.Area
+available_files	./lib/modules/s3.rb	/^  def available_files$/;"	f	class:S3
+budget_project_type	./app/models/gef/pame_record.rb	/^  belongs_to :budget_project_type, class_name: 'Gef::BudgetType', foreign_key: :budget_project_type_id$/;"	F	class:Gef.PameRecord
+budget_project_type=	./app/models/gef/pame_record.rb	/^  belongs_to :budget_project_type, class_name: 'Gef::BudgetType', foreign_key: :budget_project_type_id$/;"	F	class:Gef.PameRecord
+budget_recurrent_type	./app/models/gef/pame_record.rb	/^  belongs_to :budget_recurrent_type, class_name: 'Gef::BudgetType', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.PameRecord
+budget_recurrent_type=	./app/models/gef/pame_record.rb	/^  belongs_to :budget_recurrent_type, class_name: 'Gef::BudgetType', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.PameRecord
+budget_selector	./lib/modules/gef/importer.rb	/^  def budget_selector budget: budget$/;"	f	class:Gef.Importer
+build_budget_project_type	./app/models/gef/pame_record.rb	/^  belongs_to :budget_project_type, class_name: 'Gef::BudgetType', foreign_key: :budget_project_type_id$/;"	F	class:Gef.PameRecord
+build_budget_recurrent_type	./app/models/gef/pame_record.rb	/^  belongs_to :budget_recurrent_type, class_name: 'Gef::BudgetType', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.PameRecord
+build_gef_area	./app/models/gef/pame_record.rb	/^  belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id$/;"	F	class:Gef.PameRecord
+build_gef_country	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_country, class_name: 'Gef::Country', foreign_key: :gef_country_id$/;"	F	class:Gef.CountryWdpaRecord
+build_gef_pame_name	./app/models/gef/pame_record.rb	/^  belongs_to :gef_pame_name, class_name: 'Gef::PameName', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameRecord
+build_gef_pame_record	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_pame_record, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+build_gef_region	./app/models/gef/country.rb	/^  belongs_to :gef_region, class_name: 'Gef::Region', foreign_key: :gef_region_id$/;"	F	class:Gef.Country
+build_gef_wdpa_record	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.CountryWdpaRecord
+build_gef_wdpa_record	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+build_primary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :primary_biome, class_name: 'Gef::Biome', foreign_key: :primary_biome_id$/;"	F	class:Gef.PameRecord
+build_protected_area	./app/models/parcc/species_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesProtectedArea
+build_protected_area	./app/models/parcc/species_turnover.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesTurnover
+build_protected_area	./app/models/parcc/suitability_change.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SuitabilityChange
+build_protected_area	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+build_quaternary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :quaternary_biome, class_name: 'Gef::Biome', foreign_key: :quaternary_biome_id$/;"	F	class:Gef.PameRecord
+build_secondary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :secondary_biome, class_name: 'Gef::Biome', foreign_key: :secondary_biome_id$/;"	F	class:Gef.PameRecord
+build_species	./app/models/parcc/species_protected_area.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SpeciesProtectedArea
+build_species	./app/models/parcc/suitability_change.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SuitabilityChange
+build_species	./app/serializers/parcc/species_protected_area_serializer.rb	/^  has_one :species$/;"	F	class:Parcc.SpeciesProtectedAreaSerializer
+build_taxonomic_class	./app/models/parcc/species_turnover.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :taxonomic_class_id$/;"	F	class:Parcc.SpeciesTurnover
+build_taxonomic_class	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+build_taxonomic_class	./app/models/parcc/taxonomic_order.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicOrder
+build_taxonomic_order	./app/models/parcc/species.rb	/^  belongs_to :taxonomic_order, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.Species
+build_taxonomic_order	./app/serializers/parcc/species_serializer.rb	/^  has_one :taxonomic_order$/;"	F	class:Parcc.SpeciesSerializer
+build_tertiary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :tertiary_biome, class_name: 'Gef::Biome', foreign_key: :tertiary_biome_id$/;"	F	class:Gef.PameRecord
+by_taxonomic_class	./app/models/parcc/species_protected_area.rb	/^  scope :by_taxonomic_class, -> taxonomic_class {$/;"	F	class:Parcc.SpeciesProtectedArea
+change	./db/migrate/20141015112626_create_gef_column_matches.rb	/^  def change$/;"	f	class:CreateGefColumnMatches
+change	./db/migrate/20141015112753_create_gef_protected_areas.rb	/^  def change$/;"	f	class:CreateGefProtectedAreas
+change	./db/migrate/20141015120330_change_type_to_column_type_from_gef_column_match.rb	/^  def change$/;"	f	class:ChangeTypeToColumnTypeFromGefColumnMatch
+change	./db/migrate/20141017150357_change_pims_from_gef_protected_area.rb	/^  def change$/;"	f	class:ChangePimsFromGefProtectedArea
+change	./db/migrate/20141022140524_removes_column_type_from_gef_column_matches.rb	/^  def change$/;"	f	class:RemovesColumnTypeFromGefColumnMatches
+change	./db/migrate/20141104101752_create_gef_areas.rb	/^  def change$/;"	f	class:CreateGefAreas
+change	./db/migrate/20141104102006_protected_area.rb	/^  def change$/;"	f	class:ProtectedArea
+change	./db/migrate/20141104102642_add_gef_area_id_to_gef_protected_area.rb	/^  def change$/;"	f	class:AddGefAreaIdToGefProtectedArea
+change	./db/migrate/20141104110250_rename_gef_protected_area_to_gef_pp_area.rb	/^  def change$/;"	f	class:RenameGefProtectedAreaToGefPpArea
+change	./db/migrate/20141110172547_create_parcc_protected_areas.rb	/^  def change$/;"	f	class:CreateParccProtectedAreas
+change	./db/migrate/20141111175448_create_parcc_species_turnovers.rb	/^  def change$/;"	f	class:CreateParccSpeciesTurnovers
+change	./db/migrate/20141113151912_create_parcc_taxonomic_classes.rb	/^  def change$/;"	f	class:CreateParccTaxonomicClasses
+change	./db/migrate/20141113152024_create_parcc_taxonomic_orders.rb	/^  def change$/;"	f	class:CreateParccTaxonomicOrders
+change	./db/migrate/20141113155712_create_parcc_species.rb	/^  def change$/;"	f	class:CreateParccSpecies
+change	./db/migrate/20141117131304_create_parcc_species_protected_areas.rb	/^  def change$/;"	f	class:CreateParccSpeciesProtectedAreas
+change	./db/migrate/20141118121712_create_gef_pame_records.rb	/^  def change$/;"	f	class:CreateGefPameRecords
+change	./db/migrate/20141118175418_remove_columns_from_wdpa_record.rb	/^  def change$/;"	f	class:RemoveColumnsFromWdpaRecord
+change	./db/migrate/20141120163720_pame_record.rb	/^  def change$/;"	f	class:PameRecord
+change	./db/migrate/20141120174151_remove_gef_area_id_to_gef_pame_record.rb	/^  def change$/;"	f	class:RemoveGefAreaIdToGefPameRecord
+change	./db/migrate/20141120180959_renames_column_gef_pame_record.rb	/^  def change$/;"	f	class:RenamesColumnGefPameRecord
+change	./db/migrate/20141201140222_add_collumn_to_area.rb	/^  def change$/;"	f	class:AddCollumnToArea
+change	./db/migrate/20141202150220_add_collumns_to_gef_pame_records.rb	/^  def change$/;"	f	class:AddCollumnsToGefPameRecords
+change	./db/migrate/20141209112838_add_gef_area_id_to_gef_pame_record.rb	/^  def change$/;"	f	class:AddGefAreaIdToGefPameRecord
+change	./db/migrate/20141209154755_create_gef_pame_names.rb	/^  def change$/;"	f	class:CreateGefPameNames
+change	./db/migrate/20141209155928_add_gef_pame_names_idto_gef_wdpa_record.rb	/^  def change$/;"	f	class:AddGefPameNamesIdtoGefWdpaRecord
+change	./db/migrate/20141209160005_add_gef_pame_names_idto_gef_pame_record.rb	/^  def change$/;"	f	class:AddGefPameNamesIdtoGefPameRecord
+change	./db/migrate/20141209172325_delete_name_from_gef_area.rb	/^  def change$/;"	f	class:DeleteNameFromGefArea
+change	./db/migrate/20141209183700_remove_name_from_gef_pame_record.rb	/^  def change$/;"	f	class:RemoveNameFromGefPameRecord
+change	./db/migrate/20150219125722_add_budgets_to_gef_pame_records.rb	/^  def change$/;"	f	class:AddBudgetsToGefPameRecords
+change	./db/migrate/20150219165304_create_gef_budget_types.rb	/^  def change$/;"	f	class:CreateGefBudgetTypes
+change	./db/migrate/20150226144216_wdpa_record.rb	/^  def change$/;"	f	class:WdpaRecord
+change	./db/migrate/20150226145129_create_gef_regions.rb	/^  def change$/;"	f	class:CreateGefRegions
+change	./db/migrate/20150226145410_create_gef_countries.rb	/^  def change$/;"	f	class:CreateGefCountries
+change	./db/migrate/20150226175701_change_column_name_gef_wdpa_record.rb	/^  def change$/;"	f	class:ChangeColumnNameGefWdpaRecord
+change	./db/migrate/20150226180744_add_wdpa_exists_to_gef_wdpa_record.rb	/^  def change$/;"	f	class:AddWdpaExistsToGefWdpaRecord
+change	./db/migrate/20150227214532_create_gef_country_wdpa_records.rb	/^  def change$/;"	f	class:CreateGefCountryWdpaRecords
+change	./db/migrate/20150227223524_change_column_gef_country.rb	/^  def change$/;"	f	class:ChangeColumnGefCountry
+change	./db/migrate/20150302111144_create_gef_searches.rb	/^  def change$/;"	f	class:CreateGefSearches
+change	./db/migrate/20150302134844_change_column_gef_search.rb	/^  def change$/;"	f	class:ChangeColumnGefSearch
+change	./db/migrate/20150413142731_create_gef_pame_record_wdpa_records.rb	/^  def change$/;"	f	class:CreateGefPameRecordWdpaRecords
+change	./db/migrate/20150413143006_create_gef_biomes.rb	/^  def change$/;"	f	class:CreateGefBiomes
+change	./db/migrate/20150413155642_change_biomes_ongef_pame_records.rb	/^  def change$/;"	f	class:ChangeBiomesOngefPameRecords
+change	./db/migrate/20150416133805_biome_column_name.rb	/^  def change$/;"	f	class:BiomeColumnName
+change	./db/migrate/20150424104630_add_species_counts_to_parcc_protected_areas_table.rb	/^  def change$/;"	f	class:AddSpeciesCountsToParccProtectedAreasTable
+change	./db/migrate/20150520002028_replace_taxonomic_class_column_in_parcc_species_turnovers_table.rb	/^  def change$/;"	f	class:ReplaceTaxonomicClassColumnInParccSpeciesTurnoversTable
+change	./db/migrate/20150602145017_replace_stat_and_value_columns_in_parcc_species_turnovers_table.rb	/^  def change$/;"	f	class:ReplaceStatAndValueColumnsInParccSpeciesTurnoversTable
+change	./db/migrate/20150608122312_create_table_parcc_suitability_changes.rb	/^  def change$/;"	f	class:CreateTableParccSuitabilityChanges
+change	./db/migrate/20150616105759_add_wdpa_id_index_to_parcc_protected_areas_table.rb	/^  def change$/;"	f	class:AddWdpaIdIndexToParccProtectedAreasTable
+change	./db/migrate/20150616105958_add_parcc_protected_area_id_index_to_parcc_species_protected_areas_table.rb	/^  def change$/;"	f	class:AddParccProtectedAreaIdIndexToParccSpeciesProtectedAreasTable
+change	./db/migrate/20150616114549_add_parcc_protected_area_id_index_to_parcc_species_turnovers_table.rb	/^  def change$/;"	f	class:AddParccProtectedAreaIdIndexToParccSpeciesTurnoversTable
+change	./db/migrate/20150616130403_add_parcc_protected_area_id_index_to_parcc_suitability_changes_table.rb	/^  def change$/;"	f	class:AddParccProtectedAreaIdIndexToParccSuitabilityChangesTable
+change	./db/migrate/20150616130817_remove_parcc_chenge_type_id_from_parcc_species_protected_areas_table.rb	/^  def change$/;"	f	class:RemoveParccChengeTypeIdFromParccSpeciesProtectedAreasTable
+change	./db/migrate/20150625221642_rename_sensivity_to_sensitivity_in_parcc_species.rb	/^  def change$/;"	f	class:RenameSensivityToSensitivityInParccSpecies
+change	./db/migrate/20150630134510_add_indexes_in_suitability_changes_table.rb	/^  def change$/;"	f	class:AddIndexesInSuitabilityChangesTable
+change	./db/migrate/20150924084405_create_parcc_taxonomic_class_protected_area.rb	/^  def change$/;"	f	class:CreateParccTaxonomicClassProtectedArea
+change	./db/migrate/20150924133225_remove_count_columns_from_parcc_protected_areas.rb	/^  def change$/;"	f	class:RemoveCountColumnsFromParccProtectedAreas
+change_column_name	./app/models/gef/pame_record.rb	/^  def self.change_column_name area: area, table: table$/;"	F	class:Gef.PameRecord
+collect_properties	./lib/modules/parcc/importers/protected_areas.rb	/^  def collect_properties record$/;"	f	class:Parcc.Importers.ProtectedAreas
+collect_values	./lib/modules/parcc/downloads/generators/protected_area_info.rb	/^  def self.collect_values protected_area$/;"	F	class:Parcc.Downloads.Generators.ProtectedAreaInfo
+collect_values	./lib/modules/parcc/downloads/generators/suitability_changes.rb	/^  def self.collect_values species, suitability_changes$/;"	F	class:Parcc.Downloads.Generators.SuitabilityChanges
+collect_values	./lib/modules/parcc/downloads/generators/turnovers.rb	/^  def self.collect_values taxo_class, turnovers$/;"	F	class:Parcc.Downloads.Generators.Turnovers
+collect_values	./lib/modules/parcc/downloads/generators/vulnerability.rb	/^  def self.collect_values species_protected_area$/;"	F	class:Parcc.Downloads.Generators.Vulnerability
+configuration	./lib/modules/parcc/import.rb	/^  def self.configuration$/;"	F	class:Parcc.Import
+countrie_ids	./app/models/gef/region.rb	/^  has_many :countries, class_name: 'Country', foreign_key: :gef_region_id$/;"	F	class:Gef.Region
+countrie_ids=	./app/models/gef/region.rb	/^  has_many :countries, class_name: 'Country', foreign_key: :gef_region_id$/;"	F	class:Gef.Region
+countries	./app/models/gef/region.rb	/^  has_many :countries, class_name: 'Country', foreign_key: :gef_region_id$/;"	F	class:Gef.Region
+countries	./lib/modules/gef/consumer.rb	/^  def countries$/;"	f	class:Gef.Consumer
+countries=	./app/models/gef/region.rb	/^  has_many :countries, class_name: 'Country', foreign_key: :gef_region_id$/;"	F	class:Gef.Region
+create	./app/controllers/gef/searches_controller.rb	/^  def create$/;"	f	class:Gef.SearchesController
+create_budget_project_type	./app/models/gef/pame_record.rb	/^  belongs_to :budget_project_type, class_name: 'Gef::BudgetType', foreign_key: :budget_project_type_id$/;"	F	class:Gef.PameRecord
+create_budget_project_type!	./app/models/gef/pame_record.rb	/^  belongs_to :budget_project_type, class_name: 'Gef::BudgetType', foreign_key: :budget_project_type_id$/;"	F	class:Gef.PameRecord
+create_budget_recurrent_type	./app/models/gef/pame_record.rb	/^  belongs_to :budget_recurrent_type, class_name: 'Gef::BudgetType', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.PameRecord
+create_budget_recurrent_type!	./app/models/gef/pame_record.rb	/^  belongs_to :budget_recurrent_type, class_name: 'Gef::BudgetType', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.PameRecord
+create_budget_type	./lib/modules/gef/importer.rb	/^  def create_budget_type(budget: budget, category: category)$/;"	f	class:Gef.Importer
+create_folder_if_needed	./lib/modules/parcc/downloads.rb	/^  def self.create_folder_if_needed$/;"	F	class:Parcc.Downloads
+create_gef_area	./app/models/gef/pame_record.rb	/^  belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id$/;"	F	class:Gef.PameRecord
+create_gef_area!	./app/models/gef/pame_record.rb	/^  belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id$/;"	F	class:Gef.PameRecord
+create_gef_country	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_country, class_name: 'Gef::Country', foreign_key: :gef_country_id$/;"	F	class:Gef.CountryWdpaRecord
+create_gef_country!	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_country, class_name: 'Gef::Country', foreign_key: :gef_country_id$/;"	F	class:Gef.CountryWdpaRecord
+create_gef_pame_name	./app/models/gef/pame_record.rb	/^  belongs_to :gef_pame_name, class_name: 'Gef::PameName', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameRecord
+create_gef_pame_name!	./app/models/gef/pame_record.rb	/^  belongs_to :gef_pame_name, class_name: 'Gef::PameName', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameRecord
+create_gef_pame_record	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_pame_record, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+create_gef_pame_record!	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_pame_record, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+create_gef_region	./app/models/gef/country.rb	/^  belongs_to :gef_region, class_name: 'Gef::Region', foreign_key: :gef_region_id$/;"	F	class:Gef.Country
+create_gef_region!	./app/models/gef/country.rb	/^  belongs_to :gef_region, class_name: 'Gef::Region', foreign_key: :gef_region_id$/;"	F	class:Gef.Country
+create_gef_wdpa_record	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.CountryWdpaRecord
+create_gef_wdpa_record	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+create_gef_wdpa_record!	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.CountryWdpaRecord
+create_gef_wdpa_record!	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+create_primary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :primary_biome, class_name: 'Gef::Biome', foreign_key: :primary_biome_id$/;"	F	class:Gef.PameRecord
+create_primary_biome!	./app/models/gef/pame_record.rb	/^  belongs_to :primary_biome, class_name: 'Gef::Biome', foreign_key: :primary_biome_id$/;"	F	class:Gef.PameRecord
+create_protected_area	./app/models/parcc/species_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesProtectedArea
+create_protected_area	./app/models/parcc/species_turnover.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesTurnover
+create_protected_area	./app/models/parcc/suitability_change.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SuitabilityChange
+create_protected_area	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+create_protected_area!	./app/models/parcc/species_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesProtectedArea
+create_protected_area!	./app/models/parcc/species_turnover.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesTurnover
+create_protected_area!	./app/models/parcc/suitability_change.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SuitabilityChange
+create_protected_area!	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+create_quaternary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :quaternary_biome, class_name: 'Gef::Biome', foreign_key: :quaternary_biome_id$/;"	F	class:Gef.PameRecord
+create_quaternary_biome!	./app/models/gef/pame_record.rb	/^  belongs_to :quaternary_biome, class_name: 'Gef::Biome', foreign_key: :quaternary_biome_id$/;"	F	class:Gef.PameRecord
+create_record	./lib/modules/parcc/importers/suitability_changes.rb	/^  def create_record record, year$/;"	f	class:Parcc.Importers.SuitabilityChanges
+create_record	./lib/modules/parcc/importers/turnover.rb	/^  def create_record defaults, record$/;"	f	class:Parcc.Importers.Turnover
+create_secondary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :secondary_biome, class_name: 'Gef::Biome', foreign_key: :secondary_biome_id$/;"	F	class:Gef.PameRecord
+create_secondary_biome!	./app/models/gef/pame_record.rb	/^  belongs_to :secondary_biome, class_name: 'Gef::Biome', foreign_key: :secondary_biome_id$/;"	F	class:Gef.PameRecord
+create_species	./app/models/parcc/species_protected_area.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SpeciesProtectedArea
+create_species	./app/models/parcc/suitability_change.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SuitabilityChange
+create_species	./app/serializers/parcc/species_protected_area_serializer.rb	/^  has_one :species$/;"	F	class:Parcc.SpeciesProtectedAreaSerializer
+create_species!	./app/models/parcc/species_protected_area.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SpeciesProtectedArea
+create_species!	./app/models/parcc/suitability_change.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SuitabilityChange
+create_species!	./app/serializers/parcc/species_protected_area_serializer.rb	/^  has_one :species$/;"	F	class:Parcc.SpeciesProtectedAreaSerializer
+create_taxonomic_class	./app/models/parcc/species_turnover.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :taxonomic_class_id$/;"	F	class:Parcc.SpeciesTurnover
+create_taxonomic_class	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+create_taxonomic_class	./app/models/parcc/taxonomic_order.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicOrder
+create_taxonomic_class!	./app/models/parcc/species_turnover.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :taxonomic_class_id$/;"	F	class:Parcc.SpeciesTurnover
+create_taxonomic_class!	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+create_taxonomic_class!	./app/models/parcc/taxonomic_order.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicOrder
+create_taxonomic_order	./app/models/parcc/species.rb	/^  belongs_to :taxonomic_order, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.Species
+create_taxonomic_order	./app/serializers/parcc/species_serializer.rb	/^  has_one :taxonomic_order$/;"	F	class:Parcc.SpeciesSerializer
+create_taxonomic_order!	./app/models/parcc/species.rb	/^  belongs_to :taxonomic_order, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.Species
+create_taxonomic_order!	./app/serializers/parcc/species_serializer.rb	/^  has_one :taxonomic_order$/;"	F	class:Parcc.SpeciesSerializer
+create_tertiary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :tertiary_biome, class_name: 'Gef::Biome', foreign_key: :tertiary_biome_id$/;"	F	class:Gef.PameRecord
+create_tertiary_biome!	./app/models/gef/pame_record.rb	/^  belongs_to :tertiary_biome, class_name: 'Gef::Biome', foreign_key: :tertiary_biome_id$/;"	F	class:Gef.PameRecord
+create_zip	./lib/modules/parcc/downloads.rb	/^  def self.create_zip zip_path, all_csv_paths$/;"	F	class:Parcc.Downloads
+csv_reader	./lib/modules/parcc/importers/base.rb	/^  def csv_reader file_path$/;"	f	class:Parcc.Importers.Base
+csv_reader	./lib/modules/parcc/importers/suitability_changes.rb	/^  def csv_reader file_path$/;"	f	class:Parcc.Importers.SuitabilityChanges
+data_list	./app/models/gef/area.rb	/^  def data_list mett_original_uid: mett_original_uid, wdpa_id: wdpa_id$/;"	f	class:Gef.Area
+data_list	./app/models/gef/pame_record.rb	/^  def self.data_list mett_original_uid: mett_original_uid, wdpa_id: wdpa_id$/;"	F	class:Gef.PameRecord
+db	./lib/modules/parcc/importers/suitability_changes.rb	/^  define_method(:db) { ActiveRecord::Base.connection }$/;"	f	class:Parcc.Importers.SuitabilityChanges
+db	./lib/modules/parcc/importers/turnover.rb	/^  define_method(:db) { ActiveRecord::Base.connection }$/;"	f	class:Parcc.Importers.Turnover
+direct_values	./lib/modules/gef/consumer.rb	/^  def direct_values$/;"	f	class:Gef.Consumer
+down	./db/migrate/20150616141402_add_high_priority_to_parcc_protected_areas.rb	/^  def down$/;"	f	class:AddHighPriorityToParccProtectedAreas
+download	./app/controllers/parcc/protected_areas_controller.rb	/^  def download$/;"	f	class:Parcc.ProtectedAreasController
+download	./lib/modules/gef/importer.rb	/^  def download$/;"	f	class:Gef.Importer
+download_data_link	./app/helpers/parcc/protected_areas_helper.rb	/^  def download_data_link protected_area$/;"	f	class:Parcc.ProtectedAreasHelper
+download_from_bucket	./lib/modules/s3.rb	/^  def download_from_bucket(filename: filename)$/;"	f	class:S3
+exposure_check	./app/helpers/parcc/protected_areas_helper.rb	/^  def exposure_check exposure$/;"	f	class:Parcc.ProtectedAreasHelper
+fetch_protected_area	./lib/modules/parcc/importers/base.rb	/^  def fetch_protected_area wdpa_id$/;"	f	class:Parcc.Importers.Base
+fetch_taxonomic_class	./lib/modules/parcc/importers/base.rb	/^  def fetch_taxonomic_class class_name$/;"	f	class:Parcc.Importers.Base
+find_areas	./app/models/gef/api/area.rb	/^  def self.find_areas type: type$/;"	F	class:Gef.Api.Area
+find_areas	./app/models/gef/search.rb	/^  def find_areas type: type$/;"	f	class:Gef.Search
+find_fields	./lib/modules/gef/importer.rb	/^  def find_fields(protected_area)$/;"	f	class:Gef.Importer
+for_api	./app/models/parcc/protected_area.rb	/^  def for_api with_species: with_species$/;"	f	class:Parcc.ProtectedArea
+for_api	./app/models/parcc/protected_area.rb	/^  def self.for_api$/;"	F	class:Parcc.ProtectedArea
+gef_area	./app/controllers/gef/areas_controller.rb	/^  def gef_area$/;"	f	class:Gef.AreasController
+gef_area	./app/controllers/gef/wdpa_records_controller.rb	/^  def gef_area$/;"	f	class:Gef.WdpaRecordsController
+gef_area	./app/models/gef/pame_record.rb	/^  belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id$/;"	F	class:Gef.PameRecord
+gef_area=	./app/models/gef/pame_record.rb	/^  belongs_to :gef_area, class_name: 'Gef::Area', foreign_key: :gef_area_id$/;"	F	class:Gef.PameRecord
+gef_countrie_ids	./app/models/gef/wdpa_record.rb	/^  has_many :gef_countries, class_name: 'Gef::Country', through: :gef_country_wdpa_records$/;"	F	class:Gef.WdpaRecord
+gef_countrie_ids=	./app/models/gef/wdpa_record.rb	/^  has_many :gef_countries, class_name: 'Gef::Country', through: :gef_country_wdpa_records$/;"	F	class:Gef.WdpaRecord
+gef_countries	./app/models/gef/wdpa_record.rb	/^  has_many :gef_countries, class_name: 'Gef::Country', through: :gef_country_wdpa_records$/;"	F	class:Gef.WdpaRecord
+gef_countries=	./app/models/gef/wdpa_record.rb	/^  has_many :gef_countries, class_name: 'Gef::Country', through: :gef_country_wdpa_records$/;"	F	class:Gef.WdpaRecord
+gef_country	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_country, class_name: 'Gef::Country', foreign_key: :gef_country_id$/;"	F	class:Gef.CountryWdpaRecord
+gef_country=	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_country, class_name: 'Gef::Country', foreign_key: :gef_country_id$/;"	F	class:Gef.CountryWdpaRecord
+gef_country_wdpa_record_ids	./app/models/gef/country.rb	/^  has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_country_id$/;"	F	class:Gef.Country
+gef_country_wdpa_record_ids	./app/models/gef/wdpa_record.rb	/^  has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.WdpaRecord
+gef_country_wdpa_record_ids=	./app/models/gef/country.rb	/^  has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_country_id$/;"	F	class:Gef.Country
+gef_country_wdpa_record_ids=	./app/models/gef/wdpa_record.rb	/^  has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.WdpaRecord
+gef_country_wdpa_records	./app/models/gef/country.rb	/^  has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_country_id$/;"	F	class:Gef.Country
+gef_country_wdpa_records	./app/models/gef/wdpa_record.rb	/^  has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.WdpaRecord
+gef_country_wdpa_records=	./app/models/gef/country.rb	/^  has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_country_id$/;"	F	class:Gef.Country
+gef_country_wdpa_records=	./app/models/gef/wdpa_record.rb	/^  has_many :gef_country_wdpa_records, class_name: 'Gef::CountryWdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.WdpaRecord
+gef_pame_name	./app/models/gef/pame_record.rb	/^  belongs_to :gef_pame_name, class_name: 'Gef::PameName', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameRecord
+gef_pame_name=	./app/models/gef/pame_record.rb	/^  belongs_to :gef_pame_name, class_name: 'Gef::PameName', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameRecord
+gef_pame_record	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_pame_record, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+gef_pame_record=	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_pame_record, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+gef_pame_record_ids	./app/models/gef/area.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_area_id$/;"	F	class:Gef.Area
+gef_pame_record_ids	./app/models/gef/biome.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord'$/;"	F	class:Gef.Biome
+gef_pame_record_ids	./app/models/gef/budget_type.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :budget_project_type_id$/;"	F	class:Gef.BudgetType
+gef_pame_record_ids	./app/models/gef/budget_type.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.BudgetType
+gef_pame_record_ids	./app/models/gef/pame_name.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameName
+gef_pame_record_ids	./app/models/gef/wdpa_record.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', through: :gef_pame_record_wdpa_records$/;"	F	class:Gef.WdpaRecord
+gef_pame_record_ids=	./app/models/gef/area.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_area_id$/;"	F	class:Gef.Area
+gef_pame_record_ids=	./app/models/gef/biome.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord'$/;"	F	class:Gef.Biome
+gef_pame_record_ids=	./app/models/gef/budget_type.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :budget_project_type_id$/;"	F	class:Gef.BudgetType
+gef_pame_record_ids=	./app/models/gef/budget_type.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.BudgetType
+gef_pame_record_ids=	./app/models/gef/pame_name.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameName
+gef_pame_record_ids=	./app/models/gef/wdpa_record.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', through: :gef_pame_record_wdpa_records$/;"	F	class:Gef.WdpaRecord
+gef_pame_record_wdpa_record_ids	./app/models/gef/pame_record.rb	/^  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecord
+gef_pame_record_wdpa_record_ids	./app/models/gef/wdpa_record.rb	/^  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.WdpaRecord
+gef_pame_record_wdpa_record_ids=	./app/models/gef/pame_record.rb	/^  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecord
+gef_pame_record_wdpa_record_ids=	./app/models/gef/wdpa_record.rb	/^  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.WdpaRecord
+gef_pame_record_wdpa_records	./app/models/gef/pame_record.rb	/^  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecord
+gef_pame_record_wdpa_records	./app/models/gef/wdpa_record.rb	/^  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.WdpaRecord
+gef_pame_record_wdpa_records=	./app/models/gef/pame_record.rb	/^  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_pame_record_id$/;"	F	class:Gef.PameRecord
+gef_pame_record_wdpa_records=	./app/models/gef/wdpa_record.rb	/^  has_many :gef_pame_record_wdpa_records, class_name: 'Gef::PameRecordWdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.WdpaRecord
+gef_pame_records	./app/models/gef/area.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_area_id$/;"	F	class:Gef.Area
+gef_pame_records	./app/models/gef/biome.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord'$/;"	F	class:Gef.Biome
+gef_pame_records	./app/models/gef/budget_type.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :budget_project_type_id$/;"	F	class:Gef.BudgetType
+gef_pame_records	./app/models/gef/budget_type.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.BudgetType
+gef_pame_records	./app/models/gef/pame_name.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameName
+gef_pame_records	./app/models/gef/wdpa_record.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', through: :gef_pame_record_wdpa_records$/;"	F	class:Gef.WdpaRecord
+gef_pame_records=	./app/models/gef/area.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_area_id$/;"	F	class:Gef.Area
+gef_pame_records=	./app/models/gef/biome.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord'$/;"	F	class:Gef.Biome
+gef_pame_records=	./app/models/gef/budget_type.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :budget_project_type_id$/;"	F	class:Gef.BudgetType
+gef_pame_records=	./app/models/gef/budget_type.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :budget_recurrent_type_id$/;"	F	class:Gef.BudgetType
+gef_pame_records=	./app/models/gef/pame_name.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameName
+gef_pame_records=	./app/models/gef/wdpa_record.rb	/^  has_many :gef_pame_records, class_name: 'Gef::PameRecord', through: :gef_pame_record_wdpa_records$/;"	F	class:Gef.WdpaRecord
+gef_region	./app/models/gef/country.rb	/^  belongs_to :gef_region, class_name: 'Gef::Region', foreign_key: :gef_region_id$/;"	F	class:Gef.Country
+gef_region=	./app/models/gef/country.rb	/^  belongs_to :gef_region, class_name: 'Gef::Region', foreign_key: :gef_region_id$/;"	F	class:Gef.Country
+gef_wdpa_record	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.CountryWdpaRecord
+gef_wdpa_record	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+gef_wdpa_record=	./app/models/gef/country_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.CountryWdpaRecord
+gef_wdpa_record=	./app/models/gef/pame_record_wdpa_record.rb	/^  belongs_to :gef_wdpa_record, class_name: 'Gef::WdpaRecord', foreign_key: :gef_wdpa_record_id$/;"	F	class:Gef.PameRecordWdpaRecord
+gef_wdpa_record_ids	./app/models/gef/country.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_country_wdpa_records$/;"	F	class:Gef.Country
+gef_wdpa_record_ids	./app/models/gef/pame_name.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameName
+gef_wdpa_record_ids	./app/models/gef/pame_record.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_pame_record_wdpa_records$/;"	F	class:Gef.PameRecord
+gef_wdpa_record_ids=	./app/models/gef/country.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_country_wdpa_records$/;"	F	class:Gef.Country
+gef_wdpa_record_ids=	./app/models/gef/pame_name.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameName
+gef_wdpa_record_ids=	./app/models/gef/pame_record.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_pame_record_wdpa_records$/;"	F	class:Gef.PameRecord
+gef_wdpa_records	./app/models/gef/country.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_country_wdpa_records$/;"	F	class:Gef.Country
+gef_wdpa_records	./app/models/gef/pame_name.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameName
+gef_wdpa_records	./app/models/gef/pame_record.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_pame_record_wdpa_records$/;"	F	class:Gef.PameRecord
+gef_wdpa_records=	./app/models/gef/country.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_country_wdpa_records$/;"	F	class:Gef.Country
+gef_wdpa_records=	./app/models/gef/pame_name.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', foreign_key: :gef_pame_name_id$/;"	F	class:Gef.PameName
+gef_wdpa_records=	./app/models/gef/pame_record.rb	/^  has_many :gef_wdpa_records, class_name: 'Gef::WdpaRecord', through: :gef_pame_record_wdpa_records$/;"	F	class:Gef.PameRecord
+generate	./lib/modules/parcc/downloads.rb	/^  def self.generate protected_area$/;"	F	class:Parcc.Downloads
+generate	./lib/modules/parcc/downloads/generators/protected_area_info.rb	/^  def self.generate protected_area$/;"	F	class:Parcc.Downloads.Generators.ProtectedAreaInfo
+generate	./lib/modules/parcc/downloads/generators/suitability_changes.rb	/^  def self.generate protected_area$/;"	F	class:Parcc.Downloads.Generators.SuitabilityChanges
+generate	./lib/modules/parcc/downloads/generators/turnovers.rb	/^  def self.generate protected_area$/;"	F	class:Parcc.Downloads.Generators.Turnovers
+generate	./lib/modules/parcc/downloads/generators/vulnerability.rb	/^  def self.generate protected_area$/;"	F	class:Parcc.Downloads.Generators.Vulnerability
+generate_and_clean	./lib/modules/parcc/downloads.rb	/^  def self.generate_and_clean protected_area$/;"	F	class:Parcc.Downloads
+generate_api_data	./app/models/gef/area.rb	/^  def generate_api_data$/;"	f	class:Gef.Area
+grouped_changes	./lib/modules/parcc/downloads/generators/suitability_changes.rb	/^  def self.grouped_changes protected_area$/;"	F	class:Parcc.Downloads.Generators.SuitabilityChanges
+grouped_suitability_changes	./app/presenters/parcc_presenter.rb	/^  def self.grouped_suitability_changes all_suitability_changes, opts={with_model: false}$/;"	F	class:ParccPresenter
+grouped_turnovers	./app/presenters/parcc_presenter.rb	/^  def self.grouped_turnovers all_turnovers$/;"	F	class:ParccPresenter
+grouped_turnovers	./lib/modules/parcc/downloads/generators/turnovers.rb	/^  def self.grouped_turnovers protected_area$/;"	F	class:Parcc.Downloads.Generators.Turnovers
+grouped_vulnerability_assessments	./app/presenters/parcc_presenter.rb	/^  def self.grouped_vulnerability_assessments all_vulnerability_assessments$/;"	F	class:ParccPresenter
+high_priority_warning	./app/helpers/parcc/protected_areas_helper.rb	/^  def high_priority_warning protected_area$/;"	f	class:Parcc.ProtectedAreasHelper
+high_priority_warning_to_return_div_if_high_priority	./test/helpers/parcc/protected_areas_helper_test.rb	/^  def high_priority_warning_to_return_div_if_high_priority$/;"	f	class:Parcc.ProtectedAreasHelperTest
+high_priority_warning_to_return_nothing_if_not_high_priority	./test/helpers/parcc/protected_areas_helper_test.rb	/^  def high_priority_warning_to_return_nothing_if_not_high_priority$/;"	f	class:Parcc.ProtectedAreasHelperTest
+import	./lib/modules/gef/importer.rb	/^  def import$/;"	f	class:Gef.Importer
+import	./lib/modules/parcc/importers/base.rb	/^  def self.import$/;"	F	class:Parcc.Importers.Base
+import	./lib/modules/parcc/importers/high_priority_protected_areas.rb	/^  def import$/;"	f	class:Parcc.Importers.HighPriorityProtectedAreas
+import	./lib/modules/parcc/importers/high_priority_protected_areas.rb	/^  def self.import$/;"	F	class:Parcc.Importers.HighPriorityProtectedAreas
+import	./lib/modules/parcc/importers/protected_areas.rb	/^  def import$/;"	f	class:Parcc.Importers.ProtectedAreas
+import	./lib/modules/parcc/importers/protected_areas.rb	/^  def self.import$/;"	F	class:Parcc.Importers.ProtectedAreas
+import	./lib/modules/parcc/importers/species/counts.rb	/^  def import$/;"	f	class:Parcc.Importers.Species.Counts
+import	./lib/modules/parcc/importers/species/taxonomic_class_protected_areas.rb	/^  def import$/;"	f	class:Parcc.Importers.Species.TaxonomicClassProtectedAreas
+import	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def import$/;"	f	class:Parcc.Importers.Species.Taxonomies
+import	./lib/modules/parcc/importers/suitability_changes.rb	/^  def import$/;"	f	class:Parcc.Importers.SuitabilityChanges
+import	./lib/modules/parcc/importers/suitability_changes.rb	/^  def self.import$/;"	F	class:Parcc.Importers.SuitabilityChanges
+import	./lib/modules/parcc/importers/turnover.rb	/^  def import$/;"	f	class:Parcc.Importers.Turnover
+import	./lib/modules/parcc/importers/turnover.rb	/^  def self.import$/;"	F	class:Parcc.Importers.Turnover
+import_counts	./lib/modules/parcc/importers/species.rb	/^  def self.import_counts$/;"	F	class:Parcc.Importers.Species
+import_taxonomies	./lib/modules/parcc/importers/species.rb	/^  def self.import_taxonomies$/;"	F	class:Parcc.Importers.Species
+index	./app/controllers/gef/api/areas_controller.rb	/^  def index$/;"	f	class:Gef.Api.AreasController
+index	./app/controllers/gef/pame_records_controller.rb	/^  def index$/;"	f	class:Gef.PameRecordsController
+index	./app/controllers/gef/wdpa_records_controller.rb	/^  def index$/;"	f	class:Gef.WdpaRecordsController
+index	./app/controllers/gef_controller.rb	/^  def index$/;"	f	class:GefController
+index	./app/controllers/parcc/api/protected_areas_controller.rb	/^  def index$/;"	f	class:Parcc.Api.ProtectedAreasController
+info_icon	./app/helpers/parcc/protected_areas_helper.rb	/^  def info_icon title$/;"	f	class:Parcc.ProtectedAreasHelper
+information	./app/models/gef/api/area.rb	/^  def self.information areas: areas, type: type$/;"	F	class:Gef.Api.Area
+information	./app/models/gef/search.rb	/^  def information areas: areas, type: type$/;"	f	class:Gef.Search
+initialize	./lib/modules/gef/importer.rb	/^  def initialize(filename: filename, bucket_name: bucket_name)$/;"	f	class:Gef.Importer
+initialize	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def initialize$/;"	f	class:Parcc.Importers.Species.Taxonomies
+initialize	./lib/modules/protected_planet_reader.rb	/^  def initialize$/;"	f	class:ProtectedPlanetReader
+initialize	./lib/modules/s3.rb	/^  def initialize(bucket_name)$/;"	f	class:S3
+iucn_value_icon	./app/helpers/parcc/protected_areas_helper.rb	/^  def iucn_value_icon value$/;"	f	class:Parcc.ProtectedAreasHelper
+join_protected_area	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def join_protected_area species, protected_area, record$/;"	f	class:Parcc.Importers.Species.Taxonomies
+jurisdiction	./lib/modules/gef/consumer.rb	/^  def jurisdiction$/;"	f	class:Gef.Consumer
+last_file	./lib/modules/s3.rb	/^  def last_file$/;"	f	class:S3
+load_protected_area	./app/controllers/parcc/protected_areas_controller.rb	/^  def load_protected_area$/;"	f	class:Parcc.ProtectedAreasController
+load_suitability_changes	./app/controllers/parcc/protected_areas_controller.rb	/^  def load_suitability_changes taxonomic_class=nil$/;"	f	class:Parcc.ProtectedAreasController
+name	./lib/modules/gef/consumer.rb	/^  def name$/;"	f	class:Gef.Consumer
+new	./app/controllers/gef/searches_controller.rb	/^  def new$/;"	f	class:Gef.SearchesController
+old_wdpa_name	./app/models/gef/wdpa_record.rb	/^  def self.old_wdpa_name gef_pmis_id: gef_pmis_id$/;"	F	class:Gef.WdpaRecord
+only_name	./lib/modules/gef/consumer.rb	/^  def only_name$/;"	f	class:Gef.Consumer
+pame_records	./app/models/gef/area.rb	/^  def pame_records wdpa_id: wdpa_id, gef_pmis_id: gef_pmis_id$/;"	f	class:Gef.Area
+percentage	./app/models/parcc/species_turnover.rb	/^  def percentage(stat, round_to=1)$/;"	f	class:Parcc.SpeciesTurnover
+populate_species	./lib/modules/parcc/importers/suitability_changes.rb	/^  def populate_species record, taxonomic_class_id$/;"	f	class:Parcc.Importers.SuitabilityChanges
+populate_values	./lib/modules/parcc/importers/suitability_changes.rb	/^  def populate_values file_path$/;"	f	class:Parcc.Importers.SuitabilityChanges
+populate_values	./lib/modules/parcc/importers/turnover.rb	/^  def populate_values file_path$/;"	f	class:Parcc.Importers.Turnover
+primary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :primary_biome, class_name: 'Gef::Biome', foreign_key: :primary_biome_id$/;"	F	class:Gef.PameRecord
+primary_biome=	./app/models/gef/pame_record.rb	/^  belongs_to :primary_biome, class_name: 'Gef::Biome', foreign_key: :primary_biome_id$/;"	F	class:Gef.PameRecord
+protected_area	./app/controllers/parcc/api/protected_areas_controller.rb	/^  def protected_area$/;"	f	class:Parcc.Api.ProtectedAreasController
+protected_area	./app/models/parcc/species_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesProtectedArea
+protected_area	./app/models/parcc/species_turnover.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesTurnover
+protected_area	./app/models/parcc/suitability_change.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SuitabilityChange
+protected_area	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+protected_area=	./app/models/parcc/species_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesProtectedArea
+protected_area=	./app/models/parcc/species_turnover.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SpeciesTurnover
+protected_area=	./app/models/parcc/suitability_change.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.SuitabilityChange
+protected_area=	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :protected_area, class_name: 'Parcc::ProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+protected_area_from_wdpaid	./lib/modules/protected_planet_reader.rb	/^  def protected_area_from_wdpaid wdpa_id$/;"	f	class:ProtectedPlanetReader
+protected_area_from_wdpaid	./lib/modules/protected_planet_reader.rb	/^  def self.protected_area_from_wdpaid wdpa_id$/;"	F	class:ProtectedPlanetReader
+protected_area_ids	./app/models/parcc/species.rb	/^  has_many :protected_areas, through: :species_protected_areas$/;"	F	class:Parcc.Species
+protected_area_ids	./app/models/parcc/taxonomic_class.rb	/^  has_many :protected_areas, class_name: 'Parcc::ProtectedArea', through: :taxonomic_class_protected_areas$/;"	F	class:Parcc.TaxonomicClass
+protected_area_ids=	./app/models/parcc/species.rb	/^  has_many :protected_areas, through: :species_protected_areas$/;"	F	class:Parcc.Species
+protected_area_ids=	./app/models/parcc/taxonomic_class.rb	/^  has_many :protected_areas, class_name: 'Parcc::ProtectedArea', through: :taxonomic_class_protected_areas$/;"	F	class:Parcc.TaxonomicClass
+protected_areas	./app/models/parcc/species.rb	/^  has_many :protected_areas, through: :species_protected_areas$/;"	F	class:Parcc.Species
+protected_areas	./app/models/parcc/taxonomic_class.rb	/^  has_many :protected_areas, class_name: 'Parcc::ProtectedArea', through: :taxonomic_class_protected_areas$/;"	F	class:Parcc.TaxonomicClass
+protected_areas=	./app/models/parcc/species.rb	/^  has_many :protected_areas, through: :species_protected_areas$/;"	F	class:Parcc.Species
+protected_areas=	./app/models/parcc/taxonomic_class.rb	/^  has_many :protected_areas, class_name: 'Parcc::ProtectedArea', through: :taxonomic_class_protected_areas$/;"	F	class:Parcc.TaxonomicClass
+protected_planet_path	./app/helpers/parcc/protected_areas_helper.rb	/^  def protected_planet_path page$/;"	f	class:Parcc.ProtectedAreasHelper
+protected_planet_url	./app/models/gef/api/area.rb	/^  def self.protected_planet_url wdpa_id: wdpa_id$/;"	F	class:Gef.Api.Area
+protected_planet_url	./app/models/gef/search.rb	/^  def protected_planet_url wdpa_id: wdpa_id$/;"	f	class:Gef.Search
+protected_planet_url	./app/models/gef/wdpa_record.rb	/^  def self.protected_planet_url wdpa_id: wdpa_id$/;"	F	class:Gef.WdpaRecord
+quaternary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :quaternary_biome, class_name: 'Gef::Biome', foreign_key: :quaternary_biome_id$/;"	F	class:Gef.PameRecord
+quaternary_biome=	./app/models/gef/pame_record.rb	/^  belongs_to :quaternary_biome, class_name: 'Gef::Biome', foreign_key: :quaternary_biome_id$/;"	F	class:Gef.PameRecord
+query_areas	./app/models/gef/search.rb	/^  def query_areas$/;"	f	class:Gef.Search
+query_wdpa	./app/models/gef/area.rb	/^  def query_wdpa gef_pmis_id: gef_pmis_id$/;"	f	class:Gef.Area
+raise_404	./app/controllers/application_controller.rb	/^  def raise_404 message='Not Found'$/;"	f	class:ApplicationController
+render_404	./app/controllers/application_controller.rb	/^  def render_404 exception$/;"	f	class:ApplicationController
+secondary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :secondary_biome, class_name: 'Gef::Biome', foreign_key: :secondary_biome_id$/;"	F	class:Gef.PameRecord
+secondary_biome=	./app/models/gef/pame_record.rb	/^  belongs_to :secondary_biome, class_name: 'Gef::Biome', foreign_key: :secondary_biome_id$/;"	F	class:Gef.PameRecord
+setup	./test/controllers/parcc/api/protected_areas_controller_test.rb	/^  def setup$/;"	f	class:ParccApiProtectedAreasControllerTest
+setup	./test/controllers/parcc/protected_areas_controller_test.rb	/^  def setup$/;"	f	class:ParccProtectedAreasControllerTest
+setup	./test/helpers/parcc/protected_areas_helper_test.rb	/^  def setup$/;"	f	class:Parcc.ProtectedAreasHelperTest
+setup	./test/integration/gef/api_areas_test.rb	/^  def setup$/;"	f	class:Gef.ApiAreasTest
+setup	./test/integration/gef/gef_search_new_test.rb	/^  def setup$/;"	f	class:Gef.SearchNewTest
+setup	./test/integration/gef/gef_search_show_test.rb	/^  def setup$/;"	f	class:Gef.SearchShowTest
+setup	./test/models/parcc/protected_area_test.rb	/^  def setup$/;"	f	class:Parcc.ProtectedAreaTest
+setup	./test/unit/gef/gef_importer_test.rb	/^    def setup$/;"	f	class:TestGefImporter
+setup	./test/unit/parcc/importers/species/taxonomies_test.rb	/^  def setup$/;"	f	class:TestParccImportersSpeciesTaxonomies
+setup	./test/unit/protected_planet_reader_test.rb	/^  def setup$/;"	f	class:TestProtectedPlanetReader
+setup	./test/unit/s3_test.rb	/^  def setup$/;"	f	class:TestS3
+show	./app/controllers/gef/areas_controller.rb	/^  def show$/;"	f	class:Gef.AreasController
+show	./app/controllers/gef/pame_records_controller.rb	/^  def show$/;"	f	class:Gef.PameRecordsController
+show	./app/controllers/gef/searches_controller.rb	/^  def show$/;"	f	class:Gef.SearchesController
+show	./app/controllers/gef/wdpa_records_controller.rb	/^  def show$/;"	f	class:Gef.WdpaRecordsController
+show	./app/controllers/parcc/api/protected_areas_controller.rb	/^  def show$/;"	f	class:Parcc.Api.ProtectedAreasController
+show	./app/controllers/parcc/protected_areas_controller.rb	/^  def show$/;"	f	class:Parcc.ProtectedAreasController
+show_params	./app/controllers/parcc/api/protected_areas_controller.rb	/^  def show_params$/;"	f	class:Parcc.Api.ProtectedAreasController
+source_file_path	./lib/modules/parcc/importers/base.rb	/^  def source_file_path$/;"	f	class:Parcc.Importers.Base
+source_file_path	./lib/modules/parcc/importers/high_priority_protected_areas.rb	/^  def source_file_path$/;"	f	class:Parcc.Importers.HighPriorityProtectedAreas
+source_file_path	./lib/modules/parcc/importers/protected_areas.rb	/^  def source_file_path$/;"	f	class:Parcc.Importers.ProtectedAreas
+source_file_path	./lib/modules/parcc/importers/species/counts.rb	/^  def source_file_path$/;"	f	class:Parcc.Importers.Species.Counts
+source_file_path	./lib/modules/parcc/importers/species/taxonomic_class_protected_areas.rb	/^  def source_file_path$/;"	f	class:Parcc.Importers.Species.TaxonomicClassProtectedAreas
+source_file_path	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def source_file_path$/;"	f	class:Parcc.Importers.Species.Taxonomies
+specie_ids	./app/models/parcc/protected_area.rb	/^  has_many :species, class_name: 'Parcc::Species',$/;"	F	class:Parcc.ProtectedArea
+specie_ids	./app/models/parcc/taxonomic_order.rb	/^  has_many :species, class_name: 'Parcc::Species', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.TaxonomicOrder
+specie_ids=	./app/models/parcc/protected_area.rb	/^  has_many :species, class_name: 'Parcc::Species',$/;"	F	class:Parcc.ProtectedArea
+specie_ids=	./app/models/parcc/taxonomic_order.rb	/^  has_many :species, class_name: 'Parcc::Species', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.TaxonomicOrder
+species	./app/models/parcc/protected_area.rb	/^  has_many :species, class_name: 'Parcc::Species',$/;"	F	class:Parcc.ProtectedArea
+species	./app/models/parcc/species_protected_area.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SpeciesProtectedArea
+species	./app/models/parcc/suitability_change.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SuitabilityChange
+species	./app/models/parcc/taxonomic_order.rb	/^  has_many :species, class_name: 'Parcc::Species', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.TaxonomicOrder
+species	./app/serializers/parcc/species_protected_area_serializer.rb	/^  has_one :species$/;"	F	class:Parcc.SpeciesProtectedAreaSerializer
+species	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def species record, taxon_order$/;"	f	class:Parcc.Importers.Species.Taxonomies
+species=	./app/models/parcc/protected_area.rb	/^  has_many :species, class_name: 'Parcc::Species',$/;"	F	class:Parcc.ProtectedArea
+species=	./app/models/parcc/species_protected_area.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SpeciesProtectedArea
+species=	./app/models/parcc/suitability_change.rb	/^  belongs_to :species, class_name: 'Parcc::Species', foreign_key: :parcc_species_id$/;"	F	class:Parcc.SuitabilityChange
+species=	./app/models/parcc/taxonomic_order.rb	/^  has_many :species, class_name: 'Parcc::Species', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.TaxonomicOrder
+species=	./app/serializers/parcc/species_protected_area_serializer.rb	/^  has_one :species$/;"	F	class:Parcc.SpeciesProtectedAreaSerializer
+species_props	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def species_props record$/;"	f	class:Parcc.Importers.Species.Taxonomies
+species_protected_area_ids	./app/models/parcc/protected_area.rb	/^  has_many :species_protected_areas,$/;"	F	class:Parcc.ProtectedArea
+species_protected_area_ids	./app/models/parcc/species.rb	/^  has_many :species_protected_areas, class_name: 'Parcc::SpeciesProtectedArea', foreign_key: :parcc_species_id$/;"	F	class:Parcc.Species
+species_protected_area_ids=	./app/models/parcc/protected_area.rb	/^  has_many :species_protected_areas,$/;"	F	class:Parcc.ProtectedArea
+species_protected_area_ids=	./app/models/parcc/species.rb	/^  has_many :species_protected_areas, class_name: 'Parcc::SpeciesProtectedArea', foreign_key: :parcc_species_id$/;"	F	class:Parcc.Species
+species_protected_areas	./app/models/parcc/protected_area.rb	/^  has_many :species_protected_areas,$/;"	F	class:Parcc.ProtectedArea
+species_protected_areas	./app/models/parcc/species.rb	/^  has_many :species_protected_areas, class_name: 'Parcc::SpeciesProtectedArea', foreign_key: :parcc_species_id$/;"	F	class:Parcc.Species
+species_protected_areas=	./app/models/parcc/protected_area.rb	/^  has_many :species_protected_areas,$/;"	F	class:Parcc.ProtectedArea
+species_protected_areas=	./app/models/parcc/species.rb	/^  has_many :species_protected_areas, class_name: 'Parcc::SpeciesProtectedArea', foreign_key: :parcc_species_id$/;"	F	class:Parcc.Species
+species_turnover_ids	./app/models/parcc/protected_area.rb	/^  has_many :species_turnovers,$/;"	F	class:Parcc.ProtectedArea
+species_turnover_ids=	./app/models/parcc/protected_area.rb	/^  has_many :species_turnovers,$/;"	F	class:Parcc.ProtectedArea
+species_turnovers	./app/models/parcc/protected_area.rb	/^  has_many :species_turnovers,$/;"	F	class:Parcc.ProtectedArea
+species_turnovers=	./app/models/parcc/protected_area.rb	/^  has_many :species_turnovers,$/;"	F	class:Parcc.ProtectedArea
+status_year	./lib/modules/gef/consumer.rb	/^  def status_year$/;"	f	class:Gef.Consumer
+sub_location	./lib/modules/gef/consumer.rb	/^  def sub_location$/;"	f	class:Gef.Consumer
+suitability_change_ids	./app/models/parcc/protected_area.rb	/^  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange',$/;"	F	class:Parcc.ProtectedArea
+suitability_change_ids	./app/models/parcc/species.rb	/^  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange', foreign_key: :parcc_species_id$/;"	F	class:Parcc.Species
+suitability_change_ids=	./app/models/parcc/protected_area.rb	/^  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange',$/;"	F	class:Parcc.ProtectedArea
+suitability_change_ids=	./app/models/parcc/species.rb	/^  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange', foreign_key: :parcc_species_id$/;"	F	class:Parcc.Species
+suitability_changes	./app/controllers/parcc/api/protected_areas_controller.rb	/^  def suitability_changes$/;"	f	class:Parcc.Api.ProtectedAreasController
+suitability_changes	./app/models/parcc/protected_area.rb	/^  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange',$/;"	F	class:Parcc.ProtectedArea
+suitability_changes	./app/models/parcc/species.rb	/^  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange', foreign_key: :parcc_species_id$/;"	F	class:Parcc.Species
+suitability_changes=	./app/models/parcc/protected_area.rb	/^  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange',$/;"	F	class:Parcc.ProtectedArea
+suitability_changes=	./app/models/parcc/species.rb	/^  has_many :suitability_changes, class_name: 'Parcc::SuitabilityChange', foreign_key: :parcc_species_id$/;"	F	class:Parcc.Species
+suitability_changes_table	./app/controllers/parcc/protected_areas_controller.rb	/^  def suitability_changes_table$/;"	f	class:Parcc.ProtectedAreasController
+suitability_value_icon	./app/helpers/parcc/protected_areas_helper.rb	/^  def suitability_value_icon value$/;"	f	class:Parcc.ProtectedAreasHelper
+table_name_prefix	./app/models/gef.rb	/^  def self.table_name_prefix$/;"	F	class:Gef
+table_name_prefix	./app/models/parcc.rb	/^  def self.table_name_prefix$/;"	F	class:Parcc
+taxon_class	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def taxon_class class_name$/;"	f	class:Parcc.Importers.Species.Taxonomies
+taxon_order	./lib/modules/parcc/importers/species/taxonomies.rb	/^  def taxon_order order_name, taxon_class$/;"	f	class:Parcc.Importers.Species.Taxonomies
+taxonomic_class	./app/models/parcc/species_turnover.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :taxonomic_class_id$/;"	F	class:Parcc.SpeciesTurnover
+taxonomic_class	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+taxonomic_class	./app/models/parcc/taxonomic_order.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicOrder
+taxonomic_class=	./app/models/parcc/species_turnover.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :taxonomic_class_id$/;"	F	class:Parcc.SpeciesTurnover
+taxonomic_class=	./app/models/parcc/taxonomic_class_protected_area.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClassProtectedArea
+taxonomic_class=	./app/models/parcc/taxonomic_order.rb	/^  belongs_to :taxonomic_class, class_name: 'Parcc::TaxonomicClass', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicOrder
+taxonomic_class_protected_area_ids	./app/models/parcc/protected_area.rb	/^  has_many :taxonomic_class_protected_areas, class_name: 'Parcc::TaxonomicClassProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.ProtectedArea
+taxonomic_class_protected_area_ids	./app/models/parcc/taxonomic_class.rb	/^  has_many :taxonomic_class_protected_areas, class_name: 'Parcc::TaxonomicClassProtectedArea', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClass
+taxonomic_class_protected_area_ids=	./app/models/parcc/protected_area.rb	/^  has_many :taxonomic_class_protected_areas, class_name: 'Parcc::TaxonomicClassProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.ProtectedArea
+taxonomic_class_protected_area_ids=	./app/models/parcc/taxonomic_class.rb	/^  has_many :taxonomic_class_protected_areas, class_name: 'Parcc::TaxonomicClassProtectedArea', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClass
+taxonomic_class_protected_areas	./app/models/parcc/protected_area.rb	/^  has_many :taxonomic_class_protected_areas, class_name: 'Parcc::TaxonomicClassProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.ProtectedArea
+taxonomic_class_protected_areas	./app/models/parcc/taxonomic_class.rb	/^  has_many :taxonomic_class_protected_areas, class_name: 'Parcc::TaxonomicClassProtectedArea', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClass
+taxonomic_class_protected_areas=	./app/models/parcc/protected_area.rb	/^  has_many :taxonomic_class_protected_areas, class_name: 'Parcc::TaxonomicClassProtectedArea', foreign_key: :parcc_protected_area_id$/;"	F	class:Parcc.ProtectedArea
+taxonomic_class_protected_areas=	./app/models/parcc/taxonomic_class.rb	/^  has_many :taxonomic_class_protected_areas, class_name: 'Parcc::TaxonomicClassProtectedArea', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClass
+taxonomic_classe_ids	./app/models/parcc/protected_area.rb	/^  has_many :taxonomic_classes, class_name: 'Parcc::TaxonomicClass', through: :taxonomic_class_protected_areas$/;"	F	class:Parcc.ProtectedArea
+taxonomic_classe_ids=	./app/models/parcc/protected_area.rb	/^  has_many :taxonomic_classes, class_name: 'Parcc::TaxonomicClass', through: :taxonomic_class_protected_areas$/;"	F	class:Parcc.ProtectedArea
+taxonomic_classes	./app/models/parcc/protected_area.rb	/^  has_many :taxonomic_classes, class_name: 'Parcc::TaxonomicClass', through: :taxonomic_class_protected_areas$/;"	F	class:Parcc.ProtectedArea
+taxonomic_classes=	./app/models/parcc/protected_area.rb	/^  has_many :taxonomic_classes, class_name: 'Parcc::TaxonomicClass', through: :taxonomic_class_protected_areas$/;"	F	class:Parcc.ProtectedArea
+taxonomic_classes_dropdown	./app/helpers/parcc/protected_areas_helper.rb	/^  def taxonomic_classes_dropdown section$/;"	f	class:Parcc.ProtectedAreasHelper
+taxonomic_classes_options	./app/helpers/parcc/protected_areas_helper.rb	/^  def taxonomic_classes_options$/;"	f	class:Parcc.ProtectedAreasHelper
+taxonomic_classes_tabs	./app/helpers/parcc/protected_areas_helper.rb	/^  def taxonomic_classes_tabs section$/;"	f	class:Parcc.ProtectedAreasHelper
+taxonomic_order	./app/models/parcc/species.rb	/^  belongs_to :taxonomic_order, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.Species
+taxonomic_order	./app/serializers/parcc/species_serializer.rb	/^  has_one :taxonomic_order$/;"	F	class:Parcc.SpeciesSerializer
+taxonomic_order=	./app/models/parcc/species.rb	/^  belongs_to :taxonomic_order, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_order_id$/;"	F	class:Parcc.Species
+taxonomic_order=	./app/serializers/parcc/species_serializer.rb	/^  has_one :taxonomic_order$/;"	F	class:Parcc.SpeciesSerializer
+taxonomic_order_ids	./app/models/parcc/taxonomic_class.rb	/^  has_many :taxonomic_orders, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClass
+taxonomic_order_ids=	./app/models/parcc/taxonomic_class.rb	/^  has_many :taxonomic_orders, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClass
+taxonomic_orders	./app/models/parcc/taxonomic_class.rb	/^  has_many :taxonomic_orders, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClass
+taxonomic_orders=	./app/models/parcc/taxonomic_class.rb	/^  has_many :taxonomic_orders, class_name: 'Parcc::TaxonomicOrder', foreign_key: :parcc_taxonomic_class_id$/;"	F	class:Parcc.TaxonomicClass
+tertiary_biome	./app/models/gef/pame_record.rb	/^  belongs_to :tertiary_biome, class_name: 'Gef::Biome', foreign_key: :tertiary_biome_id$/;"	F	class:Gef.PameRecord
+tertiary_biome=	./app/models/gef/pame_record.rb	/^  belongs_to :tertiary_biome, class_name: 'Gef::Biome', foreign_key: :tertiary_biome_id$/;"	F	class:Gef.PameRecord
+test_exposure_check_icon_if_not_present	./test/helpers/parcc/protected_areas_helper_test.rb	/^  def test_exposure_check_icon_if_not_present$/;"	f	class:Parcc.ProtectedAreasHelperTest
+test_exposure_check_icon_if_present	./test/helpers/parcc/protected_areas_helper_test.rb	/^  def test_exposure_check_icon_if_present$/;"	f	class:Parcc.ProtectedAreasHelperTest
+test_iucn_red_list_icon	./test/helpers/parcc/protected_areas_helper_test.rb	/^  def test_iucn_red_list_icon$/;"	f	class:Parcc.ProtectedAreasHelperTest
+test_suitability_value_icon	./test/helpers/parcc/protected_areas_helper_test.rb	/^  def test_suitability_value_icon$/;"	f	class:Parcc.ProtectedAreasHelperTest
+test_traits_to_return_list	./test/helpers/parcc/protected_areas_helper_test.rb	/^  def test_traits_to_return_list$/;"	f	class:Parcc.ProtectedAreasHelperTest
+to_csv	./app/models/gef/search.rb	/^  def to_csv$/;"	f	class:Gef.Search
+traits	./app/helpers/parcc/protected_areas_helper.rb	/^  def traits type, pa_species$/;"	f	class:Parcc.ProtectedAreasHelper
+up	./db/migrate/20150616141402_add_high_priority_to_parcc_protected_areas.rb	/^  def up$/;"	f	class:AddHighPriorityToParccProtectedAreas
+update_area	./lib/modules/parcc/importers/high_priority_protected_areas.rb	/^  def update_area record$/;"	f	class:Parcc.Importers.HighPriorityProtectedAreas
+url_generator	./lib/modules/protected_planet_reader.rb	/^  def url_generator(value: value)$/;"	f	class:ProtectedPlanetReader
+user_params	./app/controllers/gef/searches_controller.rb	/^  def user_params$/;"	f	class:Gef.SearchesController
+vulnerability	./app/controllers/parcc/api/protected_areas_controller.rb	/^  def vulnerability$/;"	f	class:Parcc.Api.ProtectedAreasController
+vulnerability_table	./app/controllers/parcc/protected_areas_controller.rb	/^  def vulnerability_table$/;"	f	class:Parcc.ProtectedAreasController
+vulnerability_table_for	./app/models/parcc/species_protected_area.rb	/^  def self.vulnerability_table_for protected_area_id, taxonomic_class=nil$/;"	F	class:Parcc.SpeciesProtectedArea
+wdpa_id	./app/controllers/parcc/api/protected_areas_controller.rb	/^  def wdpa_id$/;"	f	class:Parcc.Api.ProtectedAreasController
+wdpa_name	./app/models/gef/wdpa_record.rb	/^  def self.wdpa_name gef_pmis_id: gef_pmis_id$/;"	F	class:Gef.WdpaRecord
+wdpa_records	./app/models/gef/pame_record.rb	/^  def self.wdpa_records area: area$/;"	F	class:Gef.PameRecord
+with_changes	./app/models/parcc/suitability_change.rb	/^  scope :with_changes, -> { where(value: ['Inc', 'Dec']) }$/;"	F	class:Parcc.SuitabilityChange
+with_taxonomic_class	./app/models/parcc/suitability_change.rb	/^  scope :with_taxonomic_class, -> taxonomic_class {$/;"	F	class:Parcc.SuitabilityChange
+with_turnovers	./app/models/parcc/protected_area.rb	/^  scope :with_turnovers, -> { includes(species_turnovers: :taxonomic_class) }$/;"	F	class:Parcc.ProtectedArea
