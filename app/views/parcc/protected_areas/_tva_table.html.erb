@@ -28,8 +28,8 @@
     <tr>
       <td class="total">Total</td>
       <td></td>
-      <td><div class="tva-box"><div class="tva-value"><%= @vulnerability_assessments[:total][:vulnerable] %></div></div></td>
-      <td><div class="tva-box"><div class="tva-value"><%= @vulnerability_assessments[:total][:total] %></div></div></td>
+      <td><div class="tva-box"><div class="tva-value"><%= @vulnerability_assessments[:total][:vulnerable] rescue "N/A" %></div></div></td>
+      <td><div class="tva-box"><div class="tva-value"><%= @vulnerability_assessments[:total][:total] rescue "N/A" %></div></div></td>
     </tr>
   </tbody>
 </table>
