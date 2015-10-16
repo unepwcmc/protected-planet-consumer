@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150630134510) do
+ActiveRecord::Schema.define(version: 20150924133225) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -134,6 +134,17 @@ ActiveRecord::Schema.define(version: 20150630134510) do
     t.datetime "updated_at"
   end
 
+  create_table "gef_search_twos", force: true do |t|
+    t.integer  "gef_country_id"
+    t.integer  "gef_region_id"
+    t.string   "primary_biome"
+    t.integer  "gef_area_id"
+    t.integer  "wdpa_id"
+    t.string   "wdpa_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "gef_searches", force: true do |t|
     t.integer  "gef_country_id"
     t.integer  "gef_region_id"
@@ -175,8 +186,6 @@ ActiveRecord::Schema.define(version: 20150630134510) do
     t.integer  "wdpa_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "count_total_species"
-    t.integer  "count_vulnerable_species"
     t.integer  "percentage_vulnerable_species"
     t.boolean  "high_priority",                 default: false
   end
@@ -232,6 +241,15 @@ ActiveRecord::Schema.define(version: 20150630134510) do
   add_index "parcc_suitability_changes", ["parcc_protected_area_id"], name: "index_parcc_suitability_changes_on_parcc_protected_area_id", using: :btree
   add_index "parcc_suitability_changes", ["parcc_species_id"], name: "index_parcc_suitability_changes_on_parcc_species_id", using: :btree
   add_index "parcc_suitability_changes", ["value"], name: "index_parcc_suitability_changes_on_value", where: "(((value)::text = 'Dec'::text) OR ((value)::text = 'Inc'::text))", using: :btree
+
+  create_table "parcc_taxonomic_class_protected_areas", force: true do |t|
+    t.integer  "parcc_taxonomic_class_id"
+    t.integer  "parcc_protected_area_id"
+    t.integer  "count_total_species"
+    t.integer  "count_vulnerable_species"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "parcc_taxonomic_classes", force: true do |t|
     t.string   "name"
