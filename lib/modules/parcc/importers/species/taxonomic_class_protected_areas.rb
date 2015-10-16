@@ -20,7 +20,7 @@ class Parcc::Importers::Species::TaxonomicClassProtectedAreas < Parcc::Importers
   def add_row_to_tcpa counts
     Parcc::TaxonomicClassProtectedArea.create(counts)
   end
-  
+
   def source_file_path
     Rails.root.join('lib/data/parcc/species/taxonomic_class_protected_areas.csv')
   end
