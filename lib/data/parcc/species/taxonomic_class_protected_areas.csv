@@ -1,4 +1,4 @@
-WDPA_ID,TAXON_CLASS,VULN_SPECIES,NON_VULN_SPECIES,TOT_SPECIES
+wdpa_id,taxon_class,vulnerable_species,non_vulnerable_species,total_species
 597,Amphibian,4,26,30
 597,Bird,34,327,361
 597,Mammal,5,102,107
