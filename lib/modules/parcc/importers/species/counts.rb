@@ -18,14 +18,14 @@ class Parcc::Importers::Species::Counts < Parcc::Importers::Base
     Parcc::TaxonomicClassProtectedArea.create({
       parcc_protected_area_id: @protected_area.id,
       parcc_taxonomic_class_id: @taxonomic_class.id,
-      count_total_species: record[:total_species],
-      count_vulnerable_species: record[:vulnerable_species]
+      count_total_species: record[:total_species].to_i,
+      count_vulnerable_species: record[:vulnerable_species].to_i
     })
   end
 
   def add_counts record
-    @protected_area.count_total_species += record[:total_species]
-    @protected_area.count_vulnerable_species += record[:vulnerable_species]
+    @protected_area.count_total_species += record[:total_species].to_i
+    @protected_area.count_vulnerable_species += record[:vulnerable_species].to_i
     @protected_area.percentage_vulnerable_species = (
       @protected_area.count_vulnerable_species.to_f / @protected_area.count_total_species
     ) * 100
