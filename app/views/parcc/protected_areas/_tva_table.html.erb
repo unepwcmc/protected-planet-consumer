@@ -15,12 +15,12 @@
         <td></td>
         <td>
           <div class="tva-box">
-            <div class="tva-value"><%= @vulnerability_assessments[taxonomic_class].count_vulnerable_species %></div>
+            <div class="tva-value"><%= @vulnerability_assessments[taxonomic_class].count_vulnerable_species rescue "N/A" %></div>
           </div>
         </td>
         <td>
           <div class="tva-box">
-            <div class="tva-value"><%= @vulnerability_assessments[taxonomic_class].count_total_species  %></div>
+            <div class="tva-value"><%= @vulnerability_assessments[taxonomic_class].count_total_species rescue "N/A" %></div>
           </div>
         </td>
       </tr>
