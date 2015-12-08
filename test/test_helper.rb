@@ -18,5 +18,3 @@ class ActionDispatch::IntegrationTest
   include Capybara::DSL
   Capybara.app = Rails.application
 end
-
-
