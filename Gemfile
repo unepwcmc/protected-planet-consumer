@@ -27,6 +27,12 @@ end
 
 group :test, :development do
   gem 'byebug'
+ gem 'capistrano', '~> 3.4', require: false
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-rvm',   '~> 0.1', require: false
+  gem 'capistrano-sidekiq'
+  gem 'capistrano-passenger', '~> 0.1.1', require: false
 end
 
 gem 'sass', '~> 3.2'
@@ -41,3 +47,5 @@ gem 'autoprefixer-rails'
 gem 'database_cleaner', '~> 1.4.0'
 
 gem 'memoist', '~> 0.12.0'
+
+
