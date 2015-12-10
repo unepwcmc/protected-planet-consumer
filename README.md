@@ -21,4 +21,3 @@ bundle install
 # Documentation for Projects based on ProtectedPlanet Consumer
 
 * [GEF Protected Area Database](docs/gef.md)
-* [PARCC Project](docs/parcc.md)
