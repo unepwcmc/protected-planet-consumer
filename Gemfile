@@ -12,6 +12,7 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 gem 'responders', '~> 2.0'
+gem 'exception_notification'
 
 group :development do
   gem 'spring'

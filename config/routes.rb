@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get '/', to: redirect('/gef/')
+
   get '/gef/not_found/', :to => redirect('/gef/not_found.html'), as: 'gef_not_found'
 
   get '/gef/', to: 'gef/searches#new', as: 'gef'
@@ -22,9 +24,4 @@ Rails.application.routes.draw do
 
   #get '/gef/area/:gef_pmis_id/wdpa-records/:wdpa_id/pame-records/:mett_original_uid', to: 'gef/pame_record#show', as: 'pame_record'
 
-  namespace :parcc do
-    namespace :api do
-      resources :protected_areas, only: [:index, :show]
-    end
-  end
 end
