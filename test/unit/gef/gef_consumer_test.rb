@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'mocha/api'
 
 class TestGefConsumer < ActiveSupport::TestCase
 

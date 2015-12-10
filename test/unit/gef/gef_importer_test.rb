@@ -1,5 +1,7 @@
 require 'test_helper'
 require 'csv'
+require 'mocha/api'
+include Mocha::API
 
 class TestGefImporter < ActiveSupport::TestCase
 

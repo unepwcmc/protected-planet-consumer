@@ -1,4 +1,6 @@
 require 'test_helper'
+require 'mocha/api'
+include Mocha::API
 
 class TestS3 < ActiveSupport::TestCase
   def setup
