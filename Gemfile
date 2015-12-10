@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
+gem 'responders', '~> 2.0'
 
 group :development do
   gem 'spring'
@@ -18,8 +19,8 @@ end
 
 group :test do
   gem 'factory_girl_rails', '~> 4.4.1'
-  gem 'mocha', '~> 1.0.0'
-  gem 'webmock', '~> 1.18.0', require: false
+  gem 'mocha'
+  gem 'webmock', require: false
   gem 'capybara', '~> 2.4.4'
   gem "codeclimate-test-reporter", require: nil
 end
